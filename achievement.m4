@@ -26,5 +26,15 @@ ifelse(mode,`html', `</div>',
        mode, `latex', `% End section'))
 divert`'dnl
 *** achievement.m4 ***
-achieve(`Dunkin Donuts', `Jan 2000-Feb 2001', `Made the donuts', `Sold the Donuts')
+ifdef(
+  NAME:  achieve
+  ARGUMENTS:
+    EMPLOYER
+    ROLE
+    DATES
+    Activity1
+    Activity2
+    ActivityN
+)
+achieve(`Dunkin Donuts', `Wage Slave', `Jan 2000-Feb 2001', `Made the donuts', `Sold the Donuts')
 
