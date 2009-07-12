@@ -1,5 +1,5 @@
 divert(-1)
-define(`mode', `latex')
+define(`spaces_to_lines', `translit(`$*', ` ', `_')')
 define(`reverse', `ifelse(`$#', `0', , `$#', `1', ``$1'',
                                `reverse(shift($@)), `$1'')')
 define(`cai', `class="achivement_item"')
@@ -16,17 +16,15 @@ ifelse(mode, `html',
     <span class="employer">$1</span>
     <span class="dates">$2</span>
   </p>',
-  mode, `latex',
-  `\section{$1:$2}')
+  mode, `latex', `\section{`spaces_to_lines($1)'_``''`spaces_to_lines(`$2')'}')
   divert(-2)dnl
-  divert`'dnl
-ifelse(mode,`html', `<ul>'',
-       mode, `latex', `\begin{itemize}')
-  make_line_items(reverse(shift(shift($@))))
+ifelse(mode,`html', ``<ul>'', mode, `latex', ``\begin{itemize}'')
+  `make_line_items(reverse(shift(shift($@))))'
 ifelse(mode,`html', `  </ul>',
        mode, `latex', `  \end{itemize}')
-ifelse(mode,`html',`</div>',
-       mode,`latex', `%end section')
+ifelse(mode,`html', `</div>',
+       mode, `latex', `% End section'))
 divert`'dnl
 *** achievement.m4 ***
 achieve(`Dunkin Donuts', `Jan 2000-Feb 2001', `Made the donuts', `Sold the Donuts')
+
