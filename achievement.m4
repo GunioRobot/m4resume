@@ -8,7 +8,17 @@ define(`make_line_items', `ifelse(`$#', `0', ,
                                              mode, `latex', `\{item}$1')',
                           `make_line_items(shift($@))
     ifelse(mode, `html',`  <li cai>$1</li>',
-                                         mode, `latex', `\{item}$1')')')
+                                         mode, `latex', `\{item}$1')')')dnl
+ifelse(
+  NAME:  achieve
+  ARGUMENTS:
+    EMPLOYER
+    ROLE
+    DATES
+    Activity1
+    Activity2
+    ActivityN
+)dnl
 define(`achieve',
 ifelse(mode, `html',
 `<div class="achievement">
@@ -25,17 +35,3 @@ ifelse(mode,`html', `  </ul>',
 ifelse(mode,`html', `</div>',
        mode, `latex', `% End section'))
 divert`'dnl
-*** achievement.m4 ***
-ifelse(
-  NAME:  achieve
-  ARGUMENTS:
-    EMPLOYER
-    ROLE
-    DATES
-    Activity1
-    Activity2
-    ActivityN
-)dnl
-achieve(`Dunkin Donuts', `Wage Slave', `Jan 2000-Feb 2001', `Made the donuts',
-`Sold the Donuts')`'dnl
-
