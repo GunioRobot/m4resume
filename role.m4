@@ -1,4 +1,5 @@
 divert(-1)
+ifelse(ifdef(`mode',`defined'),,`define(`mode',`latex')')
 define(`spaces_to_lines', `translit(`$*', ` ', `_')')
 define(`reverse', `ifelse(`$#', `0', , `$#', `1', ``$1'',
                                `reverse(shift($@)), `$1'')')
