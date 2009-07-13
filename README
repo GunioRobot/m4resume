@@ -1,3 +1,17 @@
 Basic invocation:
 
-m4 achievement.m4 demo.m4 -Dmode=(html|latex)
+m4 role.m4 demo.m4 -Dmode=(html|latex)
+
+
+DOCUMENTATION:
+
+None as yet.  In the doc directory there are my notes from reading the GNU M4
+manual though.
+
+
+CONTENTS:
+
+scratch.m4 : scratch m4 code as I figure out ideas
+README     : this file
+demo.m4    : a basic m4 file hich should demonstrate the m4 items that I add
+
