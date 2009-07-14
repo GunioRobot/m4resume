@@ -35,6 +35,8 @@ define(`CANDIDATE_NAME', `Steven G. Harms')
 define(`CANDIDATE_ADDRESS', `123 Main St. Apt. 245, Austin, Texas 78727')
 define(`CANDIDATE_PHONE', ``415-555-1212'')
 define(`CANDIDATE_EMAIL', `nobodys\_real\_address@gmail.com')
+define(`CANDIDATE_EMAIL', ``@m4resume'')
+define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
 
 ###############################################################################
 CONVENIENCE MACROS

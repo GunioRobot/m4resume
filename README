@@ -1,6 +1,6 @@
-Basic invocation:
+BASIC INVOCATION:
 
-bin/build.sh > output/resume.tex             [output to LaTeX by default]
+Bin/build.sh > output/resume.tex             [output to LaTeX by default]
 bin/build.sh -Dmode=html |elinks -force-html [To view HTML mode]
 
 DOCUMENTATION:
@@ -17,3 +17,8 @@ doc        : place for notes I took on GNU M4 and scratch test set
 metaprog   : M4 is awesome for MP, some sketches to help flesh that out quickly
 src        : M4 sources (referenced in build.sh)
 
+
+THANKS:
+
+Andrew McNabb whose LaTeX formatting was nice, clean, and thoroughly
+theft-worthy.
