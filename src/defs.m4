@@ -11,13 +11,21 @@ define(`wrap_dates', `s')
 PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
-define(`CANDIDATE_NAME', `Steven G. Harms')
-define(`RUL', `Rijksuniversiteit Leiden')
+define(`CANDIDATE_NAME', `Your Name HERE')
+
+###############################################################################
+CONVENIENCE MACROS
+For specifying the configuration of the HTML template
+###############################################################################
+define(`STH', `Some Thing Here')
+
+###############################################################################
+EDUCATION MACROS
+For specifying the configuration of the HTML template
 define(`RES_EDUCATION_MYUNI', `The University of Hard Knocks')
 define(`RES_EDUCATION_MYDATES', `1995-2000')
-define(`RES_EDUCATION_DEGREEINFO',`
-        `BBA:  Management Information Systems (MIS)', 
-        `BA:  Philosophy,''),
+define(`RES_EDUCATION_DEGREEINFO',`BBA:  Mumbledy-stuff (MIS), 
+        BS:  M4 Processing,'),
 ###############################################################################
 HTML MACROS
 For specifying the configuration of the HTML template
