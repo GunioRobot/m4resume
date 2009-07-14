@@ -7,3 +7,8 @@ achieve(format_place(`Greasy Spoon'),
         format_job(`Dishwasher'), 
         format_dates(`Jan 2001-Feb 2004'), 
         `Hosed plates', `Spit in food')`'dnl
+achieve(format_place(`Evilcorp Industries'), 
+        format_job(`Mastermind'), 
+        format_dates(`Present'), 
+        `Re-aligned chemical weapons division for malevolent synergies', 
+        `Parked in two spots')`'dnl
