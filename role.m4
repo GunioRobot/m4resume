@@ -35,4 +35,3 @@ ifelse(mode,`html', `  </ul>',
        mode, `latex', `  \end{itemize}')
 ifelse(mode,`html', `</div>',
        mode, `latex', `% End section'))
-divert`'dnl
