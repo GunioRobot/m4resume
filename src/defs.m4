@@ -6,12 +6,35 @@ For specifying the configuration of the HTML template
 define(`wrap_place', `i')
 define(`wrap_job',   `b')
 define(`wrap_dates', `s')
+
+# Unset this if you don't want to include the personal statement template,
+# some people don't like them.
+define(`RES_FORMAT_DO_PERSONAL_STATEMENT', `1')
+
+# I certainly hope you have some skills, but...perhaps your name is Linus
+# Torvalds and you don't really need it.
+define(`RES_FORMAT_DO_SKILLS_STATEMENT', `1')
+
+#Some people have extra-curricular activities, they may define this
+# undefine(`RES_FORMAT_DO_ACTIVITES_STATEMENT')
+
+#Some people have extra-curricular activities, they may define this
+# undefine(`RES_FORMAT_DO_EXTRACURR_STATEMENT')
+
+#Some people have honors, they may define this
+# undefine(`RES_FORMAT_DO_HONORS_STATEMENT')
  
+#Share the code
+define(`RES_FORMAT_DO_CODESAMP_STATEMENT', `1')
+
 ###############################################################################
 PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
-define(`CANDIDATE_NAME', `Your Name HERE')
+define(`CANDIDATE_NAME', `Steven G. Harms')
+define(`CANDIDATE_ADDRESS', `123 Main St. Apt. 245, Austin, Texas 78727')
+define(`CANDIDATE_PHONE', ``415-555-1212'')
+define(`CANDIDATE_EMAIL', `nobodys\_real\_address@gmail.com')
 
 ###############################################################################
 CONVENIENCE MACROS

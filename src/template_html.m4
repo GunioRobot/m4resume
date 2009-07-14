@@ -5,6 +5,7 @@ divert(`2')
 </html>
 divert
 <body>
+ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement')')
   <div class="achivements">
     include(`src/demo.m4')
   </div>

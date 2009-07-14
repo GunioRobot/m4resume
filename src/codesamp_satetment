@@ -1,0 +1,15 @@
+ifelse(mode, `latex', `
+  \section*{ Code Sample }
+   \begin{itemize}
+     \item \textbf{GitHub}: \textsf{http://github.com/sgharms/m4resume/tree/master}
+   \end{itemize}
+
+', ``
+<div id="personal_statement">
+  <p>
+  <ol>
+     <li>GitHub: <a href="http://github.com/sgharms/m4resume/tree/master">m4resume</a> 
+  </ol>
+  </p>
+<div>
+'')

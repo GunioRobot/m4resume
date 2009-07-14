@@ -28,7 +28,7 @@ define(`achieve',
     <span class="role">$2</span>
     <span class="dates">$3</span>
   </p>',
-  mode, `latex', \section*{$1 : $2}
+  mode, `latex', \subsection*{$1 : $2}
   \label{patsubst(
          `translit(
            patsubst(`$1 $2',
@@ -44,7 +44,7 @@ ifelse(mode,`html', ``  <ul>'', mode, `latex', ``\begin{itemize}'')
 ifelse(mode,`html', `  </ul>',
        mode, `latex', `\end{itemize}')
 ifelse(mode,`html', `</div>',
-       mode, `latex', `% End section
+       mode, `latex', `% End subsection
        ')'
 )
 

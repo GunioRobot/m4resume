@@ -1,0 +1,120 @@
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+
+\begin{center}
+  \fontfamily{phv}
+    \Huge Steven G. Harms
+\end{center}
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape 123 Main St. Apt. 245, Austin, Texas 78727  \hfill 415-555-1212; nobodys\_real\_address@gmail.com}
+
+% \vspace{-1pt} {\small\itshape Twitter: @sgharms  \hfill GitHub:URL \hfill SuperHappyFaceNetworkBook:  URL}
+
+
+
+
+  \section*{ Personal Statement}
+  I am a beautiful and unique snowflake who can use \LaTeX.
+
+
+\section*{Work Experience}
+\label{sec: work_experience}
+\subsection*{\textit{Guybrush Threepwood Enterprises} : \textbf{Swabby}}
+  \label{_guybrushthreepwoodenterprises_swabby}
+  \textsf{Jan 2000-Feb 2001}
+      
+\begin{itemize}
+    \item Found the Secret of Monkey Island
+    \item Avoided voodoo spells
+\end{itemize}
+% End subsection
+       
+\subsection*{\textit{Matsumotocorp} : \textbf{Awestruck Acolyte}}
+  \label{_matsumotocorp_awestruckacolyte}
+  \textsf{Jan 2001-Feb 2004}
+      
+\begin{itemize}
+    \item Comprehended Inject
+    \item Avoided conflict with DHH
+\end{itemize}
+% End subsection
+       
+\subsection*{\textit{Evilcorp Industries} : \textbf{Mastermind}}
+  \label{_evilcorpindustries_mastermind}
+  \textsf{Present}
+      
+\begin{itemize}
+    \item Re-aligned weapons division for malevolent synergies
+    \item Parked in two spots
+\end{itemize}
+% End subsection
+       
+\subsection*{\textit{Education} : \textbf{The University of Hard Knocks}}
+  \label{_education_theuniversityofhardknocks}
+  \textsf{1995-2000}
+      
+\begin{itemize}
+    \item BBA:  Mumbledy-stuff (MIS)
+    \item BS:  M4 Processing
+    \item Some Thing Here Study Abroad: I was a special snowflake in another country.
+\end{itemize}
+% End subsection
+       
+
+
+  \section*{ Skills }
+   \begin{itemize}
+     \item \textbf{Martial Arts}: Bo Staff Skills, Num-Chuk Skills
+     \item \textbf{Piratical Skills}: Can hold my breath for 10 minutes
+     \item \textit{Software Development}: Git, M4, Ruby
+   \end{itemize}
+
+
+
+
+
+
+
+  \section*{ Code Sample }
+   \begin{itemize}
+     \item \textbf{GitHub}: M4resume [\textsf{http://github.com/sgharms/m4resume/tree/master}]
+   \end{itemize}
+
+
+
+\end{document}
