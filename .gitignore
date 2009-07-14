@@ -1,1 +1,5 @@
 *.swp
+output/*.aux
+output/*.log
+output/*.pdf
+output/*.pdfsync
