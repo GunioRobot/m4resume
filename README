@@ -1,6 +1,6 @@
 Basic invocation:
 
-bin/build.sh
+bin/build.sh (Params to pass to M4 like -Dmode=blah)
 
 
 DOCUMENTATION:
