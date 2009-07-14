@@ -15,9 +15,9 @@
 \usepackage{graphicx}
 \fi
 
-\begin{document}
-
 include(`src/custom_latex_macros.m4')dnl
+
+\begin{document}
 
 \ifpdf
 \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
