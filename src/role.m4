@@ -27,10 +27,11 @@ ifelse(mode, `html',
     <span class="employer">$1</span>
     <span class="dates">$2</span>
   </p>',
-  mode, `latex', ``\section*{$1 --- $2}'')
+  mode, `latex', ``\section*{$1 --- $2}
+  $3'')
   divert(-2)dnl
 ifelse(mode,`html', ``<ul>'', mode, `latex', ``\begin{itemize}'')
-  `make_line_items(reverse(shift(shift($@))))'
+  `make_line_items(reverse(shift(shift(shift($@)))))'
 ifelse(mode,`html', `  </ul>',
        mode, `latex', `  \end{itemize}')
 ifelse(mode,`html', `</div>',
