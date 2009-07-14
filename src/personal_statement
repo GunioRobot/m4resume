@@ -9,5 +9,5 @@ ifelse(mode, `latex', `
   <p>
     I am a beautiful and unique snowflake who can write HTML &hellip; and M4.
   </p>
-<div>
+</div>
 '')

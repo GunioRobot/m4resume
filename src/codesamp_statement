@@ -5,11 +5,9 @@ ifelse(mode, `latex', `
    \end{itemize}
 
 ', `
-<div id="personal\_statement">
-  <p>
+<div id="code_samples">
   <ol>
-     <li>GitHub: <a href="http://github.com/sgharms/m4resume/tree/master">m4resume</a> 
+     <li>GitHub: <a href="http://github.com/sgharms/m4resume/tree/master">m4resume</a></li>
   </ol>
-  </p>
-<div>
+</div>
 ')

@@ -7,13 +7,11 @@ ifelse(mode, `latex', `
    \end{itemize}
 
 ', ``
-<div id="personal_statement">
-  <p>
+<div id="honors_statement">
   <ol>
     <li>Martial Arts}: Bo Staff Skills, Num-Chuk Skills</li>
     <li>Piratical Skills}: Can hold my breath for 10 minutes</li>
     <li>Software Development}: Git, M4, Ruby</li>
   </ol>
-  </p>
-<div>
+</div>
 '')

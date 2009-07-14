@@ -62,6 +62,6 @@ define(`RES_HTML_DECLARATION',
 
 define(`RES_HTML_HEAD', `
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>R&eacute;sum&eacute; for CANDIDATE_NAME</title>
 </head>')
