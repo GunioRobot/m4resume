@@ -28,7 +28,7 @@ define(`achieve',
     <span class="role">$2</span>
     <span class="dates">$3</span>
   </p>',
-  mode, `latex', \section*{$1 --- $2}
+  mode, `latex', \section*{$1 : $2}
   \label{patsubst(
          `translit(
            patsubst(`$1 $2',
@@ -37,8 +37,7 @@ define(`achieve',
            `A-Z\{} ',
            `a-z___')', 
          `_+', 
-         `_')`'dnl
-}
+         `_')`'}
   $3)
 ifelse(mode,`html', ``  <ul>'', mode, `latex', ``\begin{itemize}'')
   make_line_items(reverse(shift(shift(shift($@)))))
