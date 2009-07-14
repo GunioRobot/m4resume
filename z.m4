@@ -8,9 +8,9 @@ define(`format_$1',
          wrap_$1,  `b', `\textbf{$`1'}',
          wrap_$1,  `s', `\textsf{$`1'}',
       )`dnl'',
-      `wrap_$1 was not defined'
+      `wrap_$1 was not defined'dnl
      )
-         )')dnl
+         )')
 divert`'dnl
-generate_formatter(`moopy')dnl
-format_moopy(`garb')
+generate_formatter(`place')dnl
+format_place(`Austin')
