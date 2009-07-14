@@ -9,9 +9,12 @@ define(`generate_formatter',
 define(`format_$1', 
   ifdef(`wrap_$1',
       `ifelse( 
-         wrap_$1,  `i', `\textit{$`1'}',
-         wrap_$1,  `b', `\textbf{$`1'}',
-         wrap_$1,  `s', `\textsf{$`1'}',
+         wrap_$1,  `i', ifelse(mode, `html', 
+                               `<em>$`1'</em>', `\textif{$`1'}'),
+         wrap_$1,  `b', ifelse(mode, `html', 
+                               `<strong>$`1'</strong>', `\textbf{$`1'}'),
+         wrap_$1,  `s', ifelse(mode, `html', 
+                               `<tt>$`1'</tt>', `\textsf{$`1'}')
       )`dnl'',
       `wrap_$1 was not defined'dnl
      )

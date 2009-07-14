@@ -25,7 +25,8 @@ define(`achieve',
 `<div class="achievement">
   <p class="employer_and_dates">
     <span class="employer">$1</span>
-    <span class="dates">$2</span>
+    <span class="role">$2</span>
+    <span class="dates">$3</span>
   </p>',
   mode, `latex', \section*{$1 --- $2}
   \label{patsubst(
@@ -39,10 +40,10 @@ define(`achieve',
          `_')`'dnl
 }
   $3)
-ifelse(mode,`html', ``<ul>'', mode, `latex', ``  \begin{itemize}'')
+ifelse(mode,`html', ``  <ul>'', mode, `latex', ``\begin{itemize}'')
   make_line_items(reverse(shift(shift(shift($@)))))
 ifelse(mode,`html', `  </ul>',
-       mode, `latex', `  \end{itemize}')
+       mode, `latex', `\end{itemize}')
 ifelse(mode,`html', `</div>',
        mode, `latex', `% End section
        ')'
