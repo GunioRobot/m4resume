@@ -1,7 +1,7 @@
 Basic invocation:
 
-bin/build.sh (Params to pass to M4 like -Dmode=blah)
-
+bin/build.sh > output/resume.tex             [output to LaTeX by default]
+bin/build.sh -Dmode=html |elinks -force-html [To view HTML mode]
 
 DOCUMENTATION:
 
