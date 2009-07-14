@@ -1,0 +1,13 @@
+ifelse(mode, `latex', `
+  \section{ Personal Statement}
+
+  I have always tried my best to do pure evil in the manner that most undermined
+  social cohesion.  I hope to do so for YOU as well --- using LaTeX on the way!
+', ``
+<div id="personal_statement">
+  <p>
+    I have always tried my best to do pure evil in the manner that most undermined
+    social cohesion.  I hope to do so for YOU as well --- but using HTML!
+  </p>
+<div>
+'')
