@@ -3,6 +3,10 @@ BASIC INVOCATION:
 Bin/build.sh > output/resume.tex             [output to LaTeX by default]
 bin/build.sh -Dmode=html |elinks -force-html [To view HTML mode]
 
+ARTIFACTS:
+
+In output directory (resume.pdf from resume.tex)
+
 DOCUMENTATION:
 
 None as yet.  In the doc directory there are my notes from reading the GNU M4
@@ -15,8 +19,8 @@ README     : this file
 bin        : place for build executibles
 doc        : place for notes I took on GNU M4 and scratch test set
 metaprog   : M4 is awesome for MP, some sketches to help flesh that out quickly
+output     : sample output (check out resume.pdf)
 src        : M4 sources (referenced in build.sh)
-
 
 THANKS:
 
