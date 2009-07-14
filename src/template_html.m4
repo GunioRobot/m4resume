@@ -1,5 +1,6 @@
 divert
 RES_HTML_DECLARATION
+<html>
 RES_HTML_HEAD
 divert(`2')
 </html>
