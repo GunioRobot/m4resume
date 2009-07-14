@@ -15,7 +15,7 @@ define(`format_$1',
       )`dnl'',
       `wrap_$1 was not defined'dnl
      )
-         )')
+)')
 dnl
 define(`generate_formatter_for',
 `ifelse(`$#', 0, ,
