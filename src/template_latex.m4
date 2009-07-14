@@ -31,5 +31,3 @@ dnl Make sure you fetch this back at the end
 divert(1)dnl
 \end{document}
 divert`'dnl
-
-
