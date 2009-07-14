@@ -1,6 +1,6 @@
 BASIC INVOCATION:
 
-Bin/build.sh > output/resume.tex             [output to LaTeX by default]
+bin/build.sh > output/resume.tex             [output to LaTeX by default]
 bin/build.sh -Dmode=html |elinks -force-html [To view HTML mode]
 
 ARTIFACTS:
