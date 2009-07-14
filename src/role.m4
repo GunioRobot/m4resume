@@ -21,18 +21,32 @@ ifelse(
     ActivityN
 )dnl
 define(`achieve',
-ifelse(mode, `html',
+`ifelse(mode, `html',
 `<div class="achievement">
   <p class="employer_and_dates">
     <span class="employer">$1</span>
     <span class="dates">$2</span>
   </p>',
-  mode, `latex', ``\section*{$1 --- $2}
-  $3'')
-  divert(-2)dnl
-ifelse(mode,`html', ``<ul>'', mode, `latex', ``\begin{itemize}'')
-  `make_line_items(reverse(shift(shift(shift($@)))))'
+  mode, `latex', \section*{$1 --- $2}
+  \label{patsubst(
+         `translit(
+           patsubst(`$1 $2',
+             `text\w+',
+             `'),
+           `A-Z\{} ',
+           `a-z___')', 
+         `_+', 
+         `_')`'dnl
+}
+  $3)
+ifelse(mode,`html', ``<ul>'', mode, `latex', ``  \begin{itemize}'')
+  make_line_items(reverse(shift(shift(shift($@)))))
 ifelse(mode,`html', `  </ul>',
        mode, `latex', `  \end{itemize}')
 ifelse(mode,`html', `</div>',
-       mode, `latex', `% End section'))
+       mode, `latex', `% End section
+       ')'
+)
+
+
+
