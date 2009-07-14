@@ -12,7 +12,12 @@ PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
 define(`CANDIDATE_NAME', `Steven G. Harms')
- 
+define(`RUL', `Rijksuniversiteit Leiden')
+define(`RES_EDUCATION_MYUNI', `The University of Hard Knocks')
+define(`RES_EDUCATION_MYDATES', `1995-2000')
+define(`RES_EDUCATION_DEGREEINFO',`
+        `BBA:  Management Information Systems (MIS)', 
+        `BA:  Philosophy,''),
 ###############################################################################
 HTML MACROS
 For specifying the configuration of the HTML template

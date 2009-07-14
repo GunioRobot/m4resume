@@ -25,6 +25,7 @@ include(`src/custom_latex_macros.m4')dnl
 \DeclareGraphicsExtensions{.eps, .jpg}
 \fi
 
+include(`src/nameblock.m4')dnl
 include(`src/demo.m4')dnl
 
 dnl Make sure you fetch this back at the end
