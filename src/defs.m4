@@ -65,3 +65,15 @@ define(`RES_HTML_HEAD', `
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>R&eacute;sum&eacute; for CANDIDATE_NAME</title>
 </head>')
+
+###############################################################################
+RDFa Support
+define(`RDFa_tokens', 
+``__RDFA_M4', <a cite="gnu.org">M4</a>, 
+`__RDFA_Ruby', <a cite="ruby.org">Ruby</a>, 
+`__RDFA_Saint_Tropez', <a cite="...">St. Tropez</a>')
+ifdef(`do_rdfa', 
+include(`src/rdfa_support.m4')
+format_RDFa_pairs(RDFa_tokens)
+)
+###############################################################################

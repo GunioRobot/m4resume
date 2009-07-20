@@ -1,0 +1,22 @@
+divert(-1)`'dnl
+define(`RDFa_tokens', ``__RDFA_M4', <a cite="gnu.org">M4</a>, `__RDFA_Ruby', <a cite="ruby.org">Ruby</a>')
+
+define(`de_prefix', `substr(`$1', len(`__RDFA_'))')
+
+define(`RDFA_DEFINITON_STRING',
+dnl got [`de_prefix(`$1')']
+`ifelse( mode, `latex', `de_prefix(`$1')',
+mode, `html', ifdef(`do_rdfa', `$2', ``de_prefix(`$1')''))')
+
+
+define(`BUILD_AN_RDFA_DEFINITION',`define(`$1', `RDFA_DEFINITON_STRING(`$1', `$2')')')
+
+define(`format_RDFa_pairs',
+`ifelse(`$#', 0, ,
+`$#', 1, $1,
+`BUILD_AN_RDFA_DEFINITION(`$1', `$2')`'dnl
+format_RDFa_pairs(shift(shift($@)))')')
+
+divert`'dnl
+format_RDFa_pairs(RDFa_tokens)dnl
+I like to program in __RDFA_Ruby and __RDFA_M4.

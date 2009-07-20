@@ -22,7 +22,21 @@ metaprog   : M4 is awesome for MP, some sketches to help flesh that out quickly
 output     : sample output (check out resume.pdf)
 src        : M4 sources (referenced in build.sh)
 
+RDFa SUPPORT
+
+If -Dmode=html and -Ddo_rdfa are set at build, m4 resume will take specialized
+tokens of the form "__RDFA_plain_text_term" and will look for its definition.
+These are defined in 'defs.m4' in the associative array "RDFa_tokens".  When
+the format is non-RDFa-compliant (LaTeX / HTML) the __RDFA_ prefix will be
+stripped, the '_'s, will be turned to spaces and thus a simple text view will
+be provided.
+
+In the event that the definition exists in the associative array, the value
+will be returned.  Thus something like __RDFA_Saint_Tropez becomes "Saint
+Tropez" in LaTeX or HTML, but becomes <a cite="...">Saint Tropez</a> in
+HTML+RDFa mode.
+
 THANKS:
 
-Andrew McNabb whose LaTeX formatting was nice, clean, and thoroughly
-theft-worthy.
+<a href="http://www.mcnabbs.org/andrew/">Andrew McNabb</a> whose LaTeX
+formatting was nice, clean, and thoroughly theft-worthy.
