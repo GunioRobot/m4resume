@@ -57,21 +57,36 @@ For specifying the configuration of the HTML template
 ###############################################################################
 
 define(`RES_HTML_DECLARATION',
-``<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">'')
+ifdef(`do_rdfa',
+``<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" 
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">'',
+``<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">''))
+
+define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:dc="http://dublincore.org/2008/01/14/dcelements.rdf#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  version="XHTML+RDFa 1.0" xml:lang="en" typeof="foaf:person">'',
+``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 
 define(`RES_HTML_HEAD', `
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta property="dc:creator" content="CANDIDATE_NAME" />
+  <meta property="description" content="Résumé for CANDIDATE_NAME" />
   <title>R&eacute;sum&eacute; for CANDIDATE_NAME</title>
 </head>')
 
 ###############################################################################
 RDFa Support
+This is where your special RDF-ized tags should go
+
 define(`RDFa_tokens', 
-``__RDFA_M4', <a cite="gnu.org">M4</a>, 
-`__RDFA_Ruby', <a cite="ruby.org">Ruby</a>, 
-`__RDFA_Saint_Tropez', <a cite="...">St. Tropez</a>')
+``__RDFA_M4', `<span rel="foaf:interest">M4</span>', 
+`__RDFA_Ruby',`<span rel="foaf:interest">Ruby</span>', 
+`__RDFA_Trinidad_and_Tobago',`Trinidad and Tobago'')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')
 format_RDFa_pairs(RDFa_tokens)

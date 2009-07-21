@@ -1,10 +1,10 @@
-divert
+divert`'dnl
 RES_HTML_DECLARATION
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-RES_HTML_HEAD
+RES_HTML_DTD_DECLARATION`'dnl
+RES_HTML_HEAD`'dnl
 divert(`2')
 </html>
-divert(`3')
+divert`'dnl
 <body>
 include(`src/nameblock.m4')dnl
 dnl
@@ -26,5 +26,4 @@ ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `<div id="codesamp_block">include(`sr
 </body>
 divert`'dnl
 undivert(`3')
-I LIKE TO PROGRAM IN __RDFA_Ruby and __RDFA_M4 and vacation in __RDFA_Saint_Tropez.
 undivert(`2')dnl
