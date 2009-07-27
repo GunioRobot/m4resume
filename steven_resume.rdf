@@ -42,6 +42,7 @@
     <foaf:homepage>www.ruby-lang.org</foaf:homepage>
   </foaf:Document>
   <cv:CV rdf:about="http://stevengharms.com/resume.html">
+  <cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
   <cv:cvIsActive>false</cv:cvIsActive>
   <cv:cvIsConfidential>true</cv:cvIsConfidential>  
     <cv:cvDescription xml:lang="en">Philosohper of code and communications and
@@ -51,6 +52,36 @@
     <cv:aboutPerson>
       <rdf:Description rdf:about="http://stevengharms.com/id" />
    </cv:aboutPerson>
+   <cv:hasSkill>
+      <cv:languageSkill rdf:nodeID="lang_dutch" />
+    </cv:hasSkill>
+   <cv:hasSkill>
+      <cv:languageSkill rdf:nodeID="lang_french" />
+    </cv:hasSkill>
+   <cv:hasSkill>
+      <cv:languageSkill rdf:nodeID="lang_latin" />
+    </cv:hasSkill>
  </cv:CV>
+<!--  Dutch definition -->
+<cv:LanguageSkill rdf:nodeID="lang_dutch">
+   <cv:skillName>Dutch</cv:skillName>
+   <cv:skillLevel>4</cv:skillLevel>
+   <cv:lngSkillLevelReading>4</cv:lngSkillLevelReading>
+   <cv:lngSkillLevelWritten>3</cv:lngSkillLevelWritten>
+</cv:LanguageSkill>
+<!--  French definition -->
+<cv:LanguageSkill rdf:nodeID="lang_french">
+   <cv:skillName>French</cv:skillName>
+   <cv:skillLevel>2</cv:skillLevel>
+   <cv:lngSkillLevelReading>2</cv:lngSkillLevelReading>
+   <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
+</cv:LanguageSkill>
+<!--  Latin definition -->
+<cv:LanguageSkill rdf:nodeID="lang_latin">
+   <cv:skillName>Latin</cv:skillName>
+   <cv:skillLevel>3</cv:skillLevel>
+   <cv:lngSkillLevelReading>3</cv:lngSkillLevelReading>
+   <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
+</cv:LanguageSkill>
 </rdf:RDF>
 
