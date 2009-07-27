@@ -17,24 +17,47 @@
     <cv:aboutPerson>
       <rdf:Description rdf:about="http://stevengharms.com/id" />
    </cv:aboutPerson>
+   <cv:hasEducation rdf:nodeID="utexas_bba" />
  </cv:CV>
-  <cv:LanguageSkill rdf:nodeID="lang_dutch">
-     <cv:skillName>Dutch</cv:skillName>
-     <cv:skillLevel>4</cv:skillLevel>
-     <cv:lngSkillLevelReading>4</cv:lngSkillLevelReading>
-     <cv:lngSkillLevelWritten>3</cv:lngSkillLevelWritten>
-   </cv:LanguageSkill>
-  <cv:LanguageSkill rdf:nodeID="lang_french">
-     <cv:skillName>French</cv:skillName>
-     <cv:skillLevel>2</cv:skillLevel>
-     <cv:lngSkillLevelReading>2</cv:lngSkillLevelReading>
-     <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
-   </cv:LanguageSkill>
-  <cv:LanguageSkill rdf:nodeID="lang_latin">
-     <cv:skillName>Latin</cv:skillName>
-     <cv:skillLevel>3</cv:skillLevel>
-     <cv:lngSkillLevelReading>3</cv:lngSkillLevelReading>
-     <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
-   </cv:LanguageSkill>
+  <cv:Education rdf:nodeID="utexas_bba">
+    <cv:studiedIn rdf:resource="http://www.utexas.edu" />
+    <cv:eduStartDate>1995-08-22</cv:eduStartDate>
+    <cv:eduGradDate>2000-05-01</cv:eduGradDate>
+    <cv:degreeType>Bachelor's of Business Administration</cv:degreeType>
+    <cv:eduMajor>Management Information Systems</cv:eduMajor>
+    <cv:eduMinor>Dutch</cv:eduMinor>
+    <cv:eduDescription>
+      A multi-disciplinary approach that blends a base in business
+      administration with a focus in building enterprise IT systems.  Attention is
+      paid to programming basics, project management, and consulting.  The program
+      culminates with a real-world project delivered to an Austin community
+      organization.
+    </cv:eduDescription>
+  </cv:Education>
+  <cv:Education rdf:nodeID="utexas_ba">
+    <cv:studiedIn rdf:resource="http://www.utexas.edu"></cv:studiedIn>
+    <cv:eduStartDate>1995-08-22</cv:eduStartDate>
+    <cv:eduGradDate>2000-05-01</cv:eduGradDate>
+    <cv:degreeType>BA</cv:degreeType>
+    <cv:eduMajor>Philosophy</cv:eduMajor>
+    <cv:eduMinor>Dutch</cv:eduMinor>
+    <cv:eduDescription>
+      A classic liberal arts program in philosophy with focus on pre-Socratic
+      Greek philosophy, German Idealism (Hegel), and Philosophy of science.
+    </cv:eduDescription>
+  </cv:Education>
+  <cv:Education rdf:nodeID="rul_leiden">
+    <cv:studiedIn rdf:resource="http://www.leiden.edu" />
+    <cv:eduStartDate>1997-08-09</cv:eduStartDate>
+    <cv:eduGradDate>1998-08-09</cv:eduGradDate>
+    <cv:degreeType>Study Abroad Programme</cv:degreeType>
+    <cv:eduMajor>Philosophy of Science</cv:eduMajor>
+    <cv:eduMinor>Dutch</cv:eduMinor>
+    <cv:eduDescription>
+      During a one-year study abroad term I studied advanced classes in Dutch
+      speaking, writing, grammar, and composition.  I also took 2 classes in the
+      faculty of Philosophy.
+    </cv:eduDescription>
+  </cv:Education>
 </rdf:RDF>
 
