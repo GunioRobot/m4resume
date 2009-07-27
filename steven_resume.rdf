@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:sgh="http://stevengharms.com/id/vocab#"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cv="http://rdfs.org/resume-rdf/"
+>
+  <foaf:Person rdf:about="http://stevengharms.com/id">
+    <foaf:name xml:lang="en">Steven G. Harms</foaf:name>        
+    <foaf:title xml:lang="en">Mr.</foaf:title>
+    <foaf:name xml:lang="en">Steven G. Harms</foaf:name>
+    <foaf:webpage>http://stevengharms.com</foaf:webpage>
+<foaf:mbox_sha1sum>189ab8346ba031cb003c96f9774308ee1db6fbcf</foaf:mbox_sha1sum>
+    <foaf:myersBriggs>INTJ</foaf:myersBriggs>
+    <foaf:surname>Harms</foaf:surname>
+    <foaf:givenName>Steven</foaf:givenName>
+    <foaf:weblog>http://stevengharms.com/index.html</foaf:weblog>
+    <foaf:based_near geo:lat="30.267" geo:long="97.74" rdf:nodeID="latlong_node" />
+    <foaf:workplaceHomepage rdf:resource="http://www.cisco.com" />
+    <foaf:schoolHomepage rdf:resource="http://www.utexas.edu" />
+    <foaf:weblog rdf:resource="http://www.stevengharms.com" />
+    <foaf:knows rdf:nodeID="damon"/>
+    <foaf:knows rdf:nodeID="wbruce"/>     
+    <foaf:knows rdf:nodeID="pat"/>
+   <foaf:interest rdf:nodeID="_rlang" />
+  </foaf:Person>
+  <foaf:Person rdf:nodeID="damon">
+       <foaf:name>Damon Clinkscales</foaf:name>
+  </foaf:Person>
+  <foaf:Person  rdf:nodeID="pat">
+       <foaf:name>Patrick Devine</foaf:name>
+  </foaf:Person>
+  <foaf:Person  rdf:nodeID="wbruce">
+       <foaf:name>Bruce Williams</foaf:name>
+  </foaf:Person>
+ <foaf:Document rdf:nodeID="_rlang">
+   <foaf:primaryTopic>Ruby</foaf:primaryTopic>
+   <foaf:homepage>www.ruby-lang.org</foaf:homepage>
+ </foaf:Document>
+ <cv:CV rdf:about="http://stevengharms.com/resume.html">
+    <cv:cvDescription xml:lang="en">Philosopher of communications and collaborations systems seeking to build information infrastructure that hastens serendipitous collaborations</cv:cvDescription>
+    <cv:aboutPerson>
+      <rdf:Description rdf:about="http://stevengharms.com/id" />
+   </cv:aboutPerson>
+ </cv:CV>
+</rdf:RDF>
+
