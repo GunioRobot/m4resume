@@ -11,18 +11,16 @@ ifelse(mode, `latex', `
 % \vspace{-1pt} {\small\itshape Twitter: @sgharms  \hfill GitHub:URL \hfill SuperHappyFaceNetworkBook:  URL}
 
 ',`
+<div id="nameblock" typeof="foaf:Person">
 <h1>
 CANDIDATE_NAME
 </h1>
-<ol>
-  <li><strong>THIS IS NOT MY REAL RESUME</strong>:  This is merely a
-  demonstration of my project <a
-  href="http://github.com/sgharms/m4resume/tree/master">m4resume</a> my real
-  resume is at <a href="http://stevengharms.com/resume.html">my site</a>.</li>
-  <li>CANDIDATE_ADDRESS</li>
-  <li>CANDIDATE_PHONE</li>
-  <li>CANDIDATE_EMAIL</li>
+<ul>
+  ifdef(`CANDIDATE_ADDRESS', `<li>CANDIDATE_ADDRESS</li>')
+  ifdef(`CANDIDATE_PHONE', `<li>__RDFA_CANDIDATE_PHONE</li>')
+  ifdef(`CANDIDATE_EMAIL', `<li>__RDFA_CANDIDATE_EMAIL</li>')
   ifdef(`CANDIDATE_TWITTER',`<li>Twitter`': CANDIDATE_TWITTER</li>')dnl
   ifdef(`CANDIDATE_FACEBOOK',`<li>Facebook: CANDIDATE_FACEBOOK</li>')dnl
-</ol>
+</ul>
+</div>
 ')

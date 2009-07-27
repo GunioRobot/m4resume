@@ -17,4 +17,4 @@ achieve(format_place(`Education'),
         format_job(`RES_EDUCATION_MYUNI'), 
         format_dates(`RES_EDUCATION_MYDATES'), 
         RES_EDUCATION_DEGREEINFO
-        `STH Study Abroad: I was a special snowflake in another country.')`'dnl
+        `__RDFA_RUL: Studied advanced Dutch and 16th-17th century Philosophy of Science.')`'dnl

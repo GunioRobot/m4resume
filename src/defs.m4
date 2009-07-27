@@ -32,25 +32,27 @@ PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
 define(`CANDIDATE_NAME', `Steven G. Harms')
-define(`CANDIDATE_ADDRESS', `123 Main St. Apt. 245, Austin, Texas 78727')
-define(`CANDIDATE_PHONE', ``415-555-1212'')
-define(`CANDIDATE_EMAIL', `nobodys\_real\_address@gmail.com')
-define(`CANDIDATE_EMAIL', ``@m4resume'')
-define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
+dnl define(`CANDIDATE_ADDRESS', `12445 Alameda Trace Circle #1016, Austin, Texas 78727')
+define(`CANDIDATE_PHONE', ``(512)466-5756'')
+define(`CANDIDATE_EMAIL', `resume@sgharms.oib.com')
+define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
+dnl define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
+define(`CANDIDATE_HOMEPAGE', ``http://stevengharms.com'')
 
 ###############################################################################
 CONVENIENCE MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
-define(`STH', `Some Thing Here')
+define(`RUL', ``Rijksuniversiteit te Leiden, Leiden, The Netherlands'')
 
 ###############################################################################
 EDUCATION MACROS
 For specifying the configuration of the HTML template
-define(`RES_EDUCATION_MYUNI', `The University of Hard Knocks')
+define(`RES_EDUCATION_MYUNI', `The University of Texas at Austin')
 define(`RES_EDUCATION_MYDATES', `1995-2000')
-define(`RES_EDUCATION_DEGREEINFO',`BBA:  Mumbledy-stuff (MIS), 
-        BS:  M4 Processing,'),
+define(`RES_EDUCATION_DEGREEINFO',`BBA:  Management Information Systems (MIS), 
+        BA:  Philosophy,'),
+Don't remove this ','  ^
 ###############################################################################
 HTML MACROS
 For specifying the configuration of the HTML template
@@ -68,15 +70,23 @@ ifdef(`do_rdfa',
 define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.org/1999/xhtml" 
   xmlns:dc="http://dublincore.org/2008/01/14/dcelements.rdf#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  version="XHTML+RDFa 1.0" xml:lang="en" typeof="foaf:person">'',
+  xmlns:cv="http://purl.org/captsolo/resume-rdf/0.2/cv#"
+  xmlns:pim="http://www.w3.org/2000/10/swap/pim/contact#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+  version="XHTML+RDFa 1.0" xml:lang="en">'',
 ``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 
 define(`RES_HTML_HEAD', `
-<head>
+<head typeof="cv:CV">
+  <title property="cv:cvTitle">Résumé for CANDIDATE_NAME</title>
+
+  <link rel="cv:aboutPerson foaf:creator" content="CANDIDATE_HOMEPAGE" />
+
+  <meta property="dc:language" content="en" />
+  <meta property="cv:isActive" content="false" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta property="dc:creator" content="CANDIDATE_NAME" />
   <meta property="description" content="Résumé for CANDIDATE_NAME" />
-  <title>R&eacute;sum&eacute; for CANDIDATE_NAME</title>
 </head>')
 
 ###############################################################################
@@ -86,6 +96,9 @@ This is where your special RDF-ized tags should go
 define(`RDFa_tokens', 
 ``__RDFA_M4', `<span rel="foaf:interest">M4</span>', 
 `__RDFA_Ruby',`<span rel="foaf:interest">Ruby</span>', 
+`__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone">CANDIDATE_PHONE</span>',
+`__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox">CANDIDATE_EMAIL</span>',
+`__RDFA_RUL',`<a foaf:schoolname href="http://www.rul.nl">RUL</a>'
 `__RDFA_Trinidad_and_Tobago',`Trinidad and Tobago'')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')
