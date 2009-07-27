@@ -17,6 +17,15 @@
     <cv:aboutPerson>
       <rdf:Description rdf:about="http://stevengharms.com/id" />
    </cv:aboutPerson>
+   <cv:hasSkill>
+      <cv:languageSkill rdf:nodeID="lang_dutch" />
+    </cv:hasSkill>
  </cv:CV>
+  <cv:LanguageSkill rdf:nodeID="lang_dutch">
+     <cv:skillName>Dutch</cv:skillName>
+     <cv:skillLevel>4</cv:skillLevel>
+     <cv:lngSkillLevelReading>4</cv:lngSkillLevelReading>
+     <cv:lngSkillLevelWritten>3</cv:lngSkillLevelWritten>
+   </cv:LanguageSkill>
 </rdf:RDF>
 
