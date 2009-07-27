@@ -64,6 +64,7 @@
     <cv:hasEducation rdf:nodeID="utexas_bba" />
     <cv:hasEducation rdf:nodeID="utexas_ba" />
     <cv:hasEducation rdf:nodeID="rul_leiden" />
+    <cv:hasTarget rdf:nodeID="cv_target" />
  </cv:CV>
 <!--  Dutch definition -->
 <cv:LanguageSkill rdf:nodeID="lang_dutch">
@@ -122,9 +123,33 @@
   <cv:eduMinor>Dutch</cv:eduMinor>
   <cv:eduDescription>
     During a one-year study abroad term I studied advanced classes in Dutch
-    speaking, writing, grammar, and composition.  I also took 2 classes in the
-    faculty of Philosophy.
+    speaking, writing, grammar, and composition.  I also took 3 classes in the
+    faculty of Philosophy: Rise of Scientific Europe, Seminar on Scientific
+    Revolutions, and Rationality of Emotions.
   </cv:eduDescription>
 </cv:Education>
+<cv:Target rdf:nodeID="cv_target">
+  <cv:targetCareerLevel>Developer</cv:targetCareerLevel>
+  <cv:targetCareerLevel>IT Architect</cv:targetCareerLevel>
+  <cv:targetCareerLevel>IT Strategist</cv:targetCareerLevel>
+  <cv:targetCompanyDescription>
+    I'm looking for a passionate start-up
+    opportunity or an enterprise that is ready to shake up its old way of
+    thinking about how to enable collaboration and labor.
+  </cv:targetCompanyDescription>
+  <cv:targetCompanyIndustry>Internet</cv:targetCompanyIndustry>
+  <cv:targetCountry>USA</cv:targetCountry>
+  <cv:targetJobDescription>
+    I am seeking a position that finds the diversity of
+    my interests and passions to be a bonus; I'm looking for a team of
+    innovative thinkers who are on the forefront of linguistic, semantic, and
+    metaprogrammatic thinking.   
+  </cv:targetJobDescription>
+  <cv:targetJobMode>full-time</cv:targetJobMode>
+  <cv:targetJobType>IT Engineering / Architecture</cv:targetJobType>
+  <cv:weeksNoticePeriod>2</cv:weeksNoticePeriod>
+  <cv:conditionWillRelocate>True</cv:conditionWillRelocate>
+  <cv:conditionWillTravel>True</cv:conditionWillTravel>
+</cv:Target>
 </rdf:RDF>
 
