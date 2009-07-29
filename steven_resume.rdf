@@ -65,6 +65,42 @@
     <cv:hasEducation rdf:nodeID="utexas_ba" />
     <cv:hasEducation rdf:nodeID="rul_leiden" />
     <cv:hasTarget rdf:nodeID="cv_target" />
+		<cv:hasWorkHistory>
+			<cv:workHistory rdf:nodeID="cisco_support">			
+				<cv:employedIn>Cisco Systems Inc.</cv:employedIn>
+				<cv:startDate>2000-06-05</cv:startDate>
+				<cv:endDate>2001-04-20</cv:endDate>
+				<cv:jobTitle>I.T. Analyst</cv:jobTitle>
+				<cv:jobDescription>Engineering Support Analyst</cv:jobDescription>
+				<cv:numSubordinates>0</cv:numSubordinates>
+				<cv:jobType>Employee</cv:jobType>
+				<cv:isCurrent>0</cv:isCurrent>
+			</cv:workHistory>
+		</cv:hasWorkHistory>		
+		<cv:hasWorkHistory>
+			<cv:workHistory rdf:nodeID="cisco_mail_admin">			
+				<cv:employedIn>Cisco Systems Inc.</cv:employedIn>
+				<cv:startDate>2001-04-20</cv:startDate>
+				<cv:endDate>2005-06-01</cv:endDate>
+				<cv:jobTitle>I.T. Engineer</cv:jobTitle>
+				<cv:jobDescription>Engineering Messaging Systems</cv:jobDescription>
+				<cv:numSubordinates>0</cv:numSubordinates>
+				<cv:jobType>Employee</cv:jobType>
+				<cv:isCurrent>0</cv:isCurrent>
+			</cv:workHistory>
+		</cv:hasWorkHistory>
+		<cv:hasWorkHistory>
+			<cv:workHistory rdf:nodeID="cisco_cct_lead">			
+				<cv:employedIn>Cisco Systems Inc.</cv:employedIn>
+				<cv:startDate>2005-06-01</cv:startDate>
+				<cv:endDate>Present</cv:endDate>
+				<cv:jobTitle>Senior I.T. Engineer</cv:jobTitle>
+				<cv:jobDescription>Communication and Collaboration Systems Lead Engineer</cv:jobDescription>
+				<cv:numSubordinates>0</cv:numSubordinates>
+				<cv:jobType>Employee</cv:jobType>
+				<cv:isCurrent>1</cv:isCurrent>
+			</cv:workHistory>
+		</cv:hasWorkHistory>
  </cv:CV>
 <!--  Dutch definition -->
 <cv:LanguageSkill rdf:nodeID="lang_dutch">
