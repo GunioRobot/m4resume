@@ -75,6 +75,11 @@
 				<cv:numSubordinates>0</cv:numSubordinates>
 				<cv:jobType>Employee</cv:jobType>
 				<cv:isCurrent>0</cv:isCurrent>
+				<cv:Notes>Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter.</cv:Notes>
+				<cv:Notes>Identified training gaps: created training and delivered to employees in 3 theatres.</cv:Notes>
+				<cv:Notes>Moved client satisfaction rating from 74% to 95%, the highest seen to that date</cv:Notes>
+				<cv:Notes>Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team.</cv:Notes>
+				<cv:Notes>Designed web-based 'vacation' mail tool. Tool reduced support calls from 500 per quarter to 25 ($30,000 estimated savings per annum ).</cv:Notes>
 			</cv:workHistory>
 		</cv:hasWorkHistory>		
 		<cv:hasWorkHistory>
@@ -87,6 +92,15 @@
 				<cv:numSubordinates>0</cv:numSubordinates>
 				<cv:jobType>Employee</cv:jobType>
 				<cv:isCurrent>0</cv:isCurrent>
+				<cv:Notes>Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution</cv:Notes>
+				<cv:Notes>Managed fleet of 10 HP servers, a dozen Mirapoint appliances</cv:Notes>
+				<cv:Notes>Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000.</cv:Notes>
+				<cv:Notes>Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design.</cv:Notes>
+				<cv:Notes>Established messaging team standard Perl module set / CVS repository / Subversion repository</cv:Notes>
+				<!-- AGGG!  rdf:Description="http://code.google.com/p/cmailguard/" --> 
+				<cv:Notes rdf:parseType='Literal'>Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at <a href="http://code.google.com/p/cmailguard/"></a></cv:Notes>
+				<cv:Notes>Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing &lt; 10 values</cv:Notes>
+				<cv:Notes>Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600% faster.</cv:Notes>
 			</cv:workHistory>
 		</cv:hasWorkHistory>
 		<cv:hasWorkHistory>
@@ -97,6 +111,25 @@
 				<cv:jobTitle>Senior I.T. Engineer</cv:jobTitle>
 				<cv:jobDescription>Communication and Collaboration Systems Lead Engineer</cv:jobDescription>
 				<cv:numSubordinates>0</cv:numSubordinates>
+				<cv:jobType>Employee</cv:jobType>
+				<cv:isCurrent>1</cv:isCurrent>
+				<cv:Notes df:parseType='Literal'>Authored 5–point, 2–year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment.  Application forms a basis for a <em>de facto</em> group-affiliation framework.</cv:Notes>
+				<cv:Notes>Led technical team responsible forum and blogging framework deployment to enable Office of CEO / CIO “Cisco 3.0” strategy,</cv:Notes>
+				<cv:Notes>Created business requirements document and RESTful API specification for new "generic list-abstraction" repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.</cv:Notes>
+				<cv:Notes>Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux</cv:Notes>
+				<cv:Notes>Created registry process (and web tool) for application host systems that use e-mail as transport layer.  This helped identify / remediate non-compliant systems that are using our data through 'non-standard' interfaces so that we can help them come into compliance</cv:Notes>
+				<cv:Notes>Lead architect in defining generic list infrastructure wherein all types of lists (e-mail, voice mail, security groups, future list structures) could be generically stored, generically communicated, modeled prototype slave systems on VMWare ESX.</cv:Notes>
+				<cv:Notes>Performed Sarbanes-Oxley audit of mail systems: reliability, fail–over, security/integrity.</cv:Notes>
+				<cv:Notes>Through automation activities, software, and lower-level-support training, we were able to reduce internal head count spend by 66% and transfer tier 1-3 support to vendor support organization.</cv:Notes>
+				<cv:Notes>Teamed with University of Texas Department of Information, Risk, and Operations Management's MIS steering committee to specify skill–set deficiencies found in recent interview candidates.</cv:Notes>
+				<cv:Notes>Cross-IT Collaboration Council: Focus on "Enterprise 2.0" idea.</cv:Notes>
+				<cv:Notes>New solutions show 400% improvement on old design: attributable to more efficient disk layout, identifying data set re-use, and profiling commonly-used subroutines.</cv:Notes>
+			</cv:workHistory>
+		</cv:hasWorkHistory>
+		<cv:hasWorkHistory>
+			<cv:workHistory rdf:nodeID="independent_development">
+				<cv:employedIn rdf:resource="http://www.stevengharms.com" />
+				<cv:jobTitle>Passionate Developer of Technical Ideas that Tickle my Fancy</cv:jobTitle>
 				<cv:jobType>Employee</cv:jobType>
 				<cv:isCurrent>1</cv:isCurrent>
 			</cv:workHistory>

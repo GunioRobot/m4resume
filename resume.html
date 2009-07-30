@@ -1,294 +1,47 @@
-<div class="centerbox">
-  <h1>At A Glance</h1>
-	<p class="aag">My professional career has been spent, thus far, at Cisco.  Rather than enumerating my roles and ancillary activities chronologically, I have grouped together based by skill.  Much of my work, however, has been too untested for the enterprise environment and has thus been conducted outside of the Cisco limn.  Characterization of that work can be found in the &ldquo;<a href="independent">Independent Development</a>&rdquo; section.  A table of contents follows:</p>
-	<ul class="outer">
-		<li><a href="#cisco">Cisco Systems</a>
-			<ul class="inner">
-				<li><a href="#reqdef">Requirements Definition</a></li>
-				<li><a href="#softdev">Software Development</a></li>
-				<li><a href="#leadership">Leadership</a></li>
-			</ul>
-		</li>
-		<li><a href="#independent">Independent Development</a>
-			<ul class="inner">
-				<li><a href="#rubydev">Ruby</a></li>
-				<li><a href="#cocoa">Cocoa</a></li>
-				<li><a href="#further">Further Technical Skill</a></li>
-			</ul>
-		</li>
-		<li><a href="#education">Education</a>
-			<ul class="inner">
-				<li><a href="#uni">University</li>
-				<li><a href="#training">Training</li>
-		</li>
-	</ul>
-	</div>
-	
-</div>
+===Ruby Development
+Completed Ruby on Rails boot-camp, 2/2007
+Designed survey application using Ruby on Rails, 3/2007
+Designed Latin verb organizer proof of concept using Ruby on Rails, code sample available upon request
+Wrote LaTeX to Unicode codepoint / HTML entity conversion library
+Implemented LaTeX to macron-glyph conversion library as Textmate bundle
+Designed Latin verb conjugation library set, including UTF-8 wrapper around multibyte&ndash;fragile Ruby String class; to be joined to aforementioned Rails application, code sample available upon request
 
-  <hr/>
-<a name="cisco"></a>
-<div class="skillblockbox"></div>
-<h1 class="name">Work Experience</h1>
-<div class="leftbox-borderless">
-<p> <a href="http://www.cisco.com">Cisco Systems
-Inc.</a>: Current Role: <i>Mail systems architect</i>. Employment Term:
-<i>2000-Present</i></p>
-</div>
-
-<a name="reqdef"></a>
-<div class="skillblockbox">
-  <div class="sectionhead">
-    <p>Requirement Definition</p>
-  </div>
-<div class="headingsubsection">
-  <ul >
-    <li>Mail systems architect, <i>7/2004 - Present</i>:
-      <ul>
-				<li>Authored 5&ndash;point, 2&ndash;year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment, <em>10/2007</em></li>
-				<li>Led technical team responsible forum and blogging framework deployment, 9/2007</li>
-        <li>Created business requirements document and RESTful API
-        specification for new "generic
-        list-abstraction" repository and interface: allows disparate
-        downstream systems (including mail) to access and utilize the same
-        list structures for mail, calendar, voice mail, meeting invite,
-        <em>etc.</em>, <em>3/2007</em></li>
-        <li>Created standard specification for all applications environments
-        with respect to standard, accepted mail routing behavior: policy
-        document, Sendmail.mc for Solaris, Linux, <em>6/2007</em></li>
-        <li>Created registry process (and web tool) for application host systems that
-        use e-mail as transport layer.  This should help identify / remediate
-        non-compliant systems that are using our data through 'non-standard'
-        interfaces so that we can help them come into compliance,
-        <em>2/2007</em></li>
-        <li>Prototyped architecture for a large-scale distribution mailing
-        list solution: gathered requirements from executive staff,
-        management team.  Handed off requirement set to internal development
-        team, <em>7/2007</em></li>
-        <li>Lead architect in defining generic list infrastructure wherein
-        all types of lists (e-mail, voice mail, security groups, future
-        list structures) could be generically stored, generically
-        communicated, modeled prototype slave systems on VMWare ESX,
-        <em>4/2006</em></li>
-        <li>Performed Sarbanes-Oxley audit of mail systems: reliability,
-        fail&ndash;over, security/integrity</li>
-    </ul>
-    <li>Print infrastructure lead, <i>11/2003 - 7/2004</i>:
-    <ul>
-      <li>Led multi-month strengths / weaknesses analysis to identify
-      stability and scalability potential of system</li>
-      <li>Defined value case for funding a transition to a model that
-      would include shared services</li>
-      <li>Defined RFP to replace print job routing infrastructure /
-      operational outsource</li>
-    </ul>
-    </li>
-    <li>Mail systems support lead, <i>3/2001 - 3/2002</i>:
-      <ul>
-        <li>Tracked top 5 issues quarter to quarter. After 3 quarters of
-        implementation, support calls dropped, on average, 100 cases
-        per quarter</li>
-        <li>Identified training gaps: created training and delivered to
-        employees in 3 theatres</li>
-      </ul>
-    </li>
-    </ul>
-  </div>
-</div>
-<a name="softdev"></a>
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>Software Development</p>
-</div>
-<div class="headingsubsection">
-<ul>
-	<li>Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster:
-		<ul>
-			<li>Wrote script to deploy core mailing list host data repository, web interface, mail interface, and build scripts from <a href="http://en.wikipedia.org/wiki/M4_(computer_language)">M4 macro definitions</a> + Bash + Perl.  This allows an entire environment to be built and deployed into a segregated space by configuring a single macro specification file, <em>3/2008</em></li>
-			<li>Designed integrated master Sendmail.mc generation, archival, deploy, and rollback solution, <em>2/2008</em></li>
-			<li>New solutions show 400% improvement on old design: attributable to more efficient disk layout, identifying data set re-use, and attention to the execution time of the most frequently&ndash;used subroutines</li>
-			<li>Migrated primary web interface for list data repository from non&ndash;validating HTML 4 Frameset specification to XHTML&ndash;compliant, CSS&ndash;based, <a href="http://template-toolkit.org/">Template::Toolkit</a> design.  User interface 600% faster.</li>
-			</ul></li>
-	<li>Coded &ldquo;serverware&rdquo; solutions: single instance appliance servers that run a standard framework stack derived from a common code&ndash;base; <a href="http://code.google.com/p/cmailguard">released code on Google Code</a><ul>
-		<li>Deployed a new automated &ldquo;bounce-back&rdquo; solution, derived from the CMailguard code</li>
-		<li>Deployed a new &ldquo;address-has-changed&rdquo; server, derived from CMailguard code</li>
-		<li>Performed and uploaded <a href="http://blip.tv/file/922794">CMailguard deployment guide</a> on <a href="http://blip.tv">blip.tv</a>, <em>5/2008</em></li>
-			</ul></li>
-<li>Coded numerous utility / automation programs for system maintenance /
-stability (Perl) (<em>3/2003 - Present</em>)
-<ul>
-<li>Deployed 7-bit quoted printable search and modify to 8-bit ASCII crawler
-to make sure unwanted Outlook-originated metadata was not inserted into 8-bit
-systems</li>
-<li>Developed XML-driven, AJAX interface for "generic dashboard" that was used
-within team.  Application used Javascript to read configuring XML file and
-then to provide asynchronous interface for UI</li>
-<li>Refactored automated reply system for form email that will not
-feed spam engines / create infinite mail loops, <i>03/2006</i></li>
-<li>Created compatibility mode system whereby mailing list
-distribution system is mastered in flat files, migrated via
-into mySQL and shared by LDAP, <i>Present</i></li>
-<li>Improved efficiency and reliability of back-end scripts by
-streamlining code. Build process speed improved by 4 hours,
-checksum validation added, <i>11/2004</i></li>
-<li>Attachment handler for MIME de-fang on large-distribution
-mailing list, <i>6/2003</i></li>
-<li>Attachment size / content restrictor (refactor of previous
-technology), <i>4/2003</i></li>
-<li>Designed Out of Office scanner / handler to prevent MS Exchange
-from feeding spam engines / spamming external mailing lists /
-causing infinite mail storm loops due to its "everyone gets a
-bounce" design, <i>7/2002</i></li>
-<li>Designed web-based 'vacation' mail tool. Tool reduced support
-calls from 500 per quarter to 25 ($30,000 estimated savings per
-annum ), <i>10/2001</i></li>
-</ul>
-<p></p>
-</li>
-<li>Established messaging team standard Perl module set / CVS
-repository / Subversion repository</li>
-
-
-<li>Began efforts around Web2.0 transitioning of existing Web interfaces
-within Messaging Systems team's interface points
-
-<li>Built XML-template based menu rendering engine: exportable applicable to
-multiple applications.  Using Javascript and XMLHttpRequest (AJAX
-methodology)</li>
-</ul>
-</ul>
-</div>
-</div>
-<a name="leadership"></a>
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>Leadership</p>
-</div>
-<div class="headingsubsection">
-<ul>
-	<li>Teamed with University of Texas Department of Information, Risk, and Operations Management's MIS steering committee to specify skill&ndash;set deficiencies found in recent interview candidates, <em>5/2008</em></li>
-  <li>Cross-IT Collaboration Council: Focus on "Enterprise 2.0" idea</li>
-  <ul>
-    <li>Provided top 5 technologies list for enabling massively-collaborative
-    culture</li>
-    <li>Provided assessment of IT-centric cultural areas for improvement</li>
-    <li>Provided assessment for standard programming language recommendation</li>
-  </ul>
-<li>Senior Messaging Architect:  See <em>Software Development, above</em></li>
-<li>Messaging Support Lead:
-  <ul>
-	<li>Managed support team for (team of 4) backbone mail systems upon which ~1bn/month mail flow</li>
-<li>Moved client satisfaction rating from 74% to 95%, the highest
-seen to that date</li>
-<li>Piloted lead + application owner support relationship still in
-use today. After performing liaison role, messaging team requested
-my transition to their team.</li>
-</ul>
-</li>
-<li>Led print infrastructure team for 18 months and then handed-off
-role to outsourcing partner.</li>
-</ul>
-</div>
-</div>
-<a name="independent"></a>
-<h1 class="name">Independent Development</h1>
-<a name="rubydev"></a>
-<!-- Ruby / Rails Development -->
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>Ruby Development</p>
-</div>
-<div class="headingsubsection">
-<ul>
-<li>Completed <a href="http://www.bignerdranch.com">Ruby on Rails boot-camp</a>, <em>2/2007</em></li>
-<li>Designed survey application using Ruby on Rails, <em>3/2007</em></li>
-<li>Designed Latin verb organizer proof of concept using Ruby on Rails, <em>code sample available upon request</em></li>
-<li>Wrote LaTeX to Unicode codepoint / HTML entity conversion library</li>
-<li>Implemented LaTeX to <a href="http://stevengharms.com/ruby-a-tool-to-convert-latex-style-macrons-to-macron-characters-html-entities-or-utf-8-escape-codes">macron-glyph conversion library as Textmate bundle</a></li>
-<li>Designed Latin verb conjugation library set, including UTF-8 wrapper around multibyte&ndash;fragile Ruby String class; to be joined to aforementioned Rails application, <em>code sample available upon request</em></li>
-</ul>
-</div>
-<p/>
-<a name="cocoa"></a>
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>Cocoa Development</p>
-</div>
-<div class="headingsubsection">
-<ul>
-<li><b>Current Projects</b>:  <a href="http://www.infoverse.org/octomatics/octomatics.htm">Octomatics Calculator</a>, <a href="http://en.wikipedia.org/wiki/Etch-A-Sketch">Etch-a-Sketch Animator 
-emulator</a>, <a href="http://www.amazon.com/gp/product/0023249803/104-7891012-2999900?v=glance&amp;n=283155">Symbolic Logic Glyph Notepad</a>, Philosophy Book Note taking software</li>
-<li>Attended <a href="http://www.bignerdranch.com">Big Nerd
-Ranch's</a> <a href=
-"http://bignerdranch.com/classes/cocoa1.shtml">Cocoa Boot Camp</a>
-in January 2006</li>
-<li>Developed <a href=
-"http://stevengharms.com/?p=602">SudokuGrid</a>
+===Cocoa Development
+Current Projects:  Octomatics Calculator, Etch-a-Sketch Animator 
+emulator, Symbolic Logic Glyph Notepad, Philosophy Book Note taking software
+Attended Big Nerd
+Ranch's Cocoa Boot Camp
+in January 2006
+Developed SudokuGrid
 application and published on blog (100+ downloads)
-<ul>
-<li>Developed Interface Builder palette for generic re-use in any
-application needing a "grid"</li>
-<li>Shared palette with readers developing grid-based NSView
-subclasses</li>
-</ul>
-</li>
-<li>Developed <a href=
-"http://stevengharms.com/?p=686">FlashCard</a>
-application using Cocoa Bindings and published on blog</li>
-<li>Developed <a href=
-"http://stevengharms.com/?p=617">tutorial on 2D
-Graphics Transforms using NSAffineTransforms</a> and published on
-blog</li>
-</ul>
-<p/>
-<!-- Closes heading sub-section --></div>
-<!-- Closes skillblock sub-section --></div>
-<a name="further"></a>
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>Further Technical Skill</p>
-</div>
-<div class="headingsubsection">
-<ul>
-<li><strong>Languages:</strong> Java, Ruby, Perl, C++, eLisp, Bash Scripting, MC macro language</li>
-<li><strong>Documentation Preparation:</strong> LaTeX document markup</li>
-<li><strong>SCM:</strong> Subversion, CVS</li>
-</ul>
-</div>
-<a name="education"></a>
-<h1 class="name">Education / Training &amp; Skills</h1>
-<a name="uni">
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>University of Texas at Austin (1995-2000)</p>
-</div>
-<div class="headingsubsection">
-<ul>
-<li>BBA, Management Information Systems</li>
-<li>BA, Philosophy; Winner, Machette Award in Philosophical Writing</li>
-<li>Study Abroad 1 year: Rijksuniversiteit Leiden, Leiden, The
-Netherlands: Philosophy of Science and Dutch</li>
-</ul>
-</div>
-</div>
-</div>
-<a name="training"></a>
-<!-- Development Tools and Processes -->
-<div class="skillblockbox">
-<div class="sectionhead">
-<p>Training and Skills</p>
-</div>
-<div class="headingsubsection">
-<ul>
-<li>Sun Solaris Sysadmin I / II Trained</li>
-<li>Sun Java Developer Class</li>
-<li>Red Hat Certified Engineer (RH7.0)</li>
-<li>VMWare, Implementing ESX Class</li>
-<li><strong>Foreign languages:</strong> Advanced Dutch, Basic French, Latin</li>
-<li>Proficient in all major OSes&mdash; but I like OSX the best!</li>
-<li><strong>Continuing Education:</strong>  Algebra, Trigonometry, C++, Calculus, Latin I&ndash;III
-</ul>
-</div>
-</div>
-</body>
-</html>
+
+Developed Interface Builder palette for generic re-use in any
+application needing a "grid"
+Shared palette with readers developing grid-based NSView
+subclasses
+
+
+Developed FlashCard
+application using Cocoa Bindings and published on blog
+Developed tutorial on 2D
+Graphics Transforms using NSAffineTransforms and published on
+blog
+
+===Further Technical Skill
+Languages: Java, Ruby, Perl, C++, eLisp, Bash Scripting, MC macro language
+Documentation Preparation: LaTeX document markup
+SCM: Subversion, CVS
+
+===Training and Skills
+Sun Solaris Sysadmin I / II Trained
+Sun Java Developer Class
+Red Hat Certified Engineer (RH7.0)
+VMWare, Implementing ESX Class
+Foreign languages: Advanced Dutch, Basic French, Latin
+Proficient in all major OSes&mdash; but I like OSX the best!
+Continuing Education:  Algebra, Trigonometry, C++, Calculus, Latin I&ndash;III
+
+
+
+
+

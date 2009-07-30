@@ -17,6 +17,18 @@
     <cv:aboutPerson>
       <rdf:Description rdf:about="http://stevengharms.com/id" />
    </cv:aboutPerson>
+		<cv:hasWorkHistory>
+			<cv:workHistory rdf:nodeID="cisco_mail_admin">			
+				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
+				<cv:startDate>2001-04-20</cv:startDate>
+				<cv:endDate>2005-06-01</cv:endDate>
+				<cv:jobTitle>I.T. Engineer</cv:jobTitle>
+				<cv:jobDescription>Engineering Messaging Systems</cv:jobDescription>
+				<cv:numSubordinates>0</cv:numSubordinates>
+				<cv:jobType>Employee</cv:jobType>
+				<cv:isCurrent>0</cv:isCurrent>
+			</cv:workHistory>
+		</cv:hasWorkHistory>
  </cv:CV>
 </rdf:RDF>
 
