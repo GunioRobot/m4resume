@@ -45,7 +45,7 @@
   <cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
   <cv:cvIsActive>false</cv:cvIsActive>
   <cv:cvIsConfidential>true</cv:cvIsConfidential>  
-    <cv:cvDescription xml:lang="en">Philosohper of code and communications and
+    <cv:cvDescription xml:lang="en">Philosopher of code and communications and
       collaborations systems seeks to build information infrastructure that
       enables serendipitous collaborations
     </cv:cvDescription>
@@ -67,7 +67,7 @@
     <cv:hasTarget rdf:nodeID="cv_target" />
 		<cv:hasWorkHistory>
 			<cv:workHistory rdf:nodeID="cisco_support">			
-				<cv:employedIn>Cisco Systems Inc.</cv:employedIn>
+				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
 				<cv:startDate>2000-06-05</cv:startDate>
 				<cv:endDate>2001-04-20</cv:endDate>
 				<cv:jobTitle>I.T. Analyst</cv:jobTitle>
@@ -79,7 +79,7 @@
 		</cv:hasWorkHistory>		
 		<cv:hasWorkHistory>
 			<cv:workHistory rdf:nodeID="cisco_mail_admin">			
-				<cv:employedIn>Cisco Systems Inc.</cv:employedIn>
+				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
 				<cv:startDate>2001-04-20</cv:startDate>
 				<cv:endDate>2005-06-01</cv:endDate>
 				<cv:jobTitle>I.T. Engineer</cv:jobTitle>
@@ -91,7 +91,7 @@
 		</cv:hasWorkHistory>
 		<cv:hasWorkHistory>
 			<cv:workHistory rdf:nodeID="cisco_cct_lead">			
-				<cv:employedIn>Cisco Systems Inc.</cv:employedIn>
+				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco" />
 				<cv:startDate>2005-06-01</cv:startDate>
 				<cv:endDate>Present</cv:endDate>
 				<cv:jobTitle>Senior I.T. Engineer</cv:jobTitle>
@@ -154,7 +154,7 @@
   <cv:studiedIn rdf:resource="http://www.leiden.edu" />
   <cv:eduStartDate>1997-08-09</cv:eduStartDate>
   <cv:eduGradDate>1998-08-09</cv:eduGradDate>
-  <cv:degreeType>Study Abroad Programme</cv:degreeType>
+  <cv:degreeType>Study Abroad Program</cv:degreeType>
   <cv:eduMajor>Philosophy of Science</cv:eduMajor>
   <cv:eduMinor>Dutch</cv:eduMinor>
   <cv:eduDescription>
