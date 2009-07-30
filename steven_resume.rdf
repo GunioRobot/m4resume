@@ -43,6 +43,10 @@
   </foaf:Document>
   <cv:CV rdf:about="http://stevengharms.com/resume.html">
   <cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
+	<dc:creator>Steven G. Harms</dc:creator>
+  <dc:format xml:lang="en">application/xhtml+xml</dc:format>
+  <dc:maker rdf:resource="http://stevengharms.com/id" />
+  <dc:language xml:lang="en">en</dc:language>
   <cv:cvIsActive>false</cv:cvIsActive>
   <cv:cvIsConfidential>true</cv:cvIsConfidential>  
     <cv:cvDescription xml:lang="en">Philosopher of code and communications and
