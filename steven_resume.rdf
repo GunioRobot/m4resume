@@ -86,268 +86,103 @@
 		<cv:hasCourse rdf:nodeID="bnr_ror" />
 		<cv:hasCourse rdf:nodeID="rhce" />
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Perl</cv:skillName>
-       <cv:skillLevel>5</cv:skillLevel>
-       <cv:skillLastUsed>Daily</cv:skillLastUsed>
-       <cv:skillYearsExperience>8</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Perl" cv:skillLevel="5" cv:skillLastUsed="Daily" cv:skillYearsExperience="8" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Ruby</cv:skillName>
-       <cv:skillLevel>4</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>3</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Ruby" cv:skillLevel="4" cv:skillLastUsed="Presently" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Rails</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-13</cv:skillLastUsed>
-       <cv:skillYearsExperience>3</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Rails" cv:skillLevel="3" cv:skillLastUsed="2009-02-13" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Cocoa</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2005-06-20</cv:skillLastUsed>
-       <cv:skillYearsExperience>2</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Cocoa" cv:skillLevel="2" cv:skillLastUsed="2005-06-20" cv:skillYearsExperience="2" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>M4</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>5</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="M4" cv:skillLevel="3" cv:skillLastUsed="Presently" cv:skillYearsExperience="5" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>PHP</cv:skillName>
-       <cv:skillLevel>4</cv:skillLevel>
-       <cv:skillLastUsed>2007-03-26</cv:skillLastUsed>
-       <cv:skillYearsExperience>2</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="PHP" cv:skillLevel="4" cv:skillLastUsed="2007-03-26" cv:skillYearsExperience="2" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Java</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2006-01-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>2</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Java" cv:skillLevel="2" cv:skillLastUsed="2006-01-15" cv:skillYearsExperience="2" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>git</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="git" cv:skillLevel="3" cv:skillLastUsed="Presently" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>svn</cv:skillName>
-       <cv:skillLevel>4</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>4</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="svn" cv:skillLevel="4" cv:skillLastUsed="Presently" cv:skillYearsExperience="4" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Semantic Web</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Semantic Web" cv:skillLevel="2" cv:skillLastUsed="Presently" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>RDF</cv:skillName>
-       <cv:skillLevel>1</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="RDF" cv:skillLevel="1" cv:skillLastUsed="Presently" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>RDFa</cv:skillName>
-       <cv:skillLevel>1</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="RDFa" cv:skillLevel="1" cv:skillLastUsed="Presently" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Metadata</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>2</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Metadata" cv:skillLevel="2" cv:skillLastUsed="Presently" cv:skillYearsExperience="2" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>HTML</cv:skillName>
-       <cv:skillLevel>5</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>10</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="HTML" cv:skillLevel="5" cv:skillLastUsed="Presently" cv:skillYearsExperience="10" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>XHTML</cv:skillName>
-       <cv:skillLevel>5</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>5</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="XHTML" cv:skillLevel="5" cv:skillLastUsed="Presently" cv:skillYearsExperience="5" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>CSS</cv:skillName>
-       <cv:skillLevel>4</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>3</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="CSS" cv:skillLevel="4" cv:skillLastUsed="Presently" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>XHTML+RDFa</cv:skillName>
-       <cv:skillLevel>4</cv:skillLevel>
-       <cv:skillLastUsed>Presentnly</cv:skillLastUsed>
-       <cv:skillYearsExperience>3</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="XHTML+RDFa" cv:skillLevel="4" cv:skillLastUsed="Presentnly" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Javascript</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2007-01-20</cv:skillLastUsed>
-       <cv:skillYearsExperience>2</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Javascript" cv:skillLevel="2" cv:skillLastUsed="2007-01-20" cv:skillYearsExperience="2" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Apache</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-21</cv:skillLastUsed>
-       <cv:skillYearsExperience>7</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Apache" cv:skillLevel="3" cv:skillLastUsed="2009-02-21" cv:skillYearsExperience="7" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Systems Administration</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>7</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Systems Administration" cv:skillLevel="3" cv:skillLastUsed="Presently" cv:skillYearsExperience="7" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Sendmail</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>5</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Sendmail" cv:skillLevel="3" cv:skillLastUsed="Presently" cv:skillYearsExperience="5" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Shell Scripting</cv:skillName>
-       <cv:skillLevel>5</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>10</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Shell Scripting" cv:skillLevel="5" cv:skillLastUsed="Presently" cv:skillYearsExperience="10" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Solaris Administration</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2007-06-30</cv:skillLastUsed>
-       <cv:skillYearsExperience>6</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Solaris Administration" cv:skillLevel="2" cv:skillLastUsed="2007-06-30" cv:skillYearsExperience="6" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Linux Administration</cv:skillName>
-       <cv:skillLevel>5</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>8</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Linux Administration" cv:skillLevel="5" cv:skillLastUsed="Presently" cv:skillYearsExperience="8" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>mySQL</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>3</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="mySQL" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>postgreSQL</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>3</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="postgreSQL" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Internationalization(i18n)</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Internationalization(i18n)" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Unicode</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Unicode" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Ruby metaprogramming</cv:skillName>
-       <cv:skillLevel>2</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Ruby metaprogramming" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>Unit Testing</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>2009-02-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>1</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="Unit Testing" cv:skillLevel="3" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="1" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>object-oriented design</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>10</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="object-oriented design" cv:skillLevel="3" cv:skillLastUsed="Presently" cv:skillYearsExperience="10" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>vim</cv:skillName>
-       <cv:skillLevel>5</cv:skillLevel>
-       <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience>6</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="vim" cv:skillLevel="5" cv:skillLastUsed="Presently" cv:skillYearsExperience="6" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill>
-       <cv:skillName>emacs</cv:skillName>
-       <cv:skillLevel>3</cv:skillLevel>
-       <cv:skillLastUsed>2004-10-15</cv:skillLastUsed>
-       <cv:skillYearsExperience>4</cv:skillYearsExperience>
-     </cv:Skill>
+     <cv:Skill  cv:skillName="emacs" cv:skillLevel="3" cv:skillLastUsed="2004-10-15" cv:skillYearsExperience="4" />
    </cv:hasSkill>
  </cv:CV>
 
