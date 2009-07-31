@@ -50,6 +50,12 @@
     <foaf:homepage>www.ruby-lang.org</foaf:homepage>
   </foaf:Document>
 
+<!-- ############################################################# -->
+
+<!-- CV Classes -->
+
+<!-- CV Class itself -->
+
   <cv:CV rdf:about="http://stevengharms.com/resume.html">
   	<cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
 		<dc:creator>Steven G. Harms</dc:creator>
@@ -161,7 +167,7 @@
      <cv:Skill  cv:skillName="mySQL" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
-     <cv:Skill  cv:skillName="postgreSQL" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="3" />
+     <cv:Skill  cv:skillName="postgres" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="3" />
    </cv:hasSkill>
    <cv:hasSkill>
      <cv:Skill  cv:skillName="Internationalization(i18n)" cv:skillLevel="2" cv:skillLastUsed="2009-02-15" cv:skillYearsExperience="1" />
@@ -186,9 +192,6 @@
    </cv:hasSkill>
  </cv:CV>
 
-<!-- ############################################################# -->
-
-<!-- CV Classes -->
 
 <!-- Courses -->
 <cv:Course rdf:nodeID="bnr_cocoa">
