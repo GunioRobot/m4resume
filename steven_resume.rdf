@@ -209,7 +209,7 @@
        <cv:skillName>M4</cv:skillName>
        <cv:skillLevel>3</cv:skillLevel>
        <cv:skillLastUsed>Presently</cv:skillLastUsed>
-       <cv:skillYearsExperience5></cv:skillYearsExperience>
+       <cv:skillYearsExperience>5</cv:skillYearsExperience>
      </cv:Skill>
    </cv:hasSkill>
    <cv:hasSkill>
