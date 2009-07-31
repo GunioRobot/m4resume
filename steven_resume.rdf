@@ -5,6 +5,8 @@
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:cv="http://rdfs.org/resume-rdf/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:doap="http://usefulinc.com/ns/doap#"
 >
   <foaf:Person rdf:about="http://stevengharms.com/id">
     <foaf:name xml:lang="en">Steven G. Harms</foaf:name>        
