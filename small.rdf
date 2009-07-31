@@ -9,21 +9,16 @@
 	xmlns:doap="http://usefulinc.com/ns/doap#"	
 >
 
-<doap:Project>
+<doap:Project rdf:nodeID="verbalatina">
 	<doap:name xml:lang="la">VerbaLatina</doap:name>
 	<doap:created>2008-08-26</doap:created>
 	<doap:shortdesc>Libraries for conjugating latin verbs and IRB like environment for exploration</doap:shortdesc>
 	<doap:description>A Rails application that wraps a library set that programmatically conjugates regular Latin Verbs from 4 principal parts into all verbal parts, moods, persons, etc.</doap:description>
 	<doap:category>Linguistics</doap:category>
-	<doap:maintainer>
-		<rdf:Description rdf:about="http://stevengharms.com/id">
-			<foaf:name>Steven G. Harms</foaf:name>
-		</rdf:Description>
-	</doap:maintainer>
+	<doap:maintainer rdf:resource="http://stevengharms.com/id" />
 	<doap:programming-language>Ruby</doap:programming-language>
 	<doap:audience>Linguists and Latin Students</doap:audience>
-	<doap:homepage>https://github.com/sgharms/verbalatina/tree/master</doap:homepage>
-
+	<doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master" />
 </doap:Project>
 
 </rdf:RDF>
