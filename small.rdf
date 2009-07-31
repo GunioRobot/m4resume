@@ -5,30 +5,26 @@
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:cv="http://rdfs.org/resume-rdf/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:doap="http://usefulinc.com/ns/doap#"	
 >
-  <cv:CV rdf:about="http://stevengharms.com/resume.html">
-  <cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
-  <cv:cvIsActive>false</cv:cvIsActive>
-  <cv:cvIsConfidential>true</cv:cvIsConfidential>  
-    <cv:cvDescription xml:lang="en">Philosohper of code and communications and
-      collaborations systems seeks to build information infrastructure that
-      enables serendipitous collaborations.
-    </cv:cvDescription>
-    <cv:aboutPerson>
-      <rdf:Description rdf:about="http://stevengharms.com/id" />
-   </cv:aboutPerson>
-		<cv:hasWorkHistory>
-			<cv:workHistory rdf:nodeID="cisco_mail_admin">			
-				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
-				<cv:startDate>2001-04-20</cv:startDate>
-				<cv:endDate>2005-06-01</cv:endDate>
-				<cv:jobTitle>I.T. Engineer</cv:jobTitle>
-				<cv:jobDescription>Engineering Messaging Systems</cv:jobDescription>
-				<cv:numSubordinates>0</cv:numSubordinates>
-				<cv:jobType>Employee</cv:jobType>
-				<cv:isCurrent>0</cv:isCurrent>
-			</cv:workHistory>
-		</cv:hasWorkHistory>
- </cv:CV>
+
+<doap:Project>
+	<doap:name xml:lang="la">VerbaLatina</doap:name>
+	<doap:created>2008-08-26</doap:created>
+	<doap:shortdesc>Libraries for conjugating latin verbs and IRB like environment for exploration</doap:shortdesc>
+	<doap:description>A Rails application that wraps a library set that programmatically conjugates regular Latin Verbs from 4 principal parts into all verbal parts, moods, persons, etc.</doap:description>
+	<doap:category>Linguistics</doap:category>
+	<doap:maintainer>
+		<rdf:Description rdf:about="http://stevengharms.com/id">
+			<foaf:name>Steven G. Harms</foaf:name>
+		</rdf:Description>
+	</doap:maintainer>
+	<doap:programming-language>Ruby</doap:programming-language>
+	<doap:audience>Linguists and Latin Students</doap:audience>
+	<doap:homepage>https://github.com/sgharms/verbalatina/tree/master</doap:homepage>
+
+</doap:Project>
+
 </rdf:RDF>
 
