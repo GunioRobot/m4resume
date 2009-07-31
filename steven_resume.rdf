@@ -240,5 +240,20 @@
 	<doap:audience>Linguists and Latin Students</doap:audience>
 	<doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master" />
 </doap:Project>
+<doap:Project rdf:nodeID="linguistics">
+	<doap:name xml:lang="la">Linguistics Package</doap:name>
+	<doap:created>2003-07-09</doap:created>
+	<doap:shortdesc>Michael Granger's Linguistics framework for Ruby (from SVN)</doap:shortdesc>
+	<doap:description rdf:parseType='Literal'>Linguistics is a framework for building linguistic utilities for Ruby objects
+	in any language. It includes a generic language-independant front end, a
+	module for mapping language codes into language names, and a module which
+	contains various English-language utilities</doap:description>
+	<doap:category>Linguistics</doap:category>
+	<doap:maintainer rdf:resource="http://github.com/bruce/linguistics/tree/master#" />
+	<doap:programming-language>Ruby</doap:programming-language>
+	<doap:audience>Linguists and Latin Students</doap:audience>
+	<doap:homepage rdf:resource="http://github.com/bruce/linguistics/tree/master#" />
+	<doap:contributor rdf:resource="http://stevengharms.com/id" />
+</doap:Project>
 </rdf:RDF>
 

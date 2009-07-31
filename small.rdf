@@ -9,16 +9,20 @@
 	xmlns:doap="http://usefulinc.com/ns/doap#"	
 >
 
-<doap:Project rdf:nodeID="verbalatina">
-	<doap:name xml:lang="la">VerbaLatina</doap:name>
-	<doap:created>2008-08-26</doap:created>
-	<doap:shortdesc>Libraries for conjugating latin verbs and IRB like environment for exploration</doap:shortdesc>
-	<doap:description>A Rails application that wraps a library set that programmatically conjugates regular Latin Verbs from 4 principal parts into all verbal parts, moods, persons, etc.</doap:description>
+<doap:Project rdf:nodeID="linguistics">
+	<doap:name xml:lang="la">Linguistics Package</doap:name>
+	<doap:created>2003-07-09</doap:created>
+	<doap:shortdesc>Michael Granger's Linguistics framework for Ruby (from SVN)</doap:shortdesc>
+	<doap:description rdf:parseType='Literal'>Linguistics is a framework for building linguistic utilities for Ruby objects
+	in any language. It includes a generic language-independant front end, a
+	module for mapping language codes into language names, and a module which
+	contains various English-language utilities</doap:description>
 	<doap:category>Linguistics</doap:category>
-	<doap:maintainer rdf:resource="http://stevengharms.com/id" />
+	<doap:maintainer rdf:resource="http://github.com/bruce/linguistics/tree/master#" />
 	<doap:programming-language>Ruby</doap:programming-language>
 	<doap:audience>Linguists and Latin Students</doap:audience>
-	<doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master" />
+	<doap:homepage rdf:resource="http://github.com/bruce/linguistics/tree/master#" />
+	<doap:contributor rdf:resource="http://stevengharms.com/id" />
 </doap:Project>
 
 </rdf:RDF>
