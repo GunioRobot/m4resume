@@ -8,42 +8,5 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:doap="http://usefulinc.com/ns/doap#"	
 >
-
-<cv:CV>
-	<cv:hasCourse>
-		<cv:Course>
-			<cv:organizedBy rdf:resource="http://bignerdranch.com" />
-			<cv:isCertification>0</cv:isCertification>
-			<cv:courseTitle>Beginning Cocoa Bootcamp</cv:courseTitle>
-			<cv:courseDescription>Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX</cv:courseDescription>
-			<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_cocoa.shtml" />
-			<cv:courseStartDate>2005-02-16</cv:courseStartDate>
-			<cv:courseFinishDate>2005-02-16</cv:courseFinishDate>
-		</cv:Course>
-	</cv:hasCourse>	
-	<cv:hasCourse>
-		<cv:Course>
-			<cv:organizedBy rdf:resource="http://bignerdranch.com" />
-			<cv:isCertification>0</cv:isCertification>
-			<cv:courseTitle>Ruby on Rails Bootcamp</cv:courseTitle>
-			<cv:courseDescription>Intensive 5-day training course covering the basics of Ruby on Rails development</cv:courseDescription>
-			<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
-			<cv:courseStartDate>2006-02-13</cv:courseStartDate>
-			<cv:courseFinishDate>2006-02-17</cv:courseFinishDate>
-		</cv:Course>
-	</cv:hasCourse>
-	<cv:hasCourse>
-		<cv:Course>
-			<cv:organizedBy rdf:resource="http://redhat.com" />
-			<cv:isCertification>1</cv:isCertification>
-			<cv:courseTitle>Red Hat Certified Engineer Bootcamp</cv:courseTitle>
-			<cv:courseDescription>Intensive 5-day training course covering Linux administration</cv:courseDescription>
-			<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
-			<cv:courseStartDate>2003-05-01</cv:courseStartDate>
-			<cv:courseFinishDate>2003-05-01</cv:courseFinishDate>
-		</cv:Course>
-	</cv:hasCourse>
-</cv:CV>	
-
 </rdf:RDF>
 
