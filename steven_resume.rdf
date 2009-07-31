@@ -8,12 +8,15 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:doap="http://usefulinc.com/ns/doap#"
 >
+
+<!-- FOAF -->
+<!-- FOAF: Steven Harms -->
   <foaf:Person rdf:about="http://stevengharms.com/id">
     <foaf:name xml:lang="en">Steven G. Harms</foaf:name>        
     <foaf:title xml:lang="en">Mr.</foaf:title>
     <foaf:name xml:lang="en">Steven G. Harms</foaf:name>
     <foaf:webpage>http://stevengharms.com</foaf:webpage>
-<foaf:mbox_sha1sum>189ab8346ba031cb003c96f9774308ee1db6fbcf</foaf:mbox_sha1sum>
+		<foaf:mbox_sha1sum>189ab8346ba031cb003c96f9774308ee1db6fbcf</foaf:mbox_sha1sum>
     <foaf:myersBriggs>INTJ</foaf:myersBriggs>
     <foaf:surname>Harms</foaf:surname>
     <foaf:givenName>Steven</foaf:givenName>
@@ -27,14 +30,17 @@
     <foaf:knows rdf:nodeID="pat"/>
    <foaf:interest rdf:nodeID="_rlang" />
   </foaf:Person>
+	<!-- Damon Clinkscales -->
   <foaf:Person rdf:nodeID="damon">
        <foaf:name>Damon Clinkscales</foaf:name>
        <foaf:homepage rdf:resource="http://damonc.com" />
   </foaf:Person>
+	<!-- Patrick Devine -->
   <foaf:Person  rdf:nodeID="pat">
        <foaf:name>Patrick Devine</foaf:name>
        <foaf:homepage rdf:resource="http://pdevine.users.sonic.net/" />
   </foaf:Person>
+	<!-- Bruce Williams -->
   <foaf:Person  rdf:nodeID="wbruce">
        <foaf:name>Bruce Williams</foaf:name>
        <foaf:homepage rdf:resource="http://www.github.com/bruce" />
@@ -43,14 +49,15 @@
     <foaf:primaryTopic>Ruby</foaf:primaryTopic>
     <foaf:homepage>www.ruby-lang.org</foaf:homepage>
   </foaf:Document>
+
   <cv:CV rdf:about="http://stevengharms.com/resume.html">
-  <cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
-	<dc:creator>Steven G. Harms</dc:creator>
-  <dc:format xml:lang="en">application/xhtml+xml</dc:format>
-  <dc:maker rdf:resource="http://stevengharms.com/id" />
-  <dc:language xml:lang="en">en</dc:language>
-  <cv:cvIsActive>false</cv:cvIsActive>
-  <cv:cvIsConfidential>true</cv:cvIsConfidential>  
+  	<cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
+		<dc:creator>Steven G. Harms</dc:creator>
+	  <dc:format xml:lang="en">application/xhtml+xml</dc:format>
+	  <dc:maker rdf:resource="http://stevengharms.com/id" />
+	  <dc:language xml:lang="en">en</dc:language>
+	  <cv:cvIsActive>false</cv:cvIsActive>
+	  <cv:cvIsConfidential>true</cv:cvIsConfidential>  
     <cv:cvDescription xml:lang="en">Philosopher of code and communications and
       collaborations systems seeks to build information infrastructure that
       enables serendipitous collaborations
@@ -71,107 +78,13 @@
     <cv:hasEducation rdf:nodeID="utexas_ba" />
     <cv:hasEducation rdf:nodeID="rul_leiden" />
     <cv:hasTarget rdf:nodeID="cv_target" />
-		<cv:hasWorkHistory>
-			<cv:workHistory rdf:nodeID="cisco_support">			
-				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
-				<cv:startDate>2000-06-05</cv:startDate>
-				<cv:endDate>2001-04-20</cv:endDate>
-				<cv:jobTitle>I.T. Analyst</cv:jobTitle>
-				<cv:jobDescription>Engineering Support Analyst</cv:jobDescription>
-				<cv:numSubordinates>0</cv:numSubordinates>
-				<cv:jobType>Employee</cv:jobType>
-				<cv:isCurrent>0</cv:isCurrent>
-				<cv:Notes rdf:parseType='Literal'>Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Identified training gaps: created training and delivered to employees in 3 theatres.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Moved client satisfaction rating from 74% to 95%, the highest seen to that date</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Designed web-based 'vacation' mail tool. Tool reduced support calls from 500 per quarter to 25 ($30,000 estimated savings per annum ).</cv:Notes>
-			</cv:workHistory>
-		</cv:hasWorkHistory>		
-		<cv:hasWorkHistory>
-			<cv:workHistory rdf:nodeID="cisco_mail_admin">			
-				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
-				<cv:startDate>2001-04-20</cv:startDate>
-				<cv:endDate>2005-06-01</cv:endDate>
-				<cv:jobTitle>I.T. Engineer</cv:jobTitle>
-				<cv:jobDescription>Engineering Messaging Systems</cv:jobDescription>
-				<cv:numSubordinates>0</cv:numSubordinates>
-				<cv:jobType>Employee</cv:jobType>
-				<cv:isCurrent>0</cv:isCurrent>
-				<cv:Notes rdf:parseType='Literal'>Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Managed fleet of 10 HP servers, a dozen Mirapoint appliances</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Established messaging team standard Perl module set / CVS repository / Subversion repository</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at <a href="http://code.google.com/p/cmailguard/"></a></cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing &lt; 10 values</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600% faster.</cv:Notes>
-			</cv:workHistory>
-		</cv:hasWorkHistory>
-		<cv:hasWorkHistory>
-			<cv:workHistory rdf:nodeID="cisco_cct_lead">			
-				<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco" />
-				<cv:startDate>2005-06-01</cv:startDate>
-				<cv:endDate>Present</cv:endDate>
-				<cv:jobTitle>Senior I.T. Engineer</cv:jobTitle>
-				<cv:jobDescription>Communication and Collaboration Systems Lead Engineer</cv:jobDescription>
-				<cv:numSubordinates>0</cv:numSubordinates>
-				<cv:jobType>Employee</cv:jobType>
-				<cv:isCurrent>1</cv:isCurrent>
-				<cv:Notes rdf:parseType='Literal'>Authored 5–point, 2–year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment.  Application forms a basis for a <em>de facto</em> group-affiliation framework.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Led technical team responsible forum and blogging framework deployment to enable Office of CEO / CIO “Cisco 3.0” strategy,</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Created business requirements document and RESTful API specification for new generic list-abstraction repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Created registry process (and web tool) for application host systems that use e-mail as transport layer.  This helped identify / remediate non-compliant systems that are using our data through 'non-standard' interfaces so that we can help them come into compliance</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Lead architect in defining generic list infrastructure wherein all types of lists (e-mail, voice mail, security groups, future list structures) could be generically stored, generically communicated, modeled prototype slave systems on VMWare ESX.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Performed Sarbanes-Oxley audit of mail systems: reliability, fail–over, security/integrity.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Through automation activities, software, and lower-level-support training, we were able to reduce internal head count spend by 66% and transfer tier 1-3 support to vendor support organization.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Teamed with University of Texas Department of Information, Risk, and Operations Management's MIS steering committee to specify skill–set deficiencies found in recent interview candidates.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>Cross-IT Collaboration Council: Focus on "Enterprise 2.0" idea.</cv:Notes>
-				<cv:Notes rdf:parseType='Literal'>New solutions show 400% improvement on old design: attributable to more efficient disk layout, identifying data set re-use, and profiling commonly-used subroutines.</cv:Notes>
-			</cv:workHistory>
-		</cv:hasWorkHistory>
-		<cv:hasWorkHistory>
-			<cv:workHistory rdf:nodeID="independent_development">
-				<cv:employedIn rdf:resource="http://www.stevengharms.com" />
-				<cv:jobTitle>Passionate Developer of Technical Ideas that Tickle my Fancy</cv:jobTitle>
-				<cv:jobType>Employee</cv:jobType>
-				<cv:isCurrent>1</cv:isCurrent>
-			</cv:workHistory>
-		</cv:hasWorkHistory>
-		<cv:hasCourse>
-			<cv:Course>
-				<cv:organizedBy rdf:resource="http://bignerdranch.com" />
-				<cv:isCertification>0</cv:isCertification>
-				<cv:courseTitle>Beginning Cocoa Bootcamp</cv:courseTitle>
-				<cv:courseDescription>Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX</cv:courseDescription>
-				<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_cocoa.shtml" />
-				<cv:courseStartDate>2005-02-16</cv:courseStartDate>
-				<cv:courseFinishDate>2005-02-16</cv:courseFinishDate>
-			</cv:Course>
-		</cv:hasCourse>	
-		<cv:hasCourse>
-			<cv:Course>
-				<cv:organizedBy rdf:resource="http://bignerdranch.com" />
-				<cv:isCertification>0</cv:isCertification>
-				<cv:courseTitle>Ruby on Rails Bootcamp</cv:courseTitle>
-				<cv:courseDescription>Intensive 5-day training course covering the basics of Ruby on Rails development</cv:courseDescription>
-				<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
-				<cv:courseStartDate>2006-02-13</cv:courseStartDate>
-				<cv:courseFinishDate>2006-02-17</cv:courseFinishDate>
-			</cv:Course>
-		</cv:hasCourse>
-		<cv:hasCourse>
-			<cv:Course>
-				<cv:organizedBy rdf:resource="http://redhat.com" />
-				<cv:isCertification>1</cv:isCertification>
-				<cv:courseTitle>Red Hat Certified Engineer Bootcamp</cv:courseTitle>
-				<cv:courseDescription>Intensive 5-day training course covering Linux administration</cv:courseDescription>
-				<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
-				<cv:courseStartDate>2003-05-01</cv:courseStartDate>
-				<cv:courseFinishDate>2003-05-01</cv:courseFinishDate>
-			</cv:Course>
-		</cv:hasCourse>		
+		<cv:hasWorkHistory rdf:nodeID="cisco_support" />
+		<cv:hasWorkHistory rdf:nodeID="cisco_mail_admin" />
+		<cv:hasWorkHistory rdf:nodeID="cisco_cct_lead" />
+		<cv:hasWorkHistory rdf:nodeID="independent_development" />
+		<cv:hasCourse rdf:nodeID="bnr_cocoa" />
+		<cv:hasCourse rdf:nodeID="bnr_ror" />
+		<cv:hasCourse rdf:nodeID="rhce" />
    <cv:hasSkill>
      <cv:Skill>
        <cv:skillName>Perl</cv:skillName>
@@ -437,27 +350,116 @@
      </cv:Skill>
    </cv:hasSkill>
  </cv:CV>
-<!--  Dutch definition -->
+
+<!-- ############################################################# -->
+
+<!-- CV Classes -->
+
+<!-- Courses -->
+<cv:Course rdf:nodeID="bnr_cocoa">
+	<cv:organizedBy rdf:resource="http://bignerdranch.com" />
+	<cv:isCertification>0</cv:isCertification>
+	<cv:courseTitle>Beginning Cocoa Bootcamp</cv:courseTitle>
+	<cv:courseDescription>Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX</cv:courseDescription>
+	<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_cocoa.shtml" />
+	<cv:courseStartDate>2005-02-16</cv:courseStartDate>
+	<cv:courseFinishDate>2005-02-16</cv:courseFinishDate>
+</cv:Course>
+
+
+<cv:Course rdf:nodeID="bnr_ror">
+	<cv:organizedBy rdf:resource="http://bignerdranch.com" />
+	<cv:isCertification>0</cv:isCertification>
+	<cv:courseTitle>Ruby on Rails Bootcamp</cv:courseTitle>
+	<cv:courseDescription>Intensive 5-day training course covering the basics of Ruby on Rails development</cv:courseDescription>
+	<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
+	<cv:courseStartDate>2006-02-13</cv:courseStartDate>
+	<cv:courseFinishDate>2006-02-17</cv:courseFinishDate>
+</cv:Course>
+
+<cv:Course rdf:nodeID="rhce">
+	<cv:organizedBy rdf:resource="http://redhat.com" />
+	<cv:isCertification>1</cv:isCertification>
+	<cv:courseTitle>Red Hat Certified Engineer Bootcamp</cv:courseTitle>
+	<cv:courseDescription>Intensive 5-day training course covering Linux administration</cv:courseDescription>
+	<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
+	<cv:courseStartDate>2003-05-01</cv:courseStartDate>
+	<cv:courseFinishDate>2003-05-01</cv:courseFinishDate>
+</cv:Course>
+
+<!-- non-Cisco Work Experience -->
+<!-- Kinda tongue-in-cheek here  -->
+<cv:workHistory rdf:nodeID="independent_development">
+	<cv:employedIn rdf:resource="http://www.stevengharms.com" />
+	<cv:jobTitle>Passionate Developer of Technical Ideas that Tickle my Fancy</cv:jobTitle>
+	<cv:jobType>Employee</cv:jobType>
+	<cv:isCurrent>1</cv:isCurrent>
+</cv:workHistory>
+
+<!-- Cisco Work Experience -->
+
+<!-- Cisco Mail Admin -->
+<cv:workHistory rdf:nodeID="cisco_mail_admin">			
+	<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
+	<cv:startDate>2001-04-20</cv:startDate>
+	<cv:endDate>2005-06-01</cv:endDate>
+	<cv:jobTitle>I.T. Engineer</cv:jobTitle>
+	<cv:jobDescription>Engineering Messaging Systems</cv:jobDescription>
+	<cv:numSubordinates>0</cv:numSubordinates>
+	<cv:jobType>Employee</cv:jobType>
+	<cv:isCurrent>0</cv:isCurrent>
+	<cv:Notes rdf:parseType='Literal'>Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Managed fleet of 10 HP servers, a dozen Mirapoint appliances</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000.</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design.</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Established messaging team standard Perl module set / CVS repository / Subversion repository</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at <a href="http://code.google.com/p/cmailguard/"></a></cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing &lt; 10 values</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600% faster.</cv:Notes>
+</cv:workHistory>
+
+<!-- Cisco Support  -->
+<cv:workHistory rdf:nodeID="cisco_support">			
+	<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
+	<cv:startDate>2000-06-05</cv:startDate>
+	<cv:endDate>2001-04-20</cv:endDate>
+	<cv:jobTitle>I.T. Analyst</cv:jobTitle>
+	<cv:jobDescription>Engineering Support Analyst</cv:jobDescription>
+	<cv:numSubordinates>0</cv:numSubordinates>
+	<cv:jobType>Employee</cv:jobType>
+	<cv:isCurrent>0</cv:isCurrent>
+	<cv:Notes rdf:parseType='Literal'>Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter.</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Identified training gaps: created training and delivered to employees in 3 theatres.</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Moved client satisfaction rating from 74% to 95%, the highest seen to that date</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team.</cv:Notes>
+	<cv:Notes rdf:parseType='Literal'>Designed web-based 'vacation' mail tool. Tool reduced support calls from 500 per quarter to 25 ($30,000 estimated savings per annum ).</cv:Notes>
+</cv:workHistory>
+
+<!--  Dutch Language Skill definition -->
 <cv:LanguageSkill rdf:nodeID="lang_dutch">
    <cv:skillName>Dutch</cv:skillName>
    <cv:skillLevel>4</cv:skillLevel>
    <cv:lngSkillLevelReading>4</cv:lngSkillLevelReading>
    <cv:lngSkillLevelWritten>3</cv:lngSkillLevelWritten>
 </cv:LanguageSkill>
-<!--  French definition -->
+
+<!--  French Language Skill definition -->
 <cv:LanguageSkill rdf:nodeID="lang_french">
    <cv:skillName>French</cv:skillName>
    <cv:skillLevel>2</cv:skillLevel>
    <cv:lngSkillLevelReading>2</cv:lngSkillLevelReading>
    <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
 </cv:LanguageSkill>
-<!--  Latin definition -->
+
+<!--  Latin Language Skill definition -->
 <cv:LanguageSkill rdf:nodeID="lang_latin">
    <cv:skillName>Latin</cv:skillName>
    <cv:skillLevel>3</cv:skillLevel>
    <cv:lngSkillLevelReading>3</cv:lngSkillLevelReading>
    <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
 </cv:LanguageSkill>
+
+<!-- UT BBA  -->
 <cv:Education rdf:nodeID="utexas_bba">
   <cv:studiedIn rdf:resource="http://www.utexas.edu" />
   <cv:eduStartDate>1995-08-22</cv:eduStartDate>
@@ -473,6 +475,8 @@
     organization.
   </cv:eduDescription>
 </cv:Education>
+
+<!-- UT BA -->
 <cv:Education rdf:nodeID="utexas_ba">
   <cv:studiedIn rdf:resource="http://www.utexas.edu"></cv:studiedIn>
   <cv:eduStartDate>1995-08-22</cv:eduStartDate>
@@ -485,6 +489,8 @@
     Greek philosophy, German Idealism (Hegel), and Philosophy of science.
   </cv:eduDescription>
 </cv:Education>
+
+<!-- Abroad at RUL -->
 <cv:Education rdf:nodeID="rul_leiden">
   <cv:studiedIn rdf:resource="http://www.leiden.edu" />
   <cv:eduStartDate>1997-08-09</cv:eduStartDate>
@@ -499,6 +505,8 @@
     Revolutions, and Rationality of Emotions.
   </cv:eduDescription>
 </cv:Education>
+
+<!-- CV Target  -->
 <cv:Target rdf:nodeID="cv_target">
   <cv:targetCareerLevel>Developer</cv:targetCareerLevel>
   <cv:targetCareerLevel>IT Architect</cv:targetCareerLevel>
@@ -526,6 +534,11 @@
   <cv:conditionWillRelocate>True</cv:conditionWillRelocate>
   <cv:conditionWillTravel>True</cv:conditionWillTravel>
 </cv:Target>
+
+<!-- ############################################################# -->
+<!-- DOAP PROJECTS -->
+<!-- VerbaLatina -->
+
 <doap:Project rdf:nodeID="verbalatina">
 	<doap:name xml:lang="la">VerbaLatina</doap:name>
 	<doap:created>2008-08-26</doap:created>
@@ -537,6 +550,8 @@
 	<doap:audience>Linguists and Latin Students</doap:audience>
 	<doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master" />
 </doap:Project>
+
+<!-- Linguistics -->
 <doap:Project rdf:nodeID="linguistics">
 	<doap:name xml:lang="en">Linguistics Package</doap:name>
 	<doap:created>2003-07-09</doap:created>
@@ -552,6 +567,8 @@
 	<doap:homepage rdf:resource="http://github.com/bruce/linguistics/tree/master#" />
 	<doap:contributor rdf:resource="http://stevengharms.com/id" />
 </doap:Project>
+
+<!-- CMailguard -->
 <doap:Project rdf:nodeID="cmailguard">
 	<doap:name xml:lang="en">CMailguard</doap:name>
 	<doap:created>2008-07-06</doap:created>
@@ -563,6 +580,8 @@
 	<doap:audience>Mail systems administrators</doap:audience>
 	<doap:homepage rdf:resource="http://code.google.com/p/cmailguard/" />
 </doap:Project>
+
+<!-- M4Resume -->
 <doap:Project rdf:nodeID="m4resume">
 	<doap:name xml:lang="en">M4Resume</doap:name>
 	<doap:created>2009-07-09</doap:created>
@@ -574,6 +593,8 @@
 	<doap:audience>Geeky job-seekers</doap:audience>
 	<doap:homepage rdf:resource="https://github.com/sgharms/m4resume/tree" />
 </doap:Project>
+
+<!-- LatinTools -->
 <doap:Project rdf:nodeID="latintools">
 	<doap:name xml:lang="en">latintools</doap:name>
 	<doap:created>2009-28-01</doap:created>
