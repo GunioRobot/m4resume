@@ -1,0 +1,675 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameOlÜ<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <title>RDFa for HTML Authors</title>
+  <meta name="generator" content="amaya 9.51, see http://www.w3.org/Amaya/">
+  <style type="text/css">
+body {color: black; background: white; font-family: sans-serif}
+h1, h2, h3 {color: blue}
+pre {margin-left: 2em}
+ .ns {font-size: smaller}
+code {color: #050}
+pre {background: #ffa; border: 1px black dotted; padding: 0.2em}
+ .html {background: #eee}
+ .forms {background: #ff7} 
+ .version {font-size: smaller}</style>
+  <link href="http://www.w3.org/StyleSheets/TR/base.css" rel="stylesheet" type="text/css">
+</head><body>
+<p><img src="http://www.w3.org/Icons/WWW/w3c_home" alt="W3C"></p>
+
+<h1>RDFa for HTML Authors,</h1>
+
+<p><a href="http://www.cwi.nl/~steven/">Steven Pemberton</a>, W3C/CWI</p>
+
+<p class="version">Version date: <!--$date=-->2009-05-14<!--$--></p>
+
+<h2 id="Introducti">Introduction</h2>
+
+<p>RDFa is a thin layer of markup you can add to your web pages that makes them
+understandable for machines as well as people. You could describe it as a CSS
+for meaning. By adding it, browsers, search engines, and other software can
+understand more about the pages, and in so doing offer more services or better
+results for the user. For instance, if a browser knows that a page is about an
+event such as a conference, it can offer to add it to your calendar, show it on
+a map, locate hotels or flights, or any number of other things.</p>
+
+<p>This document introduces RDFa and gives examples of its use.</p>
+
+<h2 id="Table">Table of Contents</h2>
+
+<div class="toc">
+<ul>
+  <li><a href="#ASimpleSearchForm">Metadata in HTML</a></li>
+  <li><a href="#Metadata">The Use of Metadata</a></li>
+  <li><a href="#Generalise">RDF: A Generalised Way of Representing
+  Metadata</a></li>
+  <li><a href="#Extending">Extending Metadata in XHTML</a></li>
+  <li><a href="#Compact">Compact URIs</a></li>
+  <li><a href="#Using">Using <code>rel</code></a></li>
+  <li><a href="#Talking">Talking about Other Documents</a></li>
+  <li><a href="#Using1">Using URIs and CURIEs in the <code>about</code>
+    attribute</a></li>
+  <li><a href="#Talking1">Talking about People, Places and Things</a></li>
+  <li><a href="#Overriding">Overriding the Content</a></li>
+  <li><a href="#Swapping">Swapping subject and object</a></li>
+  <li><a href="#Advanced">Advanced topics</a></li>
+  <li><a href="#resource">The resource attribute</a></li>
+  <li><a href="#Packaging">Packaging a group of relations</a></li>
+  <li><a href="#Data">Data Types</a></li>
+  <li><a href="#Validating">Validating</a></li>
+  <li><a href="#Looking">Looking at the results</a></li>
+  <li><a href="#Summary">Summary of Attributes</a></li>
+  <li><a href="#Further">Further Reading</a></li>
+</ul>
+</div>
+
+<h2 id="ASimpleSearchForm">Metadata in HTML</h2>
+
+<p>If you know HTML markup, you will know that you can add metadata to an HTML
+document by adding <code>&lt;meta&gt;</code> and <code>&lt;link&gt;</code>
+elements in the head. For instance:</p>
+<pre>&lt;meta name="description" content="A site about fish" /&gt;</pre>
+
+<p>gives a description of the current document. You could say that the current
+page has a <code>description</code> property, whose value is "<code>A site
+about fish</code>".</p>
+
+<p>Similarly you can say:</p>
+<pre>&lt;link rel="next" href="thecod.html" /&gt;</pre>
+
+<p>which says that if you consider this page as one in a series of pages, the
+next one is <code>thecod.html</code>. In other words, this page has a
+<code>next</code> relation to <code>thecod.html</code>.</p>
+
+<p>There are a smattering of other places in HTML where you can add some
+metadata, such as the <code>title</code> element and attribute in places, and
+the <code>cite</code> attribute on <code>&lt;blockquote&gt;</code> and others,
+but that is about it.</p>
+
+<p>In passing, you might wonder why you can't say</p>
+<pre>&lt;meta name="description"&gt;A site about fish&lt;/meta&gt;</pre>
+
+<p>and the answer is simply that at the time this feature was added to HTML,
+some browsers would incorrectly have displayed the text in the meta element,
+even though it was in the <code>&lt;head&gt;</code> and so to prevent that
+happening the content was put in an attribute instead (this, by the way, is
+being fixed in XHTML2).</p>
+
+<h2 id="Metadata">The Use of Metadata</h2>
+
+<p>Typically the metadata in a document is used for several purposes:</p>
+<ul>
+  <li>the <code>title</code> element can provide a title for windows and
+    bookmarks,</li>
+  <li>the <code>title</code> <em>attribute</em> can provide a hover-over
+    information pop-up,</li>
+  <li>search engines can use the <code>description</code> property in search
+    results,</li>
+  <li>some browsers provide a navigation bar with the values of the
+    <code>next</code>, <code>prev</code> and other properties so that you can
+    navigate between the different pages, or see the copyright information
+    about a page</li>
+</ul>
+
+<p>and so on.</p>
+
+<h2 id="Generalise">RDF: A Generalised Way of Representing Metadata</h2>
+
+<p>In the time since the <code>meta</code> element was added to HTML, a
+generalised way of representing metadata has been defined at W3C. This is
+called <em>RDF</em>, the resource description framework ('resource' roughly
+speaking means 'document' here, but you'll see examples of other things than
+documents later).</p>
+
+<p>RDF is a <em>very</em> simple framework. Essentially all knowledge is
+gathered as assertions of the form:</p>
+
+<blockquote>
+  <p>URI â€” property â€” value</p>
+</blockquote>
+
+<p>where 'URI' is the URI of the thing being described, 'property' is (the URI
+of) a property, and 'value' is the value that that property can take, either
+another URI, a literal string, or a chunk of XML.</p>
+
+<p>So assuming the example document above has a URL of
+<code>http://www.example.com/home.html</code>, then the RDF assertion, or
+<em>triple</em> as it is often called, for the <em>description</em> property
+is</p>
+<pre class="html">http://www.example.com/home.html â€” [html:description] â€” "A site about fish"</pre>
+
+<p>and the RDF triple for the <em>next</em> relation would be</p>
+<pre class="html">http://www.example.com/home.html â€” [html:next] â€” http://www.example.com/thecod.html</pre>
+
+<p>The value <code>[html:next]</code> means here "the url that represents the
+HTML <em>next</em> property", and is expressed here as a <em>Compact URI</em>
+or <em>CURIE</em> for short. More on those later.</p>
+
+<h2 id="Extending">Extending Metadata in XHTML</h2>
+
+<p>RDFa extends the possibilities of metadata in XHTML, by generalising the
+attributes on <code>meta</code> and <code>link</code> and allowing them to be
+used on <em>any</em> element, not just <code>meta</code> and <code>link</code>
+(so that you may now have metadata in the body of the page as well as the head)
+and then defining how those attributes can be interpreted as RDF.</p>
+
+<p>To take a simple example, many people add a number of so-called <em>Dublin
+Core</em> properties to their pages, such as <em>title</em> and <em>author</em>
+(which is called <em>creator</em> in Dublin Core, since the properties can be
+used with other things, such as paintings):</p>
+
+<div>
+
+<div>
+<pre>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head <strong>profile="http://dublincore.org/documents/dcq-html/"</strong>&gt;
+   &lt;title&gt;John Smith's Fish of the World&lt;/title&gt;
+   <strong>&lt;meta name="DC.title" content="Fish of the World"/&gt;</strong>
+   <strong>&lt;meta name="DC.creator" content="John Smith"/&gt;</strong>
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;h1&gt;Fish of the World&lt;/h1&gt;
+   &lt;p&gt;by John Smith&lt;/p&gt;</pre>
+
+<p>The <em>Dublin Core Metadata Initiative</em> organization defined these and
+other properties for defining the metadata about books, works of art and so on.
+You can see in the example above that they duplicate information in the
+document itself. A nice thing about RDFa is that you can attach the properties
+to the document text instead:</p>
+<pre>&lt;html xmlns="http://www.w3.org/1999/xhtml"
+      <strong>xmlns:dc="http://purl.org/dc/elements/1.1/"</strong>&gt;
+&lt;head&gt;
+   &lt;title&gt;John Smith's Fish of the World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;h1 <strong>property="dc:title"</strong>&gt;Fish of the World&lt;/h1&gt;
+   &lt;p&gt;by &lt;span <strong>property="dc:creator"</strong>&gt;John Smith&lt;/span&gt;&lt;/p&gt;</pre>
+
+<p>What this does is declare that we are going to use the Dublin Core
+properties, and prefix them with <code>dc:</code>. It then attaches the Dublin
+Core properties <code>title</code> and <code>creator</code> to the relevant
+parts of the text. Of course, a major advantage of this is that the visible
+versions in the text don't get out of sync with the metadata versions.</p>
+
+<h2 id="Compact">Compact URIs</h2>
+
+<p>In the last example we had <code>property="dc:title"</code>. This says "the
+property called <em>title</em> from the vocabulary identified by <em>dc:</em>".
+But we also said earlier that a property was kept as a URI. A form such as
+<code>dc:title</code> is called a <em>Compact URI</em>, or <em>CURIE</em> for
+short. The URI it represents is just the concatenation of the URI in the
+declaration of the prefix (in this case
+<code>xmlns:dc="http://purl.org/dc/elements/1.1/"</code>) and whatever follows
+the colon. So in this case <code>dc:title</code> is a short form of the full
+URI <code>http://purl.org/dc/elements/1.1/title</code>. (You can now probably
+see why CURIEs are nice to have.)</p>
+
+<p>In the case that there is no prefix (as in the case of something like
+<code>rel="index"</code>), then a default prefix is used. For XHTML that
+default is <code>http://www.w3.org/1999/xhtml/vocab#</code>.</p>
+
+<h2 id="Using">Using <code>rel</code></h2>
+
+<p>Using the <code>property</code> attribute like this gives you an equivalent
+of the <code>meta</code> element, but then in the text of your page. To get the
+equivalent of a <code>link</code> element, you use the <code>rel</code>
+attribute. For instance, pages often have a clickable "Next" link to take you
+to the next page:</p>
+<pre>&lt;a href="thecod.html"&gt;Next&lt;/a&gt;</pre>
+
+<p>It can be expressed like this:</p>
+<pre>&lt;a href="thecod.html" rel="next"&gt;Next&lt;/a&gt;</pre>
+
+<p>Similarly, </p>
+<pre>&lt;a href="page2.html"&gt;Back&lt;/a&gt;</pre>
+
+<p>can be written</p>
+<pre>&lt;a href="page2.html" rel="prev"&gt;Back&lt;/a&gt;</pre>
+
+<p>Another typical use for <em>rel</em> is to use it to point to the copyright
+or licensing information of a page. Instead of:</p>
+<pre>&lt;a href="copyright.html"&gt;Copyright&lt;/a&gt;</pre>
+
+<p>You can write</p>
+<pre>&lt;a href="copyright.html" rel="copyright"&gt;Copyright&lt;/a&gt;</pre>
+
+<p>(By the way, it doesn't matter what order you put the <code>href</code> and
+<code>rel</code> in.)</p>
+
+<p>Of course, you could already do this in HTML. What is new is that it is now
+defined how to interpret this as RDF, and, as you will later see, you can apply
+it to more than just <code>&lt;a&gt;</code> elements.</p>
+
+<h2 id="Talking">Talking about Other Documents</h2>
+
+<p>Most of the metadata in HTML only allows you to talk about the document
+itself, and in all the examples we have given so far, we have been giving
+metadata about the page in question. But you may want to be able to talk about
+other things than just the current document (and you will see more examples of
+this shortly).</p>
+
+<p>For this you can use the <code>about</code> attribute to specify what it is
+the information applies to. For instance, suppose you link to some data:</p>
+<pre>Here is a plot of the data: &lt;img src="plot.png" alt="Rainfall 1900-1999"/&gt;.
+The &lt;a href="rainfall.csv"&gt;raw data&lt;/a&gt; is available.</pre>
+
+<p>and you want to include the licensing conditions of that data:</p>
+<pre>The data is available under &lt;a href="license.html"&gt;these conditions&lt;/a&gt;.</pre>
+
+<p>then you can say this:</p>
+<pre>The data is available under
+&lt;a <strong>about="rainfall.csv" rel="license"</strong> href="license.html"&gt;these conditions&lt;/a&gt;.</pre>
+
+<p>If you use <code>about</code> on a container element, like a
+<code>&lt;p&gt;</code> then the <em>about</em> applies to all the contained
+relations:</p>
+<pre>&lt;p <strong>about="rainfall.csv"</strong>&gt;
+   The data &lt;strong property="dc:title"&gt;Rainfall 1900-1999&lt;/strong&gt;
+   is the property of &lt;em property="dc:creator"&gt;Data Be We, Inc&lt;/em&gt;
+   and is available under
+   &lt;a rel="license" href="license.html"&gt;these conditions&lt;/a&gt;.
+&lt;/p&gt;</pre>
+
+<h2 id="Using1">Using URIs and CURIEs in the <code>about</code> attribute</h2>
+
+<p>Note that the <code>about</code> attribute contains a URI. It can point to
+anything on the Web:</p>
+<pre>&lt;p <strong>about="http://www.w3.org/TR/rdfa-syntax"</strong>&gt;The title of the RDFa specification is
+  &lt;em property="dc:title"&gt;RDFa in XHTML: Syntax and Processing&lt;/em&gt;...&lt;/p&gt;</pre>
+
+<p>Occasionally you may want to use a CURIE instead of a URI in
+<code>about</code> (as you will see shortly), and so to distinguish a CURIE
+from a URI in those cases, you enclose a CURIE in square brackets. For
+instance, suppose you had defined
+<code>xmlns:tr="http://www.w3.org/TR/"</code>, then you could write the above
+in the following way:</p>
+<pre>&lt;p about="<strong>[tr:rdfa-syntax]</strong>"&gt;The title of the RDFa specification is
+  &lt;em property="dc:title"&gt;RDFa in XHTML: Syntax and Processing&lt;/em&gt;...&lt;/p&gt;</pre>
+
+<h2 id="Talking1">Talking about People, Places and Things</h2>
+
+<p>Up to now we have been talking about assigning properties to things with
+URIs. But there is a problem: not everything that you might want to talk about
+has a URI. The city of Amsterdam doesn't have a URI. Nor does a person, or an
+object like a car, or a concept like <em>love</em>. Of course, these things
+have pages <em>about</em> them, but that is different. It is important not to
+confuse a website <em>about</em> something with that thing itself.</p>
+
+<p>To take an example to explain the difference, suppose we want to say that
+T.S. Eliot is the author of the poem <em>The Waste Land</em>. Well, we might do
+a search for the poem, and find
+<code>http://en.wikipedia.org/wiki/The_Waste_Land</code>. You might then be
+tempted to say:</p>
+<pre>&lt;span about="http://en.wikipedia.org/wiki/The_Waste_Land"
+      property="dc:creator"&gt;T.S. Eliot&lt;/span&gt;</pre>
+
+<p>Unfortunately, this says that T.S. Eliot created the Wikipedia page, which
+is patently not true. So what do we do?</p>
+
+<p>Well, RDFa has a notation that allows you to create a local name for
+something that doesn't have a URI (or that has a URI that you don't know), and
+say something about it anyway:</p>
+<pre>&lt;link <strong>about="[_:TheWasteLand]"</strong> rel="foaf:isPrimaryTopicOf"
+      href="http://en.wikipedia.org/wiki/The_Waste_Land" /&gt;</pre>
+
+<p>The "_:" is a reserved prefix for this notation. You can put any identifier
+after the colon. What this says is "There is something (which we shall call
+'TheWasteLand') which is the <em>primary topic</em> of the page at
+<code>http://en.wikipedia.org/wiki/The_Waste_Land</code>."</p>
+
+<p>Now that we have uniquely identified the poem we can record that its creator
+was 'T.S. Eliot'":</p>
+<pre>&lt;span about="[_:TheWasteLand]" property="dc:creator"&gt;T.S. Eliot&lt;/span&gt;</pre>
+
+<p>(By the way, the foaf properties are identified by
+<code>xmlns:foaf="http://xmlns.com/foaf/0.1/"</code>).</p>
+
+<p>In this way we can mint all sorts of names for people, places, organizations
+and other things that haven't got URIs, and uniquely identify them. A
+person:</p>
+<pre>&lt;link about="[_:StevenPemberton]"
+      rel="foaf:isPrimaryTopicOf" href="http://www.cwi.nl/~steven/" /&gt;</pre>
+
+<p>A place:</p>
+<pre>&lt;link about="[_:Amsterdam]"
+      rel="foaf:isPrimarytopicOf" href="http://www.amsterdam.nl/" /&gt;</pre>
+
+<p>An organization:</p>
+<pre>&lt;link about="[_:W3C]"
+      rel="foaf:isPrimaryTopicOf" href="http://www.w3.org/" /&gt;</pre>
+
+<p>And then we can use those names in order to talk about them:</p>
+<pre>&lt;a about="[_:W3C]" rel="foaf:homepage" href="http://www.w3.org/"&gt;W3C&lt;/a&gt;</pre>
+
+<p>These special CURIEs beginning "_:" are called <em>blank nodes</em> or
+<em>bnodes.</em> Note that they are local to a document, so you have to
+redeclare them in each document that you use them.</p>
+
+<p>By the way, the important thing with blank nodes is to uniquely identify
+them by some means if you can. <code>foaf:isPrimaryTopicOf</code> is one way,
+but any property that is unique will work. For instance:</p>
+<pre>&lt;link about="[_:StevenPemberton]" rel="foaf:mbox" href="mailto:steven@w3.org" /&gt;</pre>
+
+<p>is just as good, since there is only one person who has that email address,
+and so we have uniquely identified that person.</p>
+
+<p>Note that since an empty URI "" means 'the current page', on your own home
+page you can add code like</p>
+<pre>&lt;link about="[_:StevenPemberton]" rel="foaf:primaryTopicOf" href=""/&gt;</pre>
+
+<p>which says "The thing we call StevenPemberton is the primary topic of this
+page".</p>
+
+<h2 id="Overriding">Overriding the Content</h2>
+
+<p>Sometimes although the content contains information that needs to be tagged,
+it is not always in the form you need it. For instance:</p>
+<pre>&lt;p&gt;Amsterdam is located
+    at latitude 52Â°22'23"N and longitude 4Â°53'32"E&lt;/p&gt;</pre>
+
+<p>While there are properties for recording latitude and longitude, they expect
+the values to be decimal numbers. Well we can write this:</p>
+<pre>&lt;p <strong>about="[_:Amsterdam]"</strong>&gt;&lt;span property="dc:name"&gt;Amsterdam&lt;/span&gt; is located
+   at latitude &lt;span <strong>property="geo:lat" content="52.373"</strong>&gt;52Â°22'23"N&lt;/span&gt;
+ and longitude &lt;span <strong>property="geo:long" content="4.892"</strong>&gt;4Â°53'32"E&lt;/span&gt;&lt;/p&gt;</pre>
+
+<p>This is of course the same <code>content</code><code></code>attribute you
+know from the <code>meta</code> element. Its value overrides whatever is in the
+content of the element.</p>
+
+<p>(The geo properties are at
+<code>xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"</code>)</p>
+
+<h2 id="Swapping">Swapping subject and object</h2>
+
+<p>A lesser-used but nevertheless useful relationship in HTML is the
+<em>reverse relationship</em> <code>rev</code>. This relationship is like
+<code>rel</code>, but reverses the relationship. For instance, if a document
+<code>doc.html</code> is indexed by the page <code>index.html</code>, then
+<code>doc.html</code> can record this fact with the link:</p>
+<pre>&lt;link rel="index" href="index.html"/&gt;</pre>
+
+<p>However, <code>index.html</code> can also record the relationship:</p>
+<pre>&lt;link <strong>rev</strong>="index" href="doc.html"/&gt;</pre>
+
+<p>which says "this page is the index for doc.html".</p>
+
+<p>You can use <code>rev</code> similarly in RDFa. All it does is swap the
+subject (the 'about') with the object (the 'href'). For instance, suppose we
+have a set of data about a person:</p>
+<pre>&lt;p about="[_:StevenPemberton]"&gt;
+   Name: &lt;span property="foaf:name"&gt;Steven Pemberton&lt;/span&gt;
+   Mail: &lt;a rel="foaf:mbox" href="mailto:steven@w3.org"&gt;steven@w3.org&lt;/a&gt;
+&lt;/p&gt;</pre>
+
+<p>Now, foaf has a property <code>img</code> that says that a particular image
+is a picture of some person. But the relationship is from the picture, to the
+person. What we would like to say is:</p>
+<pre>&lt;link about="Steven.jpg" rel="foaf:img" href="[_:StevenPemberton]"/&gt;</pre>
+
+<p>except that at the moment we are talking about the person, and not the
+image. So if we want to add this information to the block above, we just
+reverse the relationship with <code>rev</code>:</p>
+<pre>&lt;p about="[_:StevenPemberton]"&gt;
+   Name: &lt;span property="foaf:name"&gt;Steven Pemberton&lt;/span&gt;
+   Mail: &lt;a rel="foaf:mbox" href="mailto:steven@w3.org"&gt;steven@w3.org&lt;/a&gt;
+   Mugshot: &lt;a <strong>rev="foaf:img"</strong> href="Steven.jpg"&gt;Photo&lt;/a&gt;
+&lt;/p&gt;</pre>
+
+<p>Note that you can have (if you want) both rel and rev on an element:</p>
+<pre>&lt;a rel="next" rev="prev" href="page2.html"&gt;Next&lt;/a&gt;</pre>
+
+<p>(Not that this example gives you very much in terms of extra
+information!)</p>
+
+<h2 id="Advanced">Advanced topics</h2>
+
+<p>You now know enough to use RDFa for day-to-day use, but there are a few
+extras you might find useful.</p>
+
+<h2 id="resource">The resource attribute</h2>
+
+<p>Alongside the <code>href</code> attribute, there is also a
+<code>resource</code> attribute with the same purpose, but usable when you
+don't want the link to be clickable, or you want to use a CURIE (since you
+can't use a CURIE in <code>href</code>):</p>
+<pre>The photo is entitled
+  &lt;em about="Steven.jpg" rel="foaf:img" resource="[_:StevenPemberton]"&gt;Steven in London&lt;/em&gt;</pre>
+
+<p>Note in passing that you may have more than one relation on an element. So
+we could also say:</p>
+<pre>The photo is entitled
+  &lt;em about="Steven.jpg" rel="foaf:img" resource="[_:StevenPemberton]"
+      <strong>property="dc:title"</strong>&gt;Steven in London&lt;/em&gt;</pre>
+
+<p></p>
+
+<h2 id="Packaging">Packaging a group of relations</h2>
+
+<p>Often a group of properties together make up a whole. For instance an event
+can have a title, a description, a location, and a start and end date. If you
+want to say that a section of markup contains such a group of properties, you
+can use the <code>typeof</code> attribute. For instance, to mark up a
+conference:</p>
+<pre>&lt;div xmlns:event="http://www.w3.org/2002/12/cal#" <strong>typeof="event:Vevent</strong><strong>"</strong>&gt;
+     &lt;h3 property="event:summary"&gt;WWW 2009&lt;/h3&gt;
+     &lt;p property="event:description"&gt;18th International World Wide Web Conference&lt;/p&gt;
+     &lt;p&gt;To be held from
+        &lt;span property="event:dtstart" content="2009-04-20"&gt;20th April 2009&lt;/span&gt;
+        until &lt;span property="event:dtend" content="2009-04-24"&gt;24th April&lt;/span&gt;,
+        in &lt;span property="event:location"&gt;Madrid, Spain&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<p>or a TV program:</p>
+<pre>&lt;div typeof="event:Vevent"&gt;
+    &lt;h3 property="event:summary"&gt;Have I Got Old News For You&lt;/h3&gt;
+    &lt;p property="event:location"&gt;BBC2&lt;/p&gt;
+    &lt;p&gt;&lt;span property="event:dtstart" content="2008-06-28T21:00:00"&gt;Saturday 28 June,
+       9pm&lt;/span&gt;-&lt;span property="event:dtend" content="2008-06-28T21:30:00"&gt;9.30pm&lt;/p&gt;
+    &lt;p property="event:description"&gt;Team captains Paul Merton and Ian
+       Hislop are joined by returning guest host Jeremy Clarkson and panellists
+       Danny Baker and Germaine Greer for the topical news quiz.
+       &lt;abbr title="in stereo"&gt;[S]&lt;/abbr&gt;&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<p>Note the use of <code>content</code> here to get the dates and times into a
+machine-readable format.</p>
+
+<h2 id="Data">Data Types</h2>
+
+<p>Occasionally you may want to specify that a particular property is of a
+certain data type. The <code>datatype</code> attribute is precisely for this
+purpose:</p>
+<pre>&lt;span property="event:dtend" datatype="xsd:date" content="2009-04-24"&gt;24th April&lt;/span&gt;</pre>
+
+<p>This would need an
+<code>xmlns:xsd="http://www.w3.org/2001/XMLSchema"</code>.</p>
+
+<h2 id="Validating">Validating</h2>
+
+<p>If you want to make sure your page validates correctly, you should ensure
+your pages have the following at the top of the document (before the
+<code>&lt;html&gt;</code>).</p>
+<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"&gt;</pre>
+
+<p>The validator at <a href="http://validator.w3.org/">http://validator.w3.org/</a> will check your
+pages.</p>
+
+<h2 id="Looking">Looking at the results</h2>
+
+<p>There are a number of online services willing to extract all the properties
+from a RDFa-enabled page, and tell you what they are. For instance, the <a href="http://www.w3.org/2007/08/pyRdfa/">RDFa Distiller</a> at
+http://www.w3.org/2007/08/pyRdfa/.</p>
+
+<h2 id="Summary">Summary of Attributes</h2>
+<dl>
+  <dt>about</dt>
+    <dd>Specifies the subject of a relationship. If not given, then the subject
+      is the current document.</dd>
+  <dt>rel</dt>
+    <dd>Defines a relation between the subject and a URL given by either
+      <code>href</code> or <code>resource</code>. The subject is either
+      specified by the closest about or src attribute, @@</dd>
+  <dt>rev</dt>
+    <dd>The same as the the rel attribute, except that subject and object are
+      reversed.</dd>
+  <dt>property</dt>
+    <dd>Defines a relationship between the subject and either a string (if the
+      <code>content</code> attribute is present) or a piece of markup otherwise
+      (the content of the element that the property attribute is on).</dd>
+  <dt>content</dt>
+    <dd>Specifies a string to use as an object for the <code>property</code>
+      attribute</dd>
+  <dt>href</dt>
+    <dd>Specifies an object URI for the <code>rev</code> and <code>rel</code>
+      attributes. Takes precedence over the <code>resource</code>
+    attribute.</dd>
+  <dt>resource</dt>
+    <dd>Specifies an object URI for the <code>rev</code> and <code>rel</code>
+      attributes if <code>href</code> is not present.</dd>
+  <dt>src</dt>
+    <dd>Specifies the subject of a relationship.</dd>
+  <dt>datatype</dt>
+    <dd>Specifies a datatype of the object of the <code>property</code>
+      attribute (either in the <code>content</code> attribute, or the content
+      of the element that the <code>datattype</code> attribute is on.) By
+      default, data in the content attribute is of type <code>string</code>,
+      and data in the content of an element has type <code>xml:Literal</code>.
+      If <code>datatype=""</code> is used, then for the RDF the element content
+      is stripped of markup, and is of type string.</dd>
+  <dt>typeof</dt>
+    <dd>Creates a blank node, which becomes the subject, and asserts that the
+      current element contains relationships that match the given RDF type.</dd>
+</dl>
+
+<h2>Examples</h2>
+
+<p>There are many vocabularies available across the web (called
+<em>taxonomies</em> by some), and there are more being created all the time.
+Here is a selection:</p>
+<ul>
+  <li><a href="http://google.com/support/webmasters/bin/answer.py?answer=146645">Reviews</a></li>
+  <li><a href="http://google.com/support/webmasters/bin/answer.py?answer=146646">Contact
+    details</a></li>
+  <li><a href="http://google.com/support/webmasters/bin/answer.py?answer=146750">Products</a></li>
+  <li><a href="http://xmlns.com/foaf/spec/">People and their
+  relationships</a></li>
+  <li><a href="http://code.google.com/p/argot-hub/">Job descriptions</a></li>
+  <li><a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a></li>
+  <li><a href="http://trac.usefulinc.com/doap">Software projects</a></li>
+</ul>
+
+<p>See the <a href="http://rdfa.info/wiki/Learn#Vocabularies">RDFa Wiki list of
+vocabularies</a> and <a href="http://rdfa.info/wiki/Examples-in-the-wild">RDFa
+examples in the wild</a> for some more.</p>
+
+<h2 id="Further">Further Reading</h2>
+
+<p><a href="http://www.w3.org/TR/rdfa-syntax/">RDFa Specification</a> - not
+written for beginners, and therefore hard going, but the final arbiter on
+RDFa</p>
+
+<p><a href="http://www.w3.org/TR/xhtml-rdfa-primer/">RDFa Primer</a> - another
+introduction to RDFa</p>
+
+<p><a href="http://rdfa.info/">rdfa.info</a> - news and information about
+developments.</p>
+
+<p><a href="http://rdfa.info/wiki/RDFa_Wiki">RDFa Wiki</a> - community meeting
+place for RDFa. </p>
+</div>
+</div>
+
+
+</body></html>Ytext/htmlUUTF-8_3http://www.w3.org/MarkUp/2009/rdfa-for-html-authorsP£Ô_WebResourceResponseXtext/css_)http://www.w3.org/StyleSheets/TR/base.cssOibplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`abcghU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_)http://www.w3.org/StyleSheets/TR/base.cssÒ./01X$classesZ$classname¢12UNSURLXNSObject#A°#oÎ‡ítÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€SP3p]Cache-ControlWExpiresSVia]Accept-RangesVServer\Content-TypeTDateZConnection_Transfer-Encoding_1policyref="http://www.w3.org/2001/05/P3P/p3p.xml"^max-age=604800_Fri, 07 Aug 2009 18:30:38 GMT_<1.1 Application and Content Networking System Software 5.5.9UbytesXApache/2Xtext/css_Fri, 31 Jul 2009 18:30:38 GMTUCloseXIdentityÒ./de£ef2_NSMutableDictionary\NSDictionaryZÒ./ij£jk2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û Ý ß á ã å ç é ë í ô ü
+:?HSV\enpwŠŒ—™›Ÿ¡£¥§©«¶¸º¼¾ÀÂÄÆÈÊÎÜäèöý
+.bq‘ÐÖßè 6CFKOc             l              qOZ/*
+   Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+/* $Id: base.css,v 1.25 2006/04/18 08:42:53 bbos Exp $ */
+
+body {
+  padding: 2em 1em 2em 70px;
+  margin: 0;
+  font-family: sans-serif;
+  color: black;
+  background: white;
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+a:active { color: #C00; background: transparent }
+
+a:link img, a:visited img { border-style: none } /* no border on img links */
+
+a img { color: white; }        /* trick to hide the border in Netscape 4 */
+@media all {                   /* hide the next rule from Netscape 4 */
+  a img { color: inherit; }    /* undo the color change above */
+}
+
+th, td { /* ns 4 */
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { text-align: left }
+/* background should be transparent, but WebTV has a bug */
+h1, h2, h3 { color: #005A9C; background: white }
+h1 { font: 170% sans-serif }
+h2 { font: 140% sans-serif }
+h3 { font: 120% sans-serif }
+h4 { font: bold 100% sans-serif }
+h5 { font: italic 100% sans-serif }
+h6 { font: small-caps 100% sans-serif }
+
+.hide { display: none }
+
+div.head { margin-bottom: 1em }
+div.head h1 { margin-top: 2em; clear: both }
+div.head table { margin-left: 2em; margin-top: 2em }
+
+p.copyright { font-size: small }
+p.copyright small { font-size: small }
+
+@media screen {  /* hide from IE3 */
+a[href]:hover { background: #ffa }
+}
+
+pre { margin-left: 2em }
+/*
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+*/
+dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+dt { font-weight: bold }
+
+pre, code { font-family: monospace } /* navigator 4 requires this */
+
+ul.toc, ol.toc {
+  list-style: disc;		/* Mac NS has problem with 'none' */
+  list-style: none;
+}
+
+@media aural {  
+  h1, h2, h3 { stress: 20; richness: 90 }
+  .hide { speak: none }
+  p.copyright { volume: x-soft; speech-rate: x-fast }
+  dt { pause-before: 20% }
+  pre { speak-punctuation: code } 
+}
+
+ÔYimage/png_$http://www.w3.org/Icons/WWW/w3c_homeOSbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯*&,-345YZ[\]^_`abcdefghijklmnopqrstuvw{|U$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€)€€( €€€€€ Ó'()$+WNS.base[NS.relative€€ €_ http://www.w3.org/Icons/w3c_homeÒ./01X$classesZ$classname¢12UNSURLXNSObject#A°#oÎÑôÓÈÓ6789IWNS.keysZNS.objects€'¯:;<=>?@ABCDEFGH€	€
+€€€€€€€€€€€€€¯JKLMNOPQRSTUVWX€€€€€€€€€ €!€"€#€$€%€&]Last-Modified]Cache-ControlVServer\Content-TypeTDate^Content-LengthTEtagZConnection_Content-LocationSP3pWExpiresSTcnSVia]Accept-RangesTVary_Mon, 24 Jul 2006 14:58:33 GMT_max-age=2592000XApache/2_image/png; qs=0.7_Fri, 31 Jul 2009 18:30:38 GMTT1936_!"790-4195514757840;450a9e0059540"UClose\w3c_home.png_1policyref="http://www.w3.org/2001/05/P3P/p3p.xml"_Sun, 30 Aug 2009 18:30:38 GMTVchoice_<1.1 Application and Content Networking System Software 5.5.9Ubytes_negotiate,acceptÒ./xy£yz2_NSMutableDictionary\NSDictionaryÒ./}~£~2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‘ — ² ¹ ¼ ¿ Ã Ç Ê Í Ð Ó Ö Ù Ü ß á ã å ç é ë í ï ñ ó õ ÷ þ;@ITW]foqx€‹Ÿ¡£¥§©«­¯±³µ·¹»½ÏÑÓÕ×ÙÛÝßáãåçéëíû	"16ATX`dhv{›­¶Êêï&ZzÀÆÙÞâø%             €              3O‰PNG
+
+   IHDR   H   0   …BÌÙ   PLTE      &&&(((,,,111555666777888;;;???DDDEEEFFFIIINNNOOOVVV]]]^^^```aaadddggglllmmmooopppqqqttt||| Zœ[œ[\]ž]ž^ž_Ÿ	`Ÿa b¡c¡d¢f£f£g¤h¥j¥k¦k¦m¨n¨ o¨!o©#qª$qª(t¬-w­2z¯4|°5|±7~±8~²9²:€³<³A„µB…¶D†¶Gˆ¸I‰¸JŠ¹K‹¹NŒºQŽ»U‘½Y”¿Z”¿[•¿]–À_—Áb™ÂgÄižÅjŸÅkŸÆl Æm¡Æn¡Ço¢Çq£Ès¤Éu¦Éw§Êx¨Ëz©Ë|ªÌ}«Í~¬Í„„„‰‰‰ŠŠŠŒŒŒ‘‘‘’’’–––———˜˜˜šššŸŸŸ   ¡¡¡¢¢¢¥¥¥¦¦¦¨¨¨ªªª«««¬¬¬­­­¯¯¯±±±²²²³³³´´´···¹¹¹¼¼¼¿¿¿‚®Îƒ¯Ï…°Ð†±Ð‡±Ðˆ²Ñ‹´ÒŒµÒ–»Ö—¼×˜¼×™½×›¾Ø ÂÚ¤ÄÜ¥ÅÜ¨ÇÝªÈÞ¯Ëà°Ìà±Íá²Íá´Îâ·Ðã»Óå¼Ôå¾ÕæÁÁÁÂÂÂÃÃÃÅÅÅÆÆÆÇÇÇÍÍÍÎÎÎÏÏÏÓÓÓØØØÙÙÙÛÛÛÜÜÜÝÝÝßßßÀÖçÁ×çÃØèÅÙèÇÛéÈÛêÊÝêËÝëÌÞëÍÞëÎßëÍßìÑáíÒâîÓãîÔãîÕäï×åïØåïÙæðÚæðÛèñÜèñàààáááäääçççéééëëëíííîîîáìóâìôäîõçïöéñöêñ÷ëò÷íóøîôøðððòòòôôôõõõ÷÷÷ðõùó÷úôøûöùü÷úüùùùûûûøúüùûýúüýûüýüüüýýýüýþýþþþþþþþÿÿÿÿÌÌÌ‘š'_   bKGD ˆH   	pHYs   H   H FÉk>  )IDATHÇí—	T”UÇTCbiV$dˆ•´ó10„A…L(¶LE!´PdÑ‰¶GT(SfDFÑ´Ð¢£ Ñ¾„²ïxï{ßãûfÎÁsêœ¼çÀ÷÷»ïw¾ûÞ»÷9†s!f•Ñi™ÎäÃ ôíN“©]vÔ™L¦^å};M;ëµšß	?æš&'IR²ü&´Q	L–,­–yÒÝ\ÎùÕ”V¥å=šÖÍ@Å¡—g‚6( ½èstvœˆ‡Yó¥ï:4Ó´ç.¬XÇ@=:iá3Aú÷	N‹'bœC®¼,Ž|‹zŠŸÏ9Ó³:ŒË't© ap³¥ ½Ùeˆ›µÍ<Ô•ó„Ç€Rçsèx2À`S…¼U¿3!ó²²Os$âô+Íx¦æíÜd\>å CdNŸ?¾g² ÔâVTÙ„µÅ;@L• 3óiqŽTù|…kQÏu)Èp¦ö\ ò9&=Éå¯?ÐÌè´:·*ù`šR×ñ “¨8!—þÉ¶^CN³³î¡V U>¸ðR×! ËQl÷õ*óUÇj1{h¿5h0@äÃŽ‚äÃz=îÙ ˆÑHP+yèSÄ}Â‹ùóS$8ÅË |wóÈr¯=ÐV‘OÅ¢Ž±ž½—€¸QŽ¼TÙµiy>ÃÂ>…KRà0¬$iÛàåjDk¯æ[¹Þé{ ºœçS‹û”Ä«³‘øî|þ•º-8È;ŽÚåó|°Ú?)çÝ V¬›¨4oÌóÃ“ìƒvI,=þÆ=ÔÓá@±“ee%ùáHZ•mžo4z1æÓÂ¿ë:ìµªZ¡ôÀíHº	TŠ};ÅÉF¾R¸:Æduõ‚]ƒÕùþ$ ¬+=T»®ï—A¯î'`_â'½Çy«t?IŠ–OŸE‡CÏótSÝ"¾5…¨7sm°ˆ]ž„)€Œ|r#êF®±Wç†)€xãƒPvn~³ˆ½\‰¿XÎ7Œñƒ·zêË,']®5OvYø|ÏˆÝaå\¿‰ú.üÎ;õpWº^kòRs~:ú~ ZÑ~¨Ü ¾ ô8ÏrWö’ß©çcÊŒn7r–ÐH°Ü~Ð AÃ%Öê]áut|†ïZJ?vÎ1]§ò°ö¢"¡¡AÅásöË›?ýî%üD-Þk©GÜÝÏB*'d¾Ù¨Xn±h{}¤b|î[¢ºhÑ3t29ö¼œÜµs™ÝLmztQÊ J×ÃžuAcœ+ÿfžWqÕÎùˆÚÑèEDËâ›e£MÓ}¶#ã¸7Ó	@/|­è†Ç6¡$."|åªÀRO]àU©žúýÓïÿ2Û²)€fš³N8HvJb,›Å    IEND®B`‚Ô\image/x-icon_http://www.w3.org/favicon.icoOøbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver«#)*0"1234U$nullÛ !"V$classR$3R$8R$5R$6R$4R$7R$2R$9R$0R$1€
+€€€€€€€	 Ó$%&'(WNS.base[NS.relative€€ €_http://www.w3.org/favicon.icoÒ+,-.X$classesZ$classname¢./UNSURLXNSObject#A°#oâ¿Îû\image/x-iconP#ïÿÿÿÿÿÿÒ+,56¢6/]NSURLResponse     ) 2 7 : P R d p v  ” — š    £ ¦ © ¬ ¯ ² ´ ¶ ¸ º ¼ ¾ À Â Ä Æ È Ï × ã å ç é	"%+4=JKTY\             7              j@    1 < N d ‚ ‘ ¨mˆm’m˜mÎmÏmÓmÜmòmûn'r”zòzû{{,€ƒˆˆ ˆ-ˆMŠI                           ŠJ
