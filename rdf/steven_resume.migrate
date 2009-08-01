@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:sgh="http://stevengharms.com/id/vocab#"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:cv="http://rdfs.org/resume-rdf/"
@@ -20,9 +21,13 @@
     <foaf:surname>Harms</foaf:surname>
     <foaf:givenName>Steven</foaf:givenName>
     <foaf:weblog>http://stevengharms.com/index.html</foaf:weblog>
-
+    <foaf:based_near geo:lat="30.267" geo:long="97.74" rdf:nodeID="latlong_node" />
     <foaf:workplaceHomepage rdf:resource="http://www.cisco.com" />
     <foaf:schoolHomepage rdf:resource="http://www.utexas.edu" />
+    <foaf:weblog rdf:resource="http://www.stevengharms.com" />
+    <foaf:knows rdf:nodeID="damon"/>
+    <foaf:knows rdf:nodeID="wbruce"/>     
+    <foaf:knows rdf:nodeID="pat"/>
    <foaf:interest rdf:nodeID="_rlang" />
   </foaf:Person>
 	<!-- Damon Clinkscales -->
@@ -231,7 +236,7 @@
 
 <!-- Cisco Work Experience -->
 
-<!-- Cisco Mailguardl Admin -->
+<!-- Cisco Mail Admin -->
 <cv:workHistory rdf:nodeID="cisco_mail_admin">			
 	<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
 	<cv:startDate>2001-04-20</cv:startDate>

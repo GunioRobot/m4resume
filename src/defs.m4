@@ -81,21 +81,13 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
 ``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 
 define(`RES_HTML_HEAD', `
-<head about="CANDIDATE_RESUME_URL">
-  <title property="cv:cvTitle">Résumé for CANDIDATE_NAME</title>
-  <link rel="cv:aboutPerson foaf:creator" content="CANDIDATE_HOMEPAGE" />
-  <meta property="dc:language" content="en" />
-  <meta property="cv:isActive" content="false" />
+<head>
+	<title>Résumé for CANDIDATE_NAME</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta property="description" content="Résumé for CANDIDATE_NAME" />
   <meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
-	<meta about="CANDIDATE_ABOUT_URI" property="foaf:title" content="Mr." />
-	<meta about="CANDIDATE_ABOUT_URI" property="foaf:firstName" content="Steven" />
-	<meta about="CANDIDATE_ABOUT_URI" property="foaf:surname" content="Harms" />
 	<meta about="[_:AustinGeoNode]" property="geo:lat"  content="30.267"/>
 	<meta about="[_:AustinGeoNode]" property="geo:long" content="97.74"/>
 	<meta about="[_:AustinGeoNode]" property="nodeID" content="AGN" />
-dnl	<meta about="CANDIDATE_ABOUT_URI" property="foaf:based_near" content="[_:AustinGeoNode]" />
 </head>')
 
 ###############################################################################
@@ -115,7 +107,7 @@ define(`RDFa_tokens',
 `__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
 `__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 `__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
-`__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span rel="geo:lat" content="30.267"><span rel="geo:long" content="97.74">Austin</span></span></span>'
+`__RDFA_Austin',`<span about="[_:AustinGeoNode]"><meta rel="geo:lat" content="30.267" /><meta rel="geo:long" content="97.74"/>Austin</span>',
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')

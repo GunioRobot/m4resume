@@ -29,7 +29,7 @@ define(`generate_formatter_for',
 '
 )
 
-define(`linkify', `<a href="$1"ifdef(`$2', $2, `')>$1</a>')
+define(`linkify', `<a href="http://$1"ifdef(`$2', $2, `')>http://$1</a>')
 
 generate_formatter(`place')dnl
 generate_formatter(`job')dnl

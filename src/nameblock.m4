@@ -19,7 +19,6 @@ __RDFA_CANDIDATE_NAME
 </h1>
 <ul>
  	ifdef(`__RDFA_CANDIDATE_ADDRESS',`<li>__RDFA_CANDIDATE_ADDRESS</li>',`ifdef(`CANDIDATE_ADDRESS', `<li>CANDIDATE_ADDRESS</li>')')
-dnl  ifdef(`__RDFA_CANDIDATE_ADDRESS', `exists and is __RDFA_CANDIDATE_ADDRESS')
 	ifdef(`CANDIDATE_TWITTER',`<li>Twitter`': CANDIDATE_TWITTER</li>')
 	ifdef(`__RDFA_CANDIDATE_GITHUB',`<li>GitHub: __RDFA_CANDIDATE_GITHUB</li>',`ifdef(`CANDIDATE_GITHUB', `<li>CANDIDATE_GITHUB</li>')')
 	ifdef(`CANDIDATE_FACEBOOK',`<li>Facebook: linkify(CANDIDATE_FACEBOOK)</li>')
