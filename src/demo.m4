@@ -2,8 +2,7 @@ divert`'dnl
 achieve(format_place(`Guybrush Threepwood Enterprises'), 
         format_job(`Swabby'), 
         format_dates(`Jan 2000-Feb 2001'), 
-        `Found the Secret of Monkey Island', `Avoided voodoo spells',
-        `Navigated the __RDFA_Trinidad_and_Tobago run in 4 parsecs')`'dnl
+        `Found the Secret of Monkey Island', `Avoided voodoo spells')`'dnl
 achieve(format_place(`Matsumotocorp'), 
         format_job(`Awestruck Acolyte'), 
         format_dates(`Jan 2001-Feb 2004'), 

@@ -32,7 +32,7 @@ PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
 define(`CANDIDATE_NAME', `Steven G. Harms')
-define(`CANDIDATE_ADDRESS', `12445 Alameda Trace Circle #1016, Austin, Texas 78727')
+define(`CANDIDATE_ADDRESS', `12445 Alameda Trace Circle Apt. 1016, Austin, Texas 78727')
 define(`CANDIDATE_PHONE', ``(512)466-5756'')
 define(`CANDIDATE_EMAIL', ``resume@sgharms.oib.com'')
 define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
@@ -89,7 +89,7 @@ define(`RES_HTML_HEAD', `
   <meta property="cv:isActive" content="false" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="description" content="Résumé for CANDIDATE_NAME" />
-	<meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
+  <meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
 </head>')
 
 ###############################################################################

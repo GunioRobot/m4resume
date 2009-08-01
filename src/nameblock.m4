@@ -23,7 +23,7 @@ __RDFA_CANDIDATE_NAME
   ifdef(`CANDIDATE_TWITTER',`<li>Twitter`': CANDIDATE_TWITTER</li>')
   ifdef(`__RDFA_CANDIDATE_GITHUB',`<li>GitHub: __RDFA_CANDIDATE_GITHUB</li>',`ifdef(`CANDIDATE_GITHUB', `<li>CANDIDATE_GITHUB</li>')')
   ifdef(`CANDIDATE_FACEBOOK',`<li>Facebook: linkify(CANDIDATE_FACEBOOK)</li>')
-	ifdef(`__RDFA_CANDIDATE_HOMEPAGE',`<li>Home / Blog: __RDFA_CANDIDATE_HOMEPAGE</li>',`ifdef(`CANDIDATE_HOMEPAGE', `<li>CANDIDATE_HOMEPAGE</li>')')	
+  ifdef(`__RDFA_CANDIDATE_HOMEPAGE',`<li>Home / Blog: __RDFA_CANDIDATE_HOMEPAGE</li>',`ifdef(`CANDIDATE_HOMEPAGE', `<li>CANDIDATE_HOMEPAGE</li>')')	
 </ul>
 </div>
 ')
