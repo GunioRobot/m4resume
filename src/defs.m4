@@ -36,9 +36,9 @@ define(`CANDIDATE_ADDRESS', `12445 Alameda Trace Circle Apt. 1016, Austin, Texas
 define(`CANDIDATE_PHONE', ``(512)466-5756'')
 define(`CANDIDATE_EMAIL', ``resume@sgharms.oib.com'')
 define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
-define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
-define(`CANDIDATE_GITHUB', ``http://www.github.com/sgharms'')
-define(`CANDIDATE_HOMEPAGE', ``http://stevengharms.com'')
+define(`CANDIDATE_FACEBOOK', ``facebook.com/sgharms'')
+define(`CANDIDATE_GITHUB', ``github.com/sgharms'')
+define(`CANDIDATE_HOMEPAGE', ``stevengharms.com'')
 define(`CANDIDATE_ABOUT_URI', `changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
 
 

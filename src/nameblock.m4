@@ -5,11 +5,12 @@ ifelse(mode, `latex', `
 \end{center}
 \vspace{-8pt} \rule{\textwidth}{1pt}
 
-\vspace{-1pt} {\small\itshape CANDIDATE_ADDRESS \hfill 
-CANDIDATE_PHONE \hfill CANDIDATE_EMAIL}
-
-% Or maybe something like this, depends on your audience, I suppose
-% \vspace{-1pt} {\small\itshape Twitter: @sgharms  \hfill GitHub:__RDFA_CANDIDATE_GITHUB \hfill Facebook:  CANDIDATE_FACEBOOK \hfill Home/Blog: CANDIDATE_HOMEPAGE}
+\begin{center}
+	\begin{tabular}{p{2in}p{2in}p{2in}}
+		www: CANDIDATE_HOMEPAGE & ph:CANDIDATE_PHONE & em:CANDIDATE_EMAIL \\
+		tw: @sgharms & gh:__RDFA_CANDIDATE_GITHUB & fb:  CANDIDATE_FACEBOOK \\
+	\end{tabular}
+\end{center}
 
 ',`
 <div id="nameblock" typeof="foaf:Person" about="CANDIDATE_ABOUT_URI">
