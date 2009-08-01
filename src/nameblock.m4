@@ -11,9 +11,9 @@ ifelse(mode, `latex', `
 % \vspace{-1pt} {\small\itshape Twitter: @sgharms  \hfill GitHub:URL \hfill SuperHappyFaceNetworkBook:  URL}
 
 ',`
-<div id="nameblock" typeof="foaf:Person">
+<div id="nameblock" typeof="foaf:Person" about="CANDIDATE_ABOUT_URI">
 <h1>
-CANDIDATE_NAME
+__RDFA_CANDIDATE_NAME
 </h1>
 <ul>
   ifdef(`CANDIDATE_ADDRESS', `<li>CANDIDATE_ADDRESS</li>')

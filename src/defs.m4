@@ -38,6 +38,9 @@ define(`CANDIDATE_EMAIL', `resume@sgharms.oib.com')
 define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
 dnl define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
 define(`CANDIDATE_HOMEPAGE', ``http://stevengharms.com'')
+define(`CANDIDATE_ABOUT_URI', `changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
+
+
 
 ###############################################################################
 CONVENIENCE MACROS
@@ -80,9 +83,7 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
 define(`RES_HTML_HEAD', `
 <head typeof="cv:CV">
   <title property="cv:cvTitle">Résumé for CANDIDATE_NAME</title>
-
   <link rel="cv:aboutPerson foaf:creator" content="CANDIDATE_HOMEPAGE" />
-
   <meta property="dc:language" content="en" />
   <meta property="cv:isActive" content="false" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -94,11 +95,16 @@ RDFa Support
 This is where your special RDF-ized tags should go
 
 define(`RDFa_tokens', 
-``__RDFA_M4', `<span rel="foaf:interest">M4</span>', 
-`__RDFA_Ruby',`<span rel="foaf:interest">Ruby</span>', 
-`__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone">CANDIDATE_PHONE</span>',
-`__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox">CANDIDATE_EMAIL</span>',
-`__RDFA_RUL',`<a foaf:schoolname href="http://www.rul.nl">RUL</a>'
+``__RDFA_M4', `<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">M4</span>', 
+`__RDFA_Ruby',`<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">Ruby</span>', 
+`__RDFA_Ruby',`<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">Rails</span>', 
+`__RDFA_Ruby',`<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">Latin</span>', 
+`__RDFA_Ruby',`<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">Dutch</span>', 
+`__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
+`__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
+`__RDFA_CANDIDATE_NAME',`<span property="foaf:name" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
+`__RDFA_RUL',`<a property="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
+
 `__RDFA_Trinidad_and_Tobago',`Trinidad and Tobago'')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')

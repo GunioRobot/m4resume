@@ -27,3 +27,4 @@ ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `<div id="codesamp_block">include(`sr
 divert`'dnl
 undivert(`3')
 undivert(`2')dnl
+
