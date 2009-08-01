@@ -105,9 +105,9 @@ define(`RDFa_tokens',
 `__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
 `__RDFA_CANDIDATE_NAME',`<span property="foaf:name" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
-`__RDFA_CANDIDATE_GITHUB',`<a rel="foaf:currentProject" content="CANDIDATE_GITHUB" rel="foaf:currentProject" href="CANDIDATE_GITHUB" about="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
+`__RDFA_CANDIDATE_GITHUB',`<a rel="foaf:currentProject" content="CANDIDATE_GITHUB" href="CANDIDATE_GITHUB" about="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
 `__RDFA_RUL',`<a property="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
-`__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage" rel="foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
+`__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')

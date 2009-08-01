@@ -6,7 +6,7 @@ ifelse(mode, `latex', `
 \vspace{-8pt} \rule{\textwidth}{1pt}
 
 \begin{center}
-	\begin{tabular}{p{2in}p{2in}p{2in}}
+	\begin{tabular}{p{2.25in}p{2.25in}p{2.25in}}
 		www: CANDIDATE_HOMEPAGE & ph:CANDIDATE_PHONE & em:CANDIDATE_EMAIL \\
 		tw: @sgharms & gh:__RDFA_CANDIDATE_GITHUB & fb:  CANDIDATE_FACEBOOK \\
 	\end{tabular}
