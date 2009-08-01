@@ -1,0 +1,125 @@
+I.  
+
+The rdf:resource property is used when the object value that could be expressed needs to be, instead, represented as a 
+value of another type
+
+<rdf:Description rdf:about="http://some/person">
+	<pim:phoneNumber>555-333-1212</pim:phoneNumber>
+</rdf:Description>
+
+II.  
+
+When talking about resources, it is not the case that the data always be able to be retrieved, what's more important
+is that the data can be uniquely identified.
+
+III.  
+
+A default description looks like:
+
+4.   <rdf:Description rdf:about="http://www.example.org/index.html">
+5.       <exterms:creation-date>August 16, 1999</exterms:creation-date>
+6.   </rdf:Description>
+
+IV.
+
+Handle a blank node:
+
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:exterms="http://example.org/stuff/1.0/">
+
+   <rdf:Description rdf:about="http://www.w3.org/TR/rdf-syntax-grammar">
+     <dc:title>RDF/XML Syntax Specification (Revised)</dc:title>
+     <exterms:editor rdf:nodeID="abc"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:nodeID="abc">
+       <exterms:fullName>Dave Beckett</exterms:fullName>
+       <exterms:homePage rdf:resource="http://purl.org/net/dajobe/"/>
+   </rdf:Description>
+
+</rdf:RDF>
+
+V.
+
+RDF does not validate against a DTD.
+
+VI:
+
+The <rdf:Description> element identifies a resource with the about attribute.
+
+The <rdf:Description> element contains elements that describe the resource:
+
+VII:
+
+efining a default namespace for an element saves us from using prefixes in all the child elements. It has the following syntax:
+
+xmlns="namespaceURI"
+This XML carries HTML table information:
+
+<table xmlns="http://www.w3.org/TR/html4/">
+  <tr>
+    <td>Apples</td>
+    <td>Bananas</td>
+  </tr>
+</table>
+This XML carries information about a piece of furniture:
+
+<table xmlns="http://www.w3schools.com/furniture">
+  <name>African Coffee Table</name>
+  <width>80</width>
+  <length>120</length>
+</table>
+
+
+
+------------------------------------------------------------------------------
+
+Moving to RDFa Primer
+
+I.   @property is an attribute introduced by RDFa for the specific purpose of marking up existing text in an XHTML page.
+	   It seems to behave like an RDF predicate (dc:title, dc:creator)
+	
+II.  @about is an attribute for specifying the exact URL to which the contained RDFa markup applies.
+
+<div about="http://this.bar/foo.html" xmlns:dc="---">
+  <p>my name is <span property="dc:creator">Steven</span>.</p>
+</div>
+
+In its absence it defaults to the current document(!).
+
+III.  @typeof is an RDFa attribute that is specifically meant to declare a new data item with a certain type
+
+<div typeof="foaf:Person" xmlns:foaf="...">
+	<!-- we use property because what's in-between the tag defines the tuple -->
+  <p property="foaf:homepage">http://example.com/foo</p> 
+  <!-- rel=foaf:mbox identifies the mailto -->
+  <a href="mailto:blah" rel="foaf:mbox"
+</div>
+
+The examples have foaf:name as a property, but other values such as foaf:mbox
+and foaf:phone with <a rel="foaf:phone">...</a>. Why? 
+
+@rel means a 'relationship' telling you what kind of relationship the data INSIDE the tag signifies. Where the content inside the tags has 
+
+IV.  Wikipedia summation:
+
+The essence of RDFa is to provide a set of attributes that can be used to carry metadata in an XML language (hence the 'a' in RDFa).
+These attributes are:
+
+about – a URI or CURIE specifying the resource the metadata is about; in its absence it defaults to the current document
+rel and rev – specifying a relationship or reverse-relationship with another resource
+href, src and resource – specifying the partner resource
+property – specifying a property for the content of an element
+content – optional attribute that overrides the content of the element when using the property attribute
+datatype – optional attribute that specifies the datatype of text specified for use with the property attribute
+typeof – optional attribute that specifies the RDF type(s) of the subject (the resource that the metadata is about).
+
+V.  RDFa for HTML Authors:
+
+Using the property attribute like this gives you an equivalent of the meta
+element, but then in the text of your page. To get the equivalent of a link
+element, you use the rel attribute. 
+
+
