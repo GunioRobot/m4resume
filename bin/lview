@@ -1,0 +1,15 @@
+#!/bin/sh -x
+bin/build.sh -Dmode=latex > output/resume.tex
+if [ "$?" -eq 0 ]; then
+  cd output
+  pdflatex resume.tex
+  if [ "$?" -eq 0 ]; then
+    cd ..
+    open -a skim output/resume.pdf
+  else
+    echo "pdflatex failed, not launching viewer"
+  fi
+else
+  echo "build.sh failed"
+  exit 1
+fi
