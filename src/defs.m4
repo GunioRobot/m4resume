@@ -85,9 +85,6 @@ define(`RES_HTML_HEAD', `
 	<title>Résumé for CANDIDATE_NAME</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
-	<meta about="[_:AustinGeoNode]" property="geo:lat"  content="30.267"/>
-	<meta about="[_:AustinGeoNode]" property="geo:long" content="97.74"/>
-	<meta about="[_:AustinGeoNode]" property="nodeID" content="AGN" />
 </head>')
 
 ###############################################################################
