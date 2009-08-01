@@ -40,7 +40,7 @@ define(`CANDIDATE_FACEBOOK', ``facebook.com/sgharms'')
 define(`CANDIDATE_GITHUB', ``github.com/sgharms'')
 define(`CANDIDATE_HOMEPAGE', ``stevengharms.com'')
 define(`CANDIDATE_ABOUT_URI', `changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
-
+define(`CANDIDATE_RESUME_URL', `http://`'CANDIDATE_HOMEPAGE`'/resume.html')
 
 
 ###############################################################################
@@ -82,7 +82,7 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
 ``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 
 define(`RES_HTML_HEAD', `
-<head>
+<head about="CANDIDATE_RESUME_URL">
   <title property="cv:cvTitle">Résumé for CANDIDATE_NAME</title>
   <link rel="cv:aboutPerson foaf:creator" content="CANDIDATE_HOMEPAGE" />
   <meta property="dc:language" content="en" />
@@ -105,8 +105,8 @@ define(`RDFa_tokens',
 `__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
 `__RDFA_CANDIDATE_NAME',`<span property="foaf:name" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
-`__RDFA_CANDIDATE_GITHUB',`<a rel="foaf:currentProject" content="CANDIDATE_GITHUB" href="CANDIDATE_GITHUB" about="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
-`__RDFA_RUL',`<a property="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
+`__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
+`__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
 `__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 ')
 ifdef(`do_rdfa', 

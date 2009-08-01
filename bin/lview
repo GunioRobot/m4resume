@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/sh
 bin/build.sh -Dmode=latex > output/resume.tex
 if [ "$?" -eq 0 ]; then
   cd output
