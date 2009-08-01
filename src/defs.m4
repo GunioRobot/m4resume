@@ -32,14 +32,14 @@ PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
 define(`CANDIDATE_NAME', `Steven G. Harms')
-define(`CANDIDATE_ADDRESS', `12445 Alameda Trace Circle Apt. 1016, Austin, Texas 78727')
+define(`CANDIDATE_ADDRESS', ``12445 Alameda Trace Circle Apt. 1016, __RDFA_Austin, Texas 78727'')
 define(`CANDIDATE_PHONE', ``(512)466-5756'')
 define(`CANDIDATE_EMAIL', ``resume@sgharms.oib.com'')
 define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
 define(`CANDIDATE_FACEBOOK', ``facebook.com/sgharms'')
 define(`CANDIDATE_GITHUB', ``github.com/sgharms'')
 define(`CANDIDATE_HOMEPAGE', ``stevengharms.com'')
-define(`CANDIDATE_ABOUT_URI', `changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
+define(`CANDIDATE_ABOUT_URI', `http://`'changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
 define(`CANDIDATE_RESUME_URL', `http://`'CANDIDATE_HOMEPAGE`'/resume.html')
 
 
@@ -75,9 +75,8 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
   xmlns:dc="http://dublincore.org/2008/01/14/dcelements.rdf#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:cv="http://purl.org/captsolo/resume-rdf/0.2/cv#"
-  xmlns:pim="http://www.w3.org/2000/10/swap/pim/contact#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
   version="XHTML+RDFa 1.0" xml:lang="en">'',
 ``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 
@@ -90,6 +89,13 @@ define(`RES_HTML_HEAD', `
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="description" content="Résumé for CANDIDATE_NAME" />
   <meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
+	<meta about="CANDIDATE_ABOUT_URI" property="foaf:title" content="Mr." />
+	<meta about="CANDIDATE_ABOUT_URI" property="foaf:firstName" content="Steven" />
+	<meta about="CANDIDATE_ABOUT_URI" property="foaf:surname" content="Harms" />
+	<meta about="[_:AustinGeoNode]" property="geo:lat"  content="30.267"/>
+	<meta about="[_:AustinGeoNode]" property="geo:long" content="97.74"/>
+	<meta about="[_:AustinGeoNode]" property="nodeID" content="AGN" />
+dnl	<meta about="CANDIDATE_ABOUT_URI" property="foaf:based_near" content="[_:AustinGeoNode]" />
 </head>')
 
 ###############################################################################
@@ -108,6 +114,8 @@ define(`RDFa_tokens',
 `__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
 `__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
 `__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
+`__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
+`__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span rel="geo:lat" content="30.267"><span rel="geo:long" content="97.74">Austin</span></span></span>'
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')
