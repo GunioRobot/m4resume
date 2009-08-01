@@ -104,7 +104,7 @@ define(`RDFa_tokens',
 `__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
 `__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 `__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
-`__RDFA_Austin',`<span about="[_:AustinGeoNode]"><meta rel="geo:lat" content="30.267" /><meta rel="geo:long" content="97.74"/>Austin</span>',
+`__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span property="geo:lat" content="30.267" /><span property="geo:long" content="97.74"/>Austin</span>',
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')
