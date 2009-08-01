@@ -36,7 +36,8 @@ dnl define(`CANDIDATE_ADDRESS', `12445 Alameda Trace Circle #1016, Austin, Texas
 define(`CANDIDATE_PHONE', ``(512)466-5756'')
 define(`CANDIDATE_EMAIL', `resume@sgharms.oib.com')
 define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
-dnl define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
+define(`CANDIDATE_FACEBOOK', ``http://facebook.com/sgharms'')
+define(`CANDIDATE_GITHUB', ``http://www.github.com/sgharms'')
 define(`CANDIDATE_HOMEPAGE', ``http://stevengharms.com'')
 define(`CANDIDATE_ABOUT_URI', `changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
 
@@ -81,13 +82,14 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
 ``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 
 define(`RES_HTML_HEAD', `
-<head typeof="cv:CV">
+<head>
   <title property="cv:cvTitle">Résumé for CANDIDATE_NAME</title>
   <link rel="cv:aboutPerson foaf:creator" content="CANDIDATE_HOMEPAGE" />
   <meta property="dc:language" content="en" />
   <meta property="cv:isActive" content="false" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="description" content="Résumé for CANDIDATE_NAME" />
+	<meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
 </head>')
 
 ###############################################################################
@@ -103,6 +105,7 @@ define(`RDFa_tokens',
 `__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
 `__RDFA_CANDIDATE_NAME',`<span property="foaf:name" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
+`__RDFA_CANDIDATE_GITHUB',`<a property="foaf:currentProject" content="CANDIDATE_GITHUB_URL" rel="foaf:currentProject" href="CANDIDATE_GITHUB_URL" about="CANDIDATE_GITHUB_URL">CANDIDATE_GITHUB_URL</a>',
 `__RDFA_RUL',`<a property="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
 
 `__RDFA_Trinidad_and_Tobago',`Trinidad and Tobago'')
