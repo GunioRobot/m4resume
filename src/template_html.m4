@@ -17,7 +17,7 @@ ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement')')dn
 
   <div class="achievements">
     <h1>Work Experience</h1>
-    include(`src/demo.m4')
+    include(`src/workexp.m4')
   </div>
 
 dnl ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `<div id="skills_block">include(`src/skills_statement')</div>')dnl
