@@ -42,7 +42,6 @@ define(`CANDIDATE_HOMEPAGE', ``stevengharms.com'')
 define(`CANDIDATE_ABOUT_URI', `http://`'changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
 define(`CANDIDATE_RESUME_URL', `http://`'CANDIDATE_HOMEPAGE`'/resume.html')
 
-
 ###############################################################################
 CONVENIENCE MACROS
 For specifying the configuration of the HTML template
@@ -57,6 +56,7 @@ define(`RES_EDUCATION_MYDATES', `1995-2000')
 define(`RES_EDUCATION_DEGREEINFO',`BBA:  Management Information Systems (MIS), 
         BA:  Philosophy,'),
 Don't remove this ','  ^
+
 ###############################################################################
 HTML MACROS
 For specifying the configuration of the HTML template
@@ -82,7 +82,7 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
 
 define(`RES_HTML_HEAD', `
 <head>
-	<title>Résumé for CANDIDATE_NAME</title>
+	<title ifdef(`do_rdfae', ``about="http://stevengharms.com/resume.html" property="cv:cvTitle"'')>Résumé for CANDIDATE_NAME</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
 </head>')
@@ -99,15 +99,19 @@ define(`RDFa_tokens',
 `__RDFA_Ruby',`<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">Dutch</span>', 
 `__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
-`__RDFA_CANDIDATE_NAME',`<span property="foaf:name" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
+`__RDFA_CANDIDATE_NAME',`<span property="foaf:name" rel="dc:maker" href="http://stevengharms.com/resume.html" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
 `__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
 `__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
 `__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 `__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
 `__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span property="geo:lat" content="30.267" /><span property="geo:long" content="97.74"/>Austin</span>',
+`__RDFA_PERSONAL_STATEMENT', `',
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')
 format_RDFa_pairs(RDFa_tokens)
 )
 ###############################################################################
+Macros that are data sources
+define(`PERSONAL_STATEMENT_BODY',`This is my personal statement')
+

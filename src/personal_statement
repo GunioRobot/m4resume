@@ -1,13 +1,13 @@
 ifelse(mode, `latex', `
   \section*{ Personal Statement}
-  I am a beautiful and unique snowflake who can use \LaTeX \ldots and M4.
-', ``
+  PERSONAL_STATEMENT_BODY
+', `
 <div id="personal_statement">
   <h1>
     Personal Statement
   </h1>
-  <p>
-    I am a beautiful and unique snowflake who can write HTML &hellip; and M4.
+  <p`'ifdef(`__RDFA_PERSONAL_STATEMENT', `__RDFA_PERSONAL_STATEMENT')`'>
+    PERSONAL_STATEMENT_BODY
   </p>
 </div>
-'')
+')
