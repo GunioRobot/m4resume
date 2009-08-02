@@ -3,7 +3,7 @@ ifelse(ifdef(`mode',`defined'),,`define(`mode',`latex')')
 define(`spaces_to_lines', `translit(`$*', ` ', `_')')
 define(`reverse', `ifelse(`$#', `0', , `$#', `1', ``$1'',
                                `reverse(shift($@)), `$1'')')
-define(`cai', `class="achivement_item"')
+define(`cai', `class="achievement_item"')
 define(`make_line_items', `ifelse(`$#', `0', , 
                           `$#', `1', `  ifelse(mode, `html',`  <li cai>$1</li>',
                                              mode, `latex', `\item $1')',
