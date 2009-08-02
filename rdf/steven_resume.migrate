@@ -11,44 +11,17 @@
 
 <!-- FOAF -->
 <!-- FOAF: Steven Harms -->
-  <foaf:Person rdf:about="http://stevengharms.com/id">
-    <foaf:name xml:lang="en">Steven G. Harms</foaf:name>        
-    <foaf:title xml:lang="en">Mr.</foaf:title>
-    <foaf:name xml:lang="en">Steven G. Harms</foaf:name>
-    <foaf:webpage>http://stevengharms.com</foaf:webpage>
-		<foaf:mbox_sha1sum>189ab8346ba031cb003c96f9774308ee1db6fbcf</foaf:mbox_sha1sum>
+
     <foaf:myersBriggs>INTJ</foaf:myersBriggs>
+    <foaf:title xml:lang="en">Mr.</foaf:title>
     <foaf:surname>Harms</foaf:surname>
     <foaf:givenName>Steven</foaf:givenName>
-    <foaf:weblog>http://stevengharms.com/index.html</foaf:weblog>
-    <foaf:based_near geo:lat="30.267" geo:long="97.74" rdf:nodeID="latlong_node" />
+
     <foaf:workplaceHomepage rdf:resource="http://www.cisco.com" />
     <foaf:schoolHomepage rdf:resource="http://www.utexas.edu" />
-    <foaf:weblog rdf:resource="http://www.stevengharms.com" />
-    <foaf:knows rdf:nodeID="damon"/>
-    <foaf:knows rdf:nodeID="wbruce"/>     
-    <foaf:knows rdf:nodeID="pat"/>
-   <foaf:interest rdf:nodeID="_rlang" />
+
   </foaf:Person>
-	<!-- Damon Clinkscales -->
-  <foaf:Person rdf:nodeID="damon">
-       <foaf:name>Damon Clinkscales</foaf:name>
-       <foaf:homepage rdf:resource="http://damonc.com" />
-  </foaf:Person>
-	<!-- Patrick Devine -->
-  <foaf:Person  rdf:nodeID="pat">
-       <foaf:name>Patrick Devine</foaf:name>
-       <foaf:homepage rdf:resource="http://pdevine.users.sonic.net/" />
-  </foaf:Person>
-	<!-- Bruce Williams -->
-  <foaf:Person  rdf:nodeID="wbruce">
-       <foaf:name>Bruce Williams</foaf:name>
-       <foaf:homepage rdf:resource="http://www.github.com/bruce" />
-  </foaf:Person>
-  <foaf:Document rdf:nodeID="_rlang">
-    <foaf:primaryTopic>Ruby</foaf:primaryTopic>
-    <foaf:homepage>www.ruby-lang.org</foaf:homepage>
-  </foaf:Document>
+
 
 <!-- ############################################################# -->
 
@@ -56,21 +29,9 @@
 
 <!-- CV Class itself -->
 
-  <cv:CV rdf:about="http://stevengharms.com/resume.html">
-  	<cv:cvTitle>Résumé for Steven G. Harms</cv:cvTitle>
-		<dc:creator>Steven G. Harms</dc:creator>
 	  <dc:format xml:lang="en">application/xhtml+xml</dc:format>
-	  <dc:maker rdf:resource="http://stevengharms.com/id" />
 	  <dc:language xml:lang="en">en</dc:language>
-	  <cv:cvIsActive>false</cv:cvIsActive>
-	  <cv:cvIsConfidential>true</cv:cvIsConfidential>  
-    <cv:cvDescription xml:lang="en">Philosopher of code and communications and
-      collaborations systems seeks to build information infrastructure that
-      enables serendipitous collaborations
-    </cv:cvDescription>
-    <cv:aboutPerson>
-      <rdf:Description rdf:about="http://stevengharms.com/id" />
-   </cv:aboutPerson>
+
    <cv:hasSkill>
       <cv:languageSkill rdf:nodeID="lang_dutch" />
     </cv:hasSkill>

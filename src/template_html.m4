@@ -10,7 +10,7 @@ include(`src/nameblock.m4')dnl
 dnl
 
 <!-- Begin resume proper -->
-<div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html">    
+<div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
 dnl	<p rel="dc:maker" href="http://stevengharms.com#me">Steven made this</p>
 
 ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement')')dnl

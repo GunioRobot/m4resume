@@ -99,13 +99,17 @@ define(`RDFa_tokens',
 `__RDFA_Ruby',`<span property="foaf:interest" about="CANDIDATE_ABOUT_URI">Dutch</span>', 
 `__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
-`__RDFA_CANDIDATE_NAME',`<span property="foaf:name" rel="dc:maker" href="http://stevengharms.com/resume.html" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
+`__RDFA_CANDIDATE_NAME',`<span property="foaf:name" rev="dc:creator" href="http://stevengharms.com/resume.html" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
 `__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
 `__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
-`__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
+`__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog foaf:webpage" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 `__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
 `__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span property="geo:lat" content="30.267" /><span property="geo:long" content="97.74"/>Austin</span>',
-`__RDFA_PERSONAL_STATEMENT', `',
+`__RDFA_PERSONAL_STATEMENT', ` property="cv:cvDescription" about="http://stevengharms.com/resume.html"',
+`__RDFA_DIST_STATUS', `I am currently ifdef(`do_rdfa',`<span property="cv:isActive" content="0">not </span>',`not ')dnl
+seeking a position.  Please do dnl
+ifdef(`do_rdfa',`<span property="cv:isConfidential" content="1">not </span>',`not ')dnl 
+re-distribute this résumé.',
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')
@@ -113,5 +117,10 @@ format_RDFa_pairs(RDFa_tokens)
 )
 ###############################################################################
 Macros that are data sources
-define(`PERSONAL_STATEMENT_BODY',`This is my personal statement')
+define(`PERSONAL_STATEMENT_BODY',
+`I love learning and experimentation.  I draw on a background that includes philosophy, business, dnl
+classics, code, and nine years of industry experience to provide innovative solutions, to ask non-obvious dnl
+questions, and to push the boundaries of what is perceived as possible.')
+
+
 
