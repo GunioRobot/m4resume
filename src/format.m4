@@ -37,3 +37,11 @@ generate_formatter(`dates')dnl
 
 define(`simplecount', `$#')
 define(`simpleecho', ``$@'')
+
+define(`cv_note_ify',
+`ifdef(`do_rdfa', 
+`changequote(`[',`]')dnl
+ifelse($#, 0, , $#,1,[`<span property="cv:Notes">$1</span>'],
+[``<span property="cv:Notes">$1</span>'',cv_note_ify(shift($@))`dnl']
+changequote`'dnl
+)',`Not RDFA')')

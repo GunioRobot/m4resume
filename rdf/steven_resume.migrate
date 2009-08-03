@@ -197,39 +197,12 @@
 
 <!-- Cisco Work Experience -->
 
-<!-- Cisco Mail Admin -->
-<cv:workHistory rdf:nodeID="cisco_mail_admin">			
 
-…	<cv:startDate>-20</cv:startDate>
-	<cv:jobDescription>Engineering Messaging Systems</cv:jobDescription>
-	<cv:numSubordinates>0</cv:numSubordinates>
-	<cv:jobType>Employee</cv:jobType>
-	<cv:isCurrent>0</cv:isCurrent>
-	<cv:Notes rdf:parseType='Literal'>Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Managed fleet of 10 HP servers, a dozen Mirapoint appliances</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000.</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design.</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Established messaging team standard Perl module set / CVS repository / Subversion repository</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at <a href="http://code.google.com/p/cmailguard/"></a></cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing &lt; 10 values</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600% faster.</cv:Notes>
-</cv:workHistory>
 
 <!-- Cisco Support  -->
 <cv:workHistory rdf:nodeID="cisco_support">			
-	<cv:employedIn rdf:resource="http://www.stevengharms.com/resume#cisco"/>
-	<cv:startDate>2000-06-05</cv:startDate>
-	<cv:endDate>2001-04-20</cv:endDate>
-	<cv:jobTitle>I.T. Analyst</cv:jobTitle>
-	<cv:jobDescription>Engineering Support Analyst</cv:jobDescription>
-	<cv:numSubordinates>0</cv:numSubordinates>
 	<cv:jobType>Employee</cv:jobType>
 	<cv:isCurrent>0</cv:isCurrent>
-	<cv:Notes rdf:parseType='Literal'>Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter.</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Identified training gaps: created training and delivered to employees in 3 theatres.</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Moved client satisfaction rating from 74% to 95%, the highest seen to that date</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team.</cv:Notes>
-	<cv:Notes rdf:parseType='Literal'>Designed web-based 'vacation' mail tool. Tool reduced support calls from 500 per quarter to 25 ($30,000 estimated savings per annum ).</cv:Notes>
 </cv:workHistory>
 
 <!--  Dutch Language Skill definition -->
