@@ -101,4 +101,4 @@ define(`reverse', `ifelse(`$#', `0', , `$#', `1', ``$1'',
                                `reverse(shift($@)), `$1'')')
 
 define(`rdfa_bracket_dates',
-`<cv:eduStartDate>substr($1,`0',`4')</cv:eduStartDate>-<cv:eduStartDate>substr($1,`5',`9')')
+`<span property="cv:eduStartDate">substr($1,`0',`4')</span>-<span property="cv:eduGradDate">substr($1,`5',`9')</span>')
