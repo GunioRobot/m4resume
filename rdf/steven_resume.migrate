@@ -205,37 +205,6 @@
    <cv:lngSkillLevelWritten>2</cv:lngSkillLevelWritten>
 </cv:LanguageSkill>
 
-<!-- UT BBA  -->
-<cv:Education rdf:nodeID="utexas_bba">
-  <cv:studiedIn rdf:resource="http://www.utexas.edu" />
-  <cv:eduStartDate>1995-08-22</cv:eduStartDate>
-  <cv:eduGradDate>2000-05-01</cv:eduGradDate>
-  <cv:degreeType>Bachelor's of Business Administration</cv:degreeType>
-  <cv:eduMajor>Management Information Systems</cv:eduMajor>
-  <cv:eduMinor>Dutch</cv:eduMinor>
-  <cv:eduDescription>
-    A multi-disciplinary approach that blends a base in business
-    administration with a focus in building enterprise IT systems.  Attention is
-    paid to programming basics, project management, and consulting.  The program
-    culminates with a real-world project delivered to an Austin community
-    organization.
-  </cv:eduDescription>
-</cv:Education>
-
-<!-- UT BA -->
-<cv:Education rdf:nodeID="utexas_ba">
-  <cv:studiedIn rdf:resource="http://www.utexas.edu"></cv:studiedIn>
-  <cv:eduStartDate>1995-08-22</cv:eduStartDate>
-  <cv:eduGradDate>2000-05-01</cv:eduGradDate>
-  <cv:degreeType>BA</cv:degreeType>
-  <cv:eduMajor>Philosophy</cv:eduMajor>
-  <cv:eduMinor>Dutch</cv:eduMinor>
-  <cv:eduDescription>
-    A classic liberal arts program in philosophy with focus on pre-Socratic
-    Greek philosophy, German Idealism (Hegel), and Philosophy of science.
-  </cv:eduDescription>
-</cv:Education>
-
 <!-- Abroad at RUL -->
 <cv:Education rdf:nodeID="rul_leiden">
   <cv:studiedIn rdf:resource="http://www.leiden.edu" />
