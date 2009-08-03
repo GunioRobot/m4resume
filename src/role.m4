@@ -22,7 +22,8 @@ ifelse(
 )dnl
 define(`achieve',
 `ifelse(mode, `html',
-`<div class="achievement">
+`<!-- BEGINNING DIV for $3 -->
+<div class="achievement"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" rel="cv:workHistory"')>
   <p class="employer_and_dates">
     <span class="employer">$1</span>
     <span class="role">$2</span>
@@ -43,7 +44,8 @@ ifelse(mode,`html', ``  <ul>'', mode, `latex', ``\begin{itemize}'')
   make_line_items(reverse(shift(shift(shift($@)))))
 ifelse(mode,`html', `  </ul>',
        mode, `latex', `\end{itemize}')
-ifelse(mode,`html', `</div>',
+ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
+  </div>',
        mode, `latex', `% End subsection
        ')'
 )

@@ -2,13 +2,15 @@ ifelse(mode, `latex', `
   \section*{ Personal Statement}
   PERSONAL_STATEMENT_BODY
 ', `
-<div id="personal_statement"`'ifdef(`do_rdfa',` property="cv:cvTitle" content="Résumé for Steven G. Harms"')`'>
+<!-- Open div for personal_statement -->
+<div id="personal_statement">
   <h1`'ifdef(`do_rdfa',` rel="cv:aboutPerson" href="CANDIDATE_ABOUT_URI"')>
     Personal Statement
   </h1>
   <p`'ifdef(`__RDFA_PERSONAL_STATEMENT', `__RDFA_PERSONAL_STATEMENT')`'>
     PERSONAL_STATEMENT_BODY
   </p>
-	ifdef(`__RDFA_DIST_STATUS',`<p rdf:parseType="Literal"><em>__RDFA_DIST_STATUS</em></p>')
+	ifdef(`__RDFA_DIST_STATUS',`<p>__RDFA_DIST_STATUS</p>')
+<!-- Close Div for personal statement -->
 </div>
 ')

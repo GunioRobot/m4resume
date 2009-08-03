@@ -10,14 +10,19 @@ include(`src/nameblock.m4')dnl
 dnl
 
 <!-- Begin resume proper -->
+<!-- This document (..resume.html) cv:cvTitle Resume... -->
+<!-- This document (..resume.html) isTypeof cv:CV-->
 <div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
-dnl	<p rel="dc:maker" href="http://stevengharms.com#me">Steven made this</p>
+<!-- In here, the about should still be pointing to (...resume.html) -->
+
 
 ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement')')dnl
 
+<!-- Open for DIV class "achievements" --> dnl
   <div class="achievements">
     <h1>Work Experience</h1>
     include(`src/workexp.m4')
+<!-- Close for DIV class "achievements" -->
   </div>
 
 dnl ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `<div id="skills_block">include(`src/skills_statement')</div>')dnl

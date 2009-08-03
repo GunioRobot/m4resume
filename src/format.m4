@@ -34,3 +34,6 @@ define(`linkify', `<a href="http://$1"ifdef(`$2', $2, `')>http://$1</a>')
 generate_formatter(`place')dnl
 generate_formatter(`job')dnl
 generate_formatter(`dates')dnl
+
+define(`simplecount', `$#')
+define(`simpleecho', ``$@'')

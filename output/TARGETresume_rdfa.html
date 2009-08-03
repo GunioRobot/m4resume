@@ -32,9 +32,12 @@
 <!-- Begin resume proper -->
 <!-- This document (..resume.html) cv:cvTitle Resume... -->
 <!-- This document (..resume.html) isTypeof cv:CV-->
-<div id="resume" about="http://stevengharms.com/resume.html" typeof="cv:CV" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
+<div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
 <!-- In here, the about should still be pointing to (...resume.html) -->
 
+
+
+<!-- Open div for personal_statement -->
 <div id="personal_statement">
   <h1 rel="cv:aboutPerson" href="http://stevengharms.com#me">
     Personal Statement
@@ -42,11 +45,15 @@
   <p property="cv:cvDescription" about="http://stevengharms.com/resume.html">
     I love learning and experimentation.  I draw on a background that includes philosophy, business, classics, code, and nine years of industry experience to provide innovative solutions, to ask non-obvious questions, and to push the boundaries of what is perceived as possible.
   </p>
-	<p><em>I am currently <span property="cv:isActive" content="0">not </span>seeking a position.  Please do <span property="cv:isConfidential" content="1">not </span>re-distribute this résumé.</em></p>
+	<p>I am currently <span property="cv:isActive" content="0">not </span>seeking a position.  Please do <span property="cv:isConfidential" content="1">not </span>re-distribute this résumé.</p>
+<!-- Close Div for personal statement -->
+</div>
+
 
   <div class="achievements">
     <h1>Work Experience</h1>
-    <div class="achievement" href="[_:ciscoMailAdmin]" rel="cv:workHistory">
+    <!-- BEGINNING DIV for <tt><span property="dc:date">2001-04</span> - <span property="dc:date">2005-06</span></tt> -->
+<div class="achievement" href="[_:rabbit]" rel="cv:workHistory">
   <p class="employer_and_dates">
     <span class="employer"><em><a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn">Cisco Systems</a></em></span>
     <span class="role"><strong><span property="cv:jobTitle">Systems Administrator</span> / <span property="cv:jobTitle">I.T. Developer</span>: <span property="cv:jobDescription">Enterprise Messaging Systems</span></strong></span>
@@ -62,11 +69,10 @@
       <li class="achievement_item"><span property="cv:Notes">Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing &lt; 10 values</span></li>
       <li class="achievement_item"><span property="cv:Notes">Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600% faster.</span></li>
   </ul>
+<!-- CLOSING DIV for <tt><span property="dc:date">2001-04</span> - <span property="dc:date">2005-06</span></tt> -->
+</div>
 
-</div>
-  <span about="http://stevengharms.com/resume.html" rel="cv:hasWorkHistory" href="[_:CiscoMailAdmin]"/>
   </div>
-</div>
 
 <!-- Closing DIV for id#resume -->
 </div>

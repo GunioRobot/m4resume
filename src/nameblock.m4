@@ -24,5 +24,6 @@ __RDFA_CANDIDATE_NAME
 	ifdef(`CANDIDATE_FACEBOOK',`<li>Facebook: linkify(CANDIDATE_FACEBOOK)</li>')
 	ifdef(`__RDFA_CANDIDATE_HOMEPAGE',`<li>Home / Blog: __RDFA_CANDIDATE_HOMEPAGE</li>',`ifdef(`CANDIDATE_HOMEPAGE', `<li>CANDIDATE_HOMEPAGE</li>')')
 </ul>
+<!-- Ends using typeof foaf:Person -->
 </div>
 ')
