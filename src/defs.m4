@@ -48,10 +48,11 @@ For specifying the configuration of the HTML template
 ###############################################################################
 define(`RUL', ``Rijksuniversiteit te Leiden, Leiden, The Netherlands'')
 define(`ITE', `I.T. Engineer')
-define(`ITE', `I.T. Analyst')
+define(`ITA', `I.T. Analyst')
 define(`ITD', `I.T. Developer')
 define(`SYSAD', `Systems Administrator')
 define(`EMS', `Enterprise Messaging Systems')
+define(`CCT', `Communication and Collaboration Platform')
 
 ###############################################################################
 EDUCATION MACROS

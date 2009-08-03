@@ -3,6 +3,55 @@ divert(-44)
 For job as Cisco mail sysadmin
 ------------------------------------------------------------------------------
 
+define(`__RDFA_CISCO_RECENT_TITLE', 
+`ifdef(`do_rdfa',
+  `<span property="cv:jobTitle">Senior ITE</span>',
+  `Senior ITE')')
+
+define(`__RDFA_CISCO_RECENT_DESC', 
+`ifdef(`do_rdfa',
+  `<span property="cv:jobDescription">CCT</span>',
+  `CCT')')
+
+
+define(`__RDFA_CISCO_RECENT_SDATE',
+`ifdef(`do_rdfa',
+  `<span property="dc:date">200RECENT-04</span>',
+  `200RECENT-04')')
+
+define(`__RDFA_CISCO_RECENT_EDATE',
+`ifdef(`do_rdfa',
+  `<span property="dc:date">2005-06</span>',
+  `2005-06')')
+
+changequote
+
+
+define(`RDFA_CISCO_RECENT_ACHIEVEMENTS',`
+`Authored 5–point`,' 2–year legacy systems migration strategy to move all backbone mail services to a standardized`,' turnkey environment.  Implementation completed 2008.',
+`Led technical team responsible forum and blogging framework deployment.',
+`Created business requirements document and RESTful API specification for new "generic list-abstraction" repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.  Implemented 2009-05.',
+`Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux',
+`Created registry process and web tool for application host systems that use e-mail as transport layer. This should help identify / remediate non-compliant systems that are using our data through unsupported interfaces so that we can help them come into compliance',
+`Wrote script to deploy core mailing list host data repository, web interface, mail interface, and build scripts from M4 macro definitions + Bash + Perl. This allows an entire environment to be built and deployed into a segregated space by configuring a single macro specification file',
+`Collaborated with University of Texas  Information, Risk, and Operations Management MIS steering committee to specify next generation of skill-set foci.',
+`Through efforts in the previous 6 years, reduced headcount to 1 full time employee, and a vendor team.  Net savings in excess of `$'320`,'000'
+')
+
+
+changequote`'dnl
+
+divert`'dnl
+achieve(format_place(__RDFA_CISCO),
+      format_job(`__RDFA_CISCO_RECENT_TITLE: __RDFA_CISCO_RECENT_DESC'), 
+      format_dates(`__RDFA_CISCO_RECENT_SDATE - __RDFA_CISCO_RECENT_EDATE'), 
+      cv_note_ify(RDFA_CISCO_RECENT_ACHIEVEMENTS))dnl
+
+divert(-44)
+------------------------------------------------------------------------------
+For job as Cisco mail sysadmin
+------------------------------------------------------------------------------
+
 define(`__RDFA_CISCO_1_TITLE', 
 `ifdef(`do_rdfa',
   `<span property="cv:jobTitle">SYSAD</span>',
@@ -57,7 +106,7 @@ For job in Cisco support
 define(`__RDFA_CISCO_2_TITLE', 
 `ifdef(`do_rdfa',
   `<span property="cv:jobTitle">ITA</span>',
-  `SYSAD')')
+  `ITA')')
 
 define(`__RDFA_CISCO_2_TITLEB', 
 `ifdef(`do_rdfa',
@@ -93,6 +142,6 @@ define(`RDFA_CISCO_2_ACHIEVEMENTS',`dnl
 
 divert`'dnl
 achieve(format_place(__RDFA_CISCO),
-      format_job(`__RDFA_CISCO_2_TITLE / __RDFA_CISCO_2_TITLEB: __RDFA_CISCO_2_DESC'), 
+      format_job(`__RDFA_CISCO_2_TITLE: __RDFA_CISCO_2_DESC'), 
       format_dates(`__RDFA_CISCO_2_SDATE - __RDFA_CISCO_2_EDATE'), 
       cv_note_ify(RDFA_CISCO_2_ACHIEVEMENTS))dnl

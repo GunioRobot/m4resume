@@ -29,9 +29,6 @@
 
 <!-- CV Class itself -->
 
-	  <dc:format xml:lang="en">application/xhtml+xml</dc:format>
-	  <dc:language xml:lang="en">en</dc:language>
-
    <cv:hasSkill>
       <cv:languageSkill rdf:nodeID="lang_dutch" />
     </cv:hasSkill>
@@ -45,9 +42,6 @@
     <cv:hasEducation rdf:nodeID="utexas_ba" />
     <cv:hasEducation rdf:nodeID="rul_leiden" />
     <cv:hasTarget rdf:nodeID="cv_target" />
-		<cv:hasWorkHistory rdf:nodeID="cisco_support" />
-		<cv:hasWorkHistory rdf:nodeID="cisco_mail_admin" />
-		<cv:hasWorkHistory rdf:nodeID="cisco_cct_lead" />
 		<cv:hasWorkHistory rdf:nodeID="independent_development" />
 		<cv:hasCourse rdf:nodeID="bnr_cocoa" />
 		<cv:hasCourse rdf:nodeID="bnr_ror" />
@@ -196,14 +190,6 @@
 </cv:workHistory>
 
 <!-- Cisco Work Experience -->
-
-
-
-<!-- Cisco Support  -->
-<cv:workHistory rdf:nodeID="cisco_support">			
-	<cv:jobType>Employee</cv:jobType>
-	<cv:isCurrent>0</cv:isCurrent>
-</cv:workHistory>
 
 <!--  Dutch Language Skill definition -->
 <cv:LanguageSkill rdf:nodeID="lang_dutch">
