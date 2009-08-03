@@ -47,6 +47,7 @@ CONVENIENCE MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
 define(`RUL', ``Rijksuniversiteit te Leiden, Leiden, The Netherlands'')
+define(`RUL_EDUCATION_MYDATES',`1997-1998')
 define(`UTEXAS', ``University of Texas at Austin'')
 define(`ITE', `I.T. Engineer')
 define(`ITA', `I.T. Analyst')
@@ -110,7 +111,7 @@ define(`RDFa_tokens',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
 `__RDFA_CANDIDATE_NAME',`<span property="foaf:name" rev="dc:creator" href="http://stevengharms.com/resume.html" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
 `__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
-`__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.rul.nl">RUL</a>',
+`__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.leiden.edu">RUL</a>',
 `__RDFA_UTEXAS',`ifdef(`do_rdfa',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolname" href="http://www.utexas.edu">UTEXAS</a>',`UTEXAS')',
 `__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog foaf:webpage" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
 `__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
@@ -125,6 +126,8 @@ ifdef(`do_rdfa',`<span property="cv:isConfidential" content="1">not </span>',`no
 re-distribute this résumé.',
 `__RDFA_MIS',`ifdef(`do_rdfa',<span property="cv:eduMajor">MIS</span>,`MIS')',
 `__RDFA_DUTCH_MINOR',`ifdef(`do_rdfa',<span property="cv:eduMinor">Dutch</span>,`Dutch')',
+`__RDFA_RES_EDUCATION_MYDATES', `ifdef(`do_rdfa',rdfa_bracket_dates(`RES_EDUCATION_MYDATES'),`RES_EDUCATION_MYDATES')',
+`__RDFA_RUL_EDUCATION_MYDATES', `ifdef(`do_rdfa',rdfa_bracket_dates(`RUL_EDUCATION_MYDATES'),`RUL_EDUCATION_MYDATES')'
 ')
 ifdef(`do_rdfa', 
 include(`src/rdfa_support.m4')

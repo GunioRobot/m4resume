@@ -99,3 +99,6 @@ ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
 define(`spaces_to_lines', `translit(`$*', ` ', `_')')
 define(`reverse', `ifelse(`$#', `0', , `$#', `1', ``$1'',
                                `reverse(shift($@)), `$1'')')
+
+define(`rdfa_bracket_dates',
+`<cv:eduStartDate>substr($1,`0',`4')</cv:eduStartDate>-<cv:eduStartDate>substr($1,`5',`9')')

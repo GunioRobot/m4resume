@@ -1,2 +1,2 @@
 #!/bin/sh
-bin/build.sh -Dmode=html -Ddo_rdfa |elinks --force-html
+bin/build.sh -Dmode=html -Ddo_rdfa |elinks --force-html $*

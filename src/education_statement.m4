@@ -58,16 +58,27 @@ define(`SCHOOL2_DESC',
 Greek philosophy, German Idealism (Hegel), and Philosophy of science.
 '')
 
+define(`SCHOOL3',``__RDFA_RUL'')
+define(`MAJOR3',`Dutch')
+define(`MINOR3',`Philosophy of Science')
+define(`SCHOOL3_DEG_AWARDED',`Study Abroad Programe')
+define(`SCHOOL3_DESC',
+``During a one-year study abroad term I studied advanced classes in Dutch
+speaking, writing, grammar, and composition.  I also took 3 classes in the
+faculty of Philosophy: Rise of Scientific Europe, Seminar on Scientific
+Revolutions, and Rationality of Emotions.
+'')
+
 
 divert`'dnl
 
 ifelse(mode, `latex', ``\section{Education}'', ``<h1>Education</h1>'')
 
-
 ifelse(mode, `latex', `
 ', `
-<div id="education_statement" >
-  educ(format_place(`SCHOOL1'),format_job(`MAJOR1'),`MINOR1',format_dates(`RES_EDUCATION_MYDATES'),`SCHOOL1_DEG_AWARDED', `SCHOOL1_DESC')
-  educ(format_place(`SCHOOL2'),format_job(`MAJOR2'),`MINOR2',format_dates(`RES_EDUCATION_MYDATES'),`SCHOOL2_DEG_AWARDED', `SCHOOL2_DESC')
+<div id="education_statement">
+  educ(format_place(`SCHOOL1'),format_job(`MAJOR1'),`MINOR1',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL1_DEG_AWARDED', `SCHOOL1_DESC')
+  educ(format_place(`SCHOOL2'),format_job(`MAJOR2'),`MINOR2',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL2_DEG_AWARDED', `SCHOOL2_DESC')
+  educ(format_place(`SCHOOL3'),format_job(`MAJOR3'),`MINOR3',format_dates(`__RDFA_RUL_EDUCATION_MYDATES'),, `SCHOOL3_DESC')
 </div>
 ')
