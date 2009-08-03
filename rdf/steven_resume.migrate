@@ -23,11 +23,7 @@
   </foaf:Person>
 
 
-<!-- ############################################################# -->
 
-<!-- CV Classes -->
-
-<!-- CV Class itself -->
 
    <cv:hasSkill>
       <cv:languageSkill rdf:nodeID="lang_dutch" />
