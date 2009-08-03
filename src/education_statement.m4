@@ -4,7 +4,7 @@ define(`educ',
 ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
 <div rel="cv:hasEducation">')
 <!-- BEGINNING DIV for $3 -->
-<div class="educational_inst"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" rel="cv:Education"  ')>
+<div class="educational_inst"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" typeof="cv:Education"')>
   <p class="school_and_dates">
     <span class="schoolname">$1</span>
     <strong>Major:</strong><span class="major">$2</span>
@@ -17,6 +17,7 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
   <p ifdef(`do_rdfa',` property="cv:eduDescription"')`'>
   $6
   </p>
+</div>
 ',
   mode, `latex', \subsection*{$1 : $2}
   \label{patsubst(
@@ -30,7 +31,6 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
          `_')`'}
   $4)
 ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
-  </div>
 </div>',
        mode, `latex', `% End subsection
        ')'
@@ -79,6 +79,6 @@ ifelse(mode, `latex', `
 <div id="education_statement">
   educ(format_place(`SCHOOL1'),format_job(`MAJOR1'),`MINOR1',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL1_DEG_AWARDED', `SCHOOL1_DESC')
   educ(format_place(`SCHOOL2'),format_job(`MAJOR2'),`MINOR2',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL2_DEG_AWARDED', `SCHOOL2_DESC')
-  educ(format_place(`SCHOOL3'),format_job(`MAJOR3'),`MINOR3',format_dates(`__RDFA_RUL_EDUCATION_MYDATES'),, `SCHOOL3_DESC')
+  educ(format_place(`SCHOOL3'),format_job(`MAJOR3'),`MINOR3',format_dates(`__RDFA_RUL_EDUCATION_MYDATES'), , `SCHOOL3_DESC')
 </div>
 ')

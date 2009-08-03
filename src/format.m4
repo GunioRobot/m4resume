@@ -68,7 +68,7 @@ define(`achieve',
 ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
 <div rel="cv:hasWorkHistory">')
 <!-- BEGINNING DIV for $3 -->
-<div class="achievement"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" rel="cv:workHistory"  ')>
+<div class="achievement"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" typeof="cv:workHistory"  ')>
   <p class="employer_and_dates">
     <span class="employer">$1</span>
     <span class="role">$2</span>
