@@ -16,26 +16,26 @@ define(`__RDFA_CISCO_RECENT_DESC',
 
 define(`__RDFA_CISCO_RECENT_SDATE',
 `ifdef(`do_rdfa',
-  `<span property="dc:date">200RECENT-04</span>',
-  `200RECENT-04')')
+  `<span property="dc:date">200-04</span>',
+  `2000-04')')
 
 define(`__RDFA_CISCO_RECENT_EDATE',
 `ifdef(`do_rdfa',
-  `<span property="dc:date">2005-06</span>',
-  `2005-06')')
+  `<span property="dc:date">2009-07</span>',
+  `2009-07')')
 
 changequote
 
 
 define(`RDFA_CISCO_RECENT_ACHIEVEMENTS',`
-`Authored 5–point`,' 2–year legacy systems migration strategy to move all backbone mail services to a standardized`,' turnkey environment.  Implementation completed 2008.',
+`Authored 5–point, 2–year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment.  Implementation completed 2008.',
 `Led technical team responsible forum and blogging framework deployment.',
-`Created business requirements document and RESTful API specification for new "generic list-abstraction" repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.  Implemented 2009-05.',
+`Created business requirements document and RESTful API specification for new generic list-abstraction repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.  Implemented 2009-05.',
 `Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux',
 `Created registry process and web tool for application host systems that use e-mail as transport layer. This should help identify / remediate non-compliant systems that are using our data through unsupported interfaces so that we can help them come into compliance',
 `Wrote script to deploy core mailing list host data repository, web interface, mail interface, and build scripts from M4 macro definitions + Bash + Perl. This allows an entire environment to be built and deployed into a segregated space by configuring a single macro specification file',
 `Collaborated with University of Texas  Information, Risk, and Operations Management MIS steering committee to specify next generation of skill-set foci.',
-`Through efforts in the previous 6 years, reduced headcount to 1 full time employee, and a vendor team.  Net savings in excess of `$'320`,'000'
+`Through efforts in the previous 6 years, reduced head-count to 1 full time employee and a vendor team.  Net savings in excess of `$'320`,'000'
 ')
 
 
