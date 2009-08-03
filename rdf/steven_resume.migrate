@@ -180,16 +180,6 @@
 	<cv:courseFinishDate>2003-05-01</cv:courseFinishDate>
 </cv:Course>
 
-<!-- non-Cisco Work Experience -->
-<!-- Kinda tongue-in-cheek here  -->
-<cv:workHistory rdf:nodeID="independent_development">
-	<cv:employedIn rdf:resource="http://www.stevengharms.com" />
-	<cv:jobTitle>Passionate Developer of Technical Ideas that Tickle my Fancy</cv:jobTitle>
-	<cv:jobType>Employee</cv:jobType>
-	<cv:isCurrent>1</cv:isCurrent>
-</cv:workHistory>
-
-<!-- Cisco Work Experience -->
 
 <!--  Dutch Language Skill definition -->
 <cv:LanguageSkill rdf:nodeID="lang_dutch">
