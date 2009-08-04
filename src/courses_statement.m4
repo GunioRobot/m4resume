@@ -8,7 +8,7 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
 <div rel="cv:hasCourse">')
 <!-- BEGINNING DIV for $3 -->
   <div class="educational_inst"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" typeof="cv:Course"')>
- <p property="cv:courseTitle" rel="cv:organized_by" href="`$4'">`$1'</p>
+ <h3 class="course_title" property="cv:courseTitle" rel="cv:organized_by" href="`$4'">`$1'</h3>
  <span property="cv:eduStartDate">`$2'</span><span property="cv:eduEndDate" content="`$3'" /> <a rel="cv:courseURL" href="`$6'">`$6'</a><span property="cv:isCertification" content="`$5'" />
 	<p>`$7'</p>
 </div>
