@@ -19,11 +19,11 @@ dnl
 ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')')dnl
 
 <!-- Open for DIV class "achievements" --> dnl
-  <div class="achievements">
-    <h1>Work Experience</h1>
-dnl    include(`src/workexp.m4')
+ <div class="achievements">
+   <h1>Work Experience</h1>
+   include(`src/workexp.m4')
 <!-- Close for DIV class "achievements" -->
-  </div>
+ </div>
 
 ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `<div id="skills_block">include(`src/skills_statement.m4')</div>')dnl
 dnl ifdef(`RES_FORMAT_DO_EDUCATION_STATEMENT',    `<div id="education_block">include(`src/education_statement.m4')</div>')dnl
