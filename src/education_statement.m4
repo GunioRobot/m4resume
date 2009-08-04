@@ -7,9 +7,9 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
 <div class="educational_inst"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" typeof="cv:Education"')>
   <p class="school_and_dates">
     <span class="schoolname">$1</span>
-    <strong>Major:</strong><span class="major">$2</span>
-    <strong>Minor:</strong><span class="minor">$3</span>
-    <strong>Dates:</strong><span class="dates">$4</span>
+    <span class="major_stlying">Major:</strong>  <span class="major">$2</span>
+    <span class="minor_stlying">Minor:</strong>  <span class="minor">$3</span>
+    <span class="dates_stlying">Dates:</strong>  <span class="dates">$4</span>
   </p>
   <p class="deg_awarded">
   $5

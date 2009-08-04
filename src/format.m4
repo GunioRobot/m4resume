@@ -11,11 +11,11 @@ define(`format_$1',
   ifdef(`wrap_$1',
 `ifelse( 
    wrap_$1,  `i', ifelse(mode, `html', 
-                         `<em>$`1'</em>', `\textit{$`1'}'),
+                         `$`1'', `\textit{$`1'}'),
    wrap_$1,  `b', ifelse(mode, `html', 
-                         `<strong>$`1'</strong>', `\textbf{$`1'}'),
+                         `$`1'', `\textbf{$`1'}'),
    wrap_$1,  `s', ifelse(mode, `html', 
-                         `<tt>$`1'</tt>', `\textsf{$`1'}')dnl
+                         `$`1', `\textsf{$`1'}')dnl
 )dnl',
       `wrap_$1 was not defined'dnl
      )

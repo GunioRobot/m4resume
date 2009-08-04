@@ -141,7 +141,7 @@ define(`RDFA_CISCO_2_ACHIEVEMENTS',`dnl
 
 
 divert`'dnl
-achieve(format_place(__RDFA_CISCO),
-      format_job(`__RDFA_CISCO_2_TITLE: __RDFA_CISCO_2_DESC'), 
-      format_dates(`__RDFA_CISCO_2_SDATE - __RDFA_CISCO_2_EDATE'), 
+achieve(__RDFA_CISCO,
+      `__RDFA_CISCO_2_TITLE: __RDFA_CISCO_2_DESC', 
+      `__RDFA_CISCO_2_SDATE - __RDFA_CISCO_2_EDATE', 
       cv_note_ify(RDFA_CISCO_2_ACHIEVEMENTS))dnl
