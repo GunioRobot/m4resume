@@ -32,7 +32,7 @@ ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
 
 divert`'dnl
 
-ifelse(mode, `latex', ``\section{Skills}'', ``<h1>Skills</h1>'')
+ifelse(mode, `latex', ``\section{Courses}'', ``<h1>Courses</h1>'')
 
 ifelse(mode, `latex', `
 ', `
