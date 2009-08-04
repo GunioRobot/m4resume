@@ -24,11 +24,11 @@ ifdef(`do_rdfa',
 __RDFA_CANDIDATE_NAME
 </h1>
 <ul>
- 	ifdef(`__RDFA_CANDIDATE_ADDRESS',`<li>__RDFA_CANDIDATE_ADDRESS</li>',`ifdef(`CANDIDATE_ADDRESS', `<li>CANDIDATE_ADDRESS</li>')')
+dnl 	ifdef(`__RDFA_CANDIDATE_ADDRESS',`<li>__RDFA_CANDIDATE_ADDRESS</li>',`ifdef(`CANDIDATE_ADDRESS', `<li>CANDIDATE_ADDRESS</li>')')
 	ifdef(`CANDIDATE_TWITTER',`<li>Twitter`': CANDIDATE_TWITTER</li>')
-	ifdef(`__RDFA_CANDIDATE_GITHUB',`<li>GitHub: __RDFA_CANDIDATE_GITHUB</li>',`ifdef(`CANDIDATE_GITHUB', `<li>CANDIDATE_GITHUB</li>')')
+	<li>ifdef(`__RDFA_CANDIDATE_GITHUB',`GitHub: __RDFA_CANDIDATE_GITHUB',`CANDIDATE_GITHUB')</li>
 	ifdef(`CANDIDATE_FACEBOOK',`<li>Facebook: linkify(CANDIDATE_FACEBOOK)</li>')
-	ifdef(`__RDFA_CANDIDATE_HOMEPAGE',`<li>Home / Blog: __RDFA_CANDIDATE_HOMEPAGE</li>',`ifdef(`CANDIDATE_HOMEPAGE', `<li>CANDIDATE_HOMEPAGE</li>')')
+	<li>ifdef(`__RDFA_CANDIDATE_HOMEPAGE',`Home / Blog: __RDFA_CANDIDATE_HOMEPAGE',`ifdef(`CANDIDATE_HOMEPAGE', `<li>CANDIDATE_HOMEPAGE')')</li>
 </ul>
 <!-- Ends using typeof foaf:Person -->
 </div>

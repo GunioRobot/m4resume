@@ -32,7 +32,7 @@ PERSONAL MACROS
 For specifying the configuration of the HTML template
 ###############################################################################
 define(`CANDIDATE_NAME', `Steven G. Harms')
-define(`CANDIDATE_ADDRESS', ``12445 Alameda Trace Circle Apt. 1016, __RDFA_Austin, Texas 78727'')
+dnl define(`CANDIDATE_ADDRESS', ``12445 Alameda Trace Circle Apt. 1016, __RDFA_Austin, Texas 78727'')
 define(`CANDIDATE_PHONE', ``(512)466-5756'')
 define(`CANDIDATE_EMAIL', ``resume@sgharms.oib.com'')
 define(`CANDIDATE_TWITTER', ``<a href="http://twitter.com/sgharms">@sgharms</a>'')
@@ -114,10 +114,10 @@ define(`RDFa_tokens',
 `__RDFA_CANDIDATE_PHONE',`<span rel="foaf:phone" property="foaf:phone" content="1+512-466-5756">CANDIDATE_PHONE</span>',
 `__RDFA_CANDIDATE_EMAIL',`<span rel="foaf:mbox" href="mailto:resume-interest@sgharms.oib.com" property="foaf:mbox">CANDIDATE_EMAIL</span>',
 `__RDFA_CANDIDATE_NAME',`<span property="foaf:name" rev="dc:creator" href="http://stevengharms.com/resume.html" about="CANDIDATE_ABOUT_URI">CANDIDATE_NAME</span>',
-`__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="CANDIDATE_GITHUB">CANDIDATE_GITHUB</a>',
+`__RDFA_CANDIDATE_GITHUB',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:currentProject" href="http://`'CANDIDATE_GITHUB">http://`'CANDIDATE_GITHUB</a>',
 `__RDFA_RUL',`<a about="CANDIDATE_ABOUT_URI" rel="foaf:schoolHomepage" property="foaf:schoolname" href="http://www.leiden.edu" content="RUL">RUL</a>',
 `__RDFA_UTEXAS',`ifdef(`do_rdfa',`<a about="CANDIDATE_ABOUT_URI" property="foaf:schoolname" rel="foaf:schoolHomepage" content="UTEXAS" href="http://www.utexas.edu">UTEXAS</a>',`UTEXAS')',
-`__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog foaf:webpage" href="CANDIDATE_HOMEPAGE">CANDIDATE_HOMEPAGE</a>',
+`__RDFA_CANDIDATE_HOMEPAGE',`<a rel="foaf:homepage foaf:weblog foaf:webpage" href="http://`'CANDIDATE_HOMEPAGE">http://`'CANDIDATE_HOMEPAGE</a>',
 `__RDFA_CANDIDATE_ADDRESS',`<a rel="foaf:based_near" content="[_:AustinGeoNode]">CANDIDATE_ADDRESS</a>',
 `__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span property="geo:lat" content="30.267" /><span property="geo:long" content="97.74"/>Austin</span>',
 `__RDFA_PERSONAL_STATEMENT', ` property="cv:cvDescription" about="http://stevengharms.com/resume.html"',
