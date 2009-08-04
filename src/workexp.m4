@@ -42,9 +42,9 @@ define(`RDFA_CISCO_RECENT_ACHIEVEMENTS',`
 changequote`'dnl
 
 divert`'dnl
-achieve(format_place(__RDFA_CISCO),
-      format_job(`__RDFA_CISCO_RECENT_TITLE: __RDFA_CISCO_RECENT_DESC'), 
-      format_dates(`__RDFA_CISCO_RECENT_SDATE - __RDFA_CISCO_RECENT_EDATE'), 
+achieve(__RDFA_CISCO,
+      `__RDFA_CISCO_RECENT_TITLE: __RDFA_CISCO_RECENT_DESC', 
+      `__RDFA_CISCO_RECENT_SDATE - __RDFA_CISCO_RECENT_EDATE', 
       cv_note_ify(RDFA_CISCO_RECENT_ACHIEVEMENTS))dnl
 
 divert(-44)
@@ -94,9 +94,9 @@ define(`RDFA_CISCO_1_ACHIEVEMENTS',``Member of 5-person team changed with  backb
 changequote`'dnl
 
 divert`'dnl
-achieve(format_place(__RDFA_CISCO),
-      format_job(`__RDFA_CISCO_1_TITLE / __RDFA_CISCO_1_TITLEB: __RDFA_CISCO_1_DESC'), 
-      format_dates(`__RDFA_CISCO_1_SDATE - __RDFA_CISCO_1_EDATE'), 
+achieve(__RDFA_CISCO,
+      `__RDFA_CISCO_1_TITLE / __RDFA_CISCO_1_TITLEB: __RDFA_CISCO_1_DESC', 
+      `__RDFA_CISCO_1_SDATE - __RDFA_CISCO_1_EDATE', 
       cv_note_ify(RDFA_CISCO_1_ACHIEVEMENTS))dnl
 divert(-44)
 
