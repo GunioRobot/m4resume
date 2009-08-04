@@ -62,6 +62,7 @@ For specifying the configuration of the HTML template
 define(`RES_FORMAT_DO_EDUCATION_STATEMENT')
 define(`RES_EDUCATION_MYUNI', `The University of Texas at Austin')
 define(`RES_EDUCATION_MYDATES', `1995-2000')
+define(`RES_FORMAT_DO_COURSES_STATEMENT')
 define(`MIS', `Management Information Systems')
 define(`RES_EDUCATION_DEGREEINFO',`BBA:  Management Information Systems (MIS), 
         BA:  Philosophy,'),

@@ -14,6 +14,12 @@ ifelse(mode, `latex', `
 
 ',`
 <div id="nameblock" typeof="foaf:Person" about="CANDIDATE_ABOUT_URI">
+ifdef(`do_rdfa',
+`<span property="foaf:myersBriggs" content="INTJ"/>
+<span property="foaf:title" content="Mr."/>
+<span property="foaf:surname" content="Harms"/>
+<span property="foaf:givenName" content="Steven"/>')
+
 <h1>
 __RDFA_CANDIDATE_NAME
 </h1>

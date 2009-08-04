@@ -15,6 +15,11 @@
 </head><body>
 
 <div id="nameblock" typeof="foaf:Person" about="http://stevengharms.com#me">
+<span property="foaf:myersBriggs" content="INTJ"/>
+<span property="foaf:title" content="Mr."/>
+<span property="foaf:surname" content="Harms"/>
+<span property="foaf:givenName" content="Steven"/>
+
 <h1>
 <span property="foaf:name" rev="dc:creator" href="http://stevengharms.com/resume.html" about="http://stevengharms.com#me">Steven G. Harms</span>
 </h1>
@@ -35,617 +40,63 @@
 <div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
 <!-- In here, the about should still be pointing to (...resume.html) -->
 
-
-
-<!-- Open div for personal_statement -->
-<div id="personal_statement">
-  <h1 rel="cv:aboutPerson" href="http://stevengharms.com#me">
-    Personal Statement
-  </h1>
-  <p property="cv:cvDescription" about="http://stevengharms.com/resume.html">
-    I love learning and experimentation.  I draw on a background that includes philosophy, business, classics, code, and nine years of industry experience to provide innovative solutions, to ask non-obvious questions, and to push the boundaries of what is perceived as possible.
-  </p>
-	<p>I am currently <span property="cv:isActive" content="0">not </span>seeking a position.  Please do <span property="cv:isConfidential" content="1">not </span>re-distribute this résumé.</p>
-<!-- Close Div for personal statement -->
-</div>
-
-
-<!-- Open for DIV class "achievements" -->  <div class="achievements">
-   <h1>Work Experience</h1>
-   
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasWorkHistory">
-<!-- BEGINNING DIV for <tt><span property="dc:date">200-04</span> - <span property="dc:date">2009-07</span></tt> -->
-<div class="achievement" href="[_:-strong-spanproperty=cvjobTitleSeniorI.T.Engineer-span-spanproperty=cvjobDescriptionCommunicationandCollaborationPlatform-span-strong]" typeof="cv:workHistory"  >
-  <p class="employer_and_dates">
-    <span class="employer"><em><a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn foaf:workplaceHomepage">Cisco Systems</a></em></span>
-    <span class="role"><strong><span property="cv:jobTitle">Senior I.T. Engineer</span>: <span property="cv:jobDescription">Communication and Collaboration Platform</span></strong></span>
-    <span class="dates"><tt><span property="dc:date">200-04</span> - <span property="dc:date">2009-07</span></tt></span>
-  </p>
-  <ul>
-      <li class="achievement_item"><span property="cv:Notes">
-Authored 5–point, 2–year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment.  Implementation completed 2008.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Led technical team responsible forum and blogging framework deployment.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Created business requirements document and RESTful API specification for new generic list-abstraction repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.  Implemented 2009-05.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Created registry process and web tool for application host systems that use e-mail as transport layer. This should help identify / remediate non-compliant systems that are using our data through unsupported interfaces so that we can help them come into compliance</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Wrote script to deploy core mailing list host data repository, web interface, mail interface, and build scripts from M4 macro definitions + Bash + Perl. This allows an entire environment to be built and deployed into a segregated space by configuring a single macro specification file</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Collaborated with University of Texas  Information, Risk, and Operations Management MIS steering committee to specify next generation of skill-set foci.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Through efforts in the previous 6 years, reduced head-count to 1 full time employee and a vendor team.  Net savings in excess of $320,000
-</span></li>
-  </ul>
-<!-- CLOSING DIV for <tt><span property="dc:date">200-04</span> - <span property="dc:date">2009-07</span></tt> -->
-  </div>
-</div>
-
-
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasWorkHistory">
-<!-- BEGINNING DIV for <tt><span property="dc:date">2001-04</span> - <span property="dc:date">2005-06</span></tt> -->
-<div class="achievement" href="[_:-strong-spanproperty=cvjobTitleSystemsAdministrator-span-spanproperty=cvjobTitleI.T.Developer-span-spanproperty=cvjobDescriptionEnterpriseMessagingSystems-span-strong]" typeof="cv:workHistory"  >
-  <p class="employer_and_dates">
-    <span class="employer"><em><a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn foaf:workplaceHomepage">Cisco Systems</a></em></span>
-    <span class="role"><strong><span property="cv:jobTitle">Systems Administrator</span> / <span property="cv:jobTitle">I.T. Developer</span>: <span property="cv:jobDescription">Enterprise Messaging Systems</span></strong></span>
-    <span class="dates"><tt><span property="dc:date">2001-04</span> - <span property="dc:date">2005-06</span></tt></span>
-  </p>
-  <ul>
-      <li class="achievement_item"><span property="cv:Notes">Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Managed fleet of 10 HP servers, a dozen Mirapoint appliances.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Established messaging team standard Perl module set / CVS repository / Subversion repository</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at <a href="http://code.google.com/p/cmailguard/"></a></span></li>
-      <li class="achievement_item"><span property="cv:Notes">Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing &lt; 10 values</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600% faster.</span></li>
-  </ul>
-<!-- CLOSING DIV for <tt><span property="dc:date">2001-04</span> - <span property="dc:date">2005-06</span></tt> -->
-  </div>
-</div>
-
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasWorkHistory">
-<!-- BEGINNING DIV for <tt><span property="dc:date">2000-06</span> - <span property="dc:date">2001-04</span></tt> -->
-<div class="achievement" href="[_:-strong-spanproperty=cvjobTitleI.T.Analyst-span-spanproperty=cvjobDescriptionEngineeringSupportAnalyst-span-strong]" typeof="cv:workHistory"  >
-  <p class="employer_and_dates">
-    <span class="employer"><em><a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn foaf:workplaceHomepage">Cisco Systems</a></em></span>
-    <span class="role"><strong><span property="cv:jobTitle">I.T. Analyst</span>: <span property="cv:jobDescription">Engineering Support Analyst</span></strong></span>
-    <span class="dates"><tt><span property="dc:date">2000-06</span> - <span property="dc:date">2001-04</span></tt></span>
-  </p>
-  <ul>
-      <li class="achievement_item"><span property="cv:Notes">Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Identified training gaps: created training and delivered to employees in 3 theatres.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Moved client satisfaction rating from 74% to 95%, the highest seen to that date</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team.</span></li>
-      <li class="achievement_item"><span property="cv:Notes">Designed web-based Web-vacation mail tool. Tool reduced support calls from 500 per quarter to 25. Net savings of $30,000 USD estimated savings per annum realized.
-</span></li>
-  </ul>
-<!-- CLOSING DIV for <tt><span property="dc:date">2000-06</span> - <span property="dc:date">2001-04</span></tt> -->
-  </div>
-</div>
-
-<!-- Close for DIV class "achievements" -->
- </div>
-
-<div id="skills_block">
+<div id="activities_block">
 <h1>Skills</h1>
 
 
-<div id="skills_statement">
-	<h2>Technical Skills</h2>
-	<div id="technical_skills">
-     
+<div id="courses_statement">
+
+
 <!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Daily -->
-<div class="educational_inst" href="[_:5]" typeof="cv:Skill">
-  <span property="cv:skillName">Perl</span>
-  <span property="cv:skillLevel" content="5" />
-  <span property="cv:skillLastUsed" content="Daily" />
-  <span property="cv:skillYearsExperience" content="8" />
+<div rel="cv:hasCourse">
+<!-- BEGINNING DIV for 2005-02 -->
+  <div class="educational_inst" href="[_:2005-02]" typeof="cv:Course">
+ <p property="cv:courseTitle" rel="cv:organized_by" href="http://bignerdranch.com">Beginning Cocoa Bootcamp</p>
+ <span property="cv:eduStartDate">2005-02</span><span property="cv:eduEndDate" content="2005-02" /> <a rel="cv:courseURL" href="http://bignerdranch.com/classes/beginning_cocoa.shtml">http://bignerdranch.com/classes/beginning_cocoa.shtml</a><span property="cv:isCertification" content="0" />
+	<p>Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX.</p>
 </div>
 
-<!-- CLOSING DIV for Daily -->
+<!-- CLOSING DIV for 2005-02 -->
 </div>
 
-     
+
+
 <!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:4]" typeof="cv:Skill">
-  <span property="cv:skillName">Ruby</span>
-  <span property="cv:skillLevel" content="4" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="3" />
+<div rel="cv:hasCourse">
+<!-- BEGINNING DIV for 2006-02-17 -->
+  <div class="educational_inst" href="[_:2006-02-13]" typeof="cv:Course">
+ <p property="cv:courseTitle" rel="cv:organized_by" href="http://bignerdranch.com">Ruby on Rails Bootcamp</p>
+ <span property="cv:eduStartDate">2006-02-13</span><span property="cv:eduEndDate" content="2006-02-17" /> <a rel="cv:courseURL" href="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml">http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml</a><span property="cv:isCertification" content="0" />
+	<p>Intensive 5-day training course covering the basics of Ruby on Rails development.</p>
 </div>
 
-<!-- CLOSING DIV for Presently -->
+<!-- CLOSING DIV for 2006-02-17 -->
 </div>
 
-     
+
+
 <!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-13 -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">Rails</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="2009-02-13" />
-  <span property="cv:skillYearsExperience" content="3 " />
+<div rel="cv:hasCourse">
+<!-- BEGINNING DIV for 2003-05-01 -->
+  <div class="educational_inst" href="[_:2003-05-01]" typeof="cv:Course">
+ <p property="cv:courseTitle" rel="cv:organized_by" href="http://redhat.com">Red Hat Certified Engineer Bootcamp</p>
+ <span property="cv:eduStartDate">2003-05-01</span><span property="cv:eduEndDate" content="2003-05-01" /> <a rel="cv:courseURL" href="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml">http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml</a><span property="cv:isCertification" content="1" />
+	<p>Intensive 5-day training course covering Linux administration.</p>
 </div>
 
-<!-- CLOSING DIV for 2009-02-13 -->
+<!-- CLOSING DIV for 2003-05-01 -->
 </div>
 
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2005-06-20 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Cocoa</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2005-06-20" />
-  <span property="cv:skillYearsExperience" content="2 " />
-</div>
-
-<!-- CLOSING DIV for 2005-06-20 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">M4</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="5 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2007-03-26 -->
-<div class="educational_inst" href="[_:4]" typeof="cv:Skill">
-  <span property="cv:skillName">PHP</span>
-  <span property="cv:skillLevel" content="4" />
-  <span property="cv:skillLastUsed" content="2007-03-26" />
-  <span property="cv:skillYearsExperience" content="2 " />
-</div>
-
-<!-- CLOSING DIV for 2007-03-26 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2006-01-15 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Java</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2006-01-15" />
-  <span property="cv:skillYearsExperience" content="2 " />
-</div>
-
-<!-- CLOSING DIV for 2006-01-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">git</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:4]" typeof="cv:Skill">
-  <span property="cv:skillName">svn</span>
-  <span property="cv:skillLevel" content="4" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="4 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Semantic Web</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:1]" typeof="cv:Skill">
-  <span property="cv:skillName">RDF</span>
-  <span property="cv:skillLevel" content="1" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:1]" typeof="cv:Skill">
-  <span property="cv:skillName">RDFa</span>
-  <span property="cv:skillLevel" content="1" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Metadata</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="2 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:5]" typeof="cv:Skill">
-  <span property="cv:skillName">HTML</span>
-  <span property="cv:skillLevel" content="5" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="10 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:5]" typeof="cv:Skill">
-  <span property="cv:skillName">XHTML</span>
-  <span property="cv:skillLevel" content="5" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="5 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:4]" typeof="cv:Skill">
-  <span property="cv:skillName">CSS</span>
-  <span property="cv:skillLevel" content="4" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="3 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presentnly -->
-<div class="educational_inst" href="[_:4]" typeof="cv:Skill">
-  <span property="cv:skillName">XHTML+RDFa</span>
-  <span property="cv:skillLevel" content="4" />
-  <span property="cv:skillLastUsed" content="Presentnly" />
-  <span property="cv:skillYearsExperience" content="3 " />
-</div>
-
-<!-- CLOSING DIV for Presentnly -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2007-01-20 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Javascript</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2007-01-20" />
-  <span property="cv:skillYearsExperience" content="2 " />
-</div>
-
-<!-- CLOSING DIV for 2007-01-20 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-21 -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">Apache</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="2009-02-21" />
-  <span property="cv:skillYearsExperience" content="7 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-21 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">Systems Administration</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="7 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">Sendmail</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="5 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:5]" typeof="cv:Skill">
-  <span property="cv:skillName">Shell Scripting</span>
-  <span property="cv:skillLevel" content="5" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="10 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2007-06-30 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Solaris Administration</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2007-06-30" />
-  <span property="cv:skillYearsExperience" content="6 " />
-</div>
-
-<!-- CLOSING DIV for 2007-06-30 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:5]" typeof="cv:Skill">
-  <span property="cv:skillName">Linux Administration</span>
-  <span property="cv:skillLevel" content="5" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="8 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-15 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">mySQL</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2009-02-15" />
-  <span property="cv:skillYearsExperience" content="3 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-15 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">postgres</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2009-02-15" />
-  <span property="cv:skillYearsExperience" content="3 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-15 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Internationalization(i18n)</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2009-02-15" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-15 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Unicode</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2009-02-15" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-15 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:Skill">
-  <span property="cv:skillName">Ruby metaprogramming</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:skillLastUsed" content="2009-02-15" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2009-02-15 -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">Unit Testing</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="2009-02-15" />
-  <span property="cv:skillYearsExperience" content="1 " />
-</div>
-
-<!-- CLOSING DIV for 2009-02-15 -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">object-oriented design</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="10 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for Presently -->
-<div class="educational_inst" href="[_:5]" typeof="cv:Skill">
-  <span property="cv:skillName">vim</span>
-  <span property="cv:skillLevel" content="5" />
-  <span property="cv:skillLastUsed" content="Presently" />
-  <span property="cv:skillYearsExperience" content="6 " />
-</div>
-
-<!-- CLOSING DIV for Presently -->
-</div>
-
-     
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2004-10-15 -->
-<div class="educational_inst" href="[_:3]" typeof="cv:Skill">
-  <span property="cv:skillName">emacs</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:skillLastUsed" content="2004-10-15" />
-  <span property="cv:skillYearsExperience" content="4 " />
-</div>
-
-<!-- CLOSING DIV for 2004-10-15 -->
-</div>
-
-	</div>
-	<h2>Language Skills</h2>
-  <div id="language_skills">
-		
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 4 -->
-<div class="educational_inst" href="[_:4]" typeof="cv:LanguageSkill">
-  <span property="cv:skillName">Dutch</span>
-  <span property="cv:skillLevel" content="4" />
-  <span property="cv:lngSkillLevelReading" content="4" />
-  <span property="cv:lngSkillLevelWritten" content="3" />
-</div>
-
-<!-- CLOSING DIV for 4 -->
-</div>
-
-		
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 2 -->
-<div class="educational_inst" href="[_:2]" typeof="cv:LanguageSkill">
-  <span property="cv:skillName">French</span>
-  <span property="cv:skillLevel" content="2" />
-  <span property="cv:lngSkillLevelReading" content="2" />
-  <span property="cv:lngSkillLevelWritten" content="2" />
-</div>
-
-<!-- CLOSING DIV for 2 -->
-</div>
 
-		
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasSkill">
-<!-- BEGINNING DIV for 3 -->
-<div class="educational_inst" href="[_:3]" typeof="cv:LanguageSkill">
-  <span property="cv:skillName">Latin</span>
-  <span property="cv:skillLevel" content="3" />
-  <span property="cv:lngSkillLevelReading" content="3" />
-  <span property="cv:lngSkillLevelWritten" content="2" />
-</div>
 
-<!-- CLOSING DIV for 3 -->
-</div>
-		
-  </div>
 </div>
 
 </div>
 
 <!-- Closing DIV for id#resume -->
+</div>
+<div>
+<p>Like many technologists, I'm also interested in collaborating with others on open-source projects.  Here are a few.</p>
 </div>
 </body>
 

@@ -1,52 +1,5 @@
-<!-- FOAF -->
-    <foaf:myersBriggs>INTJ</foaf:myersBriggs>
-    <foaf:title xml:lang="en">Mr.</foaf:title>
-    <foaf:surname>Harms</foaf:surname>
-    <foaf:givenName>Steven</foaf:givenName>
-  </foaf:Person>
-
-    <cv:hasTarget rdf:nodeID="cv_target" />
-		<cv:hasWorkHistory rdf:nodeID="independent_development" />
-		<cv:hasCourse rdf:nodeID="bnr_cocoa" />
-		<cv:hasCourse rdf:nodeID="bnr_ror" />
-		<cv:hasCourse rdf:nodeID="rhce" />
-
-
-
-
-<!-- Courses -->
-<cv:Course rdf:nodeID="bnr_cocoa">
-	<cv:organizedBy rdf:resource="http://bignerdranch.com" />
-	<cv:isCertification>0</cv:isCertification>
-	<cv:courseTitle>Beginning Cocoa Bootcamp</cv:courseTitle>
-	<cv:courseDescription>Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX</cv:courseDescription>
-	<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_cocoa.shtml" />
-	<cv:courseStartDate>2005-02-16</cv:courseStartDate>
-	<cv:courseFinishDate>2005-02-16</cv:courseFinishDate>
-</cv:Course>
-
-
-<cv:Course rdf:nodeID="bnr_ror">
-	<cv:organizedBy rdf:resource="http://bignerdranch.com" />
-	<cv:isCertification>0</cv:isCertification>
-	<cv:courseTitle>Ruby on Rails Bootcamp</cv:courseTitle>
-	<cv:courseDescription>Intensive 5-day training course covering the basics of Ruby on Rails development</cv:courseDescription>
-	<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
-	<cv:courseStartDate>2006-02-13</cv:courseStartDate>
-	<cv:courseFinishDate>2006-02-17</cv:courseFinishDate>
-</cv:Course>
-
-<cv:Course rdf:nodeID="rhce">
-	<cv:organizedBy rdf:resource="http://redhat.com" />
-	<cv:isCertification>1</cv:isCertification>
-	<cv:courseTitle>Red Hat Certified Engineer Bootcamp</cv:courseTitle>
-	<cv:courseDescription>Intensive 5-day training course covering Linux administration</cv:courseDescription>
-	<cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml" />
-	<cv:courseStartDate>2003-05-01</cv:courseStartDate>
-	<cv:courseFinishDate>2003-05-01</cv:courseFinishDate>
-</cv:Course>
-
 <!-- CV Target  -->
+<cv:hasTarget rdf:nodeID="cv_target" />
 <cv:Target rdf:nodeID="cv_target">
   <cv:targetCareerLevel>Developer</cv:targetCareerLevel>
   <cv:targetCareerLevel>IT Architect</cv:targetCareerLevel>
@@ -74,10 +27,6 @@
   <cv:conditionWillRelocate>True</cv:conditionWillRelocate>
   <cv:conditionWillTravel>True</cv:conditionWillTravel>
 </cv:Target>
-
-<!-- ############################################################# -->
-<!-- DOAP PROJECTS -->
-<!-- VerbaLatina -->
 
 <doap:Project rdf:nodeID="verbalatina">
 	<doap:name xml:lang="la">VerbaLatina</doap:name>
