@@ -16,8 +16,8 @@ define(`__RDFA_CISCO_RECENT_DESC',
 
 define(`__RDFA_CISCO_RECENT_SDATE',
 `ifdef(`do_rdfa',
-  `<span property="dc:date">200-04</span>',
-  `2000-04')')
+  `<span property="dc:date">2005-04</span>',
+  `2005-04')')
 
 define(`__RDFA_CISCO_RECENT_EDATE',
 `ifdef(`do_rdfa',
@@ -44,7 +44,7 @@ changequote`'dnl
 divert`'dnl
 achieve(__RDFA_CISCO,
       `__RDFA_CISCO_RECENT_TITLE: __RDFA_CISCO_RECENT_DESC', 
-      `__RDFA_CISCO_RECENT_SDATE - __RDFA_CISCO_RECENT_EDATE', 
+      `__RDFA_CISCO_RECENT_SDATE`'fdash()__RDFA_CISCO_RECENT_EDATE', 
       cv_note_ify(RDFA_CISCO_RECENT_ACHIEVEMENTS))dnl
 
 divert(-44)
@@ -96,7 +96,7 @@ changequote`'dnl
 divert`'dnl
 achieve(__RDFA_CISCO,
       `__RDFA_CISCO_1_TITLE / __RDFA_CISCO_1_TITLEB: __RDFA_CISCO_1_DESC', 
-      `__RDFA_CISCO_1_SDATE - __RDFA_CISCO_1_EDATE', 
+      `__RDFA_CISCO_1_SDATE`'fdash()__RDFA_CISCO_1_EDATE', 
       cv_note_ify(RDFA_CISCO_1_ACHIEVEMENTS))dnl
 divert(-44)
 
@@ -143,5 +143,5 @@ define(`RDFA_CISCO_2_ACHIEVEMENTS',`dnl
 divert`'dnl
 achieve(__RDFA_CISCO,
       `__RDFA_CISCO_2_TITLE: __RDFA_CISCO_2_DESC', 
-      `__RDFA_CISCO_2_SDATE - __RDFA_CISCO_2_EDATE', 
+      `__RDFA_CISCO_2_SDATE`'fdash()__RDFA_CISCO_2_EDATE', 
       cv_note_ify(RDFA_CISCO_2_ACHIEVEMENTS))dnl

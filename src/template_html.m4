@@ -19,7 +19,7 @@ ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')'
 
 <!-- Open for DIV class "achievements" --> dnl
  <div class="achievements">
-   <h1>Work Experience</h1>
+   <h2>Work Experience</h2>
    include(`src/workexp.m4')
 <!-- Close for DIV class "achievements" -->
  </div>

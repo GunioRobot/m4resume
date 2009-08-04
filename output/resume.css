@@ -9,10 +9,38 @@ body {
   font-size:14px
 }
 
+/* Formatting technical skills*/
 #ts_blurb{
 	font-style:italic;
 }
 
+/* Formating the Work Section*/
 #skills_statement .rating{
 	font-style:italic;	
+}
+
+p.employer_and_dates .employer{
+/*	font-weight: bold;*/
+}
+
+p.employer_and_dates span.role{
+	font-style: italic;
+}
+
+p.employer_and_dates span.dates{
+	font-weight: bold;
+}
+
+/*Formatting education*/
+
+.major_styling, .minor_styling, .dates_styling
+{
+/*	font-weight:bold;*/
+	font-style:italic;
+}
+
+
+.major, .minor, .dates
+{
+/*	font-style:italic;*/
 }

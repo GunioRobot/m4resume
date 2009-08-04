@@ -4,9 +4,9 @@ ifelse(mode, `latex', `
 ', `
 <!-- Open div for personal_statement -->
 <div id="personal_statement">
-  <h1`'ifdef(`do_rdfa',` rel="cv:aboutPerson" href="CANDIDATE_ABOUT_URI"')>
+  <h2`'ifdef(`do_rdfa',` rel="cv:aboutPerson" href="CANDIDATE_ABOUT_URI"')>
     Personal Statement
-  </h1>
+  </h2>
   <p`'ifdef(`__RDFA_PERSONAL_STATEMENT', `__RDFA_PERSONAL_STATEMENT')`'>
     PERSONAL_STATEMENT_BODY
   </p>

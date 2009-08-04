@@ -7,9 +7,12 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
 <div class="educational_inst"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" typeof="cv:Education"')>
   <p class="school_and_dates">
     <span class="schoolname">$1</span>
-    <span class="major_stlying">Major:</strong>  <span class="major">$2</span>
-    <span class="minor_stlying">Minor:</strong>  <span class="minor">$3</span>
-    <span class="dates_stlying">Dates:</strong>  <span class="dates">$4</span>
+		<br/>
+    <span class="major_styling">Major:</span>  <span class="major">$2</span>
+		<br/>
+    <span class="minor_styling">Minor:</span>  <span class="minor">$3</span>
+    <br/>
+    <span class="dates_styling">Dates:</span>  <span class="dates">$4</span>
   </p>
   <p class="deg_awarded">
   $5
@@ -72,7 +75,7 @@ Revolutions, and Rationality of Emotions.
 
 divert`'dnl
 
-ifelse(mode, `latex', ``\section{Education}'', ``<h1>Education</h1>'')
+ifelse(mode, `latex', ``\section{Education}'', ``<h2>Education</h2>'')
 
 ifelse(mode, `latex', `
 ', `
