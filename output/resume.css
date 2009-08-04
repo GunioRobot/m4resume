@@ -8,3 +8,11 @@ body {
   font-family: "Helvetica Neue",Helvetica, Arial, Verdana, Lucida, Times, sans-serif;
   font-size:14px
 }
+
+#ts_blurb{
+	font-style:italic;
+}
+
+#skills_statement .rating{
+	font-style:italic;	
+}
