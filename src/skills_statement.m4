@@ -31,6 +31,36 @@ ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
        ')'
 )
 
+define(`lskill',
+`ifelse(mode, `html',
+`
+ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
+<div rel="cv:hasSkill">')
+<!-- BEGINNING DIV for $3 -->
+<div class="educational_inst"`'ifdef(`do_rdfa', ` href="[_:translit(`$2',`<>"" :/"',`-------')]" typeof="cv:LanguageSkill"')>
+  <span property="cv:skillName">`$1'</span>
+  <span property="cv:skillLevel" content="`$2'" />
+  <span property="cv:lngSkillLevelReading" content="`$3'" />
+  <span property="cv:lngSkillLevelWritten" content="`$4'" />
+</div>
+',
+  mode, `latex', \subsection*{$1 : $2}
+  \label{patsubst(
+         `translit(
+           patsubst(`$1 $2',
+             `text\w+',
+             `'),
+           `A-Z\{} ',
+           `a-z___')', 
+         `_+', 
+         `_')`'}
+  $4)
+ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
+</div>',
+       mode, `latex', `% End subsection
+       ')'
+)
+
 divert`'dnl
 
 ifelse(mode, `latex', ``\section{Skills}'', ``<h1>Skills</h1>'')
@@ -38,6 +68,7 @@ ifelse(mode, `latex', ``\section{Skills}'', ``<h1>Skills</h1>'')
 ifelse(mode, `latex', `
 ', `
 <div id="skills_statement">
+	<h2>Technical Skills</h2>
 	<div id="technical_skills">
      tskill(`Perl', `5', `Daily', `8')
      tskill(`Ruby', `4', `Presently', `3')
@@ -73,7 +104,11 @@ ifelse(mode, `latex', `
      tskill(`vim', `5', `Presently', `6' )
      tskill(`emacs', `3', `2004-10-15', `4' )
 	</div>
+	<h2>Language Skills</h2>
   <div id="language_skills">
+		lskill(`Dutch',`4',`4',`3')
+		lskill(`French',`2',`2',`2')
+		lskill(`Latin',`3',`3',`2')		
   </div>
 </div>
 ')
