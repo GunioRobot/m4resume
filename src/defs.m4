@@ -97,7 +97,7 @@ define(`RES_HTML_HEAD', `
 <head>
 	<title ifdef(`do_rdfae', ``about="http://stevengharms.com/resume.html" property="cv:cvTitle"'')>Résumé for CANDIDATE_NAME</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta property="generator=" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
+  <meta property="generator" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
 </head>')
 
 ###############################################################################
@@ -153,6 +153,7 @@ define(`PERSONAL_TARGET_BLOCK',
 	<span property="cv:targetJobType" content="Internet software development" />
 	<span property="cv:targetJobType" content="Ruby development" />
 	<span property="cv:targetJobType" content="Rails development" />
+	<span property="cv:targetJobType" content="Ruby on Rails" />
 	<span property="cv:targetCompanyDescription">
 	  I am looking for a passionate start-up
 	  opportunity or an enterprise that is ready to shake up its old way of
