@@ -15,7 +15,7 @@ dnl
 <div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
 <!-- In here, the about should still be pointing to (...resume.html) -->
 
-dnl ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')')dnl
+ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')')dnl
 dnl 
 dnl <!-- Open for DIV class "achievements" --> dnl
 dnl  <div class="achievements">

@@ -123,10 +123,8 @@ define(`RDFa_tokens',
 `__RDFA_CISCO', `ifdef(`do_rdfa',
 	`<a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn foaf:workplaceHomepage">Cisco Systems</a>',
 	`<a href="http://www.cisco.com">Cisco Systems</a>')',
-`__RDFA_DIST_STATUS', `I am currently ifdef(`do_rdfa',`<span property="cv:isActive" content="0">not </span>',`not ')dnl
-seeking a position.  Please do dnl
-ifdef(`do_rdfa',`<span property="cv:isConfidential" content="1">not </span>',`not ')dnl 
-re-distribute this résumé.',
+`__RDFA_DIST_STATUS', `<span property="cv:isActive" content="0" /> dnl
+<span property="cv:isConfidential" content="1" />',
 `__RDFA_MIS',`ifdef(`do_rdfa',<span property="cv:eduMajor">MIS</span>,`MIS')',
 `__RDFA_DUTCH_MINOR',`ifdef(`do_rdfa',<span property="cv:eduMinor">Dutch</span>,`Dutch')',
 `__RDFA_RES_EDUCATION_MYDATES', `ifdef(`do_rdfa',rdfa_bracket_dates(`RES_EDUCATION_MYDATES'),`RES_EDUCATION_MYDATES')',
@@ -142,6 +140,39 @@ define(`PERSONAL_STATEMENT_BODY',
 `I love learning and experimentation.  I draw on a background that includes philosophy, business, dnl
 classics, code, and nine years of industry experience to provide innovative solutions, to ask non-obvious dnl
 questions, and to push the boundaries of what is perceived as possible.')
+
+define(`PERSONAL_TARGET_BLOCK',
+``
+<div rel="cv:hasTarget">
+	<div typeof="cv:Target">
+	<span property="cv:targetCareerLevel" content="Developer" />
+	<span property="cv:targetCareerLevel" content="IT Architect" /> 
+	<span property="cv:targetCareerLevel" content="IT Strategist" /> 
+	<span property="cv:targetJobType" content="IT Engineering" />
+	<span property="cv:targetJobType" content="IT Architecture" />
+	<span property="cv:targetJobType" content="Internet software development" />
+	<span property="cv:targetJobType" content="Ruby development" />
+	<span property="cv:targetJobType" content="Rails development" />
+	<span property="cv:targetCompanyDescription">
+	  I am looking for a passionate start-up
+	  opportunity or an enterprise that is ready to shake up its old way of
+	  thinking about how to enable collaboration.
+	</span>
+	<span property="cv:targetCountry" content="USA" />
+	<span property="cv:targetJobDescription" content="
+	  I am seeking a position that finds the diversity of
+	  my interests and passions to be a bonus; I am looking for a team of
+	  innovative thinkers who are on the forefront of linguistic, semantic, and
+	  metaprogrammatic thinking." />   
+
+	<span property="cv:targetCompanyIndustry" content="Internet" />
+	<span property="cv:targetJobMode" content="full-time" />
+	<span property="cv:weeksNoticePeriod" content="2" />
+	<span property="cv:conditionWillRelocate" content="True" />
+	<span property="cv:conditionWillTravel" content="True" />
+	</div>
+</div>
+'')
 
 
 

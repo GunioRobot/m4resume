@@ -1,8 +1,11 @@
-<cv:hasTarget rdf:nodeID="cv_target" />
-<cv:Target rdf:nodeID="cv_target">
   <cv:targetCareerLevel>Developer</cv:targetCareerLevel>
   <cv:targetCareerLevel>IT Architect</cv:targetCareerLevel>
   <cv:targetCareerLevel>IT Strategist</cv:targetCareerLevel>
+  <cv:targetJobType>IT Engineering</cv:targetJobType>
+  <cv:targetJobType>IT Architecture</cv:targetJobType>
+  <cv:targetJobType>Internet software development</cv:targetJobType>
+  <cv:targetJobType>Ruby development</cv:targetJobType>
+  <cv:targetJobType>Rails development</cv:targetJobType>
   <cv:targetCompanyDescription>
     I'm looking for a passionate start-up
     opportunity or an enterprise that is ready to shake up its old way of
@@ -17,12 +20,6 @@
     metaprogrammatic thinking.   
   </cv:targetJobDescription>
   <cv:targetJobMode>full-time</cv:targetJobMode>
-  <cv:targetJobType>IT Engineering</cv:targetJobType>
-  <cv:targetJobType>IT Architecture</cv:targetJobType>
-  <cv:targetJobType>Internet software development</cv:targetJobType>
-  <cv:targetJobType>Ruby development</cv:targetJobType>
-  <cv:targetJobType>Rails development</cv:targetJobType>
   <cv:weeksNoticePeriod>2</cv:weeksNoticePeriod>
   <cv:conditionWillRelocate>True</cv:conditionWillRelocate>
   <cv:conditionWillTravel>True</cv:conditionWillTravel>
-</cv:Target>

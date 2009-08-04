@@ -12,5 +12,7 @@ ifelse(mode, `latex', `
   </p>
 	ifdef(`__RDFA_DIST_STATUS',`<p>__RDFA_DIST_STATUS</p>')
 <!-- Close Div for personal statement -->
+ifdef(`do_rdfa', ifdef(`PERSONAL_TARGET_BLOCK',`PERSONAL_TARGET_BLOCK'))
+
 </div>
 ')
