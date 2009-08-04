@@ -74,7 +74,7 @@ ifelse(mode, `latex', `
 ', `
 <div id="skills_statement">
 	<p id="ts_blurb">Rated by proficiency on a 5-point scale with 5 being highest.</p>
-	<h2>Technical Skills</h2>
+	<h3>Technical Skills</h3>
 	<div id="technical_skills">
      tskill(`Perl', `5', `Daily', `8')
      tskill(`HTML', `5', `Presently', `10' )
@@ -114,7 +114,7 @@ ifelse(mode, `latex', `
 		 small_hr
      tskill(`Unicode', `2', `2009-02-15', `1' )
 	</div>
-	<h2>Language Skills</h2>
+	<h3>Language Skills</h3>
   <div id="language_skills">
 		lskill(`Dutch',`4',`4',`3')
 		lskill(`French',`2',`2',`2')

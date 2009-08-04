@@ -41,6 +41,18 @@ ifdef(`RES_FORMAT_DO_HONORS_STATEMENT',    `<div id="honors_block">include(`src/
 dnl ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `<div id="codesamp_block">include(`src/codesamp_statement.m4')</div>')dnl
 <!-- Projects Div Close -->
 </div>
+<div id="w3c_praise">
+<hr/>
+	<p about=""
+     resource="http://www.w3.org/TR/rdfa-syntax"
+     rel="dct:conformsTo" xmlns:dc="http://purl.org/dc/terms/">
+    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml-rdfa"
+        alt="Valid XHTML + RDFa"   /></a>
+ </p>
+<p>XML lovers and machines might prefer the <a href="http://www.w3.org/2007/08/pyRdfa/extract?uri=referer">RDF</a> version.</p>
+<p>Or, you might want to see this résumé's RDF turned into a <a href="http://www.w3.org/RDF/Validator/ARPServlet?URI=http%3A%2F%2Fstevengharms.com%2Fresume.rdf&amp;PARSE=Parse+URI%3A+&amp;TRIPLES_AND_GRAPH=PRINT_GRAPH&amp;FORMAT=PNG_EMBED">graph</a>.</p>
+</div>
 </body>
 divert`'dnl
 undivert(`3')

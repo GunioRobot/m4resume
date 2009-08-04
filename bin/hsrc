@@ -1,2 +1,2 @@
 #!/bin/sh
-bin/build.sh -Dmode=html -Ddo_rdfa > output/resume_rdfa.html
+bin/build.sh -Dmode=html -Ddo_rdfa > output/resume.html
