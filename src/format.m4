@@ -15,7 +15,7 @@ define(`format_$1',
    wrap_$1,  `b', ifelse(mode, `html', 
                          `$`1'', `\textbf{$`1'}'),
    wrap_$1,  `s', ifelse(mode, `html', 
-                         `$`1', `\textsf{$`1'}')dnl
+                         `$`1'', `\textsf{$`1'}')dnl
 )dnl',
       `wrap_$1 was not defined'dnl
      )

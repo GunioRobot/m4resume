@@ -27,21 +27,21 @@ include(`src/custom_latex_macros.m4')dnl
 
 include(`src/nameblock.m4')dnl
 
-ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement')')dnl
+ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')')dnl
 
 \section*{Work Experience}
 \label{sec: work_experience}
-include(`src/demo.m4')dnl
+include(`src/workexp.m4')dnl
 
-ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `include(`src/skills_statement')')dnl
+ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `include(`src/skills_statement.m4')')dnl
 
-ifdef(`RES_FORMAT_DO_ACTIVITES_STATEMENT', `include(`src/activities_statement')')dnl
+ifdef(`RES_FORMAT_DO_ACTIVITES_STATEMENT', `include(`src/activities_statement.m4')')dnl
 
-ifdef(`RES_FORMAT_DO_EXTRACURR_STATEMENT', `include(`src/extracurr_statement')')dnl
+ifdef(`RES_FORMAT_DO_EXTRACURR_STATEMENT', `include(`src/extracurr_statement.m4')')dnl
 
-ifdef(`RES_FORMAT_DO_HONORS_STATEMENT',    `include(`src/honors_statement')')dnl
+ifdef(`RES_FORMAT_DO_HONORS_STATEMENT',    `include(`src/honors_statement.m4')')dnl
 
-ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `include(`src/codesamp_statement')')dnl
+ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `include(`src/codesamp_statement.m4')')dnl
 
 dnl Make sure you fetch this back at the end
 divert(1)dnl
