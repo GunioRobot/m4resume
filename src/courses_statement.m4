@@ -47,16 +47,16 @@ acourse(`Beginning Cocoa Bootcamp',
 `Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX.')
 
 acourse(`Ruby on Rails Bootcamp',
-`2006-02-13',
-`2006-02-17',
+`2006-02',
+`2006-02',
 `http://bignerdranch.com',
 `0',
 `http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml',
 `Intensive 5-day training course covering the basics of Ruby on Rails development.')
 
 acourse(`Red Hat Certified Engineer Bootcamp',
-`2003-05-01',
-`2003-05-01',
+`2003-05',
+`2003-05',
 `http://redhat.com',
 `1',
 `http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml',
