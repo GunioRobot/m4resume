@@ -1,6 +1,7 @@
 divert(-20)
 
 define(`aProj',
+`ifelse(mode, `html',
 `
   <div typeof="doap:Project">
 		<p>
@@ -17,17 +18,22 @@ define(`aProj',
 			</span>
 		</p>	
 </div>
-')
+',
+mode, `latex',
+`
+\subsection*{`$1'}
+Category:  Language: Audience
+Homepage: {\bf `$9'}
+
+`$4'
+
+')')
 
 divert`'dnl
 
 
 ifelse(mode, `latex', `
   \section*{ Code Sample }
-   \begin{itemize}
-     \item \textbf{GitHub}: M4resume [\textsf{http://github.com/sgharms/m4resume/tree/master}]
-   \end{itemize}
-
 ', `
 <div id="code_samples">
 <h2>Open-source projects:</h2>
