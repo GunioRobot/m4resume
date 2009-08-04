@@ -118,7 +118,7 @@ define(`RDFa_tokens',
 `__RDFA_Austin',`<span about="[_:AustinGeoNode]"><span property="geo:lat" content="30.267" /><span property="geo:long" content="97.74"/>Austin</span>',
 `__RDFA_PERSONAL_STATEMENT', ` property="cv:cvDescription" about="http://stevengharms.com/resume.html"',
 `__RDFA_CISCO', `ifdef(`do_rdfa',
-	`<a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn">Cisco Systems</a>',
+	`<a href="http://www.cisco.com" rel="cv:workplaceHomepage cv:employedIn foaf:workplaceHomepage">Cisco Systems</a>',
 	`<a href="http://www.cisco.com">Cisco Systems</a>')',
 `__RDFA_DIST_STATUS', `I am currently ifdef(`do_rdfa',`<span property="cv:isActive" content="0">not </span>',`not ')dnl
 seeking a position.  Please do dnl

@@ -1,42 +1,10 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:sgh="http://stevengharms.com/id/vocab#"
-  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:cv="http://rdfs.org/resume-rdf/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:doap="http://usefulinc.com/ns/doap#"
->
-
 <!-- FOAF -->
-<!-- FOAF: Steven Harms -->
-
     <foaf:myersBriggs>INTJ</foaf:myersBriggs>
     <foaf:title xml:lang="en">Mr.</foaf:title>
     <foaf:surname>Harms</foaf:surname>
     <foaf:givenName>Steven</foaf:givenName>
-
-    <foaf:workplaceHomepage rdf:resource="http://www.cisco.com" />
-    <foaf:schoolHomepage rdf:resource="http://www.utexas.edu" />
-
   </foaf:Person>
 
-
-
-
-   <cv:hasSkill>
-      <cv:languageSkill rdf:nodeID="lang_dutch" />
-    </cv:hasSkill>
-   <cv:hasSkill>
-      <cv:languageSkill rdf:nodeID="lang_french" />
-    </cv:hasSkill>
-   <cv:hasSkill>
-      <cv:languageSkill rdf:nodeID="lang_latin" />
-    </cv:hasSkill>
-    <cv:hasEducation rdf:nodeID="utexas_bba" />
-    <cv:hasEducation rdf:nodeID="utexas_ba" />
-    <cv:hasEducation rdf:nodeID="rul_leiden" />
     <cv:hasTarget rdf:nodeID="cv_target" />
 		<cv:hasWorkHistory rdf:nodeID="independent_development" />
 		<cv:hasCourse rdf:nodeID="bnr_cocoa" />
