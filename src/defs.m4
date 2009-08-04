@@ -96,6 +96,7 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
 define(`RES_HTML_HEAD', `
 <head>
 	<title ifdef(`do_rdfae', ``about="http://stevengharms.com/resume.html" property="cv:cvTitle"'')>Résumé for CANDIDATE_NAME</title>
+  <link rel="stylesheet" type="text/css" href="resume.css" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="generator" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
 </head>')
