@@ -63,6 +63,7 @@ define(`RES_FORMAT_DO_EDUCATION_STATEMENT')
 define(`RES_EDUCATION_MYUNI', `The University of Texas at Austin')
 define(`RES_EDUCATION_MYDATES', `1995-2000')
 define(`RES_FORMAT_DO_COURSES_STATEMENT')
+define(`RES_FORMAT_DO_CODESAMP_STATEMENT')
 define(`MIS', `Management Information Systems')
 define(`RES_EDUCATION_DEGREEINFO',`BBA:  Management Information Systems (MIS), 
         BA:  Philosophy,'),
@@ -88,6 +89,7 @@ define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.
   xmlns:cv="http://purl.org/captsolo/resume-rdf/0.2/cv#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:doap="http://usefulinc.com/ns/doap#"
   version="XHTML+RDFa 1.0" xml:lang="en">'',
 ``<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">''))
 

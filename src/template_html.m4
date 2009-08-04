@@ -26,17 +26,19 @@ dnl  </div>
 dnl 
 dnl ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `<div id="skills_block">include(`src/skills_statement.m4')</div>')dnl
 dnl ifdef(`RES_FORMAT_DO_EDUCATION_STATEMENT',    `<div id="education_block">include(`src/education_statement.m4')</div>')dnl
-ifdef(`RES_FORMAT_DO_COURSES_STATEMENT', `<div id="activities_block">include(`src/courses_statement.m4')</div>')dnl
+dnl ifdef(`RES_FORMAT_DO_COURSES_STATEMENT', `<div id="activities_block">include(`src/courses_statement.m4')</div>')dnl
 
 dnl ifdef(`RES_FORMAT_DO_ACTIVITES_STATEMENT', `<div id="activities_block">include(`src/activities_statement.m4')</div>')dnl
 dnl ifdef(`RES_FORMAT_DO_EXTRACURR_STATEMENT', `<div id="extracurr_block">include(`src/extracurr_statement.m4')</div>')dnl
 dnl ifdef(`RES_FORMAT_DO_HONORS_STATEMENT',    `<div id="honors_block">include(`src/honors_statement.m4')</div>')dnl
-dnl ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `<div id="codesamp_block">include(`src/codesamp_statement.m4')</div>')dnl
+
 
 <!-- Closing DIV for id#resume -->
 </div>
+<!-- Projects Div Open -->
 <div>
-<p>Like many technologists, I'm also interested in collaborating with others on open-source projects.  Here are a few.</p>
+dnl ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `<div id="codesamp_block">include(`src/codesamp_statement.m4')</div>')dnl
+<!-- Projects Div Close -->
 </div>
 </body>
 divert`'dnl

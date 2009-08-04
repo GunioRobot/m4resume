@@ -7,6 +7,7 @@
   xmlns:cv="http://purl.org/captsolo/resume-rdf/0.2/cv#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:doap="http://usefulinc.com/ns/doap#"
   version="XHTML+RDFa 1.0" xml:lang="en">
 <head>
 	<title >Résumé for Steven G. Harms</title>
@@ -40,63 +41,121 @@
 <div id="resume" typeof="cv:CV" about="http://stevengharms.com/resume.html" property="cv:cvTitle" content="Résumé for Steven G. Harms">    
 <!-- In here, the about should still be pointing to (...resume.html) -->
 
-<div id="activities_block">
-<h1>Skills</h1>
 
 
-<div id="courses_statement">
-
-
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasCourse">
-<!-- BEGINNING DIV for 2005-02 -->
-  <div class="educational_inst" href="[_:2005-02]" typeof="cv:Course">
- <p property="cv:courseTitle" rel="cv:organized_by" href="http://bignerdranch.com">Beginning Cocoa Bootcamp</p>
- <span property="cv:eduStartDate">2005-02</span><span property="cv:eduEndDate" content="2005-02" /> <a rel="cv:courseURL" href="http://bignerdranch.com/classes/beginning_cocoa.shtml">http://bignerdranch.com/classes/beginning_cocoa.shtml</a><span property="cv:isCertification" content="0" />
-	<p>Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX.</p>
-</div>
-
-<!-- CLOSING DIV for 2005-02 -->
-</div>
-
-
-
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasCourse">
-<!-- BEGINNING DIV for 2006-02-17 -->
-  <div class="educational_inst" href="[_:2006-02-13]" typeof="cv:Course">
- <p property="cv:courseTitle" rel="cv:organized_by" href="http://bignerdranch.com">Ruby on Rails Bootcamp</p>
- <span property="cv:eduStartDate">2006-02-13</span><span property="cv:eduEndDate" content="2006-02-17" /> <a rel="cv:courseURL" href="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml">http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml</a><span property="cv:isCertification" content="0" />
-	<p>Intensive 5-day training course covering the basics of Ruby on Rails development.</p>
-</div>
-
-<!-- CLOSING DIV for 2006-02-17 -->
-</div>
-
-
-
-<!-- BEGIN CONTAINER DIV FOR RDFa -->
-<div rel="cv:hasCourse">
-<!-- BEGINNING DIV for 2003-05-01 -->
-  <div class="educational_inst" href="[_:2003-05-01]" typeof="cv:Course">
- <p property="cv:courseTitle" rel="cv:organized_by" href="http://redhat.com">Red Hat Certified Engineer Bootcamp</p>
- <span property="cv:eduStartDate">2003-05-01</span><span property="cv:eduEndDate" content="2003-05-01" /> <a rel="cv:courseURL" href="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml">http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml</a><span property="cv:isCertification" content="1" />
-	<p>Intensive 5-day training course covering Linux administration.</p>
-</div>
-
-<!-- CLOSING DIV for 2003-05-01 -->
-</div>
-
-
-
-</div>
-
-</div>
 
 <!-- Closing DIV for id#resume -->
 </div>
+<!-- Projects Div Open -->
 <div>
-<p>Like many technologists, I'm also interested in collaborating with others on open-source projects.  Here are a few.</p>
+<div id="codesamp_block">
+
+
+<div id="code_samples">
+<h2>Open-source projects:</h2>
+</div>
+
+
+
+
+
+  <div typeof="doap:Project">
+		<p>
+			<span property="doap:name">VerbaLatina</span> Est:<span property="doap:created">2008-08-26</span> 
+			Category:<span property="doap:category">Linguistics</span>  Language:<span property="doap:programming-language">Ruby</span>
+			<span property="doap:shortdesc" content="Libraries for conjugating latin verbs and IRB like environment for exploration"/>
+			<span rev="doap:maintainer" href="http://stevengharms.com#me" />
+			<span rel="doap:audience" content="Linguists and Latin Students" />
+		</p>
+		<p>[<a href="https://github.com/sgharms/verbalatina/tree/master" rel="doap:homepage">https://github.com/sgharms/verbalatina/tree/master</a>]</p>
+		<p>
+			<span property="doap:description">
+				A Rails application that wraps a library set that programmatically conjugates regular Latin Verbs from 4 principal parts into all verbal parts, moods, persons, etc.
+			</span>
+		</p>	
+</div>
+
+
+
+  <div typeof="doap:Project">
+		<p>
+			<span property="doap:name">Linguistics Package</span> Est:<span property="doap:created">2003-07-09</span> 
+			Category:<span property="doap:category">Linguistics</span>  Language:<span property="doap:programming-language">Ruby</span>
+			<span property="doap:shortdesc" content="Michael Grangers Linguistics framework for Ruby (from SVN)'"/>
+			<span rev="doap:maintainer" href="http://stevengharms.com#me" />
+			<span rel="doap:audience" content="Linguists and Latin Students" />
+		</p>
+		<p>[<a href="http://github.com/bruce/linguistics/tree/master" rel="doap:homepage">http://github.com/bruce/linguistics/tree/master</a>]</p>
+		<p>
+			<span property="doap:description">
+				Linguistics is a framework for building linguistic utilities for Ruby objects
+in any language. It includes a generic language-independant front end, a
+module for mapping language codes into language names, and a module which
+contains various English-language utilities
+			</span>
+		</p>	
+</div>
+
+
+
+
+  <div typeof="doap:Project">
+		<p>
+			<span property="doap:name">CMailguard</span> Est:<span property="doap:created">2008-07-06</span> 
+			Category:<span property="doap:category">Sysadmin</span>  Language:<span property="doap:programming-language">Perl</span>
+			<span property="doap:shortdesc" content="Software for handling data from Sendmail, processing it, and then classifying, dropping, or holding it in an escrow pen."/>
+			<span rev="doap:maintainer" href="http://stevengharms.com#me" />
+			<span rel="doap:audience" content="Mail systems administrators" />
+		</p>
+		<p>[<a href="http://code.google.com/p/cmailguard/" rel="doap:homepage">http://code.google.com/p/cmailguard/</a>]</p>
+		<p>
+			<span property="doap:description">
+				For mail architectures that are highly distributed, consolidating mails and running elgibility-to-send to certain addresses is difficult and problematic.  Mailguard is designed such that addresses can be routed to a central server. Upon reaching the server, the data is sent via STDOUT into the mailguard application.  The application then classifies the sender and based on configuration parameters decides whether the mail should be silently discarded, forwarded on, or put into a holding pen until the message can be validated by a moderator.
+			</span>
+		</p>	
+</div>
+
+
+
+  <div typeof="doap:Project">
+		<p>
+			<span property="doap:name">M4Resume</span> Est:<span property="doap:created">2009-07-09</span> 
+			Category:<span property="doap:category">Productivity</span>  Language:<span property="doap:programming-language">M4</span>
+			<span property="doap:shortdesc" content="Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa."/>
+			<span rev="doap:maintainer" href="http://stevengharms.com#me" />
+			<span rel="doap:audience" content="Geeky job-seekers" />
+		</p>
+		<p>[<a href="https://github.com/sgharms/m4resume/tree" rel="doap:homepage">https://github.com/sgharms/m4resume/tree</a>]</p>
+		<p>
+			<span property="doap:description">
+				Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.
+			</span>
+		</p>	
+</div>
+
+
+
+  <div typeof="doap:Project">
+		<p>
+			<span property="doap:name">latintools</span> Est:<span property="doap:created">2009-28-01</span> 
+			Category:<span property="doap:category">Linguistics</span>  Language:<span property="doap:programming-language">Ruby</span>
+			<span property="doap:shortdesc" content="Libraries for editing Latin text quickly."/>
+			<span rev="doap:maintainer" href="http://stevengharms.com#me" />
+			<span rel="doap:audience" content="Classicists" />
+		</p>
+		<p>[<a href="https://github.com/sgharms/verbalatina/tree/master" rel="doap:homepage">https://github.com/sgharms/verbalatina/tree/master</a>]</p>
+		<p>
+			<span property="doap:description">
+				Tools for entering LaTeX useful for Latin writing quickly through Textmate; also converting LaTeX glyphs at CLI to HTML or UTF-8 codes
+			</span>
+		</p>	
+</div>
+
+
+
+
+
+</div><!-- Projects Div Close -->
 </div>
 </body>
 
