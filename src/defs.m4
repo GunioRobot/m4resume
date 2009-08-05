@@ -57,7 +57,7 @@ define(`EMS', `Enterprise Messaging Systems')
 define(`CCT', `Communication and Collaboration Platform')
 define(`CISCO', `Cisco Systems')
 define(`CMailg',`ifelse(mode, `html', `<a href="http://code.google.com/p/cmailguard/">Google Code CMailguard</a>',
-                        `CMailguard (http://code.google.com/p/cmailguard/)')')
+                        `Google Code {\bf CMailguard} Project')')
 
 ###############################################################################
 EDUCATION MACROS

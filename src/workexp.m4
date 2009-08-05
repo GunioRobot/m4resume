@@ -131,7 +131,7 @@ define(`__RDFA_CISCO_2_EDATE',
 define(`RDFA_CISCO_2_ACHIEVEMENTS',`dnl
 `Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter',
 `Identified training gaps: created training and delivered to employees in 3 theatres',
-`Moved client satisfaction rating from 74% to 95%, the highest seen to that date',
+`Moved client satisfaction rating from 74`'pcnt to 95`'pcnt, the highest seen to that date',
 `Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team',
 `Designed web-based Web-vacation mail tool. Tool reduced support calls from 500 per quarter to 25. Net savings of 30`,'000 USD estimated savings per annum realized'
 ')dnl
