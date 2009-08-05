@@ -23,7 +23,9 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
            `a-z___')', 
          `_+', 
          `_')`'}
-  $4)
+  {\verb $6 }
+
+$7)
 ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
 </div>',
        mode, `latex', `% End subsection
@@ -35,6 +37,30 @@ divert`'dnl
 ifelse(mode, `latex', ``\section*{Courses}'', ``<h2>Courses</h2>'')
 
 ifelse(mode, `latex', `
+acourse(`Beginning Cocoa Bootcamp',
+`2005-02',
+`2005-02',
+`http://bignerdranch.com',
+`0',
+`http://bignerdranch.com/classes/beginning_cocoa.shtml',
+`Intensive 5-day training course covering the basics of Cocoa / Objective-C programming on Mac OSX.')
+
+acourse(`Ruby on Rails Bootcamp',
+`2006-02',
+`2006-02',
+`http://bignerdranch.com',
+`0',
+`http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml',
+`Intensive 5-day training course covering the basics of Ruby on Rails development.')
+
+acourse(`Red Hat Certified Engineer Bootcamp',
+`2003-05',
+`2003-05',
+`http://redhat.com',
+`1',
+`http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml',
+`Intensive 5-day training course covering Linux administration.')
+
 
 ', `
 <div id="courses_statement">

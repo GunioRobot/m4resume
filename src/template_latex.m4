@@ -38,8 +38,6 @@ ifdef(`RES_FORMAT_DO_EDUCATION_STATEMENT',    `include(`src/education_statement.
 
 ifdef(`RES_FORMAT_DO_COURSES_STATEMENT', `include(`src/courses_statement.m4')')dnl
 
-ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `include(`src/skills_statement.m4')')dnl
-
 ifdef(`RES_FORMAT_DO_ACTIVITES_STATEMENT', `include(`src/activities_statement.m4')')dnl
 
 ifdef(`RES_FORMAT_DO_EXTRACURR_STATEMENT', `include(`src/extracurr_statement.m4')')dnl
@@ -47,6 +45,8 @@ ifdef(`RES_FORMAT_DO_EXTRACURR_STATEMENT', `include(`src/extracurr_statement.m4'
 ifdef(`RES_FORMAT_DO_HONORS_STATEMENT',    `include(`src/honors_statement.m4')')dnl
 
 ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `include(`src/codesamp_statement.m4')')dnl
+
+ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `include(`src/skills_statement.m4')')dnl
 
 dnl Make sure you fetch this back at the end
 divert(1)dnl
