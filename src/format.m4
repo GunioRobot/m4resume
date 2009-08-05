@@ -108,4 +108,4 @@ define(`rdfa_bracket_dates',
 
 define(`fdash', `ifelse(mode, `html', `&ndash;', mode, `latex', `--')')
 define(`pcnt', `ifelse(mode,`latex',`{\%}',`%')')
-define(`amp', `ifelse(mode,`latex',`\&',`&amp;')')
+define(`amp', `ifelse(mode,`latex',`\&',`&`amp';')')

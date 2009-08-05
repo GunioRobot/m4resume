@@ -40,6 +40,7 @@ ifdef(`RES_FORMAT_DO_HONORS_STATEMENT',    `<div id="honors_block">include(`src/
 <div>
 dnl ifdef(`RES_FORMAT_DO_CODESAMP_STATEMENT',  `<div id="codesamp_block">include(`src/codesamp_statement.m4')</div>')dnl
 <!-- Projects Div Close -->
+undefine(`amp')
 </div>
 <div id="w3c_praise">
 <hr/>
