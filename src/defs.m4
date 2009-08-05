@@ -55,6 +55,9 @@ define(`ITD', `I.T. Developer')
 define(`SYSAD', `Systems Administrator')
 define(`EMS', `Enterprise Messaging Systems')
 define(`CCT', `Communication and Collaboration Platform')
+define(`CISCO', `Cisco Systems')
+define(`CMailg',`ifelse(mode, `html', `<a href="http://code.google.com/p/cmailguard/">Google Code CMailguard</a>',
+                        `CMailguard (http://code.google.com/p/cmailguard/)')')
 
 ###############################################################################
 EDUCATION MACROS

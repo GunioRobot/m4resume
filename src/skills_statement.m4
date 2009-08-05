@@ -68,7 +68,7 @@ ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
 define(`small_hr',`		<hr style="width:50px; text-align:left" />')
 divert`'dnl
 
-ifelse(mode, `latex', ``\section{Skills}'', ``<h2>Skills</h2>'')
+ifelse(mode, `latex', ``\section*{Skills}'', ``<h2>Skills</h2>'')
 
 ifelse(mode, `latex', `
 ', `

@@ -21,9 +21,10 @@ define(`aProj',
 ',
 mode, `latex',
 `
-\subsection*{`$1'}
+\subsubsection*{`$1'}
 Category:  Language: Audience
 Homepage: {\bf `$9'}
+\vspace{0.05in}
 
 `$4'
 
@@ -33,7 +34,7 @@ divert`'dnl
 
 
 ifelse(mode, `latex', `
-  \section*{ Code Sample }
+  \subsection*{ Code Sample }
 ', `
 <div id="code_samples">
 <h2>Open-source projects:</h2>

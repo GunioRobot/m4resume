@@ -44,14 +44,17 @@ define(`cv_note_ify',
 ifelse($#, 0, , $#,1,[`<span property="cv:Notes">$1</span>'],
 [``<span property="cv:Notes">$1</span>'',cv_note_ify(shift($@))`dnl']
 changequote`'dnl
-)',`Not RDFA')')
+)',
+`ifelse(mode,`html',`VANILLA HTML',
+        mode, `latex', `$@',
+				)')')
 
 define(`make_line_items', `ifelse(`$#', `0', , 
                           `$#', `1', `  ifelse(mode, `html',`  <li cai>$1</li>',
-                                             mode, `latex', `\item $1')',
+                                               mode, `latex', `\item{$1}')',
                           `make_line_items(shift($@))
     ifelse(mode, `html',`  <li cai>$1</li>',
-                                         mode, `latex', `\item $1')')')dnl
+                                         mode, `latex', `\item{$1}')')')dnl
 ifelse(
   NAME:  achieve
   ARGUMENTS:
@@ -104,3 +107,5 @@ define(`rdfa_bracket_dates',
 `<span property="cv:eduStartDate">substr($1,`0',`4')</span>-<span property="cv:eduGradDate">substr($1,`5',`9')</span>')
 
 define(`fdash', `ifelse(mode, `html', `&ndash;', mode, `latex', `--')')
+define(`pcnt', `ifelse(mode,`latex',`{\%}',`%')')
+define(`amp', `ifelse(mode,`latex',`\&',`&amp;')')

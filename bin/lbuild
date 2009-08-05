@@ -1,0 +1,2 @@
+#!/bin/sh
+bin/build.sh -Dmode=latex > output/resume.tex
