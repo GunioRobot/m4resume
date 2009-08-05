@@ -86,7 +86,7 @@ define(`RDFA_CISCO_1_ACHIEVEMENTS',``Member of 5-person team changed with  backb
 `Established messaging team standard Perl module set / CVS repository / Subversion repository',
 `Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at CMailg',
 `Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing fewer than 10 values',
-`Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed 600`'pcnt faster'')dnl
+`Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed six times faster'')dnl
 
 
 changequote`'dnl
@@ -131,7 +131,7 @@ define(`__RDFA_CISCO_2_EDATE',
 define(`RDFA_CISCO_2_ACHIEVEMENTS',`dnl
 `Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter',
 `Identified training gaps: created training and delivered to employees in 3 theatres',
-`Moved client satisfaction rating from 74`'pcnt to 95`'pcnt, the highest seen to that date',
+`Moved client satisfaction rating from 74 to 95 percent, the highest seen to that date',
 `Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team',
 `Designed web-based Web-vacation mail tool. Tool reduced support calls from 500 per quarter to 25. Net savings of 30`,'000 USD estimated savings per annum realized'
 ')dnl
