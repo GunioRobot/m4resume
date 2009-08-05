@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Build the HTML version
+bin/build.sh -Dmode=html -Ddo_rdfa > output/resume.html
+
+# Build the LaTeX version
+bin/build.sh -Dmode=latex > output/resume.tex
+cd output
+pdflatex resume.tex
+
+# Send it up to the host
+scp -P 2222 resume.pdf resume.html resume.css resume.rdf  sgharms@stevengharms.com:public_html/
