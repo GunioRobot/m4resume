@@ -36,6 +36,10 @@ ifdef(`do_rdfa',`<!-- BEGIN CONTAINER DIV FOR RDFa -->
 ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
 </div>',
        mode, `latex', `% End subsection
+\vspace{0.02in}
+$5\\
+
+\noindent`' $6
        ')'
 )
 
@@ -75,9 +79,12 @@ Revolutions, and Rationality of Emotions.
 
 divert`'dnl
 
-ifelse(mode, `latex', ``\section{Education}'', ``<h2>Education</h2>'')
+ifelse(mode, `latex', ``\section*{Education}'', ``<h2>Education</h2>'')
 
 ifelse(mode, `latex', `
+	educ(format_job(`SCHOOL1'),format_place(`MAJOR1'),`MINOR1',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL1_DEG_AWARDED', `SCHOOL1_DESC')
+	educ(format_job(`SCHOOL2'),format_place(`MAJOR2'),`MINOR2',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL2_DEG_AWARDED', `SCHOOL2_DESC')
+	educ(format_job(`SCHOOL3'),format_place(`MAJOR3'),`MINOR3',format_dates(`__RDFA_RUL_EDUCATION_MYDATES'), , `SCHOOL3_DESC')
 ', `
 <div id="education_statement">
   educ(format_place(`SCHOOL1'),format_job(`MAJOR1'),`MINOR1',format_dates(`__RDFA_RES_EDUCATION_MYDATES'),`SCHOOL1_DEG_AWARDED', `SCHOOL1_DESC')

@@ -33,6 +33,11 @@ ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')'
 \label{sec: work_experience}
 include(`src/workexp.m4')dnl
 
+
+ifdef(`RES_FORMAT_DO_EDUCATION_STATEMENT',    `include(`src/education_statement.m4')')dnl
+
+ifdef(`RES_FORMAT_DO_COURSES_STATEMENT', `include(`src/courses_statement.m4')')dnl
+
 ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `include(`src/skills_statement.m4')')dnl
 
 ifdef(`RES_FORMAT_DO_ACTIVITES_STATEMENT', `include(`src/activities_statement.m4')')dnl

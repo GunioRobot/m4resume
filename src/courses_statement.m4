@@ -32,9 +32,10 @@ ifelse(mode,`html', `<!-- CLOSING DIV for $3 -->
 
 divert`'dnl
 
-ifelse(mode, `latex', ``\section{Courses}'', ``<h2>Courses</h2>'')
+ifelse(mode, `latex', ``\section*{Courses}'', ``<h2>Courses</h2>'')
 
 ifelse(mode, `latex', `
+
 ', `
 <div id="courses_statement">
 
