@@ -56,7 +56,7 @@ undefine(`amp')
  </p>
 <p>XML lovers and machines might prefer the <a href="http://www.w3.org/2007/08/pyRdfa/extract?uri=referer">RDF</a> version.</p>
 <p>Or, you might want to see this résumé's RDF turned into a <a href="http://www.w3.org/RDF/Validator/ARPServlet?URI=http%3A%2F%2Fstevengharms.com%2Fresume.rdf&amp;PARSE=Parse+URI%3A+&amp;TRIPLES_AND_GRAPH=PRINT_GRAPH&amp;FORMAT=PNG_EMBED">graph</a>.</p>
-<p>Or, if you want to print it out, you might like a <a href="resume.pdf">pdf</a>.
+<p>Or, if you want to print it out, you might like a <a href="resume.pdf">pdf</a>.</p>
 </div>
 </body>
 divert`'dnl
