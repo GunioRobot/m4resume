@@ -11,6 +11,7 @@ pdflatex resume.tex
 # Send it up to the host
 scp -P 2222 resume.pdf resume.html resume.css *.gif  sgharms@stevengharms.com:public_html/
 
-wget http://www.w3.org/2007/08/pyRdfa/extract?uri=http://stevengharms.com/resume.html
+wget http://www.w3.org/2007/08/pyRdfa/extract?uri=http%3A%2F%2Fstevengharms.com%2Fresume.html&format=pretty-xml&warnings=false&parser=lax&space-preserve=true&submit=Go!&text=http://www.w3.org/2007/08/pyRdfa/extract?uri=http%3A%2F%2Fstevengharms.com%2Fresume.html&format=pretty-xml&warnings=false&parser=lax&space-preserve=true&submit=Go!&text=
+
 mv extrac* resume.rdf
 scp -P 2222 resume.rdf sgharms@stevengharms.com:public_html/
