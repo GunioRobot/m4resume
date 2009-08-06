@@ -41,6 +41,7 @@ define(`CANDIDATE_GITHUB', ``github.com/sgharms'')
 define(`CANDIDATE_HOMEPAGE', ``stevengharms.com'')
 define(`CANDIDATE_ABOUT_URI', `http://`'changecom(`*')CANDIDATE_HOMEPAGE`#'me'`'changecom(`#'))
 define(`CANDIDATE_RESUME_URL', `http://`'CANDIDATE_HOMEPAGE`'/resume.html')
+define(`ICONIZED_PDF')
 
 ###############################################################################
 CONVENIENCE MACROS

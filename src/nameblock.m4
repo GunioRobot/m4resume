@@ -21,7 +21,7 @@ ifdef(`do_rdfa',
 <span property="foaf:givenName" content="Steven"/>')
 
 <h1>
-__RDFA_CANDIDATE_NAME
+__RDFA_CANDIDATE_NAME <a href="resume.pdf"><img src="pdficon_large.gif" alt="Adobe PDF icon" /></a>
 </h1>
 <ul>
 dnl 	ifdef(`__RDFA_CANDIDATE_ADDRESS',`<li>__RDFA_CANDIDATE_ADDRESS</li>',`ifdef(`CANDIDATE_ADDRESS', `<li>CANDIDATE_ADDRESS</li>')')
