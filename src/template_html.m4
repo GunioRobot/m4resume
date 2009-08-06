@@ -26,9 +26,9 @@ ifdef(`RES_FORMAT_DO_PERSONAL_STATEMENT', `include(`src/personal_statement.m4')'
 
 
 ifdef(`RES_FORMAT_DO_EDUCATION_STATEMENT',    `<div id="education_block">include(`src/education_statement.m4')</div>')dnl
-RIGHT BEFORE
+
 ifdef(`RES_FORMAT_DO_COURSES_STATEMENT', `<div id="activities_block">include(`src/courses_statement.m4')</div>')dnl
-RIGHT AFTER
+
 ifdef(`RES_FORMAT_DO_SKILLS_STATEMENT',    `<div id="skills_block">include(`src/skills_statement.m4')</div>')dnl
 
 ifdef(`RES_FORMAT_DO_ACTIVITES_STATEMENT', `<div id="activities_block">include(`src/activities_statement.m4')</div>')dnl

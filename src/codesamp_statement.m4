@@ -22,8 +22,10 @@ define(`aProj',
 mode, `latex',
 `
 \subsubsection*{`$1'}
-Category:  Language: Audience
-Homepage: {\bf `$9'}
+
+{\bf Category:} `$5'  {\bf Language:} `$7' {\bf Audience:} `$8'
+
+{\bf Homepage:} {\tt `$9'}
 \vspace{0.05in}
 
 `$4'
