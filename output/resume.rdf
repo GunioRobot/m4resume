@@ -12,178 +12,501 @@
   xmlns:xml="http://www.w3.org/XML/1998/namespace"
 >
   <cv:CV rdf:about="http://stevengharms.com/resume.html">
-    <xhv:stylesheet rdf:resource="http://stevengharms.com/resume.css"/>
-    <cv:hasCourse>
-      <cv:Course>
-        <cv:eduStartDate xml:lang="en">2005-02</cv:eduStartDate>
-        <cv:organized_by rdf:resource="http://bignerdranch.com"/>
-        <cv:courseTitle xml:lang="en">Beginning Cocoa Bootcamp</cv:courseTitle>
-        <cv:eduEndDate xml:lang="en">2005-02</cv:eduEndDate>
-        <cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_cocoa.shtml"/>
-        <cv:isCertification xml:lang="en">0</cv:isCertification>
-      </cv:Course>
-    </cv:hasCourse>
-    <cv:hasCourse>
-      <cv:Course>
-        <cv:eduStartDate xml:lang="en">2003-05</cv:eduStartDate>
-        <cv:organized_by rdf:resource="http://redhat.com"/>
-        <cv:courseTitle xml:lang="en">Red Hat Certified Engineer Bootcamp</cv:courseTitle>
-        <cv:eduEndDate xml:lang="en">2003-05</cv:eduEndDate>
-        <cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml"/>
-        <cv:isCertification xml:lang="en">1</cv:isCertification>
-      </cv:Course>
-    </cv:hasCourse>
-    <cv:hasCourse>
-      <cv:Course>
-        <cv:eduStartDate xml:lang="en">2006-02</cv:eduStartDate>
-        <cv:organized_by rdf:resource="http://bignerdranch.com"/>
-        <cv:courseTitle xml:lang="en">Ruby on Rails Bootcamp</cv:courseTitle>
-        <cv:eduEndDate xml:lang="en">2006-02</cv:eduEndDate>
-        <cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml"/>
-        <cv:isCertification xml:lang="en">0</cv:isCertification>
-      </cv:Course>
-    </cv:hasCourse>
-    <cv:isConfidential xml:lang="en">1</cv:isConfidential>
-    <cv:aboutPerson>
+    <dc:creator>
       <foaf:Person rdf:about="http://stevengharms.com#me">
-        <foaf:surname xml:lang="en">Harms</foaf:surname>
         <foaf:schoolname xml:lang="en">University of Texas at Austin</foaf:schoolname>
         <foaf:schoolname xml:lang="en">Rijksuniversiteit te Leiden, Leiden, The Netherlands</foaf:schoolname>
-        <foaf:title xml:lang="en">Mr.</foaf:title>
-        <foaf:name xml:lang="en">Steven G. Harms</foaf:name>
-        <foaf:weblog rdf:resource="http://stevengharms.com"/>
-        <foaf:givenName xml:lang="en">Steven</foaf:givenName>
-        <foaf:homepage rdf:resource="http://stevengharms.com"/>
-        <foaf:webpage rdf:resource="http://stevengharms.com"/>
-        <foaf:myersBriggs xml:lang="en">INTJ</foaf:myersBriggs>
         <foaf:currentProject rdf:resource="http://github.com/sgharms"/>
-        <foaf:schoolHomepage rdf:resource="http://www.utexas.edu"/>
-        <foaf:schoolHomepage rdf:resource="http://www.leiden.edu"/>
         <doap:maintainer>
           <doap:Project>
-            <doap:category xml:lang="en">Linguistics</doap:category>
-            <doap:programming-language xml:lang="en">Ruby</doap:programming-language>
-            <doap:created xml:lang="en">2003-07-09</doap:created>
-            <doap:homepage rdf:resource="http://github.com/bruce/linguistics/tree/master"/>
+            <doap:shortdesc xml:lang="en">Software for handling data from Sendmail, processing it, and then classifying, dropping, or holding it in an escrow pen.</doap:shortdesc>
+            <doap:category xml:lang="en">Sysadmin</doap:category>
+            <doap:description xml:lang="en">
+				For mail architectures that are highly distributed, consolidating mails and running elgibility-to-send to certain addresses is difficult and problematic.  Mailguard is designed such that addresses can be routed to a central server. Upon reaching the server, the data is sent via STDOUT into the mailguard application.  The application then classifies the sender and based on configuration parameters decides whether the mail should be silently discarded, forwarded on, or put into a holding pen until the message can be validated by a moderator.
+			</doap:description>
+            <doap:programming-language xml:lang="en">Perl</doap:programming-language>
+            <doap:created xml:lang="en">2008-07-06</doap:created>
+            <doap:name xml:lang="en">CMailguard</doap:name>
+            <doap:homepage rdf:resource="http://code.google.com/p/cmailguard/"/>
+          </doap:Project>
+        </doap:maintainer>
+        <doap:maintainer>
+          <doap:Project>
             <doap:shortdesc xml:lang="en">Michael Grangers Linguistics framework for Ruby (from SVN)</doap:shortdesc>
+            <doap:category xml:lang="en">Linguistics</doap:category>
             <doap:description xml:lang="en">
 				Linguistics is a framework for building linguistic utilities for Ruby objects
 in any language. It includes a generic language-independant front end, a
 module for mapping language codes into language names, and a module which
 contains various English-language utilities.
 			</doap:description>
+            <doap:programming-language xml:lang="en">Ruby</doap:programming-language>
+            <doap:created xml:lang="en">2003-07-09</doap:created>
             <doap:name xml:lang="en">Linguistics Package</doap:name>
+            <doap:homepage rdf:resource="http://github.com/bruce/linguistics/tree/master"/>
           </doap:Project>
         </doap:maintainer>
         <doap:maintainer>
           <doap:Project>
-            <doap:category xml:lang="en">Linguistics</doap:category>
-            <doap:programming-language xml:lang="en">Ruby</doap:programming-language>
-            <doap:created xml:lang="en">2009-28-01</doap:created>
-            <doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master"/>
-            <doap:shortdesc xml:lang="en">Libraries for editing Latin text quickly.</doap:shortdesc>
-            <doap:description xml:lang="en">
-				Tools for entering LaTeX; useful for Latin writing quickly through Textmate; also has code for converting LaTeX-glyphs at CLI to HTML or UTF-8 codes.
-			</doap:description>
-            <doap:name xml:lang="en">latintools</doap:name>
-          </doap:Project>
-        </doap:maintainer>
-        <doap:maintainer>
-          <doap:Project>
-            <doap:category xml:lang="en">Productivity</doap:category>
-            <doap:programming-language xml:lang="en">M4</doap:programming-language>
-            <doap:created xml:lang="en">2009-07-09</doap:created>
-            <doap:homepage rdf:resource="https://github.com/sgharms/m4resume/tree"/>
-            <doap:shortdesc xml:lang="en">Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.</doap:shortdesc>
-            <doap:description xml:lang="en">
-				Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.
-			</doap:description>
-            <doap:name xml:lang="en">M4Resume</doap:name>
-          </doap:Project>
-        </doap:maintainer>
-        <doap:maintainer>
-          <doap:Project>
-            <doap:category xml:lang="en">Linguistics</doap:category>
-            <doap:programming-language xml:lang="en">Ruby</doap:programming-language>
-            <doap:created xml:lang="en">2008-08-26</doap:created>
-            <doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master"/>
             <doap:shortdesc xml:lang="en">Libraries for conjugating latin verbs and IRB like environment for exploration</doap:shortdesc>
+            <doap:category xml:lang="en">Linguistics</doap:category>
             <doap:description xml:lang="en">
 				A Rails application that wraps a library set that programmatically conjugates regular Latin Verbs from 4 principal parts into all verbal parts, moods, persons, etc.
 			</doap:description>
+            <doap:programming-language xml:lang="en">Ruby</doap:programming-language>
+            <doap:created xml:lang="en">2008-08-26</doap:created>
             <doap:name xml:lang="en">VerbaLatina</doap:name>
+            <doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master"/>
           </doap:Project>
         </doap:maintainer>
         <doap:maintainer>
           <doap:Project>
-            <doap:category xml:lang="en">Sysadmin</doap:category>
-            <doap:programming-language xml:lang="en">Perl</doap:programming-language>
-            <doap:created xml:lang="en">2008-07-06</doap:created>
-            <doap:homepage rdf:resource="http://code.google.com/p/cmailguard/"/>
-            <doap:shortdesc xml:lang="en">Software for handling data from Sendmail, processing it, and then classifying, dropping, or holding it in an escrow pen.</doap:shortdesc>
+            <doap:shortdesc xml:lang="en">Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.</doap:shortdesc>
+            <doap:category xml:lang="en">Productivity</doap:category>
             <doap:description xml:lang="en">
-				For mail architectures that are highly distributed, consolidating mails and running elgibility-to-send to certain addresses is difficult and problematic.  Mailguard is designed such that addresses can be routed to a central server. Upon reaching the server, the data is sent via STDOUT into the mailguard application.  The application then classifies the sender and based on configuration parameters decides whether the mail should be silently discarded, forwarded on, or put into a holding pen until the message can be validated by a moderator.
+				Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.
 			</doap:description>
-            <doap:name xml:lang="en">CMailguard</doap:name>
+            <doap:programming-language xml:lang="en">M4</doap:programming-language>
+            <doap:created xml:lang="en">2009-07-09</doap:created>
+            <doap:name xml:lang="en">M4Resume</doap:name>
+            <doap:homepage rdf:resource="https://github.com/sgharms/m4resume/tree"/>
           </doap:Project>
         </doap:maintainer>
+        <doap:maintainer>
+          <doap:Project>
+            <doap:shortdesc xml:lang="en">Libraries for editing Latin text quickly.</doap:shortdesc>
+            <doap:category xml:lang="en">Linguistics</doap:category>
+            <doap:description xml:lang="en">
+				Tools for entering LaTeX; useful for Latin writing quickly through Textmate; also has code for converting LaTeX-glyphs at CLI to HTML or UTF-8 codes.
+			</doap:description>
+            <doap:programming-language xml:lang="en">Ruby</doap:programming-language>
+            <doap:created xml:lang="en">2009-28-01</doap:created>
+            <doap:name xml:lang="en">latintools</doap:name>
+            <doap:homepage rdf:resource="https://github.com/sgharms/verbalatina/tree/master"/>
+          </doap:Project>
+        </doap:maintainer>
+        <foaf:schoolHomepage rdf:resource="http://www.utexas.edu"/>
+        <foaf:schoolHomepage rdf:resource="http://www.leiden.edu"/>
+        <foaf:homepage rdf:resource="http://stevengharms.com"/>
+        <foaf:myersBriggs xml:lang="en">INTJ</foaf:myersBriggs>
+        <foaf:surname xml:lang="en">Harms</foaf:surname>
+        <foaf:givenName xml:lang="en">Steven</foaf:givenName>
+        <foaf:name xml:lang="en">Steven G. Harms</foaf:name>
+        <foaf:webpage rdf:resource="http://stevengharms.com"/>
+        <foaf:title xml:lang="en">Mr.</foaf:title>
+        <foaf:weblog rdf:resource="http://stevengharms.com"/>
       </foaf:Person>
-    </cv:aboutPerson>
+    </dc:creator>
+    <cv:hasWorkHistory>
+      <cv:workHistory>
+        <cv:jobDescription xml:lang="en">Communication and Collaboration Platform</cv:jobDescription>
+        <foaf:workplaceHomepage rdf:resource="http://www.cisco.com"/>
+        <dc:date xml:lang="en">2005-04</dc:date>
+        <dc:date xml:lang="en">2009-07</dc:date>
+        <cv:jobTitle xml:lang="en">Senior I.T. Engineer</cv:jobTitle>
+        <cv:Notes xml:lang="en">Led technical team responsible forum and blogging framework deployment</cv:Notes>
+        <cv:Notes xml:lang="en">Wrote script to deploy core mailing list host data repository, web interface, mail interface, and build scripts from M4 macro definitions + Bash + Perl. This allows an entire environment to be built and deployed into a segregated space by configuring a single macro specification file</cv:Notes>
+        <cv:Notes xml:lang="en">Authored 5–point, 2–year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment.  Implementation completed 2008</cv:Notes>
+        <cv:Notes xml:lang="en">Collaborated with University of Texas  Information, Risk, and Operations Management MIS steering committee to specify next generation of skill-set foci</cv:Notes>
+        <cv:Notes xml:lang="en">Through efforts in the previous 6 years, reduced head-count to 1 full time employee and a vendor team.  Realized net savings in excess of 320,000USD</cv:Notes>
+        <cv:Notes xml:lang="en">Created registry process and web tool for application host systems that use e-mail as transport layer. This should help identify / remediate non-compliant systems that are using our data through unsupported interfaces so that we can help them come into compliance</cv:Notes>
+        <cv:Notes xml:lang="en">Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux</cv:Notes>
+        <cv:Notes xml:lang="en">Created business requirements document and RESTful API specification for new generic list-abstraction repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.  Implemented 2009-05</cv:Notes>
+        <cv:workplaceHomepage rdf:resource="http://www.cisco.com"/>
+        <cv:employedIn rdf:resource="http://www.cisco.com"/>
+      </cv:workHistory>
+    </cv:hasWorkHistory>
+    <cv:hasWorkHistory>
+      <cv:workHistory>
+        <cv:jobDescription xml:lang="en">Enterprise Messaging Systems</cv:jobDescription>
+        <foaf:workplaceHomepage rdf:resource="http://www.cisco.com"/>
+        <dc:date xml:lang="en">2005-06</dc:date>
+        <dc:date xml:lang="en">2001-04</dc:date>
+        <cv:jobTitle xml:lang="en">Systems Administrator</cv:jobTitle>
+        <cv:jobTitle xml:lang="en">I.T. Developer</cv:jobTitle>
+        <cv:Notes xml:lang="en">Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing fewer than 10 values</cv:Notes>
+        <cv:Notes xml:lang="en">Managed fleet of 10 HP servers, a dozen Mirapoint appliances</cv:Notes>
+        <cv:Notes xml:lang="en">Established messaging team standard Perl module set / CVS repository / Subversion repository</cv:Notes>
+        <cv:Notes xml:lang="en">Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000</cv:Notes>
+        <cv:Notes xml:lang="en">Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at CMailg</cv:Notes>
+        <cv:Notes xml:lang="en">Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution</cv:Notes>
+        <cv:Notes xml:lang="en">Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed six times faster</cv:Notes>
+        <cv:Notes xml:lang="en">Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design</cv:Notes>
+        <cv:workplaceHomepage rdf:resource="http://www.cisco.com"/>
+        <cv:employedIn rdf:resource="http://www.cisco.com"/>
+      </cv:workHistory>
+    </cv:hasWorkHistory>
+    <cv:hasWorkHistory>
+      <cv:workHistory>
+        <cv:jobDescription xml:lang="en">Engineering Support Analyst</cv:jobDescription>
+        <foaf:workplaceHomepage rdf:resource="http://www.cisco.com"/>
+        <dc:date xml:lang="en">2000-06</dc:date>
+        <dc:date xml:lang="en">2001-04</dc:date>
+        <cv:jobTitle xml:lang="en">I.T. Analyst</cv:jobTitle>
+        <cv:Notes xml:lang="en">Identified training gaps: created training and delivered to employees in 3 theatres</cv:Notes>
+        <cv:Notes xml:lang="en">Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team</cv:Notes>
+        <cv:Notes xml:lang="en">Moved client satisfaction rating from 74 to 95 percent, the highest seen to that date</cv:Notes>
+        <cv:Notes xml:lang="en">Designed web-based Web-vacation mail tool. Tool reduced support calls from 500 per quarter to 25. Net savings of 30,000 USD estimated savings per annum realized
+</cv:Notes>
+        <cv:Notes xml:lang="en">Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter</cv:Notes>
+        <cv:workplaceHomepage rdf:resource="http://www.cisco.com"/>
+        <cv:employedIn rdf:resource="http://www.cisco.com"/>
+      </cv:workHistory>
+    </cv:hasWorkHistory>
+    <cv:aboutPerson rdf:resource="http://stevengharms.com#me"/>
+    <cv:isConfidential xml:lang="en">1</cv:isConfidential>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">7 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Systems Administration</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">8 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Linux Administration</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">8</cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Daily</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Perl</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Metadata</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">10 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">object-oriented design</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">5 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Sendmail</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:LanguageSkill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:lngSkillLevelWritten xml:lang="en">2</cv:lngSkillLevelWritten>
+        <cv:lngSkillLevelReading xml:lang="en">2</cv:lngSkillLevelReading>
+        <cv:skillName xml:lang="en">French</cv:skillName>
+      </cv:LanguageSkill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">RDF</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">10 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">HTML</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">6 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">vim</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">4 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">svn</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Ruby metaprogramming</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Unicode</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2005-06-20</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Cocoa</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2007-01-20</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Javascript</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presentnly</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">XHTML+RDFa</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Internationalization(i18n)</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2006-01-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Java</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">RDFa</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">6 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2007-06-30</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Solaris Administration</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">7 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-21</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Apache</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">postgres</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">10 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Shell Scripting</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">CSS</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">mySQL</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">3</cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Ruby</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">5 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">XHTML</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-13</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Rails</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">git</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2007-03-26</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">PHP</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:LanguageSkill>
+        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
+        <cv:lngSkillLevelWritten xml:lang="en">3</cv:lngSkillLevelWritten>
+        <cv:lngSkillLevelReading xml:lang="en">4</cv:lngSkillLevelReading>
+        <cv:skillName xml:lang="en">Dutch</cv:skillName>
+      </cv:LanguageSkill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:LanguageSkill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:lngSkillLevelWritten xml:lang="en">2</cv:lngSkillLevelWritten>
+        <cv:lngSkillLevelReading xml:lang="en">3</cv:lngSkillLevelReading>
+        <cv:skillName xml:lang="en">Latin</cv:skillName>
+      </cv:LanguageSkill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">4 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2004-10-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">emacs</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Unit Testing</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">Semantic Web</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:hasSkill>
+      <cv:Skill>
+        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
+        <cv:skillYearsExperience xml:lang="en">5 </cv:skillYearsExperience>
+        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
+        <cv:skillName xml:lang="en">M4</cv:skillName>
+      </cv:Skill>
+    </cv:hasSkill>
+    <cv:isActive xml:lang="en">0</cv:isActive>
+    <cv:cvTitle xml:lang="en">Résumé for Steven G. Harms</cv:cvTitle>
     <cv:hasTarget>
       <cv:Target>
+        <cv:targetCareerLevel xml:lang="en">Developer</cv:targetCareerLevel>
+        <cv:targetCareerLevel xml:lang="en">IT Strategist</cv:targetCareerLevel>
+        <cv:targetCareerLevel xml:lang="en">IT Architect</cv:targetCareerLevel>
+        <cv:conditionWillRelocate xml:lang="en">True</cv:conditionWillRelocate>
         <cv:targetJobDescription xml:lang="en">    I am seeking a position that finds the diversity of    my interests and passions to be a bonus; I am looking for a team of    innovative thinkers who are on the forefront of linguistic, semantic, and    metaprogrammatic thinking.</cv:targetJobDescription>
-        <cv:targetCompanyIndustry xml:lang="en">Internet</cv:targetCompanyIndustry>
+        <cv:weeksNoticePeriod xml:lang="en">2</cv:weeksNoticePeriod>
+        <cv:conditionWillTravel xml:lang="en">True</cv:conditionWillTravel>
         <cv:targetCompanyDescription xml:lang="en">
 	  I am looking for a passionate start-up
 	  opportunity or an enterprise that is ready to shake up its old way of
 	  thinking about how to enable collaboration.
 	</cv:targetCompanyDescription>
-        <cv:conditionWillRelocate xml:lang="en">True</cv:conditionWillRelocate>
-        <cv:targetCountry xml:lang="en">USA</cv:targetCountry>
-        <cv:targetJobType xml:lang="en">Rails development</cv:targetJobType>
-        <cv:targetJobType xml:lang="en">IT Architecture</cv:targetJobType>
-        <cv:targetJobType xml:lang="en">Ruby on Rails</cv:targetJobType>
         <cv:targetJobType xml:lang="en">IT Engineering</cv:targetJobType>
-        <cv:targetJobType xml:lang="en">Ruby development</cv:targetJobType>
         <cv:targetJobType xml:lang="en">Internet software development</cv:targetJobType>
-        <cv:weeksNoticePeriod xml:lang="en">2</cv:weeksNoticePeriod>
-        <cv:conditionWillTravel xml:lang="en">True</cv:conditionWillTravel>
+        <cv:targetJobType xml:lang="en">Ruby development</cv:targetJobType>
+        <cv:targetJobType xml:lang="en">Ruby on Rails</cv:targetJobType>
+        <cv:targetJobType xml:lang="en">IT Architecture</cv:targetJobType>
+        <cv:targetJobType xml:lang="en">Rails development</cv:targetJobType>
+        <cv:targetCompanyIndustry xml:lang="en">Internet</cv:targetCompanyIndustry>
         <cv:targetJobMode xml:lang="en">full-time</cv:targetJobMode>
-        <cv:targetCareerLevel xml:lang="en">Developer</cv:targetCareerLevel>
-        <cv:targetCareerLevel xml:lang="en">IT Strategist</cv:targetCareerLevel>
-        <cv:targetCareerLevel xml:lang="en">IT Architect</cv:targetCareerLevel>
+        <cv:targetCountry xml:lang="en">USA</cv:targetCountry>
       </cv:Target>
     </cv:hasTarget>
+    <cv:cvDescription xml:lang="en">
+    I love learning and experimentation.  I draw on a background that includes philosophy, business, classics, code, and nine years of industry experience to provide innovative solutions, to ask non-obvious questions, and to push the boundaries of what is perceived as possible.
+  </cv:cvDescription>
+    <cv:hasCourse>
+      <cv:Course>
+        <cv:organized_by rdf:resource="http://bignerdranch.com"/>
+        <cv:eduStartDate xml:lang="en">2005-02</cv:eduStartDate>
+        <cv:isCertification xml:lang="en">0</cv:isCertification>
+        <cv:courseTitle xml:lang="en">Beginning Cocoa Bootcamp</cv:courseTitle>
+        <cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_cocoa.shtml"/>
+        <cv:eduEndDate xml:lang="en">2005-02</cv:eduEndDate>
+      </cv:Course>
+    </cv:hasCourse>
+    <cv:hasCourse>
+      <cv:Course>
+        <cv:organized_by rdf:resource="http://bignerdranch.com"/>
+        <cv:eduStartDate xml:lang="en">2006-02</cv:eduStartDate>
+        <cv:isCertification xml:lang="en">0</cv:isCertification>
+        <cv:courseTitle xml:lang="en">Ruby on Rails Bootcamp</cv:courseTitle>
+        <cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml"/>
+        <cv:eduEndDate xml:lang="en">2006-02</cv:eduEndDate>
+      </cv:Course>
+    </cv:hasCourse>
+    <cv:hasCourse>
+      <cv:Course>
+        <cv:organized_by rdf:resource="http://redhat.com"/>
+        <cv:eduStartDate xml:lang="en">2003-05</cv:eduStartDate>
+        <cv:isCertification xml:lang="en">1</cv:isCertification>
+        <cv:courseTitle xml:lang="en">Red Hat Certified Engineer Bootcamp</cv:courseTitle>
+        <cv:courseURL rdf:resource="http://bignerdranch.com/classes/beginning_ruby_on_rails.shtml"/>
+        <cv:eduEndDate xml:lang="en">2003-05</cv:eduEndDate>
+      </cv:Course>
+    </cv:hasCourse>
+    <xhv:stylesheet rdf:resource="http://stevengharms.com/resume.css"/>
     <cv:hasEducation>
       <cv:Education>
-        <cv:eduStartDate xml:lang="en">1997</cv:eduStartDate>
-        <cv:eduDescription xml:lang="en">
-  During a one-year study abroad term I studied advanced classes in Dutch
-speaking, writing, grammar, and composition.  I also took 3 classes in the
-faculty of Philosophy: Rise of Scientific Europe, Seminar on Scientific
-Revolutions, and Rationality of Emotions.
-
-  </cv:eduDescription>
-        <cv:eduGradDate xml:lang="en">1998</cv:eduGradDate>
-      </cv:Education>
-    </cv:hasEducation>
-    <cv:hasEducation>
-      <cv:Education>
-        <cv:eduStartDate xml:lang="en">1995</cv:eduStartDate>
-        <cv:eduGradDate xml:lang="en">2000</cv:eduGradDate>
-        <cv:eduDescription xml:lang="en">
-  A classic liberal arts program in philosophy with focus on pre-Socratic
-Greek philosophy, German Idealism (Hegel), and Philosophy of science.
-
-  </cv:eduDescription>
-        <cv:eduMinor xml:lang="en">Dutch</cv:eduMinor>
-      </cv:Education>
-    </cv:hasEducation>
-    <cv:hasEducation>
-      <cv:Education>
-        <cv:eduStartDate xml:lang="en">1995</cv:eduStartDate>
-        <cv:eduMinor xml:lang="en">Dutch</cv:eduMinor>
-        <cv:eduGradDate xml:lang="en">2000</cv:eduGradDate>
+        <cv:eduMajor xml:lang="en">Management Information Systems</cv:eduMajor>
         <cv:eduDescription xml:lang="en">
   A multi-disciplinary approach that blends a base in business
 administration with a focus in building enterprise IT systems.  Attention is
@@ -191,358 +514,35 @@ paid to programming basics, project management, and consulting.  The program
 culminates with a real-world project delivered to an Austin community
 organization.
   </cv:eduDescription>
-        <cv:eduMajor xml:lang="en">Management Information Systems</cv:eduMajor>
+        <cv:eduStartDate xml:lang="en">1995</cv:eduStartDate>
+        <cv:eduGradDate xml:lang="en">2000</cv:eduGradDate>
+        <cv:eduMinor xml:lang="en">Dutch</cv:eduMinor>
       </cv:Education>
     </cv:hasEducation>
-    <cv:hasWorkHistory>
-      <cv:workHistory>
-        <dc:date xml:lang="en">2001-04</dc:date>
-        <dc:date xml:lang="en">2005-06</dc:date>
-        <cv:Notes xml:lang="en">Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing fewer than 10 values</cv:Notes>
-        <cv:Notes xml:lang="en">Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000</cv:Notes>
-        <cv:Notes xml:lang="en">Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed six times faster</cv:Notes>
-        <cv:Notes xml:lang="en">Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at CMailg</cv:Notes>
-        <cv:Notes xml:lang="en">Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design</cv:Notes>
-        <cv:Notes xml:lang="en">Managed fleet of 10 HP servers, a dozen Mirapoint appliances</cv:Notes>
-        <cv:Notes xml:lang="en">Established messaging team standard Perl module set / CVS repository / Subversion repository</cv:Notes>
-        <cv:Notes xml:lang="en">Member of 5-person team changed with  backbone mail systems upon which ~1bn/month mail flow.  Build anti-spam, anti-malware solution</cv:Notes>
-        <cv:jobDescription xml:lang="en">Enterprise Messaging Systems</cv:jobDescription>
-        <foaf:workplaceHomepage rdf:resource="http://www.cisco.com"/>
-        <cv:employedIn rdf:resource="http://www.cisco.com"/>
-        <cv:workplaceHomepage rdf:resource="http://www.cisco.com"/>
-        <cv:jobTitle xml:lang="en">I.T. Developer</cv:jobTitle>
-        <cv:jobTitle xml:lang="en">Systems Administrator</cv:jobTitle>
-      </cv:workHistory>
-    </cv:hasWorkHistory>
-    <cv:hasWorkHistory>
-      <cv:workHistory>
-        <dc:date xml:lang="en">2001-04</dc:date>
-        <dc:date xml:lang="en">2000-06</dc:date>
-        <cv:Notes xml:lang="en">Designed web-based Web-vacation mail tool. Tool reduced support calls from 500 per quarter to 25. Net savings of 30,000 USD estimated savings per annum realized
-</cv:Notes>
-        <cv:Notes xml:lang="en">Moved client satisfaction rating from 74 to 95 percent, the highest seen to that date</cv:Notes>
-        <cv:Notes xml:lang="en">Developed lead + application owner support relationship still in use today. After performing liaison role, messaging team requested my transition to their team</cv:Notes>
-        <cv:Notes xml:lang="en">Identified training gaps: created training and delivered to employees in 3 theatres</cv:Notes>
-        <cv:Notes xml:lang="en">Tracked top 5 issues quarter to quarter. After 3 quarters of implementation, support calls dropped, on average, 100 cases per quarter</cv:Notes>
-        <cv:jobDescription xml:lang="en">Engineering Support Analyst</cv:jobDescription>
-        <foaf:workplaceHomepage rdf:resource="http://www.cisco.com"/>
-        <cv:employedIn rdf:resource="http://www.cisco.com"/>
-        <cv:workplaceHomepage rdf:resource="http://www.cisco.com"/>
-        <cv:jobTitle xml:lang="en">I.T. Analyst</cv:jobTitle>
-      </cv:workHistory>
-    </cv:hasWorkHistory>
-    <cv:hasWorkHistory>
-      <cv:workHistory>
-        <dc:date xml:lang="en">2009-07</dc:date>
-        <dc:date xml:lang="en">2005-04</dc:date>
-        <cv:Notes xml:lang="en">Through efforts in the previous 6 years, reduced head-count to 1 full time employee and a vendor team.  Realized net savings in excess of 320,000USD</cv:Notes>
-        <cv:Notes xml:lang="en">Collaborated with University of Texas  Information, Risk, and Operations Management MIS steering committee to specify next generation of skill-set foci</cv:Notes>
-        <cv:Notes xml:lang="en">Authored 5–point, 2–year legacy systems migration strategy to move all backbone mail services to a standardized, turnkey environment.  Implementation completed 2008</cv:Notes>
-        <cv:Notes xml:lang="en">Created standard specification for all applications environments with respect to standard, accepted mail routing behavior: policy document, Sendmail.mc for Solaris, Linux</cv:Notes>
-        <cv:Notes xml:lang="en">Created registry process and web tool for application host systems that use e-mail as transport layer. This should help identify / remediate non-compliant systems that are using our data through unsupported interfaces so that we can help them come into compliance</cv:Notes>
-        <cv:Notes xml:lang="en">Created business requirements document and RESTful API specification for new generic list-abstraction repository and interface: allows disparate downstream systems (including mail) to access and utilize the same list structures for mail, calendar, voice mail, meeting invite, etc.  Implemented 2009-05</cv:Notes>
-        <cv:Notes xml:lang="en">Wrote script to deploy core mailing list host data repository, web interface, mail interface, and build scripts from M4 macro definitions + Bash + Perl. This allows an entire environment to be built and deployed into a segregated space by configuring a single macro specification file</cv:Notes>
-        <cv:Notes xml:lang="en">Led technical team responsible forum and blogging framework deployment</cv:Notes>
-        <cv:jobDescription xml:lang="en">Communication and Collaboration Platform</cv:jobDescription>
-        <foaf:workplaceHomepage rdf:resource="http://www.cisco.com"/>
-        <cv:employedIn rdf:resource="http://www.cisco.com"/>
-        <cv:workplaceHomepage rdf:resource="http://www.cisco.com"/>
-        <cv:jobTitle xml:lang="en">Senior I.T. Engineer</cv:jobTitle>
-      </cv:workHistory>
-    </cv:hasWorkHistory>
-    <cv:isActive xml:lang="en">0</cv:isActive>
-    <cv:cvTitle xml:lang="en">Résumé for Steven G. Harms</cv:cvTitle>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Internationalization(i18n)</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Ruby metaprogramming</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">git</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">CSS</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:LanguageSkill>
-        <cv:skillName xml:lang="en">Dutch</cv:skillName>
-        <cv:lngSkillLevelWritten xml:lang="en">3</cv:lngSkillLevelWritten>
-        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
-        <cv:lngSkillLevelReading xml:lang="en">4</cv:lngSkillLevelReading>
-      </cv:LanguageSkill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:LanguageSkill>
-        <cv:skillName xml:lang="en">French</cv:skillName>
-        <cv:lngSkillLevelWritten xml:lang="en">2</cv:lngSkillLevelWritten>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:lngSkillLevelReading xml:lang="en">2</cv:lngSkillLevelReading>
-      </cv:LanguageSkill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Systems Administration</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">7 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">M4</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">5 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Solaris Administration</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">6 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2007-06-30</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">svn</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">4 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">postgres</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Shell Scripting</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">10 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:LanguageSkill>
-        <cv:skillName xml:lang="en">Latin</cv:skillName>
-        <cv:lngSkillLevelWritten xml:lang="en">2</cv:lngSkillLevelWritten>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:lngSkillLevelReading xml:lang="en">3</cv:lngSkillLevelReading>
-      </cv:LanguageSkill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">RDF</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Javascript</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2007-01-20</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Semantic Web</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">object-oriented design</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">10 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">XHTML</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">5 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">HTML</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">10 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">emacs</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">4 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2004-10-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Rails</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-13</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Unit Testing</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Perl</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">8</cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Daily</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">XHTML+RDFa</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presentnly</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">mySQL</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">3 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">PHP</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2007-03-26</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Java</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2006-01-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Apache</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">7 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-21</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Ruby</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">3</cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(4)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Metadata</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Unicode</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2009-02-15</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">vim</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">6 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Cocoa</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">2 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(2)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">2005-06-20</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">RDFa</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">1 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Linux Administration</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">8 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(5)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <cv:hasSkill>
-      <cv:Skill>
-        <cv:skillName xml:lang="en">Sendmail</cv:skillName>
-        <cv:skillYearsExperience xml:lang="en">5 </cv:skillYearsExperience>
-        <cv:skillLevel xml:lang="en">(3)</cv:skillLevel>
-        <cv:skillLastUsed xml:lang="en">Presently</cv:skillLastUsed>
-      </cv:Skill>
-    </cv:hasSkill>
-    <dc:creator rdf:resource="http://stevengharms.com#me"/>
-    <cv:cvDescription xml:lang="en">
-    I love learning and experimentation.  I draw on a background that includes philosophy, business, classics, code, and nine years of industry experience to provide innovative solutions, to ask non-obvious questions, and to push the boundaries of what is perceived as possible.
-  </cv:cvDescription>
+    <cv:hasEducation>
+      <cv:Education>
+        <cv:eduStartDate xml:lang="en">1997</cv:eduStartDate>
+        <cv:eduGradDate xml:lang="en">1998</cv:eduGradDate>
+        <cv:eduDescription xml:lang="en">
+  During a one-year study abroad term I studied advanced classes in Dutch
+speaking, writing, grammar, and composition.  I also took 3 classes in the
+faculty of Philosophy: Rise of Scientific Europe, Seminar on Scientific
+Revolutions, and Rationality of Emotions.
+
+  </cv:eduDescription>
+      </cv:Education>
+    </cv:hasEducation>
+    <cv:hasEducation>
+      <cv:Education>
+        <cv:eduStartDate xml:lang="en">1995</cv:eduStartDate>
+        <cv:eduDescription xml:lang="en">
+  A classic liberal arts program in philosophy with focus on pre-Socratic
+Greek philosophy, German Idealism (Hegel), and Philosophy of science.
+
+  </cv:eduDescription>
+        <cv:eduGradDate xml:lang="en">2000</cv:eduGradDate>
+        <cv:eduMinor xml:lang="en">Dutch</cv:eduMinor>
+      </cv:Education>
+    </cv:hasEducation>
   </cv:CV>
 </rdf:RDF>

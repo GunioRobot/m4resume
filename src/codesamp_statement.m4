@@ -97,7 +97,7 @@ aProj(`latintools',
 `http://stevengharms.com#me',
 `Ruby',
 `Classicists',
-`https://github.com/sgharms/verbalatina/tree/master')
+`https://github.com/sgharms/latintools/tree/master')
 
 
 
