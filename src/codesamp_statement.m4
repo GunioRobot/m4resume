@@ -34,7 +34,7 @@ divert`'dnl
 
 
 ifelse(mode, `latex', `
-\section*{Code Sample }
+\section*{Code Sample}
 ', `
 <div id="code_samples">
 <h2>Open-source projects:</h2>
@@ -79,8 +79,8 @@ aProj(`CMailguard',
 
 aProj(`M4Resume',
 `2009-07-09',
-`Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.',
-`Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  LaTeX, XHTML, and XHTML+RDFa.',
+`Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  'LaTeX`, XHTML, and XHTML+RDFa.',
+`Tool for writing résumés in M4, and then having it flexibly build them into a variety of formats:  'LaTeX`, XHTML, and XHTML+RDFa.',
 `Productivity',
 `http://stevengharms.com#me',
 `M4',
@@ -90,7 +90,7 @@ aProj(`M4Resume',
 aProj(`latintools',
 `2009-28-01',
 `Libraries for editing Latin text quickly.',
-`Tools for entering LaTeX useful for Latin writing quickly through Textmate; also converting LaTeX glyphs at CLI to HTML or UTF-8 codes',
+`Tools for entering' LaTeX`; useful for Latin writing quickly through Textmate; also has code for converting 'LaTeX-glyphs `at CLI to HTML or UTF-8 codes',
 `Linguistics',
 `http://stevengharms.com#me',
 `Ruby',

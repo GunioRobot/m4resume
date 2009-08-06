@@ -58,6 +58,7 @@ define(`CCT', `Communication and Collaboration Platform')
 define(`CISCO', `Cisco Systems')
 define(`CMailg',`ifelse(mode, `html', `<a href="http://code.google.com/p/cmailguard/">Google Code CMailguard</a>',
                         `Google Code {\bf CMailguard} Project')')
+ifelse(mode, `latex', `define(`LaTeX', ``\LaTeX'')')
 
 ###############################################################################
 EDUCATION MACROS
