@@ -130,7 +130,7 @@ lskill(`Latin',`3',`3',`2')
      tskill(`vim', `5', `Presently', `6' )
 		 small_hr
      tskill(`CSS', `4', `Presently', `3' )
-     tskill(`XHTML+RDFa', `4', `Presentnly', `3' )
+     tskill(`XHTML+RDFa', `4', `Presently', `3' )
      tskill(`Ruby', `4', `Presently', `3')
      tskill(`git', `4', `Presently', `1' )
      tskill(`svn', `4', `Presently', `4' )
