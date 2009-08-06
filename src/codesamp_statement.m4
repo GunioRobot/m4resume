@@ -3,17 +3,17 @@ divert(-20)
 define(`aProj',
 `ifelse(mode, `html',
 `
-  <div typeof="doap:Project">
+  <div typeof="doap:Project" class="projblock">
 		<p>
-			<span property="doap:name">`$1'</span> Est:<span property="doap:created">`$2'</span> 
-			Category:<span property="doap:category">`$5'</span>  Language:<span property="doap:programming-language">`$7'</span>
+			<span class="projname_label" property="doap:name">`$1'</span> &rarr; <span class="est_label">Est:  </span><span property="doap:created" class="created_date">`$2'</span> 
+			<span class="category_label">Category:</span>  <span class="category" property="doap:category">`$5'</span>  <span class="lang_label">Language:  </span><span property="doap:programming-language" class="prog_lang">`$7'</span>
 			<span property="doap:shortdesc" content="`$3'"/>
 			<span rev="doap:maintainer" href="`$6'" />
 			<span rel="doap:audience" content="`$8'" />
 		</p>
 		<p>[<a href="`$9'" rel="doap:homepage">`$9'</a>]</p>
 		<p>
-			<span property="doap:description">
+			<span property="doap:description" class="description">
 				`$4'
 			</span>
 		</p>	
@@ -57,11 +57,11 @@ aProj(`VerbaLatina',
 
 aProj(`Linguistics Package',
 `2003-07-09',
-`Michael Granger's Linguistics framework for Ruby (from SVN)',
+`Michael Grangers Linguistics framework for Ruby (from SVN)',
 `Linguistics is a framework for building linguistic utilities for Ruby objects
 in any language. It includes a generic language-independant front end, a
 module for mapping language codes into language names, and a module which
-contains various English-language utilities',
+contains various English-language utilities.',
 `Linguistics',
 `http://stevengharms.com#me',
 `Ruby',
@@ -92,7 +92,7 @@ aProj(`M4Resume',
 aProj(`latintools',
 `2009-28-01',
 `Libraries for editing Latin text quickly.',
-`Tools for entering' LaTeX`; useful for Latin writing quickly through Textmate; also has code for converting 'LaTeX-glyphs `at CLI to HTML or UTF-8 codes',
+`Tools for entering' LaTeX`; useful for Latin writing quickly through Textmate; also has code for converting 'LaTeX-glyphs `at CLI to HTML or UTF-8 codes.',
 `Linguistics',
 `http://stevengharms.com#me',
 `Ruby',

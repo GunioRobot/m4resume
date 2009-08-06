@@ -39,8 +39,12 @@ p.employer_and_dates span.dates{
 	font-style:italic;
 }
 
-
 .major, .minor, .dates
 {
 /*	font-style:italic;*/
+}
+
+div.projblock .projname_label, .est_label, .category_label, .lang_label
+{
+		font-weight: bold;
 }
