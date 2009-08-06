@@ -1,5 +1,5 @@
 ifelse(mode, `latex', `
-  \section*{ Personal Statement}
+  \section*{Personal Statement}
   PERSONAL_STATEMENT_BODY
 ', `
 <!-- Open div for personal_statement -->

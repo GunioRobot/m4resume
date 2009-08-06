@@ -34,7 +34,7 @@ divert`'dnl
 
 
 ifelse(mode, `latex', `
-  \section*{ Code Sample }
+\section*{Code Sample }
 ', `
 <div id="code_samples">
 <h2>Open-source projects:</h2>
