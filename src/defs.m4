@@ -104,6 +104,8 @@ define(`RES_HTML_HEAD', `
   <link rel="stylesheet" type="text/css" href="resume.css" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta property="generator" content="M4Resume: https://github.com/sgharms/m4resume/tree" />
+	<meta name="keywords" content="steven, harms, steven harms, resume, semantic, ruby, rails, m4, linguistics, latin, french, dutch, web," />
+	<meta name="description" content="Resume for Steven G. Harms" />
 </head>')
 
 ###############################################################################
