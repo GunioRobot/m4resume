@@ -84,7 +84,9 @@ define(`RDFA_CISCO_1_ACHIEVEMENTS',``Member of 5-person team changed with  backb
 `Migrated legacy environment of spool-based and Mirapoint-based clients to Exchange 2000',
 `Designed Out of Office scanner / handler to prevent MS Exchange from feeding spam engines / spamming external mailing lists / causing infinite mail storm loops due to its "everyone gets a bounce" design',
 `Established messaging team standard Perl module set / CVS repository / Subversion repository',
-`Built common framework for Sendmail-based processing, filtration, and re-routing.  Built 3 special-use appliances using single polymorphic code base.  Available at CMailg',
+`Built common framework for Sendmail-based processing, filtration, and
+re-routing.  Built 3 special-use appliances using single polymorphic code base
+(CMailg)',
 `Built software solutions for turnkey rebuild of core infrastructure components to increase resiliency in event of attrition or disaster.  Build entire deploy suite in M4 which allowed customization to disaster environment by changing fewer than 10 values',
 `Migrated primary web interface for list data repository from non–validating HTML 4 Frameset specification to XHTML–compliant, CSS–based, Template::Toolkit design.  User interface performed six times faster'')dnl
 

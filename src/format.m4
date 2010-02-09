@@ -40,9 +40,10 @@ define(`simpleecho', ``$@'')
 
 define(`cv_note_ify',
 `ifdef(`do_rdfa', 
-`changequote(`[',`]')dnl
+`
+changequote(`[',`]')dnl
 ifelse($#, 0, , $#,1,[`<span property="cv:Notes">$1</span>'],
-[``<span property="cv:Notes">$1</span>'',cv_note_ify(shift($@))`dnl']
+[`<span property="cv:Notes">$1</span>',cv_note_ify(shift($@))`dnl']
 changequote`'dnl
 )',
 `ifelse(mode,`html',`VANILLA HTML',
