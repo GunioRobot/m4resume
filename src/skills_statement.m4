@@ -116,6 +116,8 @@ lskill(`Latin',`3',`3',`2')
  tskill(`Internationalization(i18n)', `2', `2009-02-15', `1' )
  small_hr
  tskill(`Unicode', `2', `2009-02-15', `1' )
+ tskill(`Java', `1', `Presently', `2' )
+ tskill(`Maven', `1', `Presently', `2' )
 
 ', `
 <div id="skills_statement">
