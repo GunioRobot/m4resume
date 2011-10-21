@@ -23,7 +23,7 @@ define(`RES_FORMAT_DO_SKILLS_STATEMENT', `1')
 
 #Some people have honors, they may define this
 # undefine(`RES_FORMAT_DO_HONORS_STATEMENT')
- 
+
 #Share the code
 define(`RES_FORMAT_DO_CODESAMP_STATEMENT', `1')
 
@@ -49,7 +49,7 @@ EDUCATION MACROS
 For specifying the configuration of the HTML template
 define(`RES_EDUCATION_MYUNI', `The University of Hard Knocks')
 define(`RES_EDUCATION_MYDATES', `1995-2000')
-define(`RES_EDUCATION_DEGREEINFO',`BBA:  Mumbledy-stuff (MIS), 
+define(`RES_EDUCATION_DEGREEINFO',`BBA:  Mumbledy-stuff (MIS),
         BS:  M4 Processing,'),
 ###############################################################################
 HTML MACROS
@@ -59,13 +59,13 @@ For specifying the configuration of the HTML template
 define(`RES_HTML_DECLARATION',
 ifdef(`do_rdfa',
 ``<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">'',
 ``<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">''))
 
-define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.org/1999/xhtml" 
+define(`RES_HTML_DTD_DECLARATION',ifdef(`do_rdfa', ``<html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:dc="http://dublincore.org/2008/01/14/dcelements.rdf#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   version="XHTML+RDFa 1.0" xml:lang="en" typeof="foaf:person">'',
@@ -83,11 +83,11 @@ define(`RES_HTML_HEAD', `
 RDFa Support
 This is where your special RDF-ized tags should go
 
-define(`RDFa_tokens', 
-``__RDFA_M4', `<span rel="foaf:interest">M4</span>', 
-`__RDFA_Ruby',`<span rel="foaf:interest">Ruby</span>', 
+define(`RDFa_tokens',
+``__RDFA_M4', `<span rel="foaf:interest">M4</span>',
+`__RDFA_Ruby',`<span rel="foaf:interest">Ruby</span>',
 `__RDFA_Trinidad_and_Tobago',`Trinidad and Tobago'')
-ifdef(`do_rdfa', 
+ifdef(`do_rdfa',
 include(`src/rdfa_support.m4')
 format_RDFa_pairs(RDFa_tokens)
 )

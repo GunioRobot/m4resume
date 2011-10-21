@@ -30,8 +30,8 @@ Copyright (C) 1989, 1990, 1991, 1992, 1993, 1994, 2004, 2005,
   pre.smallexample { font-size:smaller }
   pre.smalllisp    { font-size:smaller }
   span.sc    { font-variant:small-caps }
-  span.roman { font-family:serif; font-weight:normal; } 
-  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+  span.roman { font-family:serif; font-weight:normal; }
+  span.sansserif { font-family:sans-serif; font-weight:normal; }
 --></style>
 </head><body>
 <h1 class="settitle">GNU M4 1.4.13 macro processor</h1>
@@ -234,7 +234,7 @@ releases in the 1.4.x series are only meant to fix bugs, increase speed,
 or improve documentation.  However<small class="dots">...</small>
 
    </p><p>An experimental feature, which would improve <code>m4</code> usefulness,
-allows for changing the syntax for what is a <dfn>word</dfn> in <code>m4</code>. 
+allows for changing the syntax for what is a <dfn>word</dfn> in <code>m4</code>.
 You should use:
 <!-- ignore -->
 </p><pre class="example">     ./configure --enable-changeword
@@ -520,7 +520,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Preliminaries">Preliminaries</a>
 
 <p><a name="index-overview-of-_0040code_007bm4_007d-1"></a><code>m4</code> is a macro processor, in the sense that it copies its
 input to the output, expanding macros as it goes.  Macros are either
-builtin or user-defined, and can take any number of arguments. 
+builtin or user-defined, and can take any number of arguments.
 Besides just doing macro expansion, <code>m4</code> has builtin functions
 for including named files, running shell commands, doing integer
 arithmetic, manipulating text in various ways, performing recursion,
@@ -528,19 +528,19 @@ etc.<small class="dots">...</small>  <code>m4</code> can be used either as a fro
 or as a macro processor in its own right.
 
    </p><p>The <code>m4</code> macro processor is widely available on all UNIXes, and has
-been standardized by <acronym>POSIX</acronym>. 
-Usually, only a small percentage of users are aware of its existence. 
+been standardized by <acronym>POSIX</acronym>.
+Usually, only a small percentage of users are aware of its existence.
 However, those who find it often become committed users.  The
 popularity of <acronym>GNU</acronym> Autoconf, which requires <acronym>GNU</acronym>
 <code>m4</code> for <em>generating</em> <samp><span class="file">configure</span></samp> scripts, is an incentive
 for many to install it, while these people will not themselves
 program in <code>m4</code>.  <acronym>GNU</acronym> <code>m4</code> is mostly compatible with the
-System V, Release 3 version, except for some minor differences. 
+System V, Release 3 version, except for some minor differences.
 See <a href="#Compatibility">Compatibility</a>, for more details.
 
    </p><p>Some people find <code>m4</code> to be fairly addictive.  They first use
 <code>m4</code> for simple problems, then take bigger and bigger challenges,
-learning how to write complex sets of <code>m4</code> macros along the way. 
+learning how to write complex sets of <code>m4</code> macros along the way.
 Once really addicted, users pursue writing of sophisticated <code>m4</code>
 applications even to solve simple problems, devoting more time
 debugging their <code>m4</code> scripts than doing real work.  Beware that
@@ -604,7 +604,7 @@ addressed some long standing bugs in the venerable 1.4 release.  Then in
 2005, Gary V. Vaughan collected together the many patches to
 <acronym>GNU</acronym> <code>m4</code> 1.4 that were floating around the net and
 released 1.4.3 and 1.4.4.  And in 2006, Eric Blake joined the team and
-prepared patches for the release of 1.4.5, 1.4.6, 1.4.7, and 1.4.8. 
+prepared patches for the release of 1.4.5, 1.4.6, 1.4.7, and 1.4.8.
 More bug fixes were incorporated in 2007, with releases 1.4.9 and
 1.4.10.  Eric continued with some portability fixes for 1.4.11 and
 1.4.12 in 2008, and 1.4.13 in 2009.
@@ -669,7 +669,7 @@ shown in a fixed width font, like this
 by the string &#8216;<samp><span class="samp">&#8658;</span></samp>&#8217;, and all error messages by the string
 &#8216;<samp><span class="samp">error--&gt;</span></samp>&#8217;.  When showing how command line options affect matters,
 the command line is shown with a prompt &#8216;<samp><span class="samp">$ </span><kbd>like this</kbd></samp>&#8217;,
-otherwise, you can assume that a simple <kbd>m4</kbd> invocation will work. 
+otherwise, you can assume that a simple <kbd>m4</kbd> invocation will work.
 Thus:
 
 <!-- ignore -->
@@ -679,7 +679,7 @@ Thus:
      error--&gt;and an error message
 </pre>
    <p>The sequence &#8216;<samp><span class="samp">^D</span></samp>&#8217; in an example indicates the end of the input
-file.  The sequence &#8216;<samp><span class="samp">&lt;NL&gt;</span></samp>&#8217; refers to the newline character. 
+file.  The sequence &#8216;<samp><span class="samp">&lt;NL&gt;</span></samp>&#8217; refers to the newline character.
 The majority of these examples are self-contained, and you can run them
 with similar results by invoking <kbd>m4 -d</kbd>.  In fact, the testsuite
 that is bundled in the <acronym>GNU</acronym> M4 package consists of the examples
@@ -702,7 +702,7 @@ Composite macro, rather than a Builtin.  It requires at least one
 argument, <var>string</var>.  Remember that in <code>m4</code>, there must not be a
 space between the macro name and the opening parenthesis, unless it was
 intended to call the macro without any arguments.  The brackets around
-<var>count</var> and <var>argument</var> show that these arguments are optional. 
+<var>count</var> and <var>argument</var> show that these arguments are optional.
 If <var>count</var> is omitted, the macro behaves as if count were &#8216;<samp><span class="samp">1</span></samp>&#8217;,
 whereas if <var>argument</var> is omitted, the macro behaves as if it were
 the empty string.  A blank argument is not the same as an omitted
@@ -711,7 +711,7 @@ and &#8216;<samp><span class="samp">example(`a',`1',)</span></samp>&#8217; would
 set to &#8216;<samp><span class="samp">1</span></samp>&#8217;; while &#8216;<samp><span class="samp">example(`a',)</span></samp>&#8217; and &#8216;<samp><span class="samp">example(`a',`')</span></samp>&#8217;
 would explicitly pass the empty string for <var>count</var>.  The ellipses
 (&#8216;<samp><span class="samp">...</span></samp>&#8217;) show that the macro processes additional arguments
-after <var>argument</var>, rather than ignoring them. 
+after <var>argument</var>, rather than ignoring them.
 </p></blockquote></div>
 
    <p><a name="index-numbers-9"></a>All macro arguments in <code>m4</code> are strings, but some are given
@@ -765,7 +765,7 @@ considered canonical.
 
    </p><p>With long options, options with mandatory arguments may be provided with
 an equal sign (&#8216;<samp><span class="samp">=</span></samp>&#8217;) in a single argument, or as two arguments, and
-options with optional arguments must be provided as a single argument. 
+options with optional arguments must be provided as a single argument.
 In other words, <kbd>m4 --def foo --debug a</kbd> is equivalent to
 <kbd>m4 --define=foo --debug= -- ./a</kbd>, although the latter form is
 considered canonical (not to mention more robust, in case a future
@@ -842,7 +842,7 @@ where a macro is defined to have a given definition.
 
      <br></dd><dt><code>-W </code><var>regexp</var></dt><dt><code>--word-regexp=</code><var>regexp</var></dt><dd>Use <var>regexp</var> as an alternative syntax for macro names.  This
 experimental option will not be present in all <acronym>GNU</acronym> <code>m4</code>
-implementations (see <a href="#Changeword">Changeword</a>). 
+implementations (see <a href="#Changeword">Changeword</a>).
 </dd></dl>
 
 <div class="node">
@@ -856,7 +856,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Invoking-m4">Invoking m4</a>
 
 <h3 class="section">2.2 Command line options for preprocessor features</h3>
 
-<p><a name="index-macro-definitions_002c-on-the-command-line-17"></a><a name="index-command-line_002c-macro-definitions-on-the-18"></a><a name="index-preprocessor-features-19"></a>Several options allow <code>m4</code> to behave more like a preprocessor. 
+<p><a name="index-macro-definitions_002c-on-the-command-line-17"></a><a name="index-command-line_002c-macro-definitions-on-the-18"></a><a name="index-preprocessor-features-19"></a>Several options allow <code>m4</code> to behave more like a preprocessor.
 Macro definitions and deletions can be made on the command line, the
 search path can be altered, and the output file can track where the
 input came from.  These features occur with the following options:
@@ -926,7 +926,7 @@ string or comment.
 only predefined macros can be deleted in this way.  This option may be
 given more than once; undefining a <var>name</var> that does not have a
 definition is silently ignored.  Order is significant with respect to
-file names. 
+file names.
 </dd></dl>
 
 <div class="node">
@@ -965,7 +965,7 @@ environment.
      <br></dd><dt><code>-G</code></dt><dt><code>--traditional</code></dt><dd>Suppress all the extensions made in this implementation, compared to the
 System V version.  See <a href="#Compatibility">Compatibility</a>, for a list of these.
 
-     <br></dd><dt><code>-H </code><var>num</var></dt><dt><code>--hashsize=</code><var>num</var></dt><dd>Make the internal hash table for symbol lookup be <var>num</var> entries big. 
+     <br></dd><dt><code>-H </code><var>num</var></dt><dt><code>--hashsize=</code><var>num</var></dt><dd>Make the internal hash table for symbol lookup be <var>num</var> entries big.
 For better performance, the number should be prime, but this is not
 checked.  The default is 509 entries.  It should not be necessary to
 increase this value, unless you define an excessive number of macros.
@@ -980,14 +980,14 @@ overflow.
      <p>The precise effect of this option is more correctly associated
 with textual nesting than dynamic recursion.  It has been useful
 when some complex <code>m4</code> input was generated by mechanical means, and
-also in diagnosing recursive algorithms that do not scale well. 
+also in diagnosing recursive algorithms that do not scale well.
 Most users never need to change this option from its default.
 
      </p><p><a name="index-rescanning-25"></a>This option does <em>not</em> have the ability to break endless
 rescanning loops, since these do not necessarily consume much memory
 or stack space.  Through clever usage of rescanning loops, one can
 request complex, time-consuming computations from <code>m4</code> with useful
-results.  Putting limitations in this area would break <code>m4</code> power. 
+results.  Putting limitations in this area would break <code>m4</code> power.
 There are many pathological cases: &#8216;<samp><span class="samp">define(`a',&nbsp;`a')a</span></samp>&#8217;<!-- /@w --> is
 only the simplest example (but see <a href="#Compatibility">Compatibility</a>).  Expecting <acronym>GNU</acronym>
 <code>m4</code> to detect these would be a little like expecting a compiler
@@ -1002,7 +1002,7 @@ releases, and issue a warning to that effect.
 versions of <acronym>GNU</acronym> <code>m4</code>, and were controlling the number of
 possible diversions which could be used at the same time.  They do nothing,
 because there is no fixed limit anymore.  They may disappear in future
-releases, and issue a warning to that effect. 
+releases, and issue a warning to that effect.
 </dd></dl>
 
 <div class="node">
@@ -1028,7 +1028,7 @@ in &#8216;<samp><span class="samp">.m4f</span></samp>&#8217;.
      <br></dd><dt><code>-R </code><var>file</var></dt><dt><code>--reload-state=</code><var>file</var></dt><dd>Before execution starts, recover the internal state from the specified
 frozen <var>file</var>.  The options <samp><span class="option">-D</span></samp>, <samp><span class="option">-U</span></samp>, and
 <samp><span class="option">-t</span></samp> take effect after state is reloaded, but before the input
-files are read. 
+files are read.
 </dd></dl>
 
 <div class="node">
@@ -1069,9 +1069,9 @@ characters per trace line.  If unspecified or zero, output is
 unlimited.  See <a href="#Debug-Levels">Debug Levels</a>, for more details.
 
      <br></dd><dt><code>-t </code><var>name</var></dt><dt><code>--trace=</code><var>name</var></dt><dd>This enables tracing for the macro <var>name</var>, at any point where it is
-defined.  <var>name</var> need not be defined when this option is given. 
+defined.  <var>name</var> need not be defined when this option is given.
 This option may be given more than once, and order is significant with
-respect to file names.  See <a href="#Trace">Trace</a>, for more details. 
+respect to file names.  See <a href="#Trace">Trace</a>, for more details.
 </dd></dl>
 
 <div class="node">
@@ -1140,7 +1140,7 @@ is not a part of either a name or a string.  Input to <code>m4</code> can also
 contain comments.  <acronym>GNU</acronym> <code>m4</code> does not yet understand
 multibyte locales; all operations are byte-oriented rather than
 character-oriented (although if your locale uses a single byte
-encoding, such as <span class="sc">ISO-8859-1</span>, you will not notice a difference). 
+encoding, such as <span class="sc">ISO-8859-1</span>, you will not notice a difference).
 However, <code>m4</code> is eight-bit clean, so you can
 use non-<span class="sc">ascii</span> characters in quoted strings (see <a href="#Changequote">Changequote</a>),
 comments (see <a href="#Changecom">Changecom</a>), and macro names (see <a href="#Indir">Indir</a>), with the
@@ -1338,7 +1338,7 @@ that line.
 &#8216;<samp><span class="samp">define</span></samp>&#8217;, which it recognizes as a macro, followed by a &#8216;<samp><span class="samp">(</span></samp>&#8217;,
 &#8216;<samp><span class="samp">[gl_STRING_MODULE_INDICATOR]</span></samp>&#8217;, and &#8216;<samp><span class="samp">,</span></samp>&#8217;.  Because an unquoted
 comma was encountered, the first argument is known to be the expansion
-of the single-quoted string token, or &#8216;<samp><span class="samp">gl_STRING_MODULE_INDICATOR</span></samp>&#8217;. 
+of the single-quoted string token, or &#8216;<samp><span class="samp">gl_STRING_MODULE_INDICATOR</span></samp>&#8217;.
 Next, <code>m4</code> sees &#8216;<samp><span class="samp">&lt;NL&gt;</span></samp>&#8217;, &#8216;<samp> </samp>&#8217;, and &#8216;<samp> </samp>&#8217;, but this
 whitespace is discarded as part of argument collection.  Then comes a
 rather lengthy single-quoted string token, &#8216;<samp><span class="samp">[&lt;NL&gt;    dnl
@@ -1358,7 +1358,7 @@ rescanned, resulting in the two literal characters &#8216;<samp><span class="sam
 &#8216;<samp><span class="samp">[=1&lt;NL&gt;  ]</span></samp>&#8217;, and finally &#8216;<samp><span class="samp">)</span></samp>&#8217;.  The collected pieces of
 expanded text are concatenated, with the end result that the macro
 &#8216;<samp><span class="samp">gl_STRING_MODULE_INDICATOR</span></samp>&#8217; is now defined to be the sequence
-&#8216;<samp><span class="samp">&lt;NL&gt;    dnl comment&lt;NL&gt;    GNULIB_$1=1&lt;NL&gt;  </span></samp>&#8217;. 
+&#8216;<samp><span class="samp">&lt;NL&gt;    dnl comment&lt;NL&gt;    GNULIB_$1=1&lt;NL&gt;  </span></samp>&#8217;.
 Once again, &#8216;<samp><span class="samp">dnl</span></samp>&#8217; is recognized and avoids a newline in the output.
 
    </p><p>The final line is then parsed, beginning with &#8216;<samp> </samp>&#8217; and &#8216;<samp> </samp>&#8217;
@@ -1402,7 +1402,7 @@ string becomes the definition of the macro.
 
    </p><p>The final line is then parsed, beginning with two spaces that are
 output literally, and an invocation of
-<code>gl_STRING_MODULE_INDICATOR</code> with the argument &#8216;<samp><span class="samp">strcase</span></samp>&#8217;. 
+<code>gl_STRING_MODULE_INDICATOR</code> with the argument &#8216;<samp><span class="samp">strcase</span></samp>&#8217;.
 Again, the &#8216;<samp><span class="samp">$1</span></samp>&#8217; in the macro definition is substituted prior to
 rescanning.  Rescanning first encounters &#8216;<samp><span class="samp">dnl</span></samp>&#8217;, and discards
 &#8216;<samp><span class="samp"> comment&lt;NL&gt;</span></samp>&#8217;.  Then two spaces are output literally.  Next
@@ -1414,7 +1414,7 @@ not affect output.  Then the token &#8216;<samp><span class="samp">translit</spa
 &#8216;<samp><span class="samp">[strcase]</span></samp>&#8217;, &#8216;<samp><span class="samp">,</span></samp>&#8217;, &#8216;<samp> </samp>&#8217;, &#8216;<samp><span class="samp">[a-z]</span></samp>&#8217;, &#8216;<samp><span class="samp">,</span></samp>&#8217;, &#8216;<samp> </samp>&#8217;,
 &#8216;<samp><span class="samp">[A-Z]</span></samp>&#8217;, and &#8216;<samp><span class="samp">)</span></samp>&#8217;.  The two spaces are discarded, and the
 translit results in the desired result &#8216;<samp><span class="samp">STRCASE</span></samp>&#8217;.  This is
-rescanned, but since it is not a macro name, it is output literally. 
+rescanned, but since it is not a macro name, it is output literally.
 Then the scanner sees &#8216;<samp><span class="samp">=</span></samp>&#8217; and &#8216;<samp><span class="samp">1</span></samp>&#8217;, which are output
 literally, followed by &#8216;<samp><span class="samp">dnl</span></samp>&#8217; which discards the rest of the
 definition of <code>gl_STRING_MODULE_INDICATOR</code>.  The newline at the
@@ -1555,7 +1555,7 @@ invocation, and how quoting can be used to inhibit macro invocation.
    </p><p>Even if quoting is usually done over the whole macro name, it can also
 be done over only a few characters of this name (provided, of course,
 that the unquoted portions are not also a macro).  It is also possible
-to quote the empty string, but this works only <em>inside</em> the name. 
+to quote the empty string, but this works only <em>inside</em> the name.
 For example:
 
 </p><pre class="example">     `divert'
@@ -1631,7 +1631,7 @@ as a macro.
 
    </p><p>If the name is followed by an opening parenthesis, the arguments will be
 collected before the macro is called.  If too few arguments are
-supplied, the missing arguments are taken to be the empty string. 
+supplied, the missing arguments are taken to be the empty string.
 However, some builtins are documented to behave differently for a
 missing optional argument than for an explicit empty string.  If there
 are too many arguments, the excess arguments are ignored.  Unquoted
@@ -1734,7 +1734,7 @@ argument, all unquoted parentheses must match.  For example, if
 <!-- ignore -->
 </p><pre class="example">     foo(() (`(') `(')
 </pre>
-   <p class="noindent">is a macro call, with one argument, whose value is &#8216;<samp><span class="samp">() (() (</span></samp>&#8217;. 
+   <p class="noindent">is a macro call, with one argument, whose value is &#8216;<samp><span class="samp">() (() (</span></samp>&#8217;.
 Commas separate arguments, except when they occur inside quotes,
 comments, or unquoted parentheses.  See <a href="#Pseudo-Arguments">Pseudo Arguments</a>, for
 examples.
@@ -1750,7 +1750,7 @@ example with the parentheses, the `right' way to do it is like this:
 must occur to create the arguments for the outer macro) or convenient
 (because it uses fewer characters) to leave out quotes for some
 arguments, and there is nothing wrong in doing it.  It just makes life a
-bit harder, if you are not careful to follow a consistent quoting style. 
+bit harder, if you are not careful to follow a consistent quoting style.
 For consistency, this manual follows the rule of thumb that each layer
 of parentheses introduces another layer of single quoting, except when
 showing the consequences of quoting rules.  This is done even when the
@@ -1814,7 +1814,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
 
 <h2 class="chapter">5 How to define new macros</h2>
 
-<p><a name="index-macros_002c-how-to-define-new-53"></a><a name="index-defining-new-macros-54"></a>Macros can be defined, redefined and deleted in several different ways. 
+<p><a name="index-macros_002c-how-to-define-new-53"></a><a name="index-defining-new-macros-54"></a>Macros can be defined, redefined and deleted in several different ways.
 Also, it is possible to redefine a macro without losing a previous
 value, and bring back the original value at a later time.
 
@@ -1848,8 +1848,8 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Definitions">Definitions</a>
 <blockquote><p>Defines <var>name</var> to expand to <var>expansion</var>.  If
 <var>expansion</var> is not given, it is taken to be empty.
 
-        </p><p>The expansion of <code>define</code> is void. 
-The macro <code>define</code> is recognized only with parameters. 
+        </p><p>The expansion of <code>define</code> is void.
+The macro <code>define</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>The following example defines the macro <var>foo</var> to expand to the text
@@ -1862,7 +1862,7 @@ The macro <code>define</code> is recognized only with parameters.
 </pre>
    <p>The empty line in the output is there because the newline is not
 a part of the macro definition, and it is consequently copied to
-the output.  This can be avoided by use of the macro <code>dnl</code>. 
+the output.  This can be avoided by use of the macro <code>dnl</code>.
 See <a href="#Dnl">Dnl</a>, for details.
 
    </p><p>The first argument to <code>define</code> should be quoted; otherwise, if the
@@ -1884,7 +1884,7 @@ definitions of a macro with <code>define</code>.  See <a href="#Incompatibilitie
 for more details.
 
    </p><p>As a <acronym>GNU</acronym> extension, the first argument to <code>define</code> does
-not have to be a simple word. 
+not have to be a simple word.
 It can be any text string, even the empty string.  A macro with a
 non-standard name cannot be invoked in the normal way, as the name is
 not recognized.  It can only be referenced by the builtins <code>indir</code>
@@ -1898,7 +1898,7 @@ macro names.
 &#8212; Composite: <b>array_set</b> (<var>index, </var><span class="roman">[</span><var>value</var><span class="roman">]</span>)<var><a name="index-array_005fset-59"></a></var><br>
 <blockquote><p>Provide access to entries within an array.  <code>array</code> reads the entry
 at location <var>index</var>, and <code>array_set</code> assigns <var>value</var> to
-location <var>index</var>. 
+location <var>index</var>.
 </p></blockquote></div>
 
 <pre class="example">     define(`array', `defn(format(``array[%d]'', `$1'))')
@@ -1937,7 +1937,7 @@ two arguments.
 </p><div class="defun">
 &#8212; Composite: <b>exch</b> (<var>arg1, arg2</var>)<var><a name="index-exch-62"></a></var><br>
 <blockquote><p>Expands to <var>arg2</var> followed by <var>arg1</var>, effectively exchanging
-their order. 
+their order.
 </p></blockquote></div>
 
 <pre class="example">     define(`exch', `$2, $1')
@@ -1955,7 +1955,7 @@ their order.
      macro
      &#8658;expansion text
 </pre>
-   <p>See <a href="#Quoting-Arguments">Quoting Arguments</a>, for an explanation of the double quotes. 
+   <p>See <a href="#Quoting-Arguments">Quoting Arguments</a>, for an explanation of the double quotes.
 (You should try and improve this example so that clients of <code>exch</code>
 do not have to double quote; or see <a href="#Improved-exch">Answers</a>).
 
@@ -2043,7 +2043,7 @@ in the expansion text.
 
 </p><div class="defun">
 &#8212; Composite: <b>nargs</b> (<var><small class="dots">...</small></var>)<var><a name="index-nargs-71"></a></var><br>
-<blockquote><p>Expands to a count of the number of arguments supplied. 
+<blockquote><p>Expands to a count of the number of arguments supplied.
 </p></blockquote></div>
 
 <pre class="example">     define(`nargs', `$#')
@@ -2083,7 +2083,7 @@ the actual arguments, unquoted, with commas in between.  For example
      &#8658;arg1,arg2,arg3 ,arg4
 </pre>
    <p>Often each argument should be quoted, and the notation <code>$@</code> handles
-that.  It is just like <code>$*</code>, except that it quotes each argument. 
+that.  It is just like <code>$*</code>, except that it quotes each argument.
 A simple example of that is:
 
 </p><pre class="example">     define(`echo', `$@')
@@ -2182,8 +2182,8 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Definitions">Definitions</a>
 <blockquote><p>For each argument, remove the macro <var>name</var>.  The macro names must
 necessarily be quoted, since they will be expanded otherwise.
 
-        </p><p>The expansion of <code>undefine</code> is void. 
-The macro <code>undefine</code> is recognized only with parameters. 
+        </p><p>The expansion of <code>undefine</code> is void.
+The macro <code>undefine</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     foo bar blah
@@ -2244,7 +2244,7 @@ empty string in most other contexts.  Combining a builtin with anything
 else is not supported; a warning is issued and the builtin is omitted
 from the final expansion.
 
-        </p><p>The macro <code>defn</code> is recognized only with parameters. 
+        </p><p>The macro <code>defn</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>Its normal use is best understood through an example, which shows how to
@@ -2391,9 +2391,9 @@ exactly like <code>define</code>.
 the topmost definition can be removed with <code>popdef</code>.  If there is
 no previous definition, <code>popdef</code> behaves like <code>undefine</code>.
 
-        </p><p>The expansion of both <code>pushdef</code> and <code>popdef</code> is void. 
+        </p><p>The expansion of both <code>pushdef</code> and <code>popdef</code> is void.
 The macros <code>pushdef</code> and <code>popdef</code> are recognized only with
-parameters. 
+parameters.
 </p></blockquote></div>
 
 <pre class="example">     define(`foo', `Expansion one.')
@@ -2475,7 +2475,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Definitions">Definitions</a>
 rest of the arguments <var>args</var>.  If <var>name</var> is not defined, an
 error message is printed, and the expansion is void.
 
-        </p><p>The macro <code>indir</code> is recognized only with parameters. 
+        </p><p>The macro <code>indir</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>This can be used to call macros with computed or &#8220;invalid&#8221;
@@ -2494,7 +2494,7 @@ called through the builtin <code>indir</code>.
 
    </p><p>One other point to observe is that argument collection occurs before
 <code>indir</code> invokes <var>name</var>, so if argument collection changes the
-value of <var>name</var>, that will be reflected in the final expansion. 
+value of <var>name</var>, that will be reflected in the final expansion.
 This is different than the behavior when invoking macros directly,
 where the definition that was in effect before argument collection is
 used.
@@ -2548,7 +2548,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Definitions">Definitions</a>
 rest of the arguments <var>args</var>.  If <var>name</var> does not name a
 builtin, an error message is printed, and the expansion is void.
 
-        </p><p>The macro <code>builtin</code> is recognized only with parameters. 
+        </p><p>The macro <code>builtin</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>This can be used even if <var>name</var> has been given another definition
@@ -2635,7 +2635,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
 
 <p>Macros, expanding to plain text, perhaps with arguments, are not quite
 enough.  We would like to have macros expand to different things, based
-on decisions taken at run-time.  For that, we need some kind of conditionals. 
+on decisions taken at run-time.  For that, we need some kind of conditionals.
 Also, we would like to have some kind of loop construct, so we could do
 something a number of times, or while some condition is true.
 
@@ -2669,7 +2669,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Conditionals">Conditionals</a>
 omitted, it is taken to be the empty string (according to the normal
 rules).
 
-        </p><p>The macro <code>ifdef</code> is recognized only with parameters. 
+        </p><p>The macro <code>ifdef</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     ifdef(`foo', ``foo' is defined', ``foo' is not defined')
@@ -2714,7 +2714,7 @@ argument is ignored, after triggering a warning.
 otherwise the first three arguments are discarded and the processing
 starts again.
 
-        </p><p>The macro <code>ifelse</code> is recognized only with parameters. 
+        </p><p>The macro <code>ifelse</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>Using only one argument is a common <code>m4</code> idiom for introducing a
@@ -2806,7 +2806,7 @@ be used for iterating through the actual arguments to a macro:
 <blockquote><p>Takes any number of arguments, and expands to all its arguments except
 <var>arg1</var>, separated by commas, with each argument quoted.
 
-        </p><p>The macro <code>shift</code> is recognized only with parameters. 
+        </p><p>The macro <code>shift</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     shift
@@ -2822,7 +2822,7 @@ be used for iterating through the actual arguments to a macro:
 
 </p><div class="defun">
 &#8212; Composite: <b>reverse</b> (<var><small class="dots">...</small></var>)<var><a name="index-reverse-126"></a></var><br>
-<blockquote><p>Takes any number of arguments, and reverses their order. 
+<blockquote><p>Takes any number of arguments, and reverses their order.
 </p></blockquote></div>
 
    <p>It is implemented as:
@@ -2851,7 +2851,7 @@ two strings results in the third, otherwise the first three arguments
 are discarded and the process repeats.  The difference is that each
 <var>test-&lt;n&gt;</var> is expanded only when it is encountered.  This means that
 every third argument to <code>cond</code> is normally given one more level of
-quoting than the corresponding argument to <code>ifelse</code>. 
+quoting than the corresponding argument to <code>ifelse</code>.
 </p></blockquote></div>
 
    <p>Here is the implementation of <code>cond</code>, along with a demonstration of
@@ -2903,7 +2903,7 @@ arguments into a single string.
 <blockquote><p>Generate a single-quoted string, consisting of each <var>arg</var> separated
 by <var>separator</var>.  While <code>joinall</code> always outputs a
 <var>separator</var> between arguments, <code>join</code> avoids the
-<var>separator</var> for an empty <var>arg</var>. 
+<var>separator</var> for an empty <var>arg</var>.
 </p></blockquote></div>
 
    <p>Here are some examples of its usage, based on the implementation
@@ -3005,7 +3005,7 @@ only one level of quoting is added, effectively removing whitespace
 after commas and turning multiple arguments into a single string.  With
 <code>dquote</code>, two levels of quoting are added, one around each element,
 and one around the list.  And with <code>dquote_elt</code>, two levels of
-quoting are added around each element. 
+quoting are added around each element.
 </p></blockquote></div>
 
    <p>An actual implementation of these three macros is distributed as
@@ -3068,7 +3068,7 @@ relying on the <acronym>GNU</acronym> extension of multi-digit arguments
 &#8212; Composite: <b>argn</b> (<var>n, <small class="dots">...</small></var>)<var><a name="index-argn-143"></a></var><br>
 <blockquote><p>Expands to argument <var>n</var> out of the remaining arguments.  <var>n</var>
 must be a positive number.  Usually invoked as
-&#8216;<samp><span class="samp">argn(`</span><var>n</var><span class="samp">',$@)</span></samp>&#8217;. 
+&#8216;<samp><span class="samp">argn(`</span><var>n</var><span class="samp">',$@)</span></samp>&#8217;.
 </p></blockquote></div>
 
    <p>It is implemented as:
@@ -3103,7 +3103,7 @@ successively assign it each integer value from <var>start</var> to <var>end</var
 inclusive.  For each assignment to <var>iterator</var>, append <var>text</var> to
 the expansion of the <code>forloop</code>.  <var>text</var> may refer to
 <var>iterator</var>.  Any definition of <var>iterator</var> prior to this
-invocation is restored. 
+invocation is restored.
 </p></blockquote></div>
 
    <p>It can, for example, be used for simple counting:
@@ -3155,7 +3155,7 @@ not finished, it increments the iterator (using the predefined macro
 </pre>
    <p>Notice the careful use of quotes.  Certain macro arguments are left
 unquoted, each for its own reason.  Try to find out <em>why</em> these
-arguments are left unquoted, and see what happens if they are quoted. 
+arguments are left unquoted, and see what happens if they are quoted.
 (As presented, these two macros are useful but not very robust for
 general use.  They lack even basic error handling for cases like
 <var>start</var> less than <var>end</var>, <var>end</var> not numeric, or
@@ -3186,7 +3186,7 @@ comma-separated list of elements contained in parentheses.  In
 contained in a quoted string.  For each assignment to <var>iterator</var>,
 append <var>text</var> to the overall expansion.  <var>text</var> may refer to
 <var>iterator</var>.  Any definition of <var>iterator</var> prior to this
-invocation is restored. 
+invocation is restored.
 </p></blockquote></div>
 
    <p>As an example, this displays each word in a list inside of a sentence,
@@ -3349,12 +3349,12 @@ entire definition stack.
 &#8212; Composite: <b>stack_foreach</b> (<var>macro, action</var>)<var><a name="index-stack_005fforeach-156"></a></var><br>
 &#8212; Composite: <b>stack_foreach_lifo</b> (<var>macro, action</var>)<var><a name="index-stack_005fforeach_005flifo-157"></a></var><br>
 <blockquote><p>For each of the <code>pushdef</code> definitions associated with <var>macro</var>,
-invoke the macro <var>action</var> with a single argument of that definition. 
+invoke the macro <var>action</var> with a single argument of that definition.
 <code>stack_foreach</code> visits the oldest definition first, while
-<code>stack_foreach_lifo</code> visits the current definition first. 
+<code>stack_foreach_lifo</code> visits the current definition first.
 <var>action</var> should not modify or dereference <var>macro</var>.  There are a
 few special macros, such as <code>defn</code>, which cannot be used as the
-<var>macro</var> parameter. 
+<var>macro</var> parameter.
 </p></blockquote></div>
 
    <p>A sample implementation of these macros is distributed in the file
@@ -3435,11 +3435,11 @@ creation of blind macros.
 <blockquote><p>Defines <var>name</var> as a blind macro, such that <var>name</var> will expand to
 <var>value</var> only when given explicit arguments.  <var>value</var> should not
 be the result of <code>defn</code> (see <a href="#Defn">Defn</a>).  This macro is only
-recognized with parameters, and results in an empty string. 
+recognized with parameters, and results in an empty string.
 </p></blockquote></div>
 
    <p>Defining a macro to define another macro can be a bit tricky.  We want
-to use a literal &#8216;<samp><span class="samp">$#</span></samp>&#8217; in the argument to the nested <code>define</code>. 
+to use a literal &#8216;<samp><span class="samp">$#</span></samp>&#8217; in the argument to the nested <code>define</code>.
 However, if &#8216;<samp><span class="samp">$</span></samp>&#8217; and &#8216;<samp><span class="samp">#</span></samp>&#8217; are adjacent in the definition of
 <code>define_blind</code>, then it would be expanded as the number of
 arguments to <code>define_blind</code> rather than the intended number of
@@ -3450,7 +3450,7 @@ need a helper macro to concatenate text that forms parameters in the
 composed macro, rather than interpreting the text as a parameter of the
 composing macro.
 
-   </p><p>As for the limitation against using <code>defn</code>, there are two reasons. 
+   </p><p>As for the limitation against using <code>defn</code>, there are two reasons.
 If a macro was previously defined with <code>define_blind</code>, then it can
 safely be renamed to a new blind macro using plain <code>define</code>; using
 <code>define_blind</code> to rename it just adds another layer of
@@ -3459,7 +3459,7 @@ macro is a builtin, then it would result in an attempt to define a macro
 consisting of both text and a builtin token; this is not supported, and
 the builtin token is flattened to an empty string.
 
-   </p><p>With that explanation, here's the definition, and some sample usage. 
+   </p><p>With that explanation, here's the definition, and some sample usage.
 Notice that <code>define_blind</code> is itself a blind macro.
 
 </p><pre class="example">     $ <kbd>m4 -d</kbd>
@@ -3494,7 +3494,7 @@ that provides exactly one argument.
 &#8212; Composite: <b>curry</b> (<var>macro, <small class="dots">...</small></var>)<var><a name="index-curry-165"></a></var><br>
 <blockquote><p>Expand to a macro call that takes exactly one argument, then appends
 that argument to the original arguments and invokes <var>macro</var> with the
-resulting list of arguments. 
+resulting list of arguments.
 </p></blockquote></div>
 
    <p>A demonstration of currying makes the intent of this macro a little more
@@ -3554,7 +3554,7 @@ an entire stack of macro definitions.
 definitions currently in <var>source</var>.  <code>copy</code> leaves <var>source</var>
 unchanged, while <code>rename</code> undefines <var>source</var>.  There are only a
 few macros, such as <code>copy</code> or <code>defn</code>, which cannot be copied
-via this macro. 
+via this macro.
 </p></blockquote></div>
 
    <p>The implementation is relatively straightforward (although since it uses
@@ -3595,7 +3595,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
 <h2 class="chapter">7 How to debug macros and input</h2>
 
 <p><a name="index-debugging-macros-171"></a><a name="index-macros_002c-debugging-172"></a>When writing macros for <code>m4</code>, they often do not work as intended on
-the first try (as is the case with most programming languages). 
+the first try (as is the case with most programming languages).
 Fortunately, there is support for macro debugging in <code>m4</code>.
 
 </p><ul class="menu">
@@ -3626,7 +3626,7 @@ the definitions of the <var>names</var> given.  The output is printed to the
 current debug file (usually standard error), and is sorted by name.  If
 an unknown name is encountered, a warning is printed.
 
-        </p><p>The expansion of <code>dumpdef</code> is void. 
+        </p><p>The expansion of <code>dumpdef</code> is void.
 </p></blockquote></div>
 
 <pre class="example">     $ <kbd>m4 -d</kbd>
@@ -3639,7 +3639,7 @@ an unknown name is encountered, a warning is printed.
      error--&gt;define: &lt;define&gt;
      &#8658;
 </pre>
-   <p>The last example shows how builtin macros definitions are displayed. 
+   <p>The last example shows how builtin macros definitions are displayed.
 The definition that is dumped corresponds to what would occur if the
 macro were to be called at that point, even if other definitions are
 still live due to redefining a macro during argument collection.
@@ -3681,7 +3681,7 @@ macros.
         </p><p>When called with arguments, only the macros listed in <var>names</var> are
 affected, whether or not they are currently defined.
 
-        </p><p>The expansion of <code>traceon</code> and <code>traceoff</code> is void. 
+        </p><p>The expansion of <code>traceon</code> and <code>traceoff</code> is void.
 </p></blockquote></div>
 
    <p>Whenever a traced macro is called and the arguments have been collected,
@@ -3857,7 +3857,7 @@ with the &#8216;<samp><span class="samp">a</span></samp>&#8217; and &#8216;<samp
      <br></dd><dt><code>x</code></dt><dd>In trace output, add a unique `macro call id' to each line of the trace
 output.  This is useful in connection with the &#8216;<samp><span class="samp">c</span></samp>&#8217; flag above.
 
-     <br></dd><dt><code>V</code></dt><dd>A shorthand for all of the above flags. 
+     <br></dd><dt><code>V</code></dt><dd>A shorthand for all of the above flags.
 </dd></dl>
 
    <p>If no flags are specified with the <samp><span class="option">-d</span></samp> option, the default is
@@ -3869,14 +3869,14 @@ the debugging output format:
 
 </p><div class="defun">
 &#8212; Builtin: <b>debugmode</b> (<span class="roman">[</span><var>flags</var><span class="roman">]</span>)<var><a name="index-debugmode-187"></a></var><br>
-<blockquote><p>The argument <var>flags</var> should be a subset of the letters listed above. 
+<blockquote><p>The argument <var>flags</var> should be a subset of the letters listed above.
 As special cases, if the argument starts with a &#8216;<samp><span class="samp">+</span></samp>&#8217;, the flags are
 added to the current debug flags, and if it starts with a &#8216;<samp><span class="samp">-</span></samp>&#8217;, they
 are removed.  If no argument is present, all debugging flags are cleared
 (as if no <samp><span class="option">-d</span></samp> was given), and with an empty argument the flags
 are reset to the default of &#8216;<samp><span class="samp">aeq</span></samp>&#8217;.
 
-        </p><p>The expansion of <code>debugmode</code> is void. 
+        </p><p>The expansion of <code>debugmode</code> is void.
 </p></blockquote></div>
 
 <!-- The explicit -dp neutralizes the testsuite default of -d. -->
@@ -3957,7 +3957,7 @@ warnings, error messages, or <code>errprint</code> output, which are
 always sent to standard error.  If <var>file</var> cannot be opened, the
 current debug file is unchanged, and an error is issued.
 
-        </p><p>The expansion of <code>debugfile</code> is void. 
+        </p><p>The expansion of <code>debugfile</code> is void.
 </p></blockquote></div>
 
 <pre class="example">     $ <kbd>m4 -d</kbd>
@@ -4018,7 +4018,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Input-Control">Input Control</a>
 without performing any macro expansion.  A warning is issued if the end
 of the file is encountered without a newline.
 
-        </p><p>The expansion of <code>dnl</code> is void. 
+        </p><p>The expansion of <code>dnl</code> is void.
 </p></blockquote></div>
 
    <p>It is often used in connection with <code>define</code>, to remove the
@@ -4081,7 +4081,7 @@ quoting is disabled.  Otherwise, if <var>end</var> is missing or void, the
 default end-quote delimiter (<code>'</code>) is used.  The quote delimiters
 can be of any length.
 
-        </p><p>The expansion of <code>changequote</code> is void. 
+        </p><p>The expansion of <code>changequote</code> is void.
 </p></blockquote></div>
 
 <pre class="example">     changequote(`[', `]')
@@ -4091,7 +4091,7 @@ can be of any length.
      foo
      &#8658;Macro foo.
 </pre>
-   <p>The quotation strings can safely contain eight-bit characters. 
+   <p>The quotation strings can safely contain eight-bit characters.
 If no single character is appropriate, <var>start</var> and <var>end</var> can be
 of any length.  Other implementations cap the delimiter length to five
 characters, but <acronym>GNU</acronym> has no inherent limit.
@@ -4104,12 +4104,12 @@ characters, but <acronym>GNU</acronym> has no inherent limit.
      &#8658;Macro [[foo]].
 </pre>
    <p>Calling <code>changequote</code> with <var>start</var> as the empty string will
-effectively disable the quoting mechanism, leaving no way to quote text. 
+effectively disable the quoting mechanism, leaving no way to quote text.
 However, using an empty string is not portable, as some other
 implementations of <code>m4</code> revert to the default quoting, while others
 preserve the prior non-empty delimiter.  If <var>start</var> is not empty,
 then an empty <var>end</var> will use the default end-quote delimiter of
-&#8216;<samp><span class="samp">'</span></samp>&#8217;, as otherwise, it would be impossible to end a quoted string. 
+&#8216;<samp><span class="samp">'</span></samp>&#8217;, as otherwise, it would be impossible to end a quoted string.
 Again, this is not portable, as some other <code>m4</code> implementations
 reuse <var>start</var> as the end-quote delimiter, while others preserve the
 previous non-empty value.  Omitting both arguments restores the default
@@ -4142,7 +4142,7 @@ and one for the new quotes.
 prefix of <var>start</var> can be recognized as part of a potential macro
 name, the quoting mechanism is effectively disabled.  Unless you use
 <code>changeword</code> (see <a href="#Changeword">Changeword</a>), this means that <var>start</var>
-should not begin with a letter, digit, or &#8216;<samp><span class="samp">_</span></samp>&#8217; (underscore). 
+should not begin with a letter, digit, or &#8216;<samp><span class="samp">_</span></samp>&#8217; (underscore).
 However, even though quoted strings are not recognized, the quote
 characters can still be discerned in macro expansion and in trace
 output.
@@ -4211,7 +4211,7 @@ characters, but uses extra parentheses to group unquoted commas that
 occur in the expansion without consuming whitespace following those
 commas.  Then <code>_expand</code> uses <code>changequote</code> to convert the
 extra parentheses back into quoting characters.  Note that it takes two
-more <code>changequote</code> invocations to restore the original quotes. 
+more <code>changequote</code> invocations to restore the original quotes.
 Contrast the behavior on whitespace when using &#8216;<samp><span class="samp">$*</span></samp>&#8217;, via
 <code>quote</code>, to attempt the same task.
 
@@ -4289,7 +4289,7 @@ as the new end-comment delimiter.  If both arguments are missing, or
 <var>end</var> is missing or void, the default end-comment delimiter of
 newline is used.  The comment delimiters can be of any length.
 
-        </p><p>The expansion of <code>changecom</code> is void. 
+        </p><p>The expansion of <code>changecom</code> is void.
 </p></blockquote></div>
 
 <pre class="example">     define(`comment', `COMMENT')
@@ -4327,14 +4327,14 @@ delimiters instead.
      # comment again
      &#8658;# comment again
 </pre>
-   <p>The comment strings can safely contain eight-bit characters. 
+   <p>The comment strings can safely contain eight-bit characters.
 If no single character is appropriate, <var>start</var> and <var>end</var> can be
 of any length.  Other implementations cap the delimiter length to five
 characters, but <acronym>GNU</acronym> has no inherent limit.
 
    </p><p>Comments are recognized in preference to macros.  However, this is not
 compatible with other implementations, where macros and even quoting
-takes precedence over comments, so it may change in a future release. 
+takes precedence over comments, so it may change in a future release.
 For portability, this means that <var>start</var> should not begin with a
 letter, digit, or &#8216;<samp><span class="samp">_</span></samp>&#8217; (underscore), and that neither the
 start-quote nor the start-comment string should be a prefix of the
@@ -4416,11 +4416,11 @@ installation
 time.  The functionality will go away in the future, to be replaced by
 other new features that are more efficient at providing the same
 capabilities.  <em>Do not rely on it</em>.  Please direct your comments
-about it the same way you would do for bugs. 
+about it the same way you would do for bugs.
 </blockquote>
 
    <p>A file being processed by <code>m4</code> is split into quoted strings, words
-(potential macro names) and simple tokens (any other single character). 
+(potential macro names) and simple tokens (any other single character).
 Initially a word is defined by the following regular expression:
 
 <!-- ignore -->
@@ -4438,8 +4438,8 @@ regular expression.  If <var>regex</var> contains grouping parentheses, the
 macro invoked is the portion that matched the first group, rather than
 the entire matching string.
 
-        </p><p>The expansion of <code>changeword</code> is void. 
-The macro <code>changeword</code> is recognized only with parameters. 
+        </p><p>The expansion of <code>changeword</code> is void.
+The macro <code>changeword</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>Relaxing the lexical rules of <code>m4</code> might be useful (for example) if
@@ -4553,13 +4553,13 @@ relief.  For example, here is the same idea represented in TeX and
    <p>In the TeX example, the first line defines a macro <code>a</code> to
 print the message &#8216;<samp><span class="samp">Hello</span></samp>&#8217;.  The second line defines &lt;@&gt; to
 be usable instead of &lt;\&gt; as an escape character.  The third line
-defines &lt;\&gt; to be a normal printing character, not an escape. 
+defines &lt;\&gt; to be a normal printing character, not an escape.
 The fourth line invokes the macro <code>a</code>.  So, when TeX is run
 on this file, it displays the message &#8216;<samp><span class="samp">Hello</span></samp>&#8217;.
 
    </p><p>When the <code>m4</code> example is passed through <code>m4</code>, it outputs
 &#8216;<samp><span class="samp">errprint(Hello)</span></samp>&#8217;.  The reason for this is that TeX does
-lexical analysis of macro definition when the macro is <em>defined</em>. 
+lexical analysis of macro definition when the macro is <em>defined</em>.
 <code>m4</code> just stores the text, postponing the lexical analysis until
 the macro is <em>used</em>.
 
@@ -4593,8 +4593,8 @@ files.
 reached.  As a <acronym>GNU</acronym> extension, additional arguments are
 concatenated with a space to the <var>string</var>.
 
-        </p><p>The expansion of <code>m4wrap</code> is void. 
-The macro <code>m4wrap</code> is recognized only with parameters. 
+        </p><p>The expansion of <code>m4wrap</code> is void.
+The macro <code>m4wrap</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     define(`cleanup', `This is the `cleanup' action.
@@ -4752,7 +4752,7 @@ and <code>include</code> will fail with an error while <code>sinclude</code> is
 silent.  The empty string counts as a file that does not exist.
 
         </p><p>The macros <code>include</code> and <code>sinclude</code> are recognized only with
-parameters. 
+parameters.
 </p></blockquote></div>
 
 <!-- status: 1 -->
@@ -4795,7 +4795,7 @@ into the input stream.  The contents of the file will be read by
      &#8658;
 </pre>
    <p>The fact that <code>include</code> and <code>sinclude</code> expand to the contents
-of the file can be used to define macros that operate on entire files. 
+of the file can be used to define macros that operate on entire files.
 Here is an example, which defines &#8216;<samp><span class="samp">bar</span></samp>&#8217; to expand to the contents
 of <samp><span class="file">incl.m4</span></samp>:
 
@@ -4869,9 +4869,9 @@ is limited mainly by the memory used to describe them, because <acronym>GNU</acr
 limit to the overall memory usable by all diversions taken altogether
 (512K, currently).  When this maximum is about to be exceeded,
 a temporary file is opened to receive the contents of the biggest
-diversion still in memory, freeing this memory for other diversions. 
+diversion still in memory, freeing this memory for other diversions.
 When creating the temporary file, <code>m4</code> honors the value of the
-environment variable <samp><span class="env">TMPDIR</span></samp>, and falls back to <samp><span class="file">/tmp</span></samp>. 
+environment variable <samp><span class="env">TMPDIR</span></samp>, and falls back to <samp><span class="file">/tmp</span></samp>.
 So, it is theoretically possible that the number and aggregate size of
 diversions is limited only by available disk space.
 
@@ -4908,7 +4908,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Diversions">Diversions</a>
 out or empty, it is assumed to be zero.  If <var>number</var> cannot be
 parsed, the diversion is unchanged.
 
-        </p><p>The expansion of <code>divert</code> is void. 
+        </p><p>The expansion of <code>divert</code> is void.
 </p></blockquote></div>
 
    <p>When all the <code>m4</code> input will have been processed, all existing
@@ -4938,7 +4938,7 @@ after any wrapped text is expanded.
      ^D
      &#8658;Wrapped TEXT precedes diverted text.
 </pre>
-   <p><a name="index-discarding-input-231"></a><a name="index-input_002c-discarding-232"></a>If output is diverted to a negative diversion, it is simply discarded. 
+   <p><a name="index-discarding-input-231"></a><a name="index-input_002c-discarding-232"></a>If output is diverted to a negative diversion, it is simply discarded.
 This can be used to suppress unwanted output.  A common example of
 unwanted output is the trailing newlines after macro definitions.  Here
 is a common programming idiom in <code>m4</code> for avoiding them.
@@ -5002,7 +5002,7 @@ undiverted, in numerical order.
 strings, which are treated as the names of files to copy into the output
 without expansion.  A warning is issued if a file could not be opened.
 
-        </p><p>The expansion of <code>undivert</code> is void. 
+        </p><p>The expansion of <code>undivert</code> is void.
 </p></blockquote></div>
 
 <pre class="example">     divert(`1')
@@ -5124,7 +5124,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Diversions">Diversions</a>
 
 </p><div class="defun">
 &#8212; Builtin: <b>divnum</b><var><a name="index-divnum-242"></a></var><br>
-<blockquote><p>Expands to the number of the current diversion. 
+<blockquote><p>Expands to the number of the current diversion.
 </p></blockquote></div>
 
 <pre class="example">     Initial divnum
@@ -5170,7 +5170,7 @@ discarded, the easiest is to end the input to <code>m4</code> with
 
 </p><div class="defun">
 &#8212; Composite: <b>cleardivert</b> (<span class="roman">[</span><var>diversions<small class="dots">...</small></var><span class="roman">]</span>)<var><a name="index-cleardivert-245"></a></var><br>
-<blockquote><p>Discard the contents of each of the listed numeric <var>diversions</var>. 
+<blockquote><p>Discard the contents of each of the listed numeric <var>diversions</var>.
 </p></blockquote></div>
 
 <pre class="example">     define(`cleardivert',
@@ -5221,7 +5221,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Text-handling">Text handling</a>
 &#8212; Builtin: <b>len</b> (<var>string</var>)<var><a name="index-len-248"></a></var><br>
 <blockquote><p>Expands to the length of <var>string</var>, as a decimal number.
 
-        </p><p>The macro <code>len</code> is recognized only with parameters. 
+        </p><p>The macro <code>len</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     len()
@@ -5249,7 +5249,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Text-handling">Text handling</a>
 <var>substring</var> does not occur in <var>string</var>, <code>index</code> expands to
 &#8216;<samp><span class="samp">-1</span></samp>&#8217;.
 
-        </p><p>The macro <code>index</code> is recognized only with parameters. 
+        </p><p>The macro <code>index</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     index(`gnus, gnats, and armadillos', `nat')
@@ -5286,9 +5286,9 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Text-handling">Text handling</a>
 &#8212; Builtin: <b>regexp</b> (<var>string, regexp, </var><span class="roman">[</span><var>replacement</var><span class="roman">]</span>)<var><a name="index-regexp-255"></a></var><br>
 <blockquote><p>Searches for <var>regexp</var> in <var>string</var>.  The syntax for regular
 expressions is the same as in <acronym>GNU</acronym> Emacs, which is similar to
-<acronym title="Basic Regular Expressions">BRE</acronym> (Basic Regular Expressions) in <acronym>POSIX</acronym>. 
+<acronym title="Basic Regular Expressions">BRE</acronym> (Basic Regular Expressions) in <acronym>POSIX</acronym>.
 See
-<a href="http://www.gnu.org/software/emacs/manual/emacs.html#Regexps">Syntax of Regular Expressions</a> in the <acronym>GNU</acronym> Emacs Manual. 
+<a href="http://www.gnu.org/software/emacs/manual/emacs.html#Regexps">Syntax of Regular Expressions</a> in the <acronym>GNU</acronym> Emacs Manual.
 Support for <acronym title="Extended Regular Expressions">ERE</acronym> (Extended Regular Expressions) is not
 available, but will be added in <acronym>GNU</acronym> M4 2.0.
 
@@ -5306,7 +5306,7 @@ warning is issued if there were fewer sub-expressions than the
 &#8216;<samp><span class="samp">\</span><var>n</var></samp>&#8217; requested, or if there is a trailing &#8216;<samp><span class="samp">\</span></samp>&#8217;.  If there
 was no match, <code>regexp</code> expands to the empty string.
 
-        </p><p>The macro <code>regexp</code> is recognized only with parameters. 
+        </p><p>The macro <code>regexp</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     regexp(`GNUs not Unix', `\&lt;[a-z]\w+')
@@ -5365,7 +5365,7 @@ is always 0.  The expansion is empty if there is an error parsing
 <var>from</var> or <var>length</var>, if <var>from</var> is beyond the end of
 <var>string</var>, or if <var>length</var> is negative.
 
-        </p><p>The macro <code>substr</code> is recognized only with parameters. 
+        </p><p>The macro <code>substr</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     substr(`gnus, gnats, and armadillos', `6')
@@ -5418,11 +5418,11 @@ in <var>chars</var> or <var>replacement</var>, place it first or last in the
 entire string, or as the last character of a range.  Back-to-back ranges
 can share a common endpoint.  It is not an error for the last character
 in the range to be `larger' than the first.  In that case, the range
-runs backwards, i.e., &#8216;<samp><span class="samp">9-0</span></samp>&#8217; means the string &#8216;<samp><span class="samp">9876543210</span></samp>&#8217;. 
+runs backwards, i.e., &#8216;<samp><span class="samp">9-0</span></samp>&#8217; means the string &#8216;<samp><span class="samp">9876543210</span></samp>&#8217;.
 The expansion of a range is dependent on the underlying encoding of
 characters, so using ranges is not always portable between machines.
 
-        </p><p>The macro <code>translit</code> is recognized only with parameters. 
+        </p><p>The macro <code>translit</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     translit(`GNUs not Unix', `A-Z')
@@ -5438,7 +5438,7 @@ characters, so using ranges is not always portable between machines.
 </pre>
    <p>In the <span class="sc">ascii</span> encoding, the first example deletes all uppercase
 letters, the second converts lowercase to uppercase, and the third
-`mirrors' all uppercase letters, while converting them to lowercase. 
+`mirrors' all uppercase letters, while converting them to lowercase.
 The two first cases are by far the most common, even though they are not
 portable to <span class="sc">ebcdic</span> or other encodings.  The fourth example shows a
 range ending in &#8216;<samp><span class="samp">-</span></samp>&#8217;, as well as back-to-back ranges.  The final
@@ -5490,7 +5490,7 @@ if there is a trailing &#8216;<samp><span class="samp">\</span></samp>&#8217;.
         </p><p>The <var>replacement</var> argument can be omitted, in which case the text
 matched by <var>regexp</var> is deleted.
 
-        </p><p>The macro <code>patsubst</code> is recognized only with parameters. 
+        </p><p>The macro <code>patsubst</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     patsubst(`GNUs not Unix', `^', `OBS: ')
@@ -5518,7 +5518,7 @@ words or whole sentences, by substituting calls of the macros
 <blockquote><p>Expand to <var>text</var>, but with capitalization changed: <code>upcase</code>
 changes all letters to upper case, <code>downcase</code> changes all letters
 to lower case, and <code>capitalize</code> changes the first character of each
-word to upper case and the remaining characters to lower case. 
+word to upper case and the remaining characters to lower case.
 </p></blockquote></div>
 
    <p>First, an example of their usage, using implementations distributed in
@@ -5602,7 +5602,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Text-handling">Text handling</a>
 satisfied by additional arguments, and the expansion of <code>format</code> is
 the formatted string.
 
-        </p><p>The macro <code>format</code> is recognized only with parameters. 
+        </p><p>The macro <code>format</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>Its use is best described by a few examples:
@@ -5718,7 +5718,7 @@ or decremented, respectively, by one.  Except for the empty string, the
 expansion is empty if <var>number</var> could not be parsed.
 
         </p><p>The macros <code>incr</code> and <code>decr</code> are recognized only with
-parameters. 
+parameters.
 </p></blockquote></div>
 
 <pre class="example">     incr(`4')
@@ -5773,13 +5773,13 @@ decreasing precedence.
 <br></dd><dt>&#8216;<samp><span class="samp">||</span></samp>&#8217;</dt><dd>Logical or
 </dd></dl>
 
-        <p>The macro <code>eval</code> is recognized only with parameters. 
+        <p>The macro <code>eval</code> is recognized only with parameters.
 </p></blockquote></div>
 
    <p>All binary operators, except exponentiation, are left associative.  C
 operators that perform variable assignment, such as &#8216;<samp><span class="samp">+=</span></samp>&#8217; or
 &#8216;<samp><span class="samp">--</span></samp>&#8217;, are not implemented, since <code>eval</code> only operates on
-constants, not variables.  Attempting to use them results in an error. 
+constants, not variables.  Attempting to use them results in an error.
 However, since traditional implementations treated &#8216;<samp><span class="samp">=</span></samp>&#8217; as an
 undocumented alias for &#8216;<samp><span class="samp">==</span></samp>&#8217; as opposed to an assignment operator,
 this usage is supported as a special case.  Be aware that a future
@@ -5809,7 +5809,7 @@ identical instead of lower than the relational operators such as
 &#8216;<samp><span class="samp">&lt;</span></samp>&#8217;, even through <acronym>GNU</acronym> M4 1.4.8.  Starting with version
 1.4.9, <acronym>GNU</acronym> M4 correctly follows <acronym>POSIX</acronym> precedence
 rules.  M4 scripts designed to be portable between releases must be
-aware that parentheses may be required to enforce C precedence rules. 
+aware that parentheses may be required to enforce C precedence rules.
 Likewise, division by zero, even in the unused branch of a
 short-circuiting operator, is not always well-defined in other
 implementations.
@@ -5866,8 +5866,8 @@ must be non-zero, or a warning is issued.
 </pre>
    <p>Within <var>expression</var>, (but not <var>radix</var> or <var>width</var>), numbers
 without a special prefix are decimal.  A simple &#8216;<samp><span class="samp">0</span></samp>&#8217; prefix
-introduces an octal number.  &#8216;<samp><span class="samp">0x</span></samp>&#8217; introduces a hexadecimal number. 
-As <acronym>GNU</acronym> extensions, &#8216;<samp><span class="samp">0b</span></samp>&#8217; introduces a binary number. 
+introduces an octal number.  &#8216;<samp><span class="samp">0x</span></samp>&#8217; introduces a hexadecimal number.
+As <acronym>GNU</acronym> extensions, &#8216;<samp><span class="samp">0b</span></samp>&#8217; introduces a binary number.
 &#8216;<samp><span class="samp">0r</span></samp>&#8217; introduces a number expressed in any radix between 1 and 36:
 the prefix should be immediately followed by the decimal expression of
 the radix, a colon, then the digits making the number.  For radix 1,
@@ -5991,7 +5991,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
 <p><a name="index-UNIX-commands_002c-running-287"></a><a name="index-executing-shell-commands-288"></a><a name="index-running-shell-commands-289"></a><a name="index-shell-commands_002c-running-290"></a><a name="index-commands_002c-running-shell-291"></a>There are a few builtin macros in <code>m4</code> that allow you to run shell
 commands from within <code>m4</code>.
 
-   </p><p>Note that the definition of a valid shell command is system dependent. 
+   </p><p>Note that the definition of a valid shell command is system dependent.
 On UNIX systems, this is the typical <samp><span class="command">/bin/sh</span></samp>.  But on other
 systems, such as native Windows, the shell has a different syntax of
 commands that it understands.  Some examples in this chapter assume
@@ -6032,7 +6032,7 @@ their existence will confirm platform details.
 <blockquote><p>Each of these macros is conditionally defined as needed to describe the
 environment of <code>m4</code>.  If defined, each macro expands to the empty
 string.  For now, these macros silently ignore all arguments, but in a
-future release of M4, they might warn if arguments are present. 
+future release of M4, they might warn if arguments are present.
 </p></blockquote></div>
 
    <p>When <acronym>GNU</acronym> extensions are in effect (that is, when you did not
@@ -6103,7 +6103,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Shell-commands">Shell commands</a>
 are not read by <code>m4</code>.  See <a href="#Esyscmd">Esyscmd</a>, if you need to process the
 command output.
 
-        </p><p>Prior to executing the command, <code>m4</code> flushes its buffers. 
+        </p><p>Prior to executing the command, <code>m4</code> flushes its buffers.
 The default standard input, output and error of <var>shell-command</var> are
 the same as those of <code>m4</code>.
 
@@ -6116,7 +6116,7 @@ supports that).  If you prefer a different shell, the
 alternative shell at <acronym>GNU</acronym> <code>m4</code> installation; the
 alternative shell must still support <samp><span class="option">-c</span></samp>.
 
-        </p><p>The macro <code>syscmd</code> is recognized only with parameters. 
+        </p><p>The macro <code>syscmd</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     define(`foo', `FOO')
@@ -6165,7 +6165,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Shell-commands">Shell commands</a>
 <blockquote><p>Expands to the standard output of the shell command
 <var>shell-command</var>.
 
-        </p><p>Prior to executing the command, <code>m4</code> flushes its buffers. 
+        </p><p>Prior to executing the command, <code>m4</code> flushes its buffers.
 The default standard input and standard error of <var>shell-command</var> are
 the same as those of <code>m4</code>.  The error output of <var>shell-command</var>
 is not a part of the expansion: it will appear along with the error
@@ -6180,7 +6180,7 @@ supports that).  If you prefer a different shell, the
 alternative shell at <acronym>GNU</acronym> <code>m4</code> installation; the
 alternative shell must still support <samp><span class="option">-c</span></samp>.
 
-        </p><p>The macro <code>esyscmd</code> is recognized only with parameters. 
+        </p><p>The macro <code>esyscmd</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     define(`foo', `FOO')
@@ -6212,7 +6212,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Shell-commands">Shell commands</a>
 &#8212; Builtin: <b>sysval</b><var><a name="index-sysval-308"></a></var><br>
 <blockquote><p>Expands to the exit status of the last shell command run with
 <code>syscmd</code> or <code>esyscmd</code>.  Expands to 0 if no command has been
-run yet. 
+run yet.
 </p></blockquote></div>
 
 <pre class="example">     sysval
@@ -6325,7 +6325,7 @@ and that users of <code>m4</code> check for its existence.
 not be created.
 
         </p><p>The macros <code>mkstemp</code> and <code>maketemp</code> are recognized only with
-parameters. 
+parameters.
 </p></blockquote></div>
 
    <p>If you try this next example, you will most likely get different output
@@ -6421,8 +6421,8 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Miscellaneous">Miscellaneous</a>
 separated by spaces.  Standard error is used, regardless of the
 <samp><span class="option">--debugfile</span></samp> option (see <a href="#Debugging-options">Invoking m4</a>).
 
-        </p><p>The expansion of <code>errprint</code> is void. 
-The macro <code>errprint</code> is recognized only with parameters. 
+        </p><p>The expansion of <code>errprint</code> is void.
+The macro <code>errprint</code> is recognized only with parameters.
 </p></blockquote></div>
 
 <pre class="example">     errprint(`Invalid arguments to forloop
@@ -6438,7 +6438,7 @@ The macro <code>errprint</code> is recognized only with parameters.
 supplied as part of the argument, as in the example.  Unfortunately, the
 exact output of <code>errprint</code> is not very portable to other <code>m4</code>
 implementations: <acronym>POSIX</acronym> requires that all arguments be printed,
-but some implementations of <code>m4</code> only print the first. 
+but some implementations of <code>m4</code> only print the first.
 Furthermore, some <acronym>BSD</acronym> implementations always append a newline
 for each <code>errprint</code> call, regardless of whether the last argument
 already had one, and <acronym>POSIX</acronym> is silent on whether this is
@@ -6464,7 +6464,7 @@ utility builtins exist:
 &#8212; Builtin: <b>__program__</b><var><a name="index-g_t_005f_005fprogram_005f_005f-323"></a></var><br>
 <blockquote><p>Expand to the quoted name of the current input file, the
 current input line number in that file, and the quoted name of the
-current invocation of <code>m4</code>. 
+current invocation of <code>m4</code>.
 </p></blockquote></div>
 
 <pre class="example">     errprint(__program__:__file__:__line__: `input error
@@ -6536,7 +6536,7 @@ though wrapped text came from line 0 of the file &#8220;&#8221;.
    <p>The <code>__program__<!-- /@w --></code> macro behaves like &#8216;<samp><span class="samp">$0</span></samp>&#8217; in shell
 terminology.  If you invoke <code>m4</code> through an absolute path or a link
 with a different spelling, rather than by relying on a <samp><span class="env">PATH</span></samp> search
-for plain &#8216;<samp><span class="samp">m4</span></samp>&#8217;, it will affect how <code>__program__<!-- /@w --></code> expands. 
+for plain &#8216;<samp><span class="samp">m4</span></samp>&#8217;, it will affect how <code>__program__<!-- /@w --></code> expands.
 The intent is that you can use it to produce error messages with the
 same formatting that <code>m4</code> produces internally.  It can also be used
 within <code>syscmd</code> (see <a href="#Syscmd">Syscmd</a>) to pick the same version of
@@ -6562,7 +6562,7 @@ read, you can use <code>m4exit</code>:
 <blockquote><p>Causes <code>m4</code> to exit, with exit status <var>code</var>.  If <var>code</var> is
 left out, the exit status is zero.  If <var>code</var> cannot be parsed, or
 is outside the range of 0 to 255, the exit status is one.  No further
-input is read, and all wrapped and diverted text is discarded. 
+input is read, and all wrapped and diverted text is discarded.
 </p></blockquote></div>
 
 <pre class="example">     m4wrap(`This text is lost due to `m4exit'.')
@@ -6578,7 +6578,7 @@ input is read, and all wrapped and diverted text is discarded.
 &#8212; Composite: <b>fatal_error</b> (<var>message</var>)<var><a name="index-fatal_005ferror-327"></a></var><br>
 <blockquote><p>Abort processing with an error message and non-zero status.  Prefix
 <var>message</var> with details about where the error occurred, and print the
-resulting string to standard error. 
+resulting string to standard error.
 </p></blockquote></div>
 
 <!-- status: 1 -->
@@ -6618,7 +6618,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
 <h2 class="chapter">15 Fast loading of frozen state</h2>
 
 <p>Some bigger <code>m4</code> applications may be built over a common base
-containing hundreds of definitions and other costly initializations. 
+containing hundreds of definitions and other costly initializations.
 Usually, the common base is kept in one or more declarative files,
 which files are listed on each <code>m4</code> invocation prior to the
 user's input file, or else each input file uses <code>include</code>.
@@ -6665,7 +6665,7 @@ every time, the user might rather execute:
 </pre>
    <p class="noindent">with the varying input.  The first call, containing the <samp><span class="option">-F</span></samp>
 option, only reads and executes file <samp><span class="file">base.m4</span></samp>, defining
-various application macros and computing other initializations. 
+various application macros and computing other initializations.
 Once the input file <samp><span class="file">base.m4</span></samp> has been completely processed, <acronym>GNU</acronym>
 <code>m4</code> produces in <samp><span class="file">base.m4f</span></samp> a <dfn>frozen</dfn> file, that is, a
 file which contains a kind of snapshot of the <code>m4</code> internal state.
@@ -6674,12 +6674,12 @@ file which contains a kind of snapshot of the <code>m4</code> internal state.
 the internal state of <code>m4</code>, from <samp><span class="file">base.m4f</span></samp>,
 <em>prior</em> to reading any other input files.  This means
 instead of starting with a virgin copy of <code>m4</code>, input will be
-read after having effectively recovered the effect of a prior run. 
+read after having effectively recovered the effect of a prior run.
 In our example, the effect is the same as if file <samp><span class="file">base.m4</span></samp> has
 been read anew.  However, this effect is achieved a lot faster.
 
    </p><p>Only one frozen file may be created or read in any one <code>m4</code>
-invocation.  It is not possible to recover two frozen files at once. 
+invocation.  It is not possible to recover two frozen files at once.
 However, frozen files may be updated incrementally, through using
 <samp><span class="option">-R</span></samp> and <samp><span class="option">-F</span></samp> options simultaneously.  For example, if
 some care is taken, the command:
@@ -6698,8 +6698,8 @@ output:
 </pre>
    <p>Some care is necessary because not every effort has been made for
 this to work in all cases.  In particular, the trace attribute of
-macros is not handled, nor the current setting of <code>changeword</code>. 
-Currently, <code>m4wrap</code> and <code>sysval</code> also have problems. 
+macros is not handled, nor the current setting of <code>changeword</code>.
+Currently, <code>m4wrap</code> and <code>sysval</code> also have problems.
 Also, interactions for some options of <code>m4</code>, being used in one call
 and not in the next, have not been fully analyzed yet.  On the other
 end, you may be confident that stacks of <code>pushdef</code> definitions
@@ -6709,10 +6709,10 @@ changed strings for quotes or comments.  And future releases of
 
    </p><p>When an <code>m4</code> run is to be frozen, the automatic undiversion
 which takes place at end of execution is inhibited.  Instead, all
-positively numbered diversions are saved into the frozen file. 
+positively numbered diversions are saved into the frozen file.
 The active diversion number is also transmitted.
 
-   </p><p>A frozen file to be reloaded need not reside in the current directory. 
+   </p><p>A frozen file to be reloaded need not reside in the current directory.
 It is looked up the same way as an <code>include</code> file (see <a href="#Search-Path">Search Path</a>).
 
    </p><p>If the frozen file was generated with a newer version of <code>m4</code>, and
@@ -6732,7 +6732,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Frozen-files">Frozen files</a>
 
 <p><a name="index-frozen-file-format-334"></a><a name="index-file-format_002c-frozen-file-335"></a>Frozen files are sharable across architectures.  It is safe to write
 a frozen file on one machine and read it on another, given that the
-second machine uses the same or newer version of <acronym>GNU</acronym> <code>m4</code>. 
+second machine uses the same or newer version of <acronym>GNU</acronym> <code>m4</code>.
 It is conventional, but not required, to give a frozen file the suffix
 of <code>.m4f</code>.
 
@@ -6740,7 +6740,7 @@ of <code>.m4f</code>.
 each starting with a capital letter and ending with a newline
 (&lt;NL&gt;).  Wherever a directive is expected, the character
 &#8216;<samp><span class="samp">#</span></samp>&#8217; introduces a comment line; empty lines are also ignored if they
-are not part of an embedded string. 
+are not part of an embedded string.
 In the following descriptions, each <var>len</var> refers to the length of
 the corresponding strings <var>str</var> in the next line of input.  Numbers
 are always expressed in decimal.  There are no escape characters.  The
@@ -6785,7 +6785,7 @@ important.
      <br></dd><dt><code>V </code><var>number</var><code> &lt;NL&gt;</code></dt><dd>Confirms the format of the file.  <code>m4</code> 1.4.13 only creates
 and understands frozen files where <var>number</var> is 1.  This directive
 must be the first non-comment in the file, and may not appear more than
-once. 
+once.
 </dd></dl>
 
 <div class="node">
@@ -6801,7 +6801,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
 
 <p><a name="index-compatibility-336"></a>This chapter describes the many of the differences between this
 implementation of <code>m4</code>, and of other implementations found under
-UNIX, such as System V Release 3, Solaris, and <acronym>BSD</acronym> flavors. 
+UNIX, such as System V Release 3, Solaris, and <acronym>BSD</acronym> flavors.
 In particular, it lists the known differences and extensions to
 <acronym>POSIX</acronym>.  However, the list is not necessarily comprehensive.
 
@@ -6835,7 +6835,7 @@ using the <samp><span class="option">-G</span></samp> command line option (see <
 
      </p><ul>
 <li>In the <code>$</code><var>n</var> notation for macro arguments, <var>n</var> can contain
-several digits, while the System V <code>m4</code> only accepts one digit. 
+several digits, while the System V <code>m4</code> only accepts one digit.
 This allows macros in <acronym>GNU</acronym> <code>m4</code> to take any number of
 arguments, and not only nine (see <a href="#Arguments">Arguments</a>).
 
@@ -6913,7 +6913,7 @@ by <acronym>GNU</acronym> M4 are extensions.  See <a href="#Invoking-m4">Invokin
 description of these options.
 
      <p>The debugging and tracing facilities in <acronym>GNU</acronym> <code>m4</code> are much
-more extensive than in most other versions of <code>m4</code>. 
+more extensive than in most other versions of <code>m4</code>.
 </p></li></ul>
 
 <div class="node">
@@ -6962,7 +6962,7 @@ separated by spaces.
 
      </li><li><acronym>POSIX</acronym> states that builtins that require arguments, but are
 called without arguments, have undefined behavior.  Traditional
-implementations simply behave as though empty strings had been passed. 
+implementations simply behave as though empty strings had been passed.
 For example, <code>a`'define`'b</code> would expand to <code>ab</code>.  But
 <acronym>GNU</acronym> <code>m4</code> ignores certain builtins if they have missing
 arguments, giving <code>adefineb</code> for the above example.
@@ -6975,7 +6975,7 @@ definition on the stack, as if doing <code>popdef(`f')</code> followed by
 
      </li><li><acronym>POSIX</acronym> 2001 requires <code>syscmd</code> (see <a href="#Syscmd">Syscmd</a>) to evaluate
 command output for macro expansion, but this was a mistake that is
-anticipated to be corrected in the next version of <acronym>POSIX</acronym>. 
+anticipated to be corrected in the next version of <acronym>POSIX</acronym>.
 <acronym>GNU</acronym> <code>m4</code> follows traditional behavior in <code>syscmd</code>
 where output is not rescanned, and provides the extension <code>esyscmd</code>
 that does scan the output.
@@ -6983,7 +6983,7 @@ that does scan the output.
      </li><li>At one point, <acronym>POSIX</acronym> required <code>changequote(</code><var>arg</var><code>)</code>
 (see <a href="#Changequote">Changequote</a>) to use newline as the close quote, but this was a
 bug, and the next version of <acronym>POSIX</acronym> is anticipated to state
-that using empty strings or just one argument is unspecified. 
+that using empty strings or just one argument is unspecified.
 Meanwhile, the <acronym>GNU</acronym> <code>m4</code> behavior of treating an empty
 end-quote delimiter as &#8216;<samp><span class="samp">'</span></samp>&#8217; is not portable, as Solaris treats it as
 repeating the start-quote delimiter, and BSD treats it as leaving the
@@ -7022,8 +7022,8 @@ implementations do end of file processing for files included with
 giving an error.
 
      </li><li>Traditional <code>m4</code> treats <code>traceon</code> (see <a href="#Trace">Trace</a>) without
-arguments as a global variable, independent of named macro tracing. 
-Also, once a macro is undefined, named tracing of that macro is lost. 
+arguments as a global variable, independent of named macro tracing.
+Also, once a macro is undefined, named tracing of that macro is lost.
 On the other hand, when <acronym>GNU</acronym> <code>m4</code> encounters
 <code>traceon</code> without
 arguments, it turns tracing on for all existing definitions at the time,
@@ -7055,7 +7055,7 @@ requires &#8216;<samp><span class="samp">=</span></samp>&#8217; to cause an erro
 implementations allowed it as an alias for &#8216;<samp><span class="samp">==</span></samp>&#8217;.
 
      </li><li><acronym>POSIX</acronym> 2001 requires <code>translit</code> (see <a href="#Translit">Translit</a>) to
-treat each character of the second and third arguments literally. 
+treat each character of the second and third arguments literally.
 However, it is anticipated that the next version of <acronym>POSIX</acronym> will
 allow the <acronym>GNU</acronym> <code>m4</code> behavior of treating &#8216;<samp><span class="samp">-</span></samp>&#8217; as a
 range operator.
@@ -7066,7 +7066,7 @@ variables of <samp><span class="env">LANG</span></samp>, <samp><span class="env"
 implemented in <acronym>GNU</acronym> <code>m4</code>.
 
      </li><li><acronym>POSIX</acronym> states that only unquoted leading newlines and blanks
-(that is, space and tab) are ignored when collecting macro arguments. 
+(that is, space and tab) are ignored when collecting macro arguments.
 However, this appears to be a bug in <acronym>POSIX</acronym>, since most
 traditional implementations also ignore all whitespace (formfeed,
 carriage return, and vertical tab).  <acronym>GNU</acronym> <code>m4</code> follows
@@ -7084,7 +7084,7 @@ implicitly enabling <samp><span class="option">--traditional</span></samp> if it
 allow a strictly-compliant client.  In the meantime, a client needing
 strict <acronym>POSIX</acronym> compliance can use the workaround of invoking a
 shell script wrapper, where the wrapper then adds <samp><span class="option">--traditional</span></samp>
-to the arguments passed to the compiled <code>m4</code>. 
+to the arguments passed to the compiled <code>m4</code>.
 </li></ul>
 
 <div class="node">
@@ -7147,7 +7147,7 @@ definitions like:
 </pre>
      <p><a name="index-rescanning-340"></a>There is nothing inherently wrong with defining &#8216;<samp><span class="samp">x</span></samp>&#8217; to
 return &#8216;<samp><span class="samp">x</span></samp>&#8217;.  The wrong thing is to expand &#8216;<samp><span class="samp">x</span></samp>&#8217; unquoted,
-because that would cause an infinite rescan loop. 
+because that would cause an infinite rescan loop.
 In <code>m4</code>, one might use macros to hold strings, as we do for
 variables in other programming languages, further checking them with:
 
@@ -7158,7 +7158,7 @@ variables in other programming languages, further checking them with:
 would be a useless limitation.  Of course, this leaves more rope for the
 <acronym>GNU</acronym> <code>m4</code> user to hang himself!  Rescanning hangs may be
 avoided through careful programming, a little like for endless loops in
-traditional programming languages. 
+traditional programming languages.
 </p></li></ul>
 
 <div class="node">
@@ -7434,7 +7434,7 @@ be found in <samp><span class="file">m4-1.4.13/examples/foreachq2.m4</span></sam
 </pre>
    <p>Note that the fixed version calls unquoted helper macros in
 <code>_foreachq<!-- /@w --></code> to trim elements immediately; those helper macros
-in turn must re-supply the layer of quotes lost in the macro invocation. 
+in turn must re-supply the layer of quotes lost in the macro invocation.
 Contrast the use of <code>_arg1q<!-- /@w --></code>, which quotes the first list
 element, with <code>_arg1<!-- /@w --></code> of the earlier implementation that
 returned the first list element directly.  Additionally, by calling the
@@ -7609,7 +7609,7 @@ writing a version of <code>foreach</code> that unboxes its list, then invokes
 <code>_foreachq</code> as previously defined in <samp><span class="file">foreachq4.m4</span></samp>.
 
    </p><p>In summary, recursion over list elements is trickier than it appeared at
-first glance, but provides a powerful idiom within <code>m4</code> processing. 
+first glance, but provides a powerful idiom within <code>m4</code> processing.
 As a final demonstration, both list styles are now able to handle
 several scenarios that would wreak havoc on one or both of the original
 implementations.  This points out one other difference between the
@@ -7720,13 +7720,13 @@ longer passing a builtin token through a text macro.
 &#8212; Composite: <b>stack_foreach_sep</b> (<var>macro, pre, post, sep</var>)<var><a name="index-stack_005fforeach_005fsep-346"></a></var><br>
 &#8212; Composite: <b>stack_foreach_sep_lifo</b> (<var>macro, pre, post, sep</var>)<var><a name="index-stack_005fforeach_005fsep_005flifo-347"></a></var><br>
 <blockquote><p>For each of the <code>pushdef</code> definitions associated with <var>macro</var>,
-expand the sequence &#8216;<samp><var>pre</var><span class="samp">`'definition`'</span><var>post</var></samp>&#8217;. 
-Additionally, expand <var>sep</var> between definitions. 
+expand the sequence &#8216;<samp><var>pre</var><span class="samp">`'definition`'</span><var>post</var></samp>&#8217;.
+Additionally, expand <var>sep</var> between definitions.
 <code>stack_foreach_sep</code> visits the oldest definition first, while
 <code>stack_foreach_sep_lifo</code> visits the current definition first.  The
 expansion may dereference <var>macro</var>, but should not modify it.  There
 are a few special macros, such as <code>defn</code>, which cannot be used as
-the <var>macro</var> parameter. 
+the <var>macro</var> parameter.
 </p></blockquote></div>
 
    <p>Note that <code>stack_foreach(`</code><var>macro</var><code>', `</code><var>action</var><code>')</code> is
@@ -8104,7 +8104,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Copying-This-Package">Copying This Pac
 <!-- This file is intended to be included within another document, -->
 <!-- hence no sectioning command or @node. -->
 <pre class="display">     Copyright ¸ 2007 Free Software Foundation, Inc. <a href="http://fsf.org/">http://fsf.org/</a>
-     
+
      Everyone is permitted to copy and distribute verbatim copies of this
      license document, but changing it is not allowed.
 </pre>
@@ -8156,14 +8156,14 @@ modified versions of the software inside them, although the
 manufacturer can do so.  This is fundamentally incompatible with the
 aim of protecting users' freedom to change the software.  The
 systematic pattern of such abuse occurs in the area of products for
-individuals to use, which is precisely where it is most unacceptable. 
+individuals to use, which is precisely where it is most unacceptable.
 Therefore, we have designed this version of the GPL to prohibit the
 practice for those products.  If such problems arise substantially in
 other domains, we stand ready to extend this provision to those
 domains in future versions of the GPL, as needed to protect the
 freedom of users.
 
-   </p><p>Finally, every program is threatened constantly by software patents. 
+   </p><p>Finally, every program is threatened constantly by software patents.
 States should not allow patents to restrict development and use of
 software on general-purpose computers, but in those that do, we wish
 to avoid the special danger that patents applied to a free program
@@ -8268,7 +8268,7 @@ content, constitutes a covered work.  This License acknowledges your
 rights of fair use or other equivalent, as provided by copyright law.
 
      </p><p>You may make, run and propagate covered works that you do not convey,
-without conditions so long as your license otherwise remains in force. 
+without conditions so long as your license otherwise remains in force.
 You may convey covered works to others for the sole purpose of having
 them make modifications exclusively for you, or provide you with
 facilities for running those works, provided that you comply with the
@@ -8389,7 +8389,7 @@ Corresponding Source along with the object code.  If the place to copy
 the object code is a network server, the Corresponding Source may be
 on a different server (operated by you or a third party) that supports
 equivalent copying facilities, provided you maintain clear directions
-next to the object code saying where to find the Corresponding Source. 
+next to the object code saying where to find the Corresponding Source.
 Regardless of what server hosts the Corresponding Source, you remain
 obligated to ensure that it is available for as long as needed to
 satisfy these requirements.
@@ -8456,7 +8456,7 @@ unpacking, reading or copying.
      </p></li><li>Additional Terms.
 
      <p>&#8220;Additional permissions&#8221; are terms that supplement the terms of this
-License by making exceptions from one or more of its conditions. 
+License by making exceptions from one or more of its conditions.
 Additional permissions that are applicable to the entire Program shall
 be treated as though they were included in this License, to the extent
 that they are valid under applicable law.  If additional permissions
@@ -8753,17 +8753,17 @@ the &#8220;copyright&#8221; line and a pointer to where the full notice is found
 
 </p><pre class="smallexample">     <var>one line to give the program's name and a brief idea of what it does.</var>
      Copyright (C) <var>year</var> <var>name of author</var>
-     
+
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU General Public License as published by
      the Free Software Foundation, either version 3 of the License, or (at
      your option) any later version.
-     
+
      This program is distributed in the hope that it will be useful, but
      WITHOUT ANY WARRANTY; without even the implied warranty of
      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
      General Public License for more details.
-     
+
      You should have received a copy of the GNU General Public License
      along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
 </pre>
@@ -8783,7 +8783,7 @@ program's commands might be different; for a GUI interface, you would
 use an &#8220;about box&#8221;.
 
    </p><p>You should also get your employer (if you work as a programmer) or school,
-if any, to sign a &#8220;copyright disclaimer&#8221; for the program, if necessary. 
+if any, to sign a &#8220;copyright disclaimer&#8221; for the program, if necessary.
 For more information on this, and how to apply and follow the GNU GPL, see
 <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
 
@@ -8833,7 +8833,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Copying-This-Manual">Copying This Manu
 <!-- hence no sectioning command or @node. -->
 <pre class="display">     Copyright ¸ 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
      <a href="http://fsf.org/">http://fsf.org/</a>
-     
+
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
 </pre>
@@ -8843,7 +8843,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="#Copying-This-Manual">Copying This Manu
      <p>The purpose of this License is to make a manual, textbook, or other
 functional and useful document <dfn>free</dfn> in the sense of freedom: to
 assure everyone the effective freedom to copy and redistribute it,
-with or without modifying it, either commercially or noncommercially. 
+with or without modifying it, either commercially or noncommercially.
 Secondarily, this License preserves for the author and publisher a way
 to get credit for their work, while not being considered responsible
 for modifications made by others.
@@ -8910,7 +8910,7 @@ drawing editor, and that is suitable for input to text formatters or
 for automatic translation to a variety of formats suitable for input
 to text formatters.  A copy made in an otherwise Transparent file
 format whose markup, or absence of markup, has been arranged to thwart
-or discourage subsequent modification by readers is not Transparent. 
+or discourage subsequent modification by readers is not Transparent.
 An image format is not Transparent if used for any substantial amount
 of text.  A copy that is not &#8220;Transparent&#8221; is called &#8220;Opaque&#8221;.
 
@@ -8977,7 +8977,7 @@ Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
 the back cover.  Both covers must also clearly and legibly identify
 you as the publisher of these copies.  The front cover must present
 the full title with all words of the title equally prominent and
-visible.  You may add other material on the covers in addition. 
+visible.  You may add other material on the covers in addition.
 Copying with changes limited to the covers, as long as they preserve
 the title of the Document and satisfy these conditions, can be treated
 as verbatim copying in other respects.
@@ -8992,7 +8992,7 @@ more than 100, you must either include a machine-readable Transparent
 copy along with each Opaque copy, or state in or with each Opaque copy
 a computer-network location from which the general network-using
 public has access to download using public-standard network protocols
-a complete Transparent copy of the Document, free of added material. 
+a complete Transparent copy of the Document, free of added material.
 If you use the latter option, you must take reasonably prudent steps,
 when you begin distribution of Opaque copies in quantity, to ensure
 that this Transparent copy will remain thus accessible at the stated
@@ -9054,7 +9054,7 @@ Version as stated in the previous sentence.
           </li><li>Preserve the network location, if any, given in the Document for
 public access to a Transparent copy of the Document, and likewise
 the network locations given in the Document for previous versions
-it was based on.  These may be placed in the &#8220;History&#8221; section. 
+it was based on.  These may be placed in the &#8220;History&#8221; section.
 You may omit a network location for a work that was published at
 least four years before the Document itself, or if the original
 publisher of the version it refers to gives permission.
@@ -9081,7 +9081,7 @@ to conflict in title with any Invariant Section.
 appendices that qualify as Secondary Sections and contain no material
 copied from the Document, you may at your option designate some or all
 of these sections as invariant.  To do this, add their titles to the
-list of Invariant Sections in the Modified Version's license notice. 
+list of Invariant Sections in the Modified Version's license notice.
 These titles must be distinct from any other section titles.
 
      </p><p>You may add a section Entitled &#8220;Endorsements&#8221;, provided it contains
@@ -9118,7 +9118,7 @@ multiple identical Invariant Sections may be replaced with a single
 copy.  If there are multiple Invariant Sections with the same name but
 different contents, make the title of each such section unique by
 adding at the end of it, in parentheses, the name of the original
-author or publisher of that section if known, or else a unique number. 
+author or publisher of that section if known, or else a unique number.
 Make the same adjustment to the section titles in the list of
 Invariant Sections in the license notice of the combined work.
 
@@ -9147,7 +9147,7 @@ other respects regarding verbatim copying of that document.
 and independent documents or works, in or on a volume of a storage or
 distribution medium, is called an &#8220;aggregate&#8221; if the copyright
 resulting from the compilation is not used to limit the legal rights
-of the compilation's users beyond what the individual works permit. 
+of the compilation's users beyond what the individual works permit.
 When the Document is included in an aggregate, this License does not
 apply to the other works in the aggregate which are not themselves
 derivative works of the Document.
@@ -9156,14 +9156,14 @@ derivative works of the Document.
 copies of the Document, then if the Document is less than one half of
 the entire aggregate, the Document's Cover Texts may be placed on
 covers that bracket the Document within the aggregate, or the
-electronic equivalent of covers if the Document is in electronic form. 
+electronic equivalent of covers if the Document is in electronic form.
 Otherwise they must appear on printed covers that bracket the whole
 aggregate.
 
      </p></li><li>TRANSLATION
 
      <p>Translation is considered a kind of modification, so you may
-distribute translations of the Document under the terms of section 4. 
+distribute translations of the Document under the terms of section 4.
 Replacing Invariant Sections with translations requires special
 permission from their copyright holders, but you may include
 translations of some or all Invariant Sections in addition to the
@@ -9215,7 +9215,7 @@ versions will be similar in spirit to the present version, but may
 differ in detail to address new problems or concerns.  See
 <a href="http://www.gnu.org/copyleft/">http://www.gnu.org/copyleft/</a>.
 
-     </p><p>Each version of the License is given a distinguishing version number. 
+     </p><p>Each version of the License is given a distinguishing version number.
 If the Document specifies that a particular numbered version of this
 License &#8220;or any later version&#8221; applies to it, you have the option of
 following the terms and conditions either of that specified version or

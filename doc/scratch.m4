@@ -9,20 +9,20 @@
 #  macro
 #
 # IMPROVED
-# Dnl     
-# dnl     
+# Dnl
+# dnl
 # define(`exch', `$2, $1')dnl
 # define(exch(``expansion text'', ``macro''))dnl
 # macro
 
-dnl     
-dnl     
+dnl
+dnl
 define(`exch', `$2, $1')dnl
 define(exch(`expansion text', `macro'))dnl
 macro
 define(`test', ``Macro name: $0'')
 test
-define(`nargs', `$#') 
+define(`nargs', `$#')
 nargs(`uno', dos, `tres')
 
 
@@ -39,7 +39,7 @@ steven
 ifdef(`steven', ``steven' is defined and was [steven]', ``steven' is not
 defined')dnl
 
-ifelse(this is a very long comment in 
+ifelse(this is a very long comment in
 which I make some
 #opinions
 #and this is very interesting

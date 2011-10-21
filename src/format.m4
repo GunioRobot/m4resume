@@ -7,14 +7,14 @@ ifelse(`
 dnl
 define(`generate_formatter',
 `dnl
-define(`format_$1', 
+define(`format_$1',
   ifdef(`wrap_$1',
-`ifelse( 
-   wrap_$1,  `i', ifelse(mode, `html', 
+`ifelse(
+   wrap_$1,  `i', ifelse(mode, `html',
                          `<em>$`1'</em>', `\textit{$`1'}'),
-   wrap_$1,  `b', ifelse(mode, `html', 
+   wrap_$1,  `b', ifelse(mode, `html',
                          `<strong>$`1'</strong>', `\textbf{$`1'}'),
-   wrap_$1,  `s', ifelse(mode, `html', 
+   wrap_$1,  `s', ifelse(mode, `html',
                          `<tt>$`1'</tt>', `\textsf{$`1'}')dnl
 )dnl',
       `wrap_$1 was not defined'dnl

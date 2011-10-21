@@ -4,7 +4,7 @@ define(`spaces_to_lines', `translit(`$*', ` ', `_')')
 define(`reverse', `ifelse(`$#', `0', , `$#', `1', ``$1'',
                                `reverse(shift($@)), `$1'')')
 define(`cai', `class="achivement_item"')
-define(`make_line_items', `ifelse(`$#', `0', , 
+define(`make_line_items', `ifelse(`$#', `0', ,
                           `$#', `1', `  ifelse(mode, `html',`  <li cai>$1</li>',
                                              mode, `latex', `\item $1')',
                           `make_line_items(shift($@))
@@ -35,8 +35,8 @@ define(`achieve',
              `text\w+',
              `'),
            `A-Z\{} ',
-           `a-z___')', 
-         `_+', 
+           `a-z___')',
+         `_+',
          `_')`'}
   $3)
 ifelse(mode,`html', ``  <ul>'', mode, `latex', ``\begin{itemize}'')
